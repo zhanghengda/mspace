@@ -1,0 +1,20 @@
+<html>
+<head>
+    <script language="javascript" type="text/javascript">
+
+
+        function messageBox(message) {
+            alert(message);
+        }
+
+        function openOneVideo(indexVideo) {
+            document.AryaVideoOne.OpenVideo('admin', '123456', 'EU6Z26UECTFV94T8111A', 4, 0, 2);
+        }
+    </script>
+</head>
+<body>
+    <object ID="AryaVideoOne" CLASSID="CLSID:D2ACAA12-4827-47FC-9200-E721CF1DD9ED" codebase="AryaVideoOne.cab#version=2,0,0,1"> </object>
+    <input name="Play" type="button" onClick="document.AryaVideoOne.OpenVideo('admin','123456','EU6Z26UECTFV94T8111A',4,0,2);" value="播放">
+    <button onclick="openOneVideo(4);">test</button>
+</body>
+</html>   

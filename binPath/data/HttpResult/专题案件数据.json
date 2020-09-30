@@ -1,0 +1,1482 @@
+{
+  "code": "2",
+  "msg": "查询成功，获得数据",
+  "infoZTAJs": [
+    {
+      "firstFieldValue": "银川市局指挥中心",
+      "firstcount": 596,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 556
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 15
+        },
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 10
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 7
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "兴庆区一大队",
+      "firstcount": 139,
+      "pivotList": [
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 139
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "银古路派出所",
+      "firstcount": 83,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 20
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 19
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 17
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 15
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 11
+        },
+        {
+          "secFieldValue": "火灾事故",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "兴庆区二大队",
+      "firstcount": 78,
+      "pivotList": [
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 78
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "东塔派出所",
+      "firstcount": 75,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 28
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 13
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 12
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 10
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 7
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "贺兰城关派出所",
+      "firstcount": 73,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 29
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 22
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 13
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 2
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "玉皇阁北街派出所",
+      "firstcount": 72,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 32
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 15
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 11
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 8
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 6
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "金凤区一大队",
+      "firstcount": 66,
+      "pivotList": [
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 64
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "中山南街派出所",
+      "firstcount": 64,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 24
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 18
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 9
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 6
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 3
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "丽景街派出所",
+      "firstcount": 62,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 20
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 16
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 11
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 10
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 5
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "永宁县公安局",
+      "firstcount": 62,
+      "pivotList": [
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 46
+        },
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "火灾事故",
+          "secCount": 2
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "金凤区二大队",
+      "firstcount": 59,
+      "pivotList": [
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 58
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "解放西街派出所",
+      "firstcount": 58,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 25
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 14
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 7
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "事件",
+          "secCount": 3
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "上海西路派出所",
+      "firstcount": 57,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 24
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 11
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 7
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "事件",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 2
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "富宁街派出所",
+      "firstcount": 56,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 23
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 12
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 8
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 6
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "事件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "贺兰交通警察大队",
+      "firstcount": 54,
+      "pivotList": [
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 54
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "西花园路派出所",
+      "firstcount": 53,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 16
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 16
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 8
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 7
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 6
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "满城北街派出所",
+      "firstcount": 51,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 22
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 14
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 6
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 4
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "新华街派出所",
+      "firstcount": 50,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 15
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 13
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 9
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 9
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "贺兰县公安局",
+      "firstcount": 47,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 35
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 9
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "北京中路派出所",
+      "firstcount": 44,
+      "pivotList": [
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 17
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 11
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 8
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 7
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "西夏区一大队",
+      "firstcount": 43,
+      "pivotList": [
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 41
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 2
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "长城中路派出所",
+      "firstcount": 43,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 20
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 9
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 6
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 4
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "永宁县公安局交警大队",
+      "firstcount": 40,
+      "pivotList": [
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 40
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "望远镇派出所",
+      "firstcount": 34,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 20
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "灵武交通警察大队",
+      "firstcount": 34,
+      "pivotList": [
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 34
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "永宁县城关派出所",
+      "firstcount": 28,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 12
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "黄河东路派出所",
+      "firstcount": 27,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 11
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 6
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 2
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "朔方路派出所",
+      "firstcount": 23,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 10
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "北京西路派出所",
+      "firstcount": 20,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 6
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 2
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "文昌路派出所",
+      "firstcount": 19,
+      "pivotList": [
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 2
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "大新派出所",
+      "firstcount": 16,
+      "pivotList": [
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 6
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "德胜工业园区派出所",
+      "firstcount": 16,
+      "pivotList": [
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 7
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 7
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "交通公安分局",
+      "firstcount": 15,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 10
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "反扒大队",
+      "firstcount": 13,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 11
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "郝家桥派出所",
+      "firstcount": 13,
+      "pivotList": [
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 2
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "杨和镇派出所",
+      "firstcount": 12,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 6
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "闽宁镇派出所",
+      "firstcount": 11,
+      "pivotList": [
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "交通警察分局",
+      "firstcount": 9,
+      "pivotList": [
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 8
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "济民路派出所",
+      "firstcount": 9,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "灵武市公安局",
+      "firstcount": 9,
+      "pivotList": [
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 4
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "李俊镇派出所",
+      "firstcount": 8,
+      "pivotList": [
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "贺兰山西路派出所",
+      "firstcount": 8,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "银川市公安局技侦支队",
+      "firstcount": 8,
+      "pivotList": [
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 5
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 3
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "宁华路派出所",
+      "firstcount": 7,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "崇兴派出所",
+      "firstcount": 7,
+      "pivotList": [
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 6
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "良田镇派出所",
+      "firstcount": 7,
+      "pivotList": [
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "南梁派出所",
+      "firstcount": 6,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "掌政派出所",
+      "firstcount": 6,
+      "pivotList": [
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "网络安全保卫支队",
+      "firstcount": 6,
+      "pivotList": [
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 6
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "镇北堡派出所",
+      "firstcount": 5,
+      "pivotList": [
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "兴庆区分局",
+      "firstcount": 4,
+      "pivotList": [
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 3
+        },
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "兴泾镇派出所",
+      "firstcount": 4,
+      "pivotList": [
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "银川市公安局刑侦支队",
+      "firstcount": 4,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 4
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "小李开锁",
+      "firstcount": 3,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 3
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "暖泉派出所",
+      "firstcount": 3,
+      "pivotList": [
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "西夏区二大队",
+      "firstcount": 3,
+      "pivotList": [
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 3
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "西郊派出所",
+      "firstcount": 3,
+      "pivotList": [
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 2
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "银川市消防支队",
+      "firstcount": 3,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 3
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "商城治安派出所",
+      "firstcount": 2,
+      "pivotList": [
+        {
+          "secFieldValue": "刑事案件",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "宁东公安分局",
+      "firstcount": 2,
+      "pivotList": [
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 2
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "情报中心",
+      "firstcount": 2,
+      "pivotList": [
+        {
+          "secFieldValue": "其他警情",
+          "secCount": 2
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "月牙湖派出所",
+      "firstcount": 2,
+      "pivotList": [
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "胜利乡派出所",
+      "firstcount": 2,
+      "pivotList": [
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "车站所",
+      "firstcount": 2,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "行政（治安）案件",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "黄羊滩派出所",
+      "firstcount": 2,
+      "pivotList": [
+        {
+          "secFieldValue": "举报投诉",
+          "secCount": 1
+        },
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "小许开锁",
+      "firstcount": 1,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "望洪乡派出所",
+      "firstcount": 1,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "梧桐树派出所",
+      "firstcount": 1,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "燕鸽派出所",
+      "firstcount": 1,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "王记开锁",
+      "firstcount": 1,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "磁窑堡派出所",
+      "firstcount": 1,
+      "pivotList": [
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "立岗派出所",
+      "firstcount": 1,
+      "pivotList": [
+        {
+          "secFieldValue": "纠纷",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "西夏区分局",
+      "firstcount": 1,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "通贵派出所",
+      "firstcount": 1,
+      "pivotList": [
+        {
+          "secFieldValue": "群众求助",
+          "secCount": 1
+        }
+      ]
+    },
+    {
+      "firstFieldValue": "高速交警支队",
+      "firstcount": 1,
+      "pivotList": [
+        {
+          "secFieldValue": "交通类警情",
+          "secCount": 1
+        }
+      ]
+    }
+  ]
+}

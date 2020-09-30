@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AlarmChromatography xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Chromatographies>
+    <Chromatography Kind="接警总量">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="150" Color="4278190335" />
+        <ChromatographyItem MinValue="151" MaxValue="300" Color="4294967040" />
+        <ChromatographyItem MinValue="301" MaxValue="450" Color="4294953984" />
+        <ChromatographyItem MinValue="451" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="有效警情">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="80" Color="4278190335" />
+        <ChromatographyItem MinValue="81" MaxValue="150" Color="4294967040" />
+        <ChromatographyItem MinValue="151" MaxValue="200" Color="4294953984" />
+        <ChromatographyItem MinValue="21" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="无效警情">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="100" Color="4278190335" />
+        <ChromatographyItem MinValue="101" MaxValue="200" Color="4294967040" />
+        <ChromatographyItem MinValue="201" MaxValue="300" Color="4294953984" />
+        <ChromatographyItem MinValue="301" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="行政（治安）案件">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="8" Color="4278190335" />
+        <ChromatographyItem MinValue="9" MaxValue="16" Color="4294967040" />
+        <ChromatographyItem MinValue="17" MaxValue="24" Color="4294953984" />
+        <ChromatographyItem MinValue="25" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="刑事案件">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="6" Color="4278190335" />
+        <ChromatographyItem MinValue="7" MaxValue="12" Color="4294967040" />
+        <ChromatographyItem MinValue="13" MaxValue="18" Color="4294953984" />
+        <ChromatographyItem MinValue="19" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="群众求助">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="20" Color="4278190335" />
+        <ChromatographyItem MinValue="21" MaxValue="40" Color="4294967040" />
+        <ChromatographyItem MinValue="41" MaxValue="60" Color="4294953984" />
+        <ChromatographyItem MinValue="61" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="交通类警情">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="10" Color="4278190335" />
+        <ChromatographyItem MinValue="11" MaxValue="20" Color="4294967040" />
+        <ChromatographyItem MinValue="21" MaxValue="30" Color="4294953984" />
+        <ChromatographyItem MinValue="31" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="火灾事故">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="2" Color="4278190335" />
+        <ChromatographyItem MinValue="3" MaxValue="4" Color="4294967040" />
+        <ChromatographyItem MinValue="5" MaxValue="6" Color="4294953984" />
+        <ChromatographyItem MinValue="7" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="其他警情">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="4" Color="4278190335" />
+        <ChromatographyItem MinValue="5" MaxValue="8" Color="4294967040" />
+        <ChromatographyItem MinValue="9" MaxValue="12" Color="4294953984" />
+        <ChromatographyItem MinValue="13" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+
+    <Chromatography Kind="纠纷">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="4" Color="4278190335" />
+        <ChromatographyItem MinValue="5" MaxValue="8" Color="4294967040" />
+        <ChromatographyItem MinValue="9" MaxValue="12" Color="4294953984" />
+        <ChromatographyItem MinValue="13" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="举报投诉">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="4" Color="4278190335" />
+        <ChromatographyItem MinValue="5" MaxValue="8" Color="4294967040" />
+        <ChromatographyItem MinValue="9" MaxValue="12" Color="4294953984" />
+        <ChromatographyItem MinValue="13" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="事件">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="4" Color="4278190335" />
+        <ChromatographyItem MinValue="5" MaxValue="8" Color="4294967040" />
+        <ChromatographyItem MinValue="9" MaxValue="12" Color="4294953984" />
+        <ChromatographyItem MinValue="13" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="灾害事故">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="4" Color="4278190335" />
+        <ChromatographyItem MinValue="5" MaxValue="8" Color="4294967040" />
+        <ChromatographyItem MinValue="9" MaxValue="12" Color="4294953984" />
+        <ChromatographyItem MinValue="13" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+    <Chromatography Kind="其他行政违法">
+      <ChromatographyItems>
+        <ChromatographyItem MinValue="0" MaxValue="4" Color="4278190335" />
+        <ChromatographyItem MinValue="5" MaxValue="8" Color="4294967040" />
+        <ChromatographyItem MinValue="9" MaxValue="12" Color="4294953984" />
+        <ChromatographyItem MinValue="13" MaxValue="2147483647" Color="4294901760" />
+      </ChromatographyItems>
+    </Chromatography>
+  </Chromatographies>
+  
+</AlarmChromatography>

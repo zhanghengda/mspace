@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AlarmStatisticData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AlarmStatisticItems>
+    <AlarmStatisticItem PoliceStationName="中山公园派出所" TotalAlarm="60" EffectiveAlarm="24" InvalidAlarm="36" SecurityAlarm="3" CriminalAlarm="2" RescueAlarm="7" TrafficAlarm="9" FireAlarm="1" OthorAlarm="2" />
+    <AlarmStatisticItem PoliceStationName="火车站派出所" TotalAlarm="90" EffectiveAlarm="36" InvalidAlarm="54" SecurityAlarm="5" CriminalAlarm="3" RescueAlarm="10" TrafficAlarm="13" FireAlarm="2" OthorAlarm="3" />
+    <AlarmStatisticItem PoliceStationName="平吉堡派出所" TotalAlarm="120" EffectiveAlarm="48" InvalidAlarm="72" SecurityAlarm="7" CriminalAlarm="4" RescueAlarm="14" TrafficAlarm="18" FireAlarm="3" OthorAlarm="2" />
+    <AlarmStatisticItem PoliceStationName="同心路派出所" TotalAlarm="150" EffectiveAlarm="60" InvalidAlarm="90" SecurityAlarm="9" CriminalAlarm="6" RescueAlarm="18" TrafficAlarm="22" FireAlarm="1" OthorAlarm="4" />
+    <AlarmStatisticItem PoliceStationName="马家滩派出所" TotalAlarm="180" EffectiveAlarm="72" InvalidAlarm="108" SecurityAlarm="10" CriminalAlarm="7" RescueAlarm="21" TrafficAlarm="27" FireAlarm="1" OthorAlarm="6" />
+    <AlarmStatisticItem PoliceStationName="良田镇派出所" TotalAlarm="210" EffectiveAlarm="84" InvalidAlarm="126" SecurityAlarm="12" CriminalAlarm="8" RescueAlarm="25" TrafficAlarm="31" FireAlarm="2" OthorAlarm="6" />
+    <AlarmStatisticItem PoliceStationName="胜利街派出所" TotalAlarm="240" EffectiveAlarm="96" InvalidAlarm="144" SecurityAlarm="14" CriminalAlarm="9" RescueAlarm="28" TrafficAlarm="36" FireAlarm="3" OthorAlarm="6" />
+    <AlarmStatisticItem PoliceStationName="德胜工业园区派出所" TotalAlarm="270" EffectiveAlarm="108" InvalidAlarm="162" SecurityAlarm="16" CriminalAlarm="10" RescueAlarm="32" TrafficAlarm="40" FireAlarm="4" OthorAlarm="6" />
+    <AlarmStatisticItem PoliceStationName="商城治安派出所" TotalAlarm="300" EffectiveAlarm="120" InvalidAlarm="180" SecurityAlarm="18" CriminalAlarm="12" RescueAlarm="36" TrafficAlarm="45" FireAlarm="1" OthorAlarm="8" />
+    <AlarmStatisticItem PoliceStationName="常信派出所" TotalAlarm="330" EffectiveAlarm="132" InvalidAlarm="198" SecurityAlarm="19" CriminalAlarm="13" RescueAlarm="39" TrafficAlarm="49" FireAlarm="2" OthorAlarm="10" />
+    <AlarmStatisticItem PoliceStationName="南梁派出所" TotalAlarm="360" EffectiveAlarm="144" InvalidAlarm="216" SecurityAlarm="21" CriminalAlarm="14" RescueAlarm="43" TrafficAlarm="54" FireAlarm="3" OthorAlarm="9" />
+    <AlarmStatisticItem PoliceStationName="立岗派出所" TotalAlarm="390" EffectiveAlarm="156" InvalidAlarm="234" SecurityAlarm="23" CriminalAlarm="15" RescueAlarm="46" TrafficAlarm="58" FireAlarm="4" OthorAlarm="10" />
+    <AlarmStatisticItem PoliceStationName="月牙湖派出所" TotalAlarm="420" EffectiveAlarm="168" InvalidAlarm="252" SecurityAlarm="25" CriminalAlarm="16" RescueAlarm="50" TrafficAlarm="63" FireAlarm="1" OthorAlarm="13" />
+    <AlarmStatisticItem PoliceStationName="金贵派出所" TotalAlarm="450" EffectiveAlarm="180" InvalidAlarm="270" SecurityAlarm="27" CriminalAlarm="18" RescueAlarm="54" TrafficAlarm="67" FireAlarm="2" OthorAlarm="12" />
+    <AlarmStatisticItem PoliceStationName="通贵派出所" TotalAlarm="480" EffectiveAlarm="192" InvalidAlarm="288" SecurityAlarm="28" CriminalAlarm="19" RescueAlarm="57" TrafficAlarm="72" FireAlarm="3" OthorAlarm="13" />
+    <AlarmStatisticItem PoliceStationName="黄河东路派出所" TotalAlarm="510" EffectiveAlarm="204" InvalidAlarm="306" SecurityAlarm="30" CriminalAlarm="20" RescueAlarm="61" TrafficAlarm="76" FireAlarm="4" OthorAlarm="13" />
+    <AlarmStatisticItem PoliceStationName="贺兰山西路派出所" TotalAlarm="540" EffectiveAlarm="216" InvalidAlarm="324" SecurityAlarm="32" CriminalAlarm="21" RescueAlarm="64" TrafficAlarm="81" FireAlarm="1" OthorAlarm="17" />
+    <AlarmStatisticItem PoliceStationName="满城北街派出所" TotalAlarm="570" EffectiveAlarm="228" InvalidAlarm="342" SecurityAlarm="34" CriminalAlarm="22" RescueAlarm="68" TrafficAlarm="85" FireAlarm="2" OthorAlarm="17" />
+    <AlarmStatisticItem PoliceStationName="城关派出所" TotalAlarm="600" EffectiveAlarm="240" InvalidAlarm="360" SecurityAlarm="36" CriminalAlarm="24" RescueAlarm="72" TrafficAlarm="90" FireAlarm="3" OthorAlarm="15" />
+    <AlarmStatisticItem PoliceStationName="宁华路派出所" TotalAlarm="60" EffectiveAlarm="24" InvalidAlarm="36" SecurityAlarm="3" CriminalAlarm="2" RescueAlarm="7" TrafficAlarm="9" FireAlarm="1" OthorAlarm="2" />
+    <AlarmStatisticItem PoliceStationName="兴泾镇派出所" TotalAlarm="90" EffectiveAlarm="36" InvalidAlarm="54" SecurityAlarm="5" CriminalAlarm="3" RescueAlarm="10" TrafficAlarm="13" FireAlarm="1" OthorAlarm="4" />
+    <AlarmStatisticItem PoliceStationName="黄羊滩派出所" TotalAlarm="120" EffectiveAlarm="48" InvalidAlarm="72" SecurityAlarm="7" CriminalAlarm="4" RescueAlarm="14" TrafficAlarm="18" FireAlarm="2" OthorAlarm="3" />
+    <AlarmStatisticItem PoliceStationName="闽宁镇派出所" TotalAlarm="150" EffectiveAlarm="60" InvalidAlarm="90" SecurityAlarm="9" CriminalAlarm="6" RescueAlarm="18" TrafficAlarm="22" FireAlarm="1" OthorAlarm="4" />
+    <AlarmStatisticItem PoliceStationName="济民路派出所" TotalAlarm="180" EffectiveAlarm="72" InvalidAlarm="108" SecurityAlarm="10" CriminalAlarm="7" RescueAlarm="21" TrafficAlarm="27" FireAlarm="1" OthorAlarm="6" />
+    <AlarmStatisticItem PoliceStationName="西花园路派出所" TotalAlarm="210" EffectiveAlarm="84" InvalidAlarm="126" SecurityAlarm="12" CriminalAlarm="8" RescueAlarm="25" TrafficAlarm="31" FireAlarm="1" OthorAlarm="7" />
+    <AlarmStatisticItem PoliceStationName="北京西路派出所" TotalAlarm="240" EffectiveAlarm="96" InvalidAlarm="144" SecurityAlarm="14" CriminalAlarm="9" RescueAlarm="28" TrafficAlarm="36" FireAlarm="2" OthorAlarm="7" />
+    <AlarmStatisticItem PoliceStationName="朔方路派出所" TotalAlarm="270" EffectiveAlarm="108" InvalidAlarm="162" SecurityAlarm="16" CriminalAlarm="10" RescueAlarm="32" TrafficAlarm="40" FireAlarm="3" OthorAlarm="7" />
+    <AlarmStatisticItem PoliceStationName="文昌路派出所" TotalAlarm="300" EffectiveAlarm="120" InvalidAlarm="180" SecurityAlarm="18" CriminalAlarm="12" RescueAlarm="36" TrafficAlarm="45" FireAlarm="4" OthorAlarm="5" />
+    <AlarmStatisticItem PoliceStationName="上海西路派出所" TotalAlarm="330" EffectiveAlarm="132" InvalidAlarm="198" SecurityAlarm="19" CriminalAlarm="13" RescueAlarm="39" TrafficAlarm="49" FireAlarm="1" OthorAlarm="11" />
+    <AlarmStatisticItem PoliceStationName="丽景街派出所" TotalAlarm="360" EffectiveAlarm="144" InvalidAlarm="216" SecurityAlarm="21" CriminalAlarm="14" RescueAlarm="43" TrafficAlarm="54" FireAlarm="2" OthorAlarm="10" />
+    <AlarmStatisticItem PoliceStationName="银古路派出所" TotalAlarm="390" EffectiveAlarm="156" InvalidAlarm="234" SecurityAlarm="23" CriminalAlarm="15" RescueAlarm="46" TrafficAlarm="58" FireAlarm="3" OthorAlarm="11" />
+    <AlarmStatisticItem PoliceStationName="解放西街派出所" TotalAlarm="420" EffectiveAlarm="168" InvalidAlarm="252" SecurityAlarm="25" CriminalAlarm="16" RescueAlarm="50" TrafficAlarm="63" FireAlarm="4" OthorAlarm="10" />
+    <AlarmStatisticItem PoliceStationName="长城中路派出所" TotalAlarm="450" EffectiveAlarm="180" InvalidAlarm="270" SecurityAlarm="27" CriminalAlarm="18" RescueAlarm="54" TrafficAlarm="67" FireAlarm="1" OthorAlarm="13" />
+    <AlarmStatisticItem PoliceStationName="北京中路派出所" TotalAlarm="480" EffectiveAlarm="192" InvalidAlarm="288" SecurityAlarm="28" CriminalAlarm="19" RescueAlarm="57" TrafficAlarm="72" FireAlarm="2" OthorAlarm="14" />
+    <AlarmStatisticItem PoliceStationName="凤凰北街派出所" TotalAlarm="510" EffectiveAlarm="204" InvalidAlarm="306" SecurityAlarm="30" CriminalAlarm="20" RescueAlarm="61" TrafficAlarm="76" FireAlarm="3" OthorAlarm="14" />
+    <AlarmStatisticItem PoliceStationName="富宁街派出所" TotalAlarm="540" EffectiveAlarm="216" InvalidAlarm="324" SecurityAlarm="32" CriminalAlarm="21" RescueAlarm="64" TrafficAlarm="81" FireAlarm="4" OthorAlarm="14" />
+    <AlarmStatisticItem PoliceStationName="玉皇阁北街派出所" TotalAlarm="570" EffectiveAlarm="228" InvalidAlarm="342" SecurityAlarm="34" CriminalAlarm="22" RescueAlarm="68" TrafficAlarm="85" FireAlarm="1" OthorAlarm="18" />
+    <AlarmStatisticItem PoliceStationName="中山南街派出所" TotalAlarm="600" EffectiveAlarm="240" InvalidAlarm="360" SecurityAlarm="36" CriminalAlarm="24" RescueAlarm="72" TrafficAlarm="90" FireAlarm="2" OthorAlarm="16" />
+    <AlarmStatisticItem PoliceStationName="新华街派出所" TotalAlarm="60" EffectiveAlarm="24" InvalidAlarm="36" SecurityAlarm="3" CriminalAlarm="2" RescueAlarm="7" TrafficAlarm="9" FireAlarm="1" OthorAlarm="2" />
+    <AlarmStatisticItem PoliceStationName="前进街派出所" TotalAlarm="90" EffectiveAlarm="36" InvalidAlarm="54" SecurityAlarm="5" CriminalAlarm="3" RescueAlarm="10" TrafficAlarm="13" FireAlarm="1" OthorAlarm="4" />
+    <AlarmStatisticItem PoliceStationName="文化街派出所" TotalAlarm="120" EffectiveAlarm="48" InvalidAlarm="72" SecurityAlarm="7" CriminalAlarm="4" RescueAlarm="14" TrafficAlarm="18" FireAlarm="1" OthorAlarm="4" />
+    <AlarmStatisticItem PoliceStationName="燕鸽派出所" TotalAlarm="150" EffectiveAlarm="60" InvalidAlarm="90" SecurityAlarm="9" CriminalAlarm="6" RescueAlarm="18" TrafficAlarm="22" FireAlarm="2" OthorAlarm="3" />
+    <AlarmStatisticItem PoliceStationName="大新派出所" TotalAlarm="180" EffectiveAlarm="72" InvalidAlarm="108" SecurityAlarm="10" CriminalAlarm="7" RescueAlarm="21" TrafficAlarm="27" FireAlarm="3" OthorAlarm="4" />
+    <AlarmStatisticItem PoliceStationName="掌政派出所" TotalAlarm="210" EffectiveAlarm="84" InvalidAlarm="126" SecurityAlarm="12" CriminalAlarm="8" RescueAlarm="25" TrafficAlarm="31" FireAlarm="4" OthorAlarm="4" />
+    <AlarmStatisticItem PoliceStationName="望远镇派出所" TotalAlarm="240" EffectiveAlarm="96" InvalidAlarm="144" SecurityAlarm="14" CriminalAlarm="9" RescueAlarm="28" TrafficAlarm="36" FireAlarm="1" OthorAlarm="8" />
+    <AlarmStatisticItem PoliceStationName="胜利乡派出所" TotalAlarm="270" EffectiveAlarm="108" InvalidAlarm="162" SecurityAlarm="16" CriminalAlarm="10" RescueAlarm="32" TrafficAlarm="40" FireAlarm="2" OthorAlarm="8" />
+    <AlarmStatisticItem PoliceStationName="望洪乡派出所" TotalAlarm="300" EffectiveAlarm="120" InvalidAlarm="180" SecurityAlarm="18" CriminalAlarm="12" RescueAlarm="36" TrafficAlarm="45" FireAlarm="3" OthorAlarm="6" />
+    <AlarmStatisticItem PoliceStationName="杨和镇派出所" TotalAlarm="330" EffectiveAlarm="132" InvalidAlarm="198" SecurityAlarm="19" CriminalAlarm="13" RescueAlarm="39" TrafficAlarm="49" FireAlarm="4" OthorAlarm="8" />
+    <AlarmStatisticItem PoliceStationName="城关派出所" TotalAlarm="360" EffectiveAlarm="144" InvalidAlarm="216" SecurityAlarm="21" CriminalAlarm="14" RescueAlarm="43" TrafficAlarm="54" FireAlarm="1" OthorAlarm="11" />
+    <AlarmStatisticItem PoliceStationName="李俊镇派出所" TotalAlarm="390" EffectiveAlarm="156" InvalidAlarm="234" SecurityAlarm="23" CriminalAlarm="15" RescueAlarm="46" TrafficAlarm="58" FireAlarm="2" OthorAlarm="12" />
+    <AlarmStatisticItem PoliceStationName="梧桐树派出所" TotalAlarm="420" EffectiveAlarm="168" InvalidAlarm="252" SecurityAlarm="25" CriminalAlarm="16" RescueAlarm="50" TrafficAlarm="63" FireAlarm="3" OthorAlarm="11" />
+    <AlarmStatisticItem PoliceStationName="临河派出所" TotalAlarm="450" EffectiveAlarm="180" InvalidAlarm="270" SecurityAlarm="27" CriminalAlarm="18" RescueAlarm="54" TrafficAlarm="67" FireAlarm="4" OthorAlarm="10" />
+    <AlarmStatisticItem PoliceStationName="东塔派出所" TotalAlarm="480" EffectiveAlarm="192" InvalidAlarm="288" SecurityAlarm="28" CriminalAlarm="19" RescueAlarm="57" TrafficAlarm="72" FireAlarm="1" OthorAlarm="15" />
+    <AlarmStatisticItem PoliceStationName="崇兴镇派出所" TotalAlarm="510" EffectiveAlarm="204" InvalidAlarm="306" SecurityAlarm="30" CriminalAlarm="20" RescueAlarm="61" TrafficAlarm="76" FireAlarm="2" OthorAlarm="15" />
+    <AlarmStatisticItem PoliceStationName="白土岗乡派出所" TotalAlarm="540" EffectiveAlarm="216" InvalidAlarm="324" SecurityAlarm="32" CriminalAlarm="21" RescueAlarm="64" TrafficAlarm="81" FireAlarm="3" OthorAlarm="15" />
+    <AlarmStatisticItem PoliceStationName="磁窑堡派出所" TotalAlarm="570" EffectiveAlarm="228" InvalidAlarm="342" SecurityAlarm="34" CriminalAlarm="22" RescueAlarm="68" TrafficAlarm="85" FireAlarm="4" OthorAlarm="15" />
+    <AlarmStatisticItem PoliceStationName="郝家桥派出所" TotalAlarm="600" EffectiveAlarm="240" InvalidAlarm="360" SecurityAlarm="36" CriminalAlarm="24" RescueAlarm="72" TrafficAlarm="90" FireAlarm="1" OthorAlarm="17" />
+    <AlarmStatisticItem PoliceStationName="镇北堡派出所" TotalAlarm="60" EffectiveAlarm="24" InvalidAlarm="36" SecurityAlarm="3" CriminalAlarm="2" RescueAlarm="7" TrafficAlarm="9" FireAlarm="2" OthorAlarm="1" />
+    <AlarmStatisticItem PoliceStationName="西郊派出所" TotalAlarm="90" EffectiveAlarm="36" InvalidAlarm="54" SecurityAlarm="5" CriminalAlarm="3" RescueAlarm="10" TrafficAlarm="13" FireAlarm="3" OthorAlarm="2" />
+    <AlarmStatisticItem PoliceStationName="丰登镇派出所" TotalAlarm="120" EffectiveAlarm="48" InvalidAlarm="72" SecurityAlarm="7" CriminalAlarm="4" RescueAlarm="14" TrafficAlarm="18" FireAlarm="4" OthorAlarm="1" />
+    <AlarmStatisticItem PoliceStationName="暖泉派出所" TotalAlarm="150" EffectiveAlarm="60" InvalidAlarm="90" SecurityAlarm="9" CriminalAlarm="6" RescueAlarm="18" TrafficAlarm="22" FireAlarm="1" OthorAlarm="4" />
+  </AlarmStatisticItems>
+</AlarmStatisticData>

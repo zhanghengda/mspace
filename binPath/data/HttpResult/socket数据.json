@@ -1,0 +1,185 @@
+{
+  "msgType": 0,
+  "deviceId": "14000521556",
+  "longti": 106.3073,
+  "lati": 38.5001,
+  "speed": 101,
+  "direction": 0,
+  "dateTime": "2016-03-09 18:49:12",
+  "deviceType": "CAR",
+  "PDT_NO": null,
+  "Police_ID": "宁A0593�?,"unit_id":null}
+  {
+    "msgType": 0,
+    "deviceId": "70331333",
+    "longti": 106.27976227,
+    "lati": 38.45252609,
+    "speed": 1.852,
+    "direction": 0,
+    "dateTime": "2016-03-09 18:17:30",
+    "deviceType": "equipment02",
+    "PDT_NO": "70331333",
+    "Police_ID": "110209",
+    "unit_id": null
+  }
+  {
+    "msgType": 0,
+    "deviceId": "14000504476",
+    "longti": 106.2679,
+    "lati": 38.4541,
+    "speed": 191,
+    "direction": 12,
+    "dateTime": "2016-03-09 18:49:15",
+    "deviceType": "CAR",
+    "PDT_NO": null,
+    "Police_ID": "兴庆分局�?",
+    "unit_id": null
+  }
+  {
+    "msgType": 0,
+    "deviceId": "14000521556",
+    "longti": 106.2679,
+    "lati": 38.4541,
+    "speed": 191,
+    "direction": 12,
+    "dateTime": "2016-03-09 18:49:15",
+    "deviceType": "CAR",
+    "PDT_NO": null,
+    "Police_ID": "宁A0593�?,"unit_id":null}
+    {
+      "msgType": 0,
+      "deviceId": "70323377",
+      "longti": 106.27938843,
+      "lati": 38.46630478,
+      "speed": 0,
+      "direction": 0,
+      "dateTime": "2016-03-09 18:17:33",
+      "deviceType": "equipment02",
+      "PDT_NO": "70323377",
+      "Police_ID": "100666",
+      "unit_id": null
+    }
+    {
+      "msgType": 0,
+      "deviceId": "70333383",
+      "longti": 106.0322876,
+      "lati": 38.4000206,
+      "speed": 0,
+      "direction": 0,
+      "dateTime": "2016-03-09 18:17:34",
+      "deviceType": "equipment02",
+      "PDT_NO": "70333383",
+      "Police_ID": "120174",
+      "unit_id": null
+    }
+    {
+      "msgType": 0,
+      "deviceId": "14000504570",
+      "longti": 106.2593,
+      "lati": 38.4732,
+      "speed": 291,
+      "direction": 9,
+      "dateTime": "2016-03-09 18:49:19",
+      "deviceType": "CAR",
+      "PDT_NO": null,
+      "Police_ID": "兴庆分局�?",
+      "unit_id": null
+    }
+    {
+      "msgType": 0,
+      "deviceId": "14000504600",
+      "longti": 106.2696,
+      "lati": 38.4699,
+      "speed": 181,
+      "direction": 0,
+      "dateTime": "2016-03-09 18:49:19",
+      "deviceType": "CAR",
+      "PDT_NO": null,
+      "Police_ID": "宁A0311�?,"unit_id":null}
+      {
+        "msgType": 0,
+        "deviceId": "14000521522",
+        "longti": 106.2815,
+        "lati": 38.4695,
+        "speed": 11,
+        "direction": 11,
+        "dateTime": "2016-03-09 18:49:21",
+        "deviceType": "CAR",
+        "PDT_NO": null,
+        "Police_ID": "兴庆分局�?",
+        "unit_id": null
+      }
+      {
+        "msgType": 0,
+        "deviceId": "70320301",
+        "longti": 106.25881195,
+        "lati": 38.48439789,
+        "speed": 0,
+        "direction": 0,
+        "dateTime": "2016-03-09 18:17:36",
+        "deviceType": "equipment02",
+        "PDT_NO": "70320301",
+        "Police_ID": "100168",
+        "unit_id": null
+      }
+      {
+        "msgType": 0,
+        "deviceId": "0",
+        "longti": 0.01,
+        "lati": 0.01,
+        "speed": 0.01,
+        "direction": 0,
+        "dateTime": "2016-03-09 18:13:14",
+        "deviceType": "CAR",
+        "PDT_NO": null,
+        "Police_ID": "�?,"unit_id":null}
+        {
+          "msgType": 0,
+          "deviceId": "14000504613",
+          "longti": 106.1859,
+          "lati": 38.4908,
+          "speed": 141,
+          "direction": 0,
+          "dateTime": "2016-03-09 18:49:21",
+          "deviceType": "CAR",
+          "PDT_NO": null,
+          "Police_ID": "宁A0275�?,"unit_id":null}
+          {
+            "msgType": 0,
+            "deviceId": "14000493685",
+            "longti": 106.171,
+            "lati": 38.4915,
+            "speed": 101,
+            "direction": 0,
+            "dateTime": "2016-03-09 18:49:21",
+            "deviceType": "CAR",
+            "PDT_NO": null,
+            "Police_ID": "特警支队2",
+            "unit_id": null
+          }
+          {
+            "msgType": 0,
+            "deviceId": "14000504502",
+            "longti": 106.2193,
+            "lati": 38.4948,
+            "speed": 91,
+            "direction": 46,
+            "dateTime": "2016-03-09 18:49:21",
+            "deviceType": "CAR",
+            "PDT_NO": null,
+            "Police_ID": "金凤分局�?",
+            "unit_id": null
+          }
+          {
+            "msgType": 0,
+            "deviceId": "70323467",
+            "longti": 106.22460938,
+            "lati": 38.47340775,
+            "speed": 0,
+            "direction": 0,
+            "dateTime": "2016-03-09 18:17:38",
+            "deviceType": "equipment02",
+            "PDT_NO": "70323467",
+            "Police_ID": "100606",
+            "unit_id": null
+          }
