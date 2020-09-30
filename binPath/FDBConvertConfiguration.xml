@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataSources>
+  <!--源 FDB数据源地址-->
+  <![CDATA[
+    数据源对应关系（下面XML中的Type）
+    MySQL     ---> MySql5
+    Firebird  ---> FireBird2
+    Oracle    ---> Oracle
+    SQLite    ---> SQLite3
+    SQLServer ---> SQLServer
+  ]]>
+  <SrcDataSources>
+    <!--可以指定多个源FDB地址-->
+
+    <!--第一个源数据源-->
+    <SrcDataSource Type ="MySql5" Server = "wjh172cn" Port= "3306" DataBase ="澳门场景0118mysql" Instance ="" UserName ="root" Password ="666666" Version="">
+      <!--这里可以设置多个FeatureDataSet,如果不指定FeatureDataSet，就复制所有的FeatureDataSet-->
+      <FeatureDataSet Name="数字澳门三维信息系统" />
+    </SrcDataSource>
+    <!--<SrcDataSource Type ="FireBird2" Server = "" Port= "" DataBase ="I:\\扬州沙北.FDB" Instance ="" UserName ="" Password ="" Version="" >
+      --><!--这里可以设置多个FeatureDataSet,如果不指定FeatureDataSet，就复制所有的FeatureDataSet
+      <FeatureDataSet Name="杭州" />--><!--
+    </SrcDataSource>
+    --><!--第二个源数据源--><!--
+    --><!--<SrcDataSource Type ="FireBird2" Server = "" Port= "" DataBase ="I:\\杭州1127.FDB" Instance ="" UserName ="" Password ="" Version="" >--><!--
+      --><!--<FeatureDataSet Name="扬州沙盘南" />--><!--
+    --><!--</SrcDataSource>--><!--
+    <SrcDataSource Type ="FireBird2" Server = "" Port= "" DataBase ="I:\\扬州沙盘南.FDB" Instance ="" UserName ="" Password ="" Version="" />
+    <SrcDataSource Type ="FireBird2" Server = "" Port= "" DataBase ="I:\\扬州江都区沙盘项目.FDB" Instance ="" UserName ="" Password ="" Version="" />
+    <SrcDataSource Type ="FireBird2" Server = "" Port= "" DataBase ="I:\\扬州沙盘中.FDB" Instance ="" UserName ="" Password ="" Version="" />-->
+  </SrcDataSources>
+  <!--目标 FDB数据源地址-->
+  <!--<DesDataSource Type ="FireBird2" Server = "" Port= "" DataBase ="I:\\aaa.FDB" Instance ="" UserName ="" Password ="" Version="" />-->
+  <DesDataSource Type="Oracle" Server="192.168.2.210" Port="1521" DataBase="testFFF" Instance="orcl" UserName="sys" Password="orcl" Version="" />
+  <!--
+  <DesDataSource Type="PostgreSql" Server="127.0.0.1" Port="30000" DataBase="test3" Instance="" UserName="gvitech" Password="gvitech" Version="">
+	<DBHaveCreated>0</DBHaveCreated>
+	<InitialDatabase>idb</InitialDatabase>
+  </DesDataSource>
+  -->
+</DataSources>
