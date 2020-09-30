@@ -1,0 +1,46 @@
+﻿<blankWindow:BlankWindow x:Class="Mmc.Mspace.RegularInspectionModule.Views.RegInsImportDataView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mmc.Mspace.RegularInspectionModule.Views"
+        xmlns:blankWindow="http://GFramework.org"
+        xmlns:control="clr-namespace:Mmc.Mspace.Theme.Controls;assembly=Mmc.Mspace.Theme"
+        xmlns:helper="clr-namespace:Mmc.Mspace.Theme.Helper;assembly=Mmc.Mspace.Theme"
+        mc:Ignorable="d"
+        Title="ImportRegInsDataView" Height="230" Width="580">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#292C35" Grid.Column="0" Grid.ColumnSpan="2" CornerRadius="5,5,0,0" blankWindow:BlankWindow.Draggable="True" />
+        <TextBlock x:Name="TitleName" blankWindow:BlankWindow.Draggable="True"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{StaticResource LoadData}" Margin="18,0,0,0" Foreground="White"  FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Grid.Row="0" x:Name="CloseButton" Grid.Column="0" Grid.ColumnSpan="2"  Style="{DynamicResource ButtonCloseStyle}" Height="24" Width="24" HorizontalAlignment="Right" VerticalAlignment="Top"  Margin="0,2,8,0" Command="{Binding CancelCmd}"
+           />
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height=" auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Foreground="White" VerticalAlignment="Center" Margin="8" Content="{StaticResource ResultDataType}"/>
+            <ComboBox Grid.Row="0" Grid.Column="1" Margin="12" Width="460" helper:TextBoxHelper.Watermark="{StaticResource PleaseChoose}" Style="{DynamicResource DefaultComboBoxStyle}" SelectedItem="{Binding SelectedItem}"  SelectedValuePath="Key" DisplayMemberPath="Value" ItemsSource="{Binding InspectionTypes}" >
+            </ComboBox>
+
+            <Label Grid.Row="1" Grid.Column="0" Foreground="White" VerticalAlignment="Center" Margin="8" Content="{StaticResource ResultDataLoad}" />
+            <TextBox Grid.Row="1" Grid.Column="1" Width="400" HorizontalAlignment="Left" Margin="12.5" Style="{DynamicResource EditableTextBoxStyle}" Text="{Binding DataFileName}"/>
+            <control:Buttons Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" Margin="0,4,10,4" Width="40" HasPathData="True" Foreground="White"  Command="{Binding ChooseFileCmd}" Style="{DynamicResource HomeLeftButtonStyle}" RIcon="{StaticResource  Fileforder}" MouseOverRIcon="{StaticResource Fileforder_C}" PressedRIcon="{StaticResource Fileforder_H}"              />
+            
+        </Grid>
+
+        <Button x:Name="okBtn" Grid.Row="2" Content="{DynamicResource OK}" HorizontalAlignment="Right" Height="36" Margin="0,20,130,30" VerticalAlignment="Bottom" Width="80" IsEnabled="{Binding IsSave}" Style="{DynamicResource DefaultButtonStyle}" Command="{Binding SaveCmd}"  />
+        <Button x:Name="cancelBtn" Grid.Row="2" Content="{DynamicResource Cancel}" HorizontalAlignment="Right" Height="36" Margin="0,20,30,30" VerticalAlignment="Bottom" Width="80"  Style="{DynamicResource DefaultButtonStyle}" Command="{Binding CancelCmd}"/>
+    </Grid>
+</blankWindow:BlankWindow>

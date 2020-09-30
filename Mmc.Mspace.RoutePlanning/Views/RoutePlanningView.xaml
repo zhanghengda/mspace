@@ -1,0 +1,402 @@
+﻿<blankWindow:BlankWindow x:Class="Mmc.Mspace.RoutePlanning.Views.RoutePlanningView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:controls="clr-namespace:Mmc.Mspace.Theme.Controls;assembly=Mmc.Mspace.Theme"
+             xmlns:local="clr-namespace:Mmc.Mspace.RoutePlanning.Views"
+             xmlns:blankWindow="http://GFramework.org"
+             mc:Ignorable="d" Width="873" Height="532"
+             WindowStyle="None"  WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+    <StackPanel>
+        <Grid Width="874">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Background="#292C35" 
+                    CornerRadius="5,5,0,0" 
+                    blankWindow:BlankWindow.Draggable="True" />
+            <TextBlock x:Name="TitleName" blankWindow:BlankWindow.Draggable="True"  
+                       Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                       Text="{DynamicResource Courselist}" Margin="18,0,0,0"
+                       Foreground="#EBF5FF"  FontSize="14"
+                       HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button Grid.Row="0" x:Name="CloseButton" Grid.Column="0"
+                    Grid.ColumnSpan="2"  Command="{Binding ReleaseWindowCmd}"
+                    Style="{DynamicResource ButtonCloseStyle}" Height="36" Width="36"
+                    HorizontalAlignment="Right" VerticalAlignment="Top"  Margin="0,2,8,0" />
+        </Grid>
+        <Grid Width="873">
+            <StackPanel Margin="16,5,16,5" Grid.Row="1">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,5">
+                    <TextBox Name="txtSerachDataName"  Text="{Binding SearchRouteCondition,Mode=TwoWay}" Foreground="White"  Width="320" Height="32" VerticalContentAlignment="Center">
+                        <TextBox.Resources>
+                            <VisualBrush x:Key="HelpBrush" TileMode="None"  Stretch="None" AlignmentX="Left">
+                                <VisualBrush.Visual>
+                                    <TextBlock FontStyle="Normal"  Foreground="DimGray" Text="{DynamicResource RoutePlanningView_SearchByIDorName}"/>
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </TextBox.Resources>
+                        <TextBox.Style>
+                            <Style TargetType="TextBox">
+                                <Setter Property="Height" Value="23"></Setter>
+                                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Center" ></Setter>
+                                <Setter Property="Background"  Value="Black" ></Setter>
+                                <Style.Triggers>
+                                    <MultiTrigger>
+                                        <MultiTrigger.Conditions>
+                                            <Condition Property="IsFocused" Value="False"/>
+                                            <Condition Property="Text" Value=""/>
+                                        </MultiTrigger.Conditions>
+                                        <MultiTrigger.Setters>
+                                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                                        </MultiTrigger.Setters>
+                                    </MultiTrigger>
+                                    <MultiTrigger>
+                                        <MultiTrigger.Conditions>
+                                            <Condition Property="IsFocused" Value="False"/>
+                                            <Condition Property="Text" Value="{x:Null}"/>
+                                        </MultiTrigger.Conditions>
+                                        <MultiTrigger.Setters>
+                                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                                        </MultiTrigger.Setters>
+                                    </MultiTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBox.Style>
+                    </TextBox>
+                    <Button Content="{DynamicResource RoutePlan_Search}" Command="{Binding SearchRouteCmd}" Height="32" Width="68" Margin="5,0,5,0" Style="{StaticResource DefaultButtonStyle}"/>
+                </StackPanel>
+                <DataGrid HorizontalContentAlignment="Center" AlternationCount="2" VerticalGridLinesBrush="Black" HorizontalGridLinesBrush="Transparent"
+                          CanUserAddRows="False" AutoGenerateColumns="False" CanUserResizeColumns="False"  BorderBrush="Black" 
+                          Name="routeplandg" ItemsSource="{Binding RoutePlanCollection}" Width="840" HorizontalScrollBarVisibility="Hidden">
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+							<Setter Property="Background" Value="#1E2026"/>
+                            <Setter Property="Foreground" Value="#B3BBC5"/>
+                            <Setter Property="BorderThickness" Value="1,0,0,0" />
+                            <Setter Property="BorderBrush" Value="#000000" />
+                            <Setter Property="Height" Value="36"/>
+                            <Setter Property="FontSize" Value="12"/>
+                        </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                        <DataGrid.RowStyle>
+                        <Style TargetType="DataGridRow">
+                            <Style.Triggers>
+                                    <Trigger Property="AlternationIndex" Value="0" >
+                                        <Setter Property="Background" Value="#0A0B0D" />
+                                    </Trigger>
+                                    <Trigger Property="AlternationIndex" Value="1" >
+                                        <Setter Property="Background" Value="#14151A" />
+                                    </Trigger>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#50ABFF"/>
+									    <Setter Property="Foreground" Value="#EBF5FF"/>
+								</Trigger>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="#1890FF"/>
+                                        <Setter Property="Foreground" Value="#EBF5FF"/>
+                                </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.RowStyle>
+                        <DataGrid.Columns>
+                        <DataGridTemplateColumn Width="57">
+                            <DataGridTemplateColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+											<TextBlock  x:Name="cb1" TextAlignment="Center" Text ="{DynamicResource RoutePlanning_RouteID}" Foreground="#B3BBC5" />
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Down}" Visibility="{Binding DataContext.IDDownVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Up}" Visibility="{Binding DataContext.IDUpVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                        </StackPanel>
+										<ToggleButton  Width="58" Height="36" Opacity="0" Foreground="#EBF5FF" IsChecked="{Binding DataContext.IDIsChecked,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.HeaderTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+									<TextBlock  FontSize="12" TextTrimming="WordEllipsis" ToolTip="{Binding RouteID}" Text="{Binding RouteID}" TextAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Width="108">
+                            <DataGridTemplateColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+											<TextBlock  x:Name="cb1" TextAlignment="Center" Text ="{DynamicResource RoutePlanning_RouteName}" Foreground="#B3BBC5" />
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Down}" Visibility="{Binding DataContext.NameDownVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Up}" Visibility="{Binding DataContext.NameUpVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                        </StackPanel>
+										<ToggleButton Width="57" Height="36" Opacity="0" Foreground="#B3BBC5" IsChecked="{Binding DataContext.NameIsChecked,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.HeaderTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                    <controls:Buttons x:Name="overlooking" FontSize="12" Command="{Binding DataContext.OverLookingCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" CommandParameter="{Binding SelectedItem,ElementName=routeplandg}" ToolTip="{Binding RouteName}" Style="{StaticResource RoutePlanningLookingBtnStyle}" Content="{Binding RouteName}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        <DataGridTemplateColumn  Width="99">
+                            <DataGridTemplateColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+											<TextBlock  x:Name="cb1" TextAlignment="Center" Text ="{DynamicResource RoutePlanning_TimeSaved}" Foreground="#B3BBC5" />
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Down}" Visibility="{Binding DataContext.TimeSavedDownVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Up}" Visibility="{Binding DataContext.TimeSavedUpVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                        </StackPanel>
+										<ToggleButton  Width="57" Height="36" Opacity="0" Foreground="#B3BBC5" IsChecked="{Binding DataContext.TimeSavedIsChecked,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.HeaderTemplate>
+                            <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+									<TextBlock TextAlignment="Center" TextTrimming="WordEllipsis" ToolTip="{Binding RouteAddTime}" Text="{Binding RouteAddTime}" FontSize="12"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Width="94">
+                            <DataGridTemplateColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+											<TextBlock  x:Name="cb1" TextAlignment="Center" Text ="{DynamicResource RoutePlanning_RouteType}" Foreground="#B3BBC5" />
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Down}" Visibility="{Binding DataContext.RouteTypeDownVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Up}" Visibility="{Binding DataContext.RouteTypeUpVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                        </StackPanel>
+										<ToggleButton  Width="57" Height="36" Opacity="0" Foreground="#B3BBC5" IsChecked="{Binding DataContext.RouteTypeIsChecked,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.HeaderTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+									<TextBlock TextAlignment="Center" TextTrimming="WordEllipsis" ToolTip="{Binding MeasurementAreaType}" Text="{Binding MeasurementAreaType}" FontSize="12"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        <DataGridTemplateColumn  Width="74">
+                            <DataGridTemplateColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+											<TextBlock  x:Name="cb1" TextAlignment="Center" Text ="{DynamicResource RoutePlanning_NumberofWaypoints}" Foreground="#B3BBC5" />
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Down}" Visibility="{Binding DataContext.PointNumDownVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Up}" Visibility="{Binding DataContext.PointNumUpVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                        </StackPanel>
+										<ToggleButton  Width="57" Height="36" Opacity="0" Foreground="#B3BBC5" IsChecked="{Binding DataContext.PointNumIsChecked,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.HeaderTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+									<TextBlock TextAlignment="Center" TextTrimming="WordEllipsis" ToolTip="{Binding NumberofWayPoints}" Text="{Binding NumberofWayPoints}" FontSize="12"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        <DataGridTemplateColumn  Width="85">
+                            <DataGridTemplateColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+											<TextBlock  x:Name="cb1" TextAlignment="Center" Text ="{DynamicResource RoutePlanning_WorkingArea}" Foreground="#B3BBC5" />
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Down}" Visibility="{Binding DataContext.WorkingAreaDownVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Up}" Visibility="{Binding DataContext.WorkingAreaUpVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                        </StackPanel>
+										<ToggleButton  Width="57" Height="36" Opacity="0" Foreground="#B3BBC5" IsChecked="{Binding DataContext.WorkingAreaIsChecked,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.HeaderTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+									<TextBlock TextAlignment="Center" TextTrimming="WordEllipsis" ToolTip="{Binding WorkingArea}" Text="{Binding WorkingArea}" FontSize="12"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        <DataGridTemplateColumn  Width="84">
+                            <DataGridTemplateColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+											<TextBlock  x:Name="cb1" TextAlignment="Center" Text ="{DynamicResource RoutePlanning_EstimatedTime}" Foreground="#B3BBC5" />
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Down}" Visibility="{Binding DataContext.EstimatedTimeDownVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Up}" Visibility="{Binding DataContext.EstimatedTimeUpVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                        </StackPanel>
+										<ToggleButton  Width="57" Height="36" Opacity="0" Foreground="#B3BBC5" IsChecked="{Binding DataContext.EstimatedTimeIsChecked,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.HeaderTemplate>
+                            <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+									<TextBlock TextAlignment="Center" TextTrimming="WordEllipsis" ToolTip="{Binding EstimatedTime}" Text="{Binding EstimatedTime}" FontSize="12"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        <DataGridTemplateColumn  Width="89">
+                            <DataGridTemplateColumn.HeaderTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+											<TextBlock  x:Name="cb1" TextAlignment="Center" Text ="{DynamicResource RoutePlanning_EstimatedRange}" Foreground="#B3BBC5" />
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Down}" Visibility="{Binding DataContext.EstimatedRangeDownVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                            <Image Height="8" Width="8" Source="{StaticResource RoutePlan_Up}" Visibility="{Binding DataContext.EstimatedRangeUpVisibility,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                        </StackPanel>
+										<ToggleButton  Width="57" Height="36" Opacity="0" Foreground="#B3BBC5" IsChecked="{Binding DataContext.EstimatedRangeIsChecked,RelativeSource={RelativeSource AncestorType=DataGrid,AncestorLevel=1}}"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.HeaderTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+									<TextBlock TextAlignment="Center" TextTrimming="WordEllipsis" ToolTip="{Binding EstimatedRange}" Text="{Binding EstimatedRange}" FontSize="12"/>
+                                </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="{DynamicResource RoutePlanning_Operating}" Width="149">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                        <controls:Buttons x:Name="bs1" Height="23" Width="38" Margin="10,5,5,5"
+                                                RIcon="{DynamicResource ViewRoute}"
+                                                MouseOverRIcon="{DynamicResource ViewRoute_H}"  
+                                                PressedRIcon="{DynamicResource ViewRoute_C}"
+                                                Tag="{DynamicResource ViewRoute_H}" 
+												ToolTip="{DynamicResource RouteDetails}"
+                                                Style="{StaticResource AddandExportAccountBtnStyle}" 
+                                                Command="{Binding DataContext.SearchDetailCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" 
+                                                CommandParameter="{Binding SelectedItem,ElementName=routeplandg}"/>
+										<controls:Buttons x:Name="bs3" Height="23" Width="38" Margin="5,5,5,5"
+                                                RIcon="{DynamicResource FlySiumlate}"
+                                                MouseOverRIcon="{DynamicResource FlySiumlate_H}"  
+                                                PressedRIcon="{DynamicResource FlySiumlate_C}"
+                                                Tag="{DynamicResource FlySiumlate_H}" 
+												ToolTip="{DynamicResource RouteSimulation}"
+                                                Style="{StaticResource AddandExportAccountBtnStyle}" 
+                                                Command="{Binding DataContext.FlightSimulateCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" 
+                                                CommandParameter="{Binding SelectedItem,ElementName=routeplandg}"/>
+										<controls:Buttons x:Name="bs2" Height="23" Width="38" Margin="5,5,5,5"
+                                                RIcon="{DynamicResource DeleteAccountItem}"
+                                                MouseOverRIcon="{DynamicResource DeleteAccountItem_H}"  
+                                                PressedRIcon="{DynamicResource DeleteAccountItem_C}"
+                                                Tag="{DynamicResource DeleteAccountItem_H}" 
+												ToolTip="{DynamicResource DeleteRoute}"
+                                                Style="{StaticResource AddandExportAccountBtnStyle}" 
+                                                Command="{Binding DataContext.DeleteItemCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" 
+                                                CommandParameter="{Binding SelectedItem,ElementName=routeplandg}"/>
+                                    </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="450,10,16,10">
+                    <controls:Buttons x:Name="bs5" Content=""
+                                RIcon="{DynamicResource FirstPageNew}"
+                                MouseOverRIcon="{DynamicResource FirstPageNew_H}"  
+                                PressedRIcon="{DynamicResource FirstPageNew_C}"
+                                Tag="{DynamicResource FirstPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding FirstPageCmd}"/>
+                    <controls:Buttons x:Name="bs3" Content="" 
+                                IsEnabled="{Binding LastPageBtnEnable}"
+                                RIcon="{DynamicResource LastPageNew}"
+                                MouseOverRIcon="{DynamicResource LastPageNew_H}"  
+                                PressedRIcon="{DynamicResource LastPageNew_C}"
+                                Tag="{DynamicResource LastPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding LastPageCmd}"/>
+					<!--<TextBlock Text="{Binding PageNum}" Margin="5,0,5,0" FontSize="14"   Foreground="#FFFFFF" />-->
+
+                    <TextBlock Text="{Binding PageNum,StringFormat= {}{0}/}" FontSize="14" Foreground="#B3BBC5"  Margin="5,5,0,5" />
+                    <TextBlock Text="{Binding PageCount}" FontSize="14" Foreground="#B3BBC5"  Margin="0,5,5,5" />
+                    <controls:Buttons x:Name="bs4" Content=""
+                              IsEnabled="{Binding NextPageBtnEnable}"
+                              RIcon="{DynamicResource NextPageNew}"
+                                MouseOverRIcon="{DynamicResource NextPageNew_H}"  
+                                PressedRIcon="{DynamicResource NextPageNew_C}"
+                                Tag="{DynamicResource NextPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding NextPageCmd}"/>
+                    <controls:Buttons x:Name="bs6" Content=""
+                              RIcon="{DynamicResource FinalPageNew}"
+                                MouseOverRIcon="{DynamicResource FinalPageNew_H}"  
+                                PressedRIcon="{DynamicResource FinalPageNew_C}"
+                                Tag="{DynamicResource FinalPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding EndPageCmd}"/>
+                </StackPanel>
+            </StackPanel>
+            </Grid>
+        <!--<StackPanel Visibility="{Binding RoutePlanDetailVisibility}" Width="573">
+            <Button Command="{Binding BackToListCmd}" HorizontalAlignment="Left" Margin="16,10,0,10" Content="{DynamicResource RoutePlan_Back}" Height="32" Width="50" Style="{StaticResource DefaultButtonStyle}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="400"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <Label Content="{DynamicResource RoutePlan_ID}" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{DynamicResource RoutePlan_ZoneType}" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{DynamicResource RoutePlan_RouteType}" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{DynamicResource RoutePlan_RouteName}" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{DynamicResource RoutePlan_NumberofWayPoints}" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{DynamicResource RoutePlan_WorkingArea}" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{DynamicResource RoutePlan_EstimatedTime}" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{DynamicResource RoutePlan_EstimatedRange}" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{DynamicResource RoutePlan_AddTime}" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{DynamicResource RoutePlan_DownloadRoute}" Style="{StaticResource RoutePlanLabel}"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label Content="{Binding RouteID}" Background="#0A0B0D" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{Binding MeasurementAreaType}" Background="#14151A" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{Binding RouteType}" Background="#0A0B0D" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{Binding RouteName}" Background="#14151A" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{Binding NumberofWayPoints}" Background="#0A0B0D" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{Binding WorkingArea}" Background="#14151A" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{Binding EstimatedTime}" Background="#0A0B0D" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{Binding EstimatedRange}" Background="#14151A" Style="{StaticResource RoutePlanLabel}"/>
+                    <Label Content="{Binding RouteAddTime}" Background="#0A0B0D" Style="{StaticResource RoutePlanLabel}"/>
+                    <StackPanel Orientation="Horizontal" >
+                        <TextBox Name="txtSendEmail" Width="340" Height="23" VerticalContentAlignment="Center">
+                            <TextBox.Resources>
+                                <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.3" Stretch="None" AlignmentX="Left">
+                                    <VisualBrush.Visual>
+                                        <TextBlock FontStyle="Italic" Foreground="Red" Text="{DynamicResource RoutePlanningView_SendEmail}"/>
+                                    </VisualBrush.Visual>
+                                </VisualBrush>
+                            </TextBox.Resources>
+                            <TextBox.Style>
+                                <Style TargetType="TextBox">
+                                    <Setter Property="Height" Value="23"></Setter>
+                                    <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                    <Setter Property="VerticalAlignment" Value="Center" ></Setter>
+                                    <Setter Property="Background"  Value="Black" ></Setter>
+                                    <Style.Triggers>
+                                        <MultiTrigger>
+                                            <MultiTrigger.Conditions>
+                                                <Condition Property="IsFocused" Value="False"/>
+                                                <Condition Property="Text" Value=""/>
+                                            </MultiTrigger.Conditions>
+                                            <MultiTrigger.Setters>
+                                                <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                                            </MultiTrigger.Setters>
+                                        </MultiTrigger>
+                                        <MultiTrigger>
+                                            <MultiTrigger.Conditions>
+                                                <Condition Property="IsFocused" Value="False"/>
+                                                <Condition Property="Text" Value="{x:Null}"/>
+                                            </MultiTrigger.Conditions>
+                                            <MultiTrigger.Setters>
+                                                <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                                            </MultiTrigger.Setters>
+                                        </MultiTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBox.Style>
+                        </TextBox>
+                        <Button Command="{Binding SendEmailCmd}" Content="{DynamicResource RoutePlan_SendEmail}" Width="50" Height="32" Style="{StaticResource DefaultButtonStyle}"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </StackPanel>-->
+    </StackPanel>
+</blankWindow:BlankWindow>

@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Costura.Fody.3.1.6\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.3.1.6\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A47AFF8-7743-4ADF-8890-45D189F7BA45}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mmc.Mspace.UavModule</RootNamespace>
+    <AssemblyName>Mmc.Mspace.UavModule</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GFramework.BlankWindow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\GFramework.BlankWindow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Common.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Common.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeCore.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeCore.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeGeometry.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeGeometry.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Math.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Math.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.RenderControl.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.RenderControl.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Resource.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Resource.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\libs\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="INIFileParser, Version=2.5.2.0, Culture=neutral, PublicKeyToken=79af7b307b65cf3c, processorArchitecture=MSIL">
+      <HintPath>..\packages\ini-parser.2.5.2\lib\net20\INIFileParser.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="LibVLCSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibVLCSharp.3.0.0\lib\net40\LibVLCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LibVLCSharp.WPF, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibVLCSharp.WPF.3.0.0\lib\net461\LibVLCSharp.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenTK, Version=3.0.1.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.3.0.1\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=3.0.1.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.GLControl.3.0.1\lib\net20\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DirectInput, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DirectInput.4.2.0\lib\net45\SharpDX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.RawInput, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.RawInput.4.2.0\lib\net45\SharpDX.RawInput.dll</HintPath>
+    </Reference>
+    <Reference Include="SVG, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SvgNet.2.0.0\lib\net40\SVG.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Extensions">
+      <HintPath>..\bin\System.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebEye.Controls.Wpf.StreamPlayerControl, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\WebEye.Controls.Wpf.StreamPlayerControl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>..\libs\websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Converter\VoltageVisibilityConverter.cs" />
+    <Compile Include="Dto\CamData.cs" />
+    <Compile Include="Dto\CombRouteListModel.cs" />
+    <Compile Include="Dto\GasInfo.cs" />
+    <Compile Include="Dto\SocketItem.cs" />
+    <Compile Include="Dto\SocketLogin.cs" />
+    <Compile Include="Dto\TypeEnum.cs" />
+    <Compile Include="HudPanel\HUD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HudPanel\HUDT.Designer.cs" />
+    <Compile Include="Service\JoyService.cs" />
+    <Compile Include="UavTracing\MultiVideoView.xaml.cs">
+      <DependentUpon>MultiVideoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UavTracing\MultiVideoVModel.cs" />
+    <Compile Include="UavTracing\SinggleVideoView.xaml.cs">
+      <DependentUpon>SinggleVideoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UavTracing\SingleVideoVModel.cs" />
+    <Compile Include="UavTracing\UavControlView.xaml.cs">
+      <DependentUpon>UavControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UavTracing\UavControlVModel.cs" />
+    <Compile Include="UavTracing\UavInfoVModel.cs" />
+    <Compile Include="UavTracing\UavItemAreaViewModel.cs" />
+    <Compile Include="UavTracing\SingleVideoViewModel.cs" />
+    <Compile Include="UavTracing\UavVideoVLCView.xaml.cs">
+      <DependentUpon>UavVideoVLCView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UavTracing\VideoControllerVModel.cs" />
+    <Compile Include="WebSocket\BuissnesServiceImpl.cs" />
+    <Compile Include="WebSocket\WebSocketBase.cs" />
+    <None Include="MultiViewCompare\CompareViewExModel.cs" />
+    <Compile Include="MultiViewCompare\GroupLayerItemModel.cs" />
+    <Compile Include="MultiViewCompare\LayerViewModel.cs" />
+    <Compile Include="MultiViewCompare\CompareView.xaml.cs">
+      <DependentUpon>CompareView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MultiViewCompare\CompareViewModel.cs" />
+    <Compile Include="MultiViewCompare\LayersView.xaml.cs">
+      <DependentUpon>LayersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MultiViewCompare\PoiItem.cs" />
+    <Compile Include="MultiViewCompare\RenderableItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Dto\SocketData.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="UavTracing\PanoramicView.xaml.cs">
+      <DependentUpon>PanoramicView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UavTracing\PanoramicViewModel.cs" />
+    <Compile Include="UavTracing\ShipTrace.cs" />
+    <Compile Include="UavTracing\UavHeatMapView.xaml.cs">
+      <DependentUpon>UavHeatMapView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UavTracing\MGasView.xaml.cs">
+      <DependentUpon>MGasView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UavTracing\MGasViewModel.cs" />
+    <Compile Include="UavTracing\UavHeatMapViewModel.cs" />
+    <Compile Include="UavTracing\UavMountControlView.xaml.cs">
+      <DependentUpon>UavMountControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UavTracing\UavMountControlViewModel.cs" />
+    <Compile Include="UavTracing\UavTrace.cs" />
+    <Compile Include="UavTracing\UavWebVideoViewModel.cs" />
+    <Compile Include="UavTracing\UavVideoWebView.xaml.cs">
+      <DependentUpon>UavVideoWebView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UavTracing\UavItemViewModel.cs" />
+    <Compile Include="UavTracing\UavListViewModel.cs" />
+    <Compile Include="UavTracing\UavTracingView.xaml.cs">
+      <DependentUpon>UavTracingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UavTracing\UavTracingModel.cs" />
+    <Compile Include="UavTracing\UavVideoView.xaml.cs">
+      <DependentUpon>UavVideoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UavTracing\UavVideoViewModel.cs" />
+    <Compile Include="Video\VideoLayerViewModel.cs" />
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MultiViewCompare\CompareView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MultiViewCompare\LayersView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UavTracing\MultiVideoView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UavTracing\PanoramicView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UavTracing\SinggleVideoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UavTracing\UavControlView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UavTracing\UavHeatMapView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UavTracing\MGasView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UavTracing\UavMountControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UavTracing\UavVideoWebView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UavTracing\UavTracingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UavTracing\UavVideoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UavTracing\UavVideoVLCView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gvitech.CityMaker.Extension\Gvitech.CityMaker.Extension.csproj">
+      <Project>{6024d395-ea9f-4d2d-887a-0827e16613e2}</Project>
+      <Name>Gvitech.CityMaker.Extension</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.DataSourceAccess\Mmc.DataSourceAccess.csproj">
+      <Project>{24fdf0d9-fec4-465b-915d-01fae99e2184}</Project>
+      <Name>Mmc.DataSourceAccess</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Framework\Mmc.Framework.csproj">
+      <Project>{22939209-2239-4851-8f9b-24b79823793a}</Project>
+      <Name>Mmc.Framework</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Common\Mmc.Mspace.Common.csproj">
+      <Project>{cd3991ed-0326-49cd-a83c-7816aafd88b7}</Project>
+      <Name>Mmc.Mspace.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Const\Mmc.Mspace.Const.csproj">
+      <Project>{149a90b6-d7bd-4b48-8daf-2e8151c8cc6b}</Project>
+      <Name>Mmc.Mspace.Const</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Services\Mmc.Mspace.Services.csproj">
+      <Project>{adcc12cb-e1d2-436a-8c33-47484ae76e08}</Project>
+      <Name>Mmc.Mspace.Services</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Theme\Mmc.Mspace.Theme.csproj">
+      <Project>{41c024cf-8b5d-4693-b3ff-8d36d2b753c4}</Project>
+      <Name>Mmc.Mspace.Theme</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.ToolModule\Mmc.Mspace.ToolModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0dd}</Project>
+      <Name>Mmc.Mspace.ToolModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Windows\Mmc.Windows.csproj">
+      <Project>{8f12bf24-3e61-46e6-8baa-4bd059203aca}</Project>
+      <Name>Mmc.Windows</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf.Toolkit\Mmc.Wpf.Toolkit.csproj">
+      <Project>{0faaf359-fce7-4c30-aede-1b290abce6de}</Project>
+      <Name>Mmc.Wpf.Toolkit</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf\Mmc.Wpf.csproj">
+      <Project>{2efe1860-3671-43c0-9e80-e0a80f438ac3}</Project>
+      <Name>Mmc.Wpf</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.PoiManager\Mmc.Mspace.PoiManagerModule.csproj">
+      <Project>{4DD21CF7-3B94-4336-9774-AC09C552896B}</Project>
+      <Name>Mmc.Mspace.PoiManagerModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HudPanel\HUDT.resx" />
+    <EmbeddedResource Include="HudPanel\HUDT.zh-Hans.resx" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Costura.Fody.3.1.6\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.3.1.6\build\Costura.Fody.props'))" />
+    <Error Condition="!Exists('..\packages\VideoLAN.LibVLC.Windows.3.0.0\build\VideoLAN.LibVLC.Windows.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\VideoLAN.LibVLC.Windows.3.0.0\build\VideoLAN.LibVLC.Windows.targets'))" />
+  </Target>
+  <Import Project="..\packages\VideoLAN.LibVLC.Windows.3.0.0\build\VideoLAN.LibVLC.Windows.targets" Condition="Exists('..\packages\VideoLAN.LibVLC.Windows.3.0.0\build\VideoLAN.LibVLC.Windows.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+</Project>

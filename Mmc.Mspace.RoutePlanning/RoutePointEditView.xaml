@@ -1,0 +1,84 @@
+﻿<blankWindow:BlankWindow x:Class="Mmc.Mspace.RoutePlanning.RoutePointEditView"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mmc.Mspace.RoutePlanning"
+                         xmlns:helper="clr-namespace:Mmc.Mspace.Theme.Helper;assembly=Mmc.Mspace.Theme"
+        xmlns:blankWindow="http://GFramework.org"
+        mc:Ignorable="d" Height="330" Width="230" Closed="Window_Closed" Style="{DynamicResource baseWindowStyle}"  WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Background="#1E2026" AllowsTransparency="True" Opacity="0.9"  >
+	<Grid >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="40"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Border Grid.Row="0" Background="#292C35" Opacity="1" Grid.Column="0" Grid.ColumnSpan="1" CornerRadius="5,5,0,0" blankWindow:BlankWindow.Draggable="True" />
+		<Button x:Name="CloseButton" Style="{DynamicResource ButtonCloseStyle}" Height="36" Width="36" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,5,0" Command="{Binding cmdCloseWindow}" />
+		<Border Height="40" Width="230" Background="#292C35" Opacity="1" Grid.Column="0" CornerRadius="0,0,5,5" Margin="0,239,0,1" Grid.Row="1"  />
+		<StackPanel  Orientation="Horizontal" Margin="50 0 0 0">
+
+			<TextBox Grid.Row="0" Width="20" Height="20" helper:TextBoxHelper.IsNeedClearButton="False" Padding="0 0 0 0" Style="{DynamicResource TbxWaterStyle}" HorizontalAlignment="Center" Text="{Binding SelectPointIndex,UpdateSourceTrigger=PropertyChanged}" TextAlignment="Center" Margin="30,0,0,0"></TextBox>
+			<TextBlock Grid.Row="0" Style="{DynamicResource DefaultTextBlockStyle}" Text=" / " VerticalAlignment="Center"></TextBlock>
+			<TextBlock Grid.Row="0" Style="{DynamicResource DefaultTextBlockStyle}" Text="{Binding SelectPointCount}" ></TextBlock>
+			<TextBlock Grid.Row="0" Style="{DynamicResource DefaultTextBlockStyle}" VerticalAlignment="Center" Text="{DynamicResource Waypoint}"/>
+
+
+		</StackPanel>
+		<Grid Grid.Row="1" Margin="15 10 10 10">
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+                <RowDefinition/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="80"/>
+				<ColumnDefinition Width="50"/>
+				<ColumnDefinition Width="50"/>
+			</Grid.ColumnDefinitions>
+			<TextBlock Text="{DynamicResource Longitude}"   Grid.Row="0" Grid.Column="0" Style="{DynamicResource DefaultTextBlockStyle}"/>
+			<TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" helper:TextBoxHelper.IsNeedClearButton="False" Margin="0 0 0 0" Width="130" Height="30" HorizontalAlignment="Left" Style="{DynamicResource TbxWaterStyle}" Text="{Binding SelectLng,UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True"/>
+			<TextBlock Text="{DynamicResource Latitude}" Grid.Row="1" Grid.Column="0" Style="{DynamicResource DefaultTextBlockStyle}"/>
+			<TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" helper:TextBoxHelper.IsNeedClearButton="False" Margin="0 0 0 0" Width="130" Height="30" HorizontalAlignment="Left" Style="{DynamicResource TbxWaterStyle}" Text="{Binding SelectLat,UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True"/>
+			<Button Grid.Column="3" Grid.Row="0" Grid.RowSpan="2" Width="28" Height="60" Content="°" Foreground="White" HorizontalAlignment="Left" Margin="0 0 0 0"  x:Name="Id_LngLatBtn"  Style="{DynamicResource RouteEditButtonStyle}" Command="{Binding cmdChangeLngLat}"/>
+			<TextBlock Text="{DynamicResource Height}" Grid.Row="2" Grid.Column="0" Style="{DynamicResource DefaultTextBlockStyle}" />
+			<TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" helper:TextBoxHelper.IsNeedClearButton="False"  Margin="0 0 0 0" Width="130" Height="30" HorizontalAlignment="Left" Style="{DynamicResource TbxWaterStyle}" Text="{Binding SelectHeight,UpdateSourceTrigger=PropertyChanged}"/>
+			<TextBlock Text="m" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" Style="{DynamicResource DefaultTextBlockStyle}" Margin="5 0 0 0"/>
+			<TextBlock Text="{DynamicResource Speed}" Grid.Row="3" Grid.Column="0" Style="{DynamicResource DefaultTextBlockStyle}"/>
+			<TextBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" helper:TextBoxHelper.IsNeedClearButton="False"  Margin="0 0 0 0" Width="130" Height="30" HorizontalAlignment="Left" Style="{DynamicResource TbxWaterStyle}" Text="{Binding SelectSpeed,UpdateSourceTrigger=PropertyChanged}"/>
+			<TextBlock Text="m/s" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" Style="{DynamicResource DefaultTextBlockStyle}" Margin="5 0 0 0"/>
+			<TextBlock Text="{DynamicResource Hover}" Grid.Row="4" Grid.Column="0" Style="{DynamicResource DefaultTextBlockStyle}"/>
+			<TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" helper:TextBoxHelper.IsNeedClearButton="False" Margin="0 0 0 0" Width="130" Height="30" HorizontalAlignment="Left" Style="{DynamicResource TbxWaterStyle}" Text="{Binding SelectHover,UpdateSourceTrigger=PropertyChanged}"/>
+			<TextBlock Text="s" Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" Style="{DynamicResource DefaultTextBlockStyle}" Margin="5 0 0 0"/>
+			<TextBlock Text="{DynamicResource Thetrigger}" Grid.Row="5" Grid.Column="0" Style="{DynamicResource DefaultTextBlockStyle}"/>
+			<TextBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" helper:TextBoxHelper.IsNeedClearButton="False" Margin="0 0 0 0" Width="130" Height="30" HorizontalAlignment="Left" Style="{DynamicResource TbxWaterStyle}" Text="{Binding SelectTrigger,UpdateSourceTrigger=PropertyChanged}"/>
+			<TextBlock Text="m" Grid.Row="5" Grid.Column="3" VerticalAlignment="Center" Style="{DynamicResource DefaultTextBlockStyle}" Margin="5 0 0 0"/>
+
+            <TextBlock Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Text="修改所有航点" Style="{DynamicResource DefaultTextBlockStyle}"/>
+            <CheckBox  Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Width="50" Height="23" HorizontalAlignment="Left" Style="{DynamicResource SwitchCheckStyle}" IsChecked="{Binding IsChangeAll}"/>
+
+			<TextBlock Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Text="{DynamicResource Cameratrigger}" Style="{DynamicResource DefaultTextBlockStyle}"/>
+			<CheckBox  Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Width="50" Height="23" HorizontalAlignment="Left" Margin="0 0 0 0" Style="{DynamicResource SwitchCheckStyle}" IsChecked="{Binding SelectCameraTrigger}"/>
+
+			<TextBlock Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Text="自动保存修改" Style="{DynamicResource DefaultTextBlockStyle}"/>
+			<CheckBox  Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" Width="50" Height="23" HorizontalAlignment="Left" Margin="0 0 0 0" Style="{DynamicResource SwitchCheckStyle}" IsChecked="{Binding SaveAuto}"/>
+			<Button Content=""  Grid.Row="9" Grid.Column="0" Width="16" Height="16" Margin="6,7,85,6" Style="{DynamicResource PrePointStyle}" ToolTip="上一个" Command="{Binding cmdPrePoint}" Grid.ColumnSpan="2"/>
+			<Button Content=""  Grid.Row="9" Grid.Column="0" Width="16" Height="16" Margin="38,7,53,6" Style="{DynamicResource ResetPointStyle}" ToolTip="恢复" Command="{Binding ReSetDataCmd}" Grid.ColumnSpan="2"/>
+			<Button Content=""  Grid.Row="9" Grid.Column="0" Width="16" Height="16" Margin="70,7,21,6" Style="{DynamicResource AddPointStyle}" ToolTip="增加" Command="{Binding AddPointCmd}" Grid.ColumnSpan="2"/>
+			<Button Content=""  Grid.Row="9" Grid.Column="0"  Width="16" Height="16" Margin="102,7,39,6" Style="{DynamicResource SavePointStyle}" ToolTip="保存"  IsEnabled="{Binding SaveAutoEnable}" Command="{Binding SaveAllCmd}" Grid.ColumnSpan="3"/>
+			<Button Grid.Row="9" Grid.Column="2" Width="16" Height="16" Command="{Binding cmdDeleteRoutePoint}" ToolTip="{DynamicResource Delete}" Style="{DynamicResource DeletePointStyleNew}" Margin="27,7,7,6"/>
+			<Button Content=""  Grid.Row="9" Grid.Column="3" Width="16" Height="16" Margin="9,7,25,6" Style="{DynamicResource NextPointStyle}" ToolTip="下一个" Command="{Binding cmdNextPoint}"/>
+			<!--<Button Grid.Row="8" Grid.Column="1" Width="16" Height="16" Command="{Binding cmdDeleteRoutePoint}" ToolTip="恢复" Style="{DynamicResource DeletePointStyle}" Margin="38,7,53,6"/>
+			<Button Grid.Row="8" Grid.Column="1" Width="16" Height="16" Command="{Binding cmdDeleteRoutePoint}" ToolTip="增加" Style="{DynamicResource DeletePointStyle}" Margin="70,7,21,6"/>
+			<Button Grid.Row="8" Grid.Column="1" Width="16" Height="16" Command="{Binding cmdDeleteRoutePoint}" ToolTip="保存" Style="{DynamicResource DeletePointStyle}" Margin="102,7,39,6" RenderTransformOrigin="-1.991,0.444" Grid.ColumnSpan="2"/>-->
+		
+		</Grid>
+	</Grid>
+</blankWindow:BlankWindow>

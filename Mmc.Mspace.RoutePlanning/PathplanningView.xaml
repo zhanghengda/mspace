@@ -1,0 +1,203 @@
+﻿<UserControl x:Class="Mmc.Mspace.RoutePlanning.PathplanningView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:controls="clr-namespace:Mmc.Mspace.Theme.Controls;assembly=Mmc.Mspace.Theme"
+             mc:Ignorable="d" Width="64">
+    <Grid  Width="64" Background="#1E2026"  VerticalAlignment="Stretch" >
+        <StackPanel Orientation="Vertical" >
+            <Popup x:Name="InputFile" MinWidth="140" PlacementTarget="{Binding ElementName= togBtn}" IsOpen="{Binding InputFileOpen}"
+                       
+                                   Placement="Right"  PopupAnimation="Fade" StaysOpen="False"  >
+                <Border SnapsToDevicePixels="True" 
+                                        BorderThickness="0" Margin="0">
+                    <StackPanel  Background="#2A3243" Orientation="Vertical">
+                        <controls:Buttons HasPathData="False"  
+                                    Style="{DynamicResource HomeMenuStyle}"
+                                              Command="{Binding cmdKmlInput}"
+                                    Content="{DynamicResource KMLImport}"
+                                            ToolTip="{DynamicResource KMLImport}"
+                                    Height="36" 
+                                    Width="140" 
+                                    Margin="0,0,0,0"/>
+
+                        <controls:Buttons   HasPathData="False" 
+                                    Style="{DynamicResource HomeMenuStyle}"
+                                            Command="{Binding cmdMissionInput}"
+                                     Content="{DynamicResource MissionImport}"
+                                               ToolTip="{DynamicResource MissionImport}"
+                                    Height="36" 
+                                    Width="140" 
+                                    Margin="0,0,0,0"/>
+                    </StackPanel>
+                </Border>
+            </Popup>
+            <Popup x:Name="DrawRoute" MinWidth="140" PlacementTarget="{Binding ElementName= togBtn2}" IsOpen="{Binding DrawRouteOpen}"
+                       
+                                   Placement="Right"  PopupAnimation="Fade" StaysOpen="False" >
+                <Border SnapsToDevicePixels="True" 
+                                        BorderThickness="0" Margin="0">
+                    <StackPanel  Background="#2A3243" Orientation="Vertical">
+                        <controls:Buttons HasPathData="False" 
+                                    Style="{DynamicResource HomeMenuStyle}"
+                                              Command="{Binding cmdCreatePowerRoute}"
+                                    Content="{DynamicResource Regularine}"     
+                                                ToolTip="{DynamicResource Regularine}"
+                                    Height="36" 
+                                    Width="140" 
+                                    Margin="0,0,0,0"/>
+
+                        <controls:Buttons   HasPathData="False" 
+                                    Style="{DynamicResource HomeMenuStyle}"
+                                            Command="{Binding cmdCreateGroundRoute}"
+                                     Content="{DynamicResource Stickto}"
+                                              ToolTip="{DynamicResource Stickto}"
+                                    Height="36" 
+                                    Width="140" 
+                                    Margin="0,0,0,0"/>
+                        <!--<controls:Buttons   HasPathData="True" 
+                                    Style="{DynamicResource HomeMenuStyle}"
+                                            Command="{Binding cmdCreateMappingRoute}"
+                                     Content="测绘航线"
+                                    Height="36" 
+                                    Width="140" 
+                                    Margin="0,0,0,0"/>-->
+                        <!--<controls:Buttons   HasPathData="True" 
+                                    Style="{DynamicResource HomeMenuStyle}"
+                                            Command="{Binding cmdCreateLogisticRoute}"
+                                     Content="物流航线"
+                                    Height="36" 
+                                    Width="140" 
+                                    Margin="0,0,0,0"/>-->
+                    </StackPanel>
+                </Border>
+            </Popup>
+            <Popup x:Name="Editwaypoint" MinWidth="140" PlacementTarget="{Binding ElementName= togBtn3}" IsOpen="{Binding ExportOpen}"
+                       
+                                   Placement="Right"  PopupAnimation="Fade" StaysOpen="False"  >
+                <Border SnapsToDevicePixels="True" 
+                                        BorderThickness="0" Margin="0">
+                    <StackPanel  Background="#2A3243" Orientation="Vertical">
+                        <controls:Buttons HasPathData="False" 
+                                    Style="{DynamicResource HomeMenuStyle}"
+                                              Command="{Binding cmdExportKml}"
+                                    Content="{DynamicResource ExportKML}"
+                                             ToolTip="{DynamicResource ExportKML}"
+                                    Height="36" 
+                                    Width="140" 
+                                    Margin="0,0,0,0"/>
+                        <controls:Buttons HasPathData="False" 
+                                    Style="{DynamicResource HomeMenuStyle}"
+                                              Command="{Binding cmdExportDoublePointKml}"
+                                    Content="{DynamicResource ExportDoubleKML}"
+                                          ToolTip="{DynamicResource ExportDoubleKML}"
+                                    Height="36" 
+                                    Width="140" 
+                                    Margin="0,0,0,0"/>
+                        <controls:Buttons HasPathData="False" 
+                                    Style="{DynamicResource HomeMenuStyle}"
+                                              Command="{Binding cmdExportGeoJson}"
+                                    Content="{DynamicResource ExportGeoJson}"
+                                           ToolTip="{DynamicResource ExportGeoJson}"
+                                    Height="36" 
+                                    Width="140" 
+                                    Margin="0,0,0,0"/>
+                        <controls:Buttons HasPathData="False" 
+                                    Style="{DynamicResource HomeMenuStyle}"
+                                              Command="{Binding cmdExportStationMission}"
+                                    Content="{DynamicResource ExportMMCMission}"
+                                             ToolTip="{DynamicResource ExportMMCMission}"
+                                    Height="36" 
+                                    Width="140" 
+                                    Margin="0,0,0,0"/>
+                    </StackPanel>
+                </Border>
+            </Popup>
+            <controls:Buttons  x:Name="togBtn" HasPathData="True" IsNeedSelected="False"
+                                    RIcon="{DynamicResource Importroutes_N}"
+                                    MouseOverRIcon="{DynamicResource Importroutes_M}"
+                                    PressedRIcon="{DynamicResource Importroutes_M}"
+                                    Style="{DynamicResource HomeLeftButtonStyle}"
+                                     Command="{Binding InputFileCommand}"
+                                    Height="64" 
+                                    Width="64" 
+                                    Margin="0,80,0,0"
+                               ToolTip="{DynamicResource RouteInput}"/>
+            <controls:Buttons  x:Name="togBtn2" HasPathData="True" IsNeedSelected="False"
+                                    RIcon="{DynamicResource Drawroute_N}"
+                                    MouseOverRIcon="{DynamicResource Drawroute_M}"
+                                    PressedRIcon="{DynamicResource Drawroute_M}"
+                                    Style="{DynamicResource HomeLeftButtonStyle}"
+                                Command="{Binding DrawRouteCommand}"
+                                    Height="64"  
+                                    Width="64" 
+                                    Margin="0,0,0,0"
+                                ToolTip="{DynamicResource Drawtheroute}"/>
+            <controls:Buttons HasPathData="True" GroupName="LeftMneu" IsNeedSelected="True"
+                                    RIcon="{DynamicResource Drawarea_N}"
+                                    MouseOverRIcon="{DynamicResource Drawarea_M}"
+                                    PressedRIcon="{DynamicResource Drawarea_M}"
+                                    Style="{DynamicResource HomeLeftButtonStyle}"
+                                    Command="{Binding cmdShowRoutePlanView}"
+                                    IsSelected="{Binding RoutePlanShowPageModel.IsSelected,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                    Height="64"  
+                                    Width="64" 
+                                    Margin="0,0,0,0"
+                               ToolTip="{DynamicResource Drawthearea}"/>
+            <controls:Buttons HasPathData="True" GroupName="LeftMneu" IsNeedSelected="True"
+                                    RIcon="{DynamicResource Editwaypoint_N}"
+                                    MouseOverRIcon="{DynamicResource Editwaypoint_M}"
+                                    PressedRIcon="{DynamicResource Editwaypoint_M}"
+                                    Style="{DynamicResource HomeLeftButtonStyle}"
+                                    Command="{Binding cmdPolyLineEditMission}"
+                              IsSelected="{Binding RoutePoitEditViewModel.IsSelected,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                    Height="64" 
+                                    Width="64" 
+                                    Margin="0,0,0,0"
+                               ToolTip="{DynamicResource Editwaypoint}"/>
+            <controls:Buttons   x:Name="togBtn3" HasPathData="True"  IsNeedSelected="False"
+                                    RIcon="{DynamicResource ExportKML_N}"
+                                    MouseOverRIcon="{DynamicResource ExportKML_M}"
+                                    PressedRIcon="{DynamicResource ExportKML_M}"
+                                    Style="{DynamicResource HomeLeftButtonStyle}"
+                                     Command="{Binding ExportCommand}"
+                                    Height="64" 
+                                    Width="64" 
+                                    Margin="0,0,0,0"
+                                 ToolTip="{DynamicResource Export}"/>
+            <controls:Buttons   HasPathData="True" GroupName="LeftMneu" IsNeedSelected="True"
+                                    RIcon="{DynamicResource Uploadserver_N}"
+                                    MouseOverRIcon="{DynamicResource Uploadserver_M}"
+                                    PressedRIcon="{DynamicResource Uploadserver_M}"
+                                    Style="{DynamicResource HomeLeftButtonStyle}"
+                                    Command="{Binding cmdShowUploadRouteView}"
+                                IsSelected="{Binding UploadRouteTipsViewModel.IsSelected,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                    Height="64" 
+                                    Width="64" 
+                                    Margin="0,0,0,0"
+                                 ToolTip="{DynamicResource Upload}"/>
+            <controls:Buttons HasPathData="True" GroupName="LeftMneu" IsNeedSelected="True"
+                                    RIcon="{DynamicResource Courselist_N}"
+                                    MouseOverRIcon="{DynamicResource Courselist_M}"
+                                    PressedRIcon="{DynamicResource Courselist_M}"
+                                    Style="{DynamicResource HomeLeftButtonStyle}"
+                                    Command="{Binding cmdShowRouteListView}"
+                                    IsSelected="{Binding RouteListModel.IsSelected,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                    Height="64" 
+                                    Width="64" 
+                                    Margin="0,0,0,0"
+                               ToolTip="{DynamicResource Routesshow}"/>
+            <!--<controls:Buttons HasPathData="True" GroupName="LeftMneu" IsNeedSelected="True"
+                                    RIcon="{DynamicResource Courselist_N}"
+                                    MouseOverRIcon="{DynamicResource Courselist_M}"
+                                    PressedRIcon="{DynamicResource Courselist_M}"
+                                    Style="{DynamicResource HomeLeftButtonStyle}"
+                                    Command="{Binding cmdShowRoutePointEdit}"
+                                    Height="64" 
+                                    Width="64" 
+                                    Margin="0,0,0,0"
+                               ToolTip="航点单体化"/>-->
+        </StackPanel>
+    </Grid>
+</UserControl>

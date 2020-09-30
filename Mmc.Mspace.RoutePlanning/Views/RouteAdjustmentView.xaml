@@ -1,0 +1,59 @@
+﻿<blankWindow:BlankWindow x:Class="Mmc.Mspace.RoutePlanning.Views.RouteAdjustmentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Mmc.Mspace.RoutePlanning.Views"
+             xmlns:blankWindow="http://GFramework.org"
+             mc:Ignorable="d" 
+             Height="244" Width="256" Style="{DynamicResource baseWindowStyle}" WindowStyle="None" ResizeMode="NoResize"
+             WindowStartupLocation="Manual" Background="#1E2026" AllowsTransparency="True" Opacity="0.9">
+    <blankWindow:BlankWindow.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="#B3BBC5"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </blankWindow:BlankWindow.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="#292C35" Opacity="1" CornerRadius="5,5,0,0" blankWindow:BlankWindow.Draggable="True"/>
+        <Button x:Name="CloseButton" Style="{DynamicResource ButtonCloseStyle}" Height="32" Width="32" HorizontalAlignment="Right" VerticalAlignment="Center" Click="btnCancel_Click" />
+        <TextBlock x:Name="tbTitle" Text="航线预设值" IsHitTestVisible="False" FontSize="14" Foreground="#EBF5FF" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="8,0"/>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,16,0,0">
+                <Label Content="默认航点高度:" Margin="16,0,0,0"/>
+                <TextBox x:Name="tbHeight" Style="{StaticResource TbxWaterStyle}" TextChanged="TbHeight_OnTextChanged" Width="93" Height="24" FontSize="14" Foreground="#B3BBC5"/>
+                <Label Content="m"/>
+            </StackPanel>
+
+            <Label Content="输入范围:1～20m" FontSize="12" Opacity="0.5" Margin="40,2"/>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,2,0,0">
+                <Label Content="默认航点间距:" Margin="16,0,0,0"/>
+                <TextBox x:Name="tbInterval" Style="{StaticResource TbxWaterStyle}" TextChanged="TbInterval_OnTextChanged" Width="93" Height="24" FontSize="14" Foreground="#B3BBC5"/>
+                <Label Content="m"/>
+            </StackPanel>
+
+            <Label Content="输入范围:1～50m" FontSize="12" Opacity="0.5" Margin="40,2,0,0"/>
+
+            <TextBlock Text="密度大小将影响航线生成速度及避障识别精度" TextWrapping="Wrap" FontSize="12" Padding="0" Foreground="#FF4E4E" Width="200" Margin="38,0,0,0"/>
+
+            <Grid Margin="0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Style="{StaticResource DefaultButtonStyle}" Content="确定" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Width="96" Height="32" Click="btnConfirm_Click"/>
+
+                <Button Style="{StaticResource DefaultButtonStyle}" Content="取消" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Width="96" Height="32" Click="btnCancel_Click"/>
+            </Grid>
+        </StackPanel>
+</Grid>
+</blankWindow:BlankWindow>

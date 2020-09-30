@@ -1,0 +1,175 @@
+﻿<Window x:Class="Mmc.Mspace.UavModule.UavTracing.MGasView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:gvifm="http://schemas.mmc.com/wpf"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Mmc.Mspace.UavModule.UavTracing"
+             mc:Ignorable="d" Height="794.666" Width="400.667">
+    <Border Background="{DynamicResource P75BlackBrush}" MouseDown="UIElement_OnPreviewMouseDown" RenderTransformOrigin="0.5,0.174">
+        <FrameworkElement.Style>
+            <Style BasedOn="{StaticResource BorderPanelStyle}" TargetType="{x:Type Border}">
+                <Style.Triggers>
+                    <DataTrigger Value="true" Binding="{Binding IsActive, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}">
+                        <Setter Property="BorderBrush" Value="{DynamicResource HighlightBackBrush}" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </FrameworkElement.Style>
+        <GroupBox HorizontalContentAlignment="Stretch" Margin="0,0,0,10">
+            <HeaderedContentControl.Header>
+                <DockPanel>
+                    <Button DockPanel.Dock="Right" Style="{StaticResource ButtonCloseStyle}" Command="{Binding CloseCmd}" />
+                    <TextBlock HorizontalAlignment="Stretch" Style="{DynamicResource ViewHeaderStyle}" Text="{Binding WindowTitle}" />
+                </DockPanel>
+            </HeaderedContentControl.Header>
+            <TabControl Background="{DynamicResource P75BlackBrush}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="0,0,0,0" Style="{DynamicResource TabControlStyle}" >
+                <TabItem Header="{DynamicResource CloudMount}"  Style="{DynamicResource TabItemStyle}">
+                    <Grid Margin="0,0,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="109*"/>
+                            <RowDefinition Height="273*"/>
+                            <RowDefinition Height="320*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Margin="30,10,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20*"/>
+                                <ColumnDefinition Width="80*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="{DynamicResource Pitch}" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding camCamHeadAngle}"  Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="{DynamicResource Roll}" VerticalAlignment="Top" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding camCamPitchAngle}" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="2" Grid.Column="0" Text="{DynamicResource Yaw}" VerticalAlignment="Top" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding camCamRoolAngle}"  Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="3" Grid.Column="0" Text="{DynamicResource Zoom}" VerticalAlignment="Top" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding camCamZoom}" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                        </Grid>
+                        <Grid Margin="55,1,55,10" Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid  Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,10,0,10">
+                                <StackPanel>
+                                    <gvifm:SimpleIconButton  Command="{Binding CamPitchUp}" Width="24" Height="24" VerticalAlignment="Top" gvifm:SimpleIconButton.Icon="pack://siteoforigin:,,,/Resources/mount/ctrl-up.png"></gvifm:SimpleIconButton>
+                                    <TextBlock Text="{DynamicResource Up}"  Style="{StaticResource HLVC@TextBlockStyle}" FontSize="11" HorizontalAlignment="Center"></TextBlock>
+                                </StackPanel>
+                            </Grid>
+                            <Grid Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left">
+                                <StackPanel Orientation="Horizontal">
+                                    <gvifm:SimpleIconButton  Width="24" Height="24" Command="{Binding CamHeadLeft}" gvifm:SimpleIconButton.Icon="pack://siteoforigin:,,,/Resources/mount/ctrl-left.png"></gvifm:SimpleIconButton>
+                                    <TextBlock Text="{DynamicResource Left}"  Style="{StaticResource HLVC@TextBlockStyle}" FontSize="11"></TextBlock>
+                                </StackPanel>
+                            </Grid>
+                            <Grid Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{DynamicResource Rigth}"  Style="{StaticResource HLVC@TextBlockStyle}" FontSize="11"></TextBlock>
+                                    <gvifm:SimpleIconButton  Width="24" Height="24" Command="{Binding CamHeadRight}" gvifm:SimpleIconButton.Icon="pack://siteoforigin:,,,/Resources/mount/ctrl-right.png"></gvifm:SimpleIconButton>
+                                </StackPanel>
+                            </Grid>
+                            <Grid  Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,10,0,10">
+                                <StackPanel>
+                                    <TextBlock Text="{DynamicResource Down}"  Style="{StaticResource HLVC@TextBlockStyle}" FontSize="11" HorizontalAlignment="Center"></TextBlock>
+                                    <gvifm:SimpleIconButton  Width="24" Height="24" Command="{Binding CamPitchDown}" VerticalAlignment="Bottom" gvifm:SimpleIconButton.Icon="pack://siteoforigin:,,,/Resources/mount/ctrl-down.png"></gvifm:SimpleIconButton>
+                                </StackPanel>
+                            </Grid>
+                            <Grid  Grid.Row="3"  Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                                <StackPanel >
+                                    <gvifm:SimpleIconButton  Width="24" Height="24" Command="{Binding CamZoomOut}"  gvifm:SimpleIconButton.Icon="pack://siteoforigin:,,,/Resources/mount/ctrl-zoomin.png"></gvifm:SimpleIconButton>
+                                    <TextBlock Text="{DynamicResource Amplification}"  Style="{StaticResource HLVC@TextBlockStyle}" FontSize="11"></TextBlock>
+                                </StackPanel>
+                            </Grid>
+                            <Grid  Grid.Row="3"  Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                <StackPanel >
+                                    <gvifm:SimpleIconButton  Width="24" Height="24" Command="{Binding CamZoomIn}"  gvifm:SimpleIconButton.Icon="pack://siteoforigin:,,,/Resources/mount/ctrl-zoomout.png"></gvifm:SimpleIconButton>
+                                    <TextBlock Text="{DynamicResource Narrow}"  Style="{StaticResource HLVC@TextBlockStyle}" FontSize="11"></TextBlock>
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="2" Margin="20,10,20,10">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid Grid.Row="0" Grid.ColumnSpan="2"  HorizontalAlignment="Stretch" Margin="0,10,0,10">
+                                    <RadioButton HorizontalAlignment="Left" Style="{DynamicResource DefaultRadioButtonStyle}" Content="{DynamicResource Lock}"></RadioButton>
+                                    <RadioButton HorizontalAlignment="Center" Style="{DynamicResource DefaultRadioButtonStyle}" Content="{DynamicResource Control}"></RadioButton>
+                                    <RadioButton HorizontalAlignment="Right" Style="{DynamicResource DefaultRadioButtonStyle}" Content="{DynamicResource Intheback}"></RadioButton>
+                                </Grid>
+                                <Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="0,10,0,10">
+                                    <TextBlock Text="{DynamicResource Rate}"  Style="{StaticResource HLVC@TextBlockStyle}" HorizontalAlignment="Left"></TextBlock>
+                                    <ComboBox >
+                                        <ListItem></ListItem>
+                                        <ListItem></ListItem>
+                                    </ComboBox>
+                                </Grid>
+
+
+                                <Grid  Grid.Row="2"  Grid.ColumnSpan="2" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" >
+                                    <StackPanel HorizontalAlignment="Left" >
+                                        <gvifm:SimpleIconButton  Width="40" Height="40" Command="{Binding CamZoomOut}"  gvifm:SimpleIconButton.Icon="pack://siteoforigin:,,,/Resources/mount/ctrl-photo.png"></gvifm:SimpleIconButton>
+                                        <TextBlock Text="{DynamicResource Takingpictures}"  Style="{StaticResource HLVC@TextBlockStyle}"></TextBlock>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Right" >
+                                        <gvifm:SimpleIconButton  Width="40" Height="40" Command="{Binding CamZoomIn}"  gvifm:SimpleIconButton.Icon="pack://siteoforigin:,,,/Resources/mount/ctrl-video.png"></gvifm:SimpleIconButton>
+                                        <TextBlock Text="{DynamicResource Video}"  Style="{StaticResource HLVC@TextBlockStyle}"></TextBlock>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="{DynamicResource Gasdetection}"  Style="{DynamicResource TabItemStyle}">
+                    <Grid Margin="0,0,2,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Margin="30,10,30,10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20*"/>
+                                <ColumnDefinition Width="80*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="{DynamicResource Pitch}" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding camCamHeadAngle}"  Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="{DynamicResource Roll}" VerticalAlignment="Top" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding camCamPitchAngle}" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="2" Grid.Column="0" Text="{DynamicResource Yaw}" VerticalAlignment="Top" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding camCamRoolAngle}"  Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="3" Grid.Column="0" Text="{DynamicResource Zoom}" VerticalAlignment="Top" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding camCamZoom}" Style="{StaticResource HLVC@TextBlockStyle}"/>
+                        </Grid>
+                    </Grid>
+
+                </TabItem>
+            </TabControl>
+        </GroupBox>
+    </Border>
+</Window>

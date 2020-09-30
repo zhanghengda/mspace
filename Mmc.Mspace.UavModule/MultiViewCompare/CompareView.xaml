@@ -1,0 +1,59 @@
+﻿<Window xmlns:LayerController="clr-namespace:Mmc.Mspace.ToolModule.LayerController;assembly=Mmc.Mspace.ToolModule"  x:Class="Mmc.Mspace.UavModule.MultiViewCompare.CompareView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Mmc.Mspace.UavModule.MultiViewCompare"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="250"
+             WindowStyle="None"
+             ResizeMode="NoResize"
+             ShowInTaskbar="False"
+             WindowStartupLocation="Manual" Background="{x:Null}"
+        >
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style TargetType="{x:Type Border}" x:Name="BorderWhiteStyle">
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="BorderBrush" Value="White"/>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Border  BorderThickness="1" BorderBrush="White" Margin="2">
+        <Grid>
+            <StackPanel Orientation="Vertical" MouseLeftButtonUp="StackPanel_MouseLeftButtonUp">
+                <Border BorderThickness="1" BorderBrush="White" Margin="2">
+                    <DockPanel>
+                        <Button Content="{DynamicResource Doublescreen}"></Button>
+                        <Button  HorizontalAlignment="Right" Command="{Binding ExitCmd}" Content="{DynamicResource Exitmultiscreen}"></Button>
+                    </DockPanel>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="White" Margin="2">
+                    <DockPanel>
+                        <Button Command="{Binding CreatePoiCmd}" Content="{DynamicResource Newannotation}"></Button>
+                        <Button Command="{Binding EditPoiCmd}" IsEnabled="False" Content="{DynamicResource Updateannotation}"></Button>
+                        <Button Command="{Binding DeletePoiCmd}" IsEnabled="False" Content="{DynamicResource Removeannotation}"></Button>
+                    </DockPanel>
+                </Border>
+                <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                        <ColumnDefinition Width="1"></ColumnDefinition>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <DockPanel Grid.Column="0" >
+                        <local:LayersView DataContext="{Binding LayerViewModel0}" VerticalAlignment="Stretch"/>
+                    </DockPanel>
+                    <GridSplitter Grid.Column="1" Width="1"></GridSplitter>
+                    <Border Grid.Column="2"  Style="{DynamicResource BorderWhiteStyle}" Margin="2">
+                        <local:LayersView  DataContext="{Binding LayerViewModel1}" VerticalAlignment="Stretch"/>
+                    </Border>
+                </Grid>
+            </StackPanel>
+
+        </Grid>
+    </Border>
+</Window>
