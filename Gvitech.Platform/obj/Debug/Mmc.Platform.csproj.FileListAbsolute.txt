@@ -1,0 +1,14 @@
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Platform.dll
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Platform.pdb
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.csprojAssemblyReference.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.csproj.CoreCompileInputs.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.csproj.CopyComplete
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.dll
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.pdb
+D:\Mspace\mspace\mspace\binPath\Mmc.Platform.dll
+D:\Mspace\mspace\mspace\binPath\Mmc.Platform.pdb
+D:\Mspace\mspace\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.csprojAssemblyReference.cache
+D:\Mspace\mspace\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.csproj.CoreCompileInputs.cache
+D:\Mspace\mspace\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.csproj.CopyComplete
+D:\Mspace\mspace\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.dll
+D:\Mspace\mspace\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.pdb
