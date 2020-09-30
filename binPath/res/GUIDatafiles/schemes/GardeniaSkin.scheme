@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<GUIScheme version="5" name="GardeniaSkin">
+	<Imageset filename="GardeniaSkin.imageset" />
+	<Font filename="NotoSansHans-11.font" />
+	<Font filename="NotoSansHans-12.font" />
+	<Font filename="presentation_caption.font" />
+	<LookNFeel filename="GardeniaSkin.looknfeel" />
+	<WindowRendererSet filename="GVGUICoreWindowRendererSet" />
+
+	<FalagardMapping windowType="GardeniaSkin/Label"       targetType="DefaultWindow"     renderer="Core/Default"      lookNFeel="GardeniaSkin/Label" />
+	<FalagardMapping windowType="GardeniaSkin/Billboard"   targetType="DefaultWindow"     renderer="Core/Default"      lookNFeel="GardeniaSkin/Billboard" />
+	<FalagardMapping windowType="GardeniaSkin/Button"      targetType="GVGUI/PushButton"  renderer="Core/Button"       lookNFeel="GardeniaSkin/Button" />
+	<FalagardMapping windowType="GardeniaSkin/Checkbox"    targetType="GVGUI/ToggleButton"    renderer="Core/ToggleButton" lookNFeel="GardeniaSkin/Checkbox" />
+	<FalagardMapping windowType="GardeniaSkin/ImageButton" targetType="GVGUI/PushButton"  renderer="Core/Button"       lookNFeel="GardeniaSkin/ImageButton" />
+	<FalagardMapping windowType="GardeniaSkin/RadioButton" targetType="GVGUI/RadioButton" renderer="Core/ToggleButton" lookNFeel="GardeniaSkin/RadioButton" />
+	<FalagardMapping windowType="GardeniaSkin/FrameWindow"  targetType="GVGUI/FrameWindow" renderer="Core/FrameWindow"  lookNFeel="GardeniaSkin/FrameWindow" />
+	<FalagardMapping windowType="GardeniaSkin/Titlebar"     targetType="GVGUI/Titlebar"    renderer="Core/Titlebar"     lookNFeel="GardeniaSkin/Titlebar" />
+	<FalagardMapping windowType="GardeniaSkin/Editbox"          targetType="GVGUI/Editbox"          renderer="Core/Editbox"          lookNFeel="GardeniaSkin/Editbox" />
+	<FalagardMapping windowType="GardeniaSkin/MultiLineEditbox" targetType="GVGUI/MultiLineEditbox" renderer="Core/MultiLineEditbox" lookNFeel="GardeniaSkin/MultiLineEditbox" />
+	<FalagardMapping windowType="GardeniaSkin/Menubar"   targetType="GVGUI/Menubar"   renderer="Core/Menubar"   lookNFeel="GardeniaSkin/Menubar" />
+	<FalagardMapping windowType="GardeniaSkin/PopupMenu" targetType="GVGUI/PopupMenu" renderer="Core/PopupMenu" lookNFeel="GardeniaSkin/PopupMenu" />
+	<FalagardMapping windowType="GardeniaSkin/MenuItem"  targetType="GVGUI/MenuItem"  renderer="Core/MenuItem"  lookNFeel="GardeniaSkin/MenuItem" />
+	<FalagardMapping windowType="GardeniaSkin/AlternateProgressBar" targetType="GVGUI/ProgressBar" renderer="Core/ProgressBar" lookNFeel="GardeniaSkin/AltProgressBar" />
+	<FalagardMapping windowType="GardeniaSkin/ProgressBar"          targetType="GVGUI/ProgressBar" renderer="Core/ProgressBar" lookNFeel="GardeniaSkin/ProgressBar" />
+	<FalagardMapping windowType="GardeniaSkin/VUMeter"              targetType="GVGUI/ProgressBar" renderer="Core/ProgressBar" lookNFeel="GardeniaSkin/VUMeter" />
+	<FalagardMapping windowType="GardeniaSkin/VerticalScrollbar"   targetType="GVGUI/Scrollbar" renderer="Core/Scrollbar" lookNFeel="GardeniaSkin/VerticalScrollbar" />
+	<FalagardMapping windowType="GardeniaSkin/HorizontalScrollbar" targetType="GVGUI/Scrollbar" renderer="Core/Scrollbar" lookNFeel="GardeniaSkin/HorizontalScrollbar" />
+	<FalagardMapping windowType="GardeniaSkin/VerticalScrollbarThumb"   targetType="GVGUI/Thumb" renderer="Core/Button" lookNFeel="GardeniaSkin/VerticalScrollbarThumb" />
+	<FalagardMapping windowType="GardeniaSkin/HorizontalScrollbarThumb" targetType="GVGUI/Thumb" renderer="Core/Button" lookNFeel="GardeniaSkin/HorizontalScrollbarThumb" />
+	<FalagardMapping windowType="GardeniaSkin/LargeVerticalScrollbar"      targetType="GVGUI/Scrollbar" renderer="Core/Scrollbar" lookNFeel="GardeniaSkin/LargeVerticalScrollbar" />
+	<FalagardMapping windowType="GardeniaSkin/LargeVerticalScrollbarThumb" targetType="GVGUI/Thumb"     renderer="Core/Button"    lookNFeel="GardeniaSkin/LargeVerticalScrollbarThumb" />
+	<FalagardMapping windowType="GardeniaSkin/TabButton"  targetType="GVGUI/TabButton"  renderer="Core/TabButton"  lookNFeel="GardeniaSkin/TabButton" />
+	<FalagardMapping windowType="GardeniaSkin/TabControl" targetType="GVGUI/TabControl" renderer="Core/TabControl" lookNFeel="GardeniaSkin/TabControl" />
+	<FalagardMapping windowType="GardeniaSkin/TabContentPane"    targetType="DefaultWindow"    renderer="Core/Default"    lookNFeel="GardeniaSkin/TabContentPane" />
+	<FalagardMapping windowType="GardeniaSkin/TabButtonPane"    targetType="DefaultWindow"    renderer="Core/Default"    lookNFeel="GardeniaSkin/TabButtonPane" />
+	<FalagardMapping windowType="GardeniaSkin/ComboDropList" targetType="GVGUI/ComboDropList" renderer="Core/Listbox" lookNFeel="GardeniaSkin/ComboDropList" />
+	<FalagardMapping windowType="GardeniaSkin/ComboEditbox"  targetType="GVGUI/Editbox"	 renderer="Core/Editbox" lookNFeel="GardeniaSkin/ComboEditbox" />
+	<FalagardMapping windowType="GardeniaSkin/Combobox" targetType="GVGUI/Combobox"	 renderer="Core/Default" lookNFeel="GardeniaSkin/Combobox" />
+	<FalagardMapping windowType="GardeniaSkin/Listbox"           targetType="GVGUI/Listbox"           renderer="Core/Listbox"           lookNFeel="GardeniaSkin/Listbox" />
+	<FalagardMapping windowType="GardeniaSkin/ListHeader"        targetType="GVGUI/ListHeader"        renderer="Core/ListHeader"        lookNFeel="GardeniaSkin/ListHeader" />
+	<FalagardMapping windowType="GardeniaSkin/ListHeaderSegment" targetType="GVGUI/ListHeaderSegment" renderer="Core/ListHeaderSegment" lookNFeel="GardeniaSkin/ListHeaderSegment" />
+	<FalagardMapping windowType="GardeniaSkin/MultiColumnList"   targetType="GVGUI/MultiColumnList"   renderer="Core/MultiColumnList"   lookNFeel="GardeniaSkin/MultiColumnList" />
+	<FalagardMapping windowType="GardeniaSkin/Slider"      targetType="GVGUI/Slider"      renderer="Core/Slider"  lookNFeel="GardeniaSkin/Slider" />
+	<FalagardMapping windowType="GardeniaSkin/SliderThumb" targetType="GVGUI/Thumb" renderer="Core/Button"  lookNFeel="GardeniaSkin/SliderThumb" />
+	<FalagardMapping windowType="GardeniaSkin/ScrollablePane" targetType="GVGUI/ScrollablePane" renderer="Core/ScrollablePane" lookNFeel="GardeniaSkin/ScrollablePane" />
+	<FalagardMapping windowType="GardeniaSkin/Spinner" targetType="GVGUI/Spinner" renderer="Core/Default" lookNFeel="GardeniaSkin/Spinner" />
+	<FalagardMapping windowType="GardeniaSkin/Tooltip" targetType="GVGUI/Tooltip" renderer="Core/Tooltip" lookNFeel="GardeniaSkin/Tooltip" />
+	<FalagardMapping windowType="GardeniaSkin/StaticImage" targetType="DefaultWindow" renderer="Core/StaticImage" lookNFeel="GardeniaSkin/StaticImage" />
+	<FalagardMapping windowType="GardeniaSkin/StaticText"  targetType="DefaultWindow" renderer="Core/StaticText"  lookNFeel="GardeniaSkin/StaticText" />
+	<FalagardMapping windowType="GardeniaSkin/ItemListbox" targetType="GVGUI/ItemListbox" renderer="Core/ItemListbox" lookNFeel="GardeniaSkin/ItemListbox" />
+	<FalagardMapping windowType="GardeniaSkin/ListboxItem" targetType="GVGUI/ItemEntry"   renderer="Core/ItemEntry"   lookNFeel="GardeniaSkin/ListboxItem" />
+	<FalagardMapping windowType="GardeniaSkin/GroupBox" targetType="DefaultWindow"   renderer="Core/Default"   lookNFeel="GardeniaSkin/GroupBox" />
+    <FalagardMapping windowType="GardeniaSkin/Tree" targetType="GVGUI/Tree"   renderer="Core/Tree"   lookNFeel="GardeniaSkin/Tree" />
+	<FalagardMapping windowType="GardeniaSkin/ScrollViewerBar"   targetType="GVGUI/ScrollViewerBar"   renderer="Core/ScrollViewerBar"   lookNFeel="GardeniaSkin/ScrollViewerBar" />
+	<FalagardMapping windowType="GardeniaSkin/ScrollViewerGroup" targetType="GVGUI/ScrollViewerGroup" renderer="Core/ScrollViewerGroup" lookNFeel="GardeniaSkin/ScrollViewerGroup" />
+	<FalagardMapping windowType="GardeniaSkin/ScrollViewerItem"  targetType="GVGUI/ScrollViewerItem"  renderer="Core/ScrollViewerItem"  lookNFeel="GardeniaSkin/ScrollViewerItem" />
+	<FalagardMapping windowType="GardeniaSkin/ScrollViewerScrollbar" targetType="GVGUI/InertialScrollbar" renderer="Core/Scrollbar" lookNFeel="GardeniaSkin/ScrollViewerScrollbar" />
+	<FalagardMapping windowType="GardeniaSkin/ScrollViewerScrollbarThumb" targetType="GVGUI/Thumb" renderer="Core/Button" lookNFeel="GardeniaSkin/ScrollViewerScrollbarThumb" />
+</GUIScheme>
+
