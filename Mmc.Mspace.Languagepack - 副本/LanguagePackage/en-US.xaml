@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Languagepack;component/LanguagePackage/en-US/Common(en-US).xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Languagepack;component/LanguagePackage/en-US/PoiManager(en-US).xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Languagepack;component/LanguagePackage/en-US/Shell(en-US).xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Languagepack;component/LanguagePackage/en-US/PoliceDeployed(en-US).xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Languagepack;component/LanguagePackage/en-US/Uav(en-US).xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Languagepack;component/LanguagePackage/en-US/RoutePlanning(en-US).xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Languagepack;component/LanguagePackage/en-US/RegularInspection(en-US).xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Languagepack;component/LanguagePackage/en-US/WireTower(en-US).xaml"/>
+        <!--其他国际化资源-->
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

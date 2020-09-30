@@ -1,0 +1,172 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="Login">登录</sys:String>
+    <sys:String x:Key="ConfigFileMiss">配置文件不存在</sys:String>
+    <sys:String x:Key="ConfigItemError">配置项错误</sys:String>
+    <sys:String x:Key="FileNotExists">文件不存在</sys:String>
+    <sys:String x:Key="SelectFile">请选择文件</sys:String>
+    <sys:String x:Key="Browse">浏览</sys:String>
+    <sys:String x:Key="Name">名称</sys:String>
+    <sys:String x:Key="LocalPath">本地路径</sys:String>
+    <sys:String x:Key="UpdateTime">修改日期</sys:String>
+    <sys:String x:Key="Opreate">操作</sys:String>
+    <sys:String x:Key="HistoryRecord">最近历史记录</sys:String>
+    <sys:String x:Key="Cancel">取消</sys:String>
+    <sys:String x:Key="SizeKb">大小(KB)</sys:String>
+    <sys:String x:Key="FileIsOpen">文件已被其他程序打开</sys:String>
+    <sys:String x:Key="SysSet">系统设置</sys:String>
+    <sys:String x:Key="Min">最小化</sys:String>
+    <sys:String x:Key="Close">退出</sys:String>
+    <sys:String x:Key="Shutdown">关闭</sys:String>
+    <sys:String x:Key="ConfirmClose">确定要退出吗?</sys:String>
+    <sys:String x:Key="OK">确定</sys:String>
+    <sys:String x:Key="Deletelayer">删除图层</sys:String>
+    <sys:String x:Key="Deletelayerconfirm">确定删除图层【{0}】吗？</sys:String>
+    <sys:String x:Key="Deletedatasourceconfirm">确定删除数据源【{0}】吗？</sys:String>
+    <sys:String x:Key="Deletedatasource">删除数据源</sys:String>
+    <sys:String x:Key="Signs">三小场所招牌</sys:String>
+    <sys:String x:Key="Building">建筑</sys:String>
+    <sys:String x:Key="Root">根节点</sys:String>
+    <sys:String x:Key="3dmodel">三维模型</sys:String>
+    <sys:String x:Key="Obliquephotography">倾斜摄影</sys:String>
+    <sys:String x:Key="Screenage">影像</sys:String>
+    <sys:String x:Key="2dvector">二维矢量</sys:String>
+    <sys:String x:Key="LocalDataMark">【本地】</sys:String>
+    <sys:String x:Key="ServerDataMark">【网络】</sys:String>
+    <sys:String x:Key="Smallgrid">小网格范围</sys:String>
+    <sys:String x:Key="Startloading">开始加载资源...</sys:String>
+    <sys:String x:Key="Analysing">正在分析,请稍候...</sys:String>
+    <sys:String x:Key="ImageAnalysing">正在分析,大概需要几分钟...</sys:String>
+    <sys:String x:Key="loadingdata">系统正在加载数据...</sys:String>
+    <sys:String x:Key="loaded">加载完成...</sys:String>
+    <sys:String x:Key="City">市</sys:String>
+    <sys:String x:Key="Street">街</sys:String>
+    <sys:String x:Key="Block">区</sys:String>
+
+    <sys:String x:Key="LocalData">本地数据</sys:String>
+    <sys:String x:Key="Selectfile">选择文件</sys:String>
+    <sys:String x:Key="ServerData">网络数据</sys:String>
+    <sys:String x:Key="Connectionservice">连接服务</sys:String>
+    <sys:String x:Key="ReLoginTootip">账号在另一台设备登陆，请重新登陆!</sys:String>
+    <sys:String x:Key="ReTootip">提示</sys:String>
+    <sys:String x:Key="Setsuccess">设置成功</sys:String>
+    <sys:String x:Key="SetCGCS2000">已将坐标系设置为CGCS2000</sys:String>
+    <sys:String x:Key="SetWGS84">已将坐标系设置为WGS84</sys:String>
+    <sys:String x:Key="NetUnConnectable">网络不连通！</sys:String>
+    <sys:String x:Key="ErrorServerURL">服务地址不能为空！</sys:String>
+    <sys:String x:Key="ErrorWFSServerURL">WFS 服务地址错误！</sys:String>
+    <sys:String x:Key="ErrorWMTSServerURL">WMTS 服务地址错误！</sys:String>
+    <sys:String x:Key="EmptyFilePath">文件未选择！</sys:String>
+    
+    <sys:String x:Key="Realtimevideo">实时视频</sys:String>
+    <sys:String x:Key="HeightAbsolute">海拔高程</sys:String>
+    <sys:String x:Key="HeightOnEverything">贴地表对象</sys:String>
+    
+    <sys:String x:Key="Seachnull">查询结果为空</sys:String>
+    <sys:String x:Key="Afterretry">请绘制航线后执行此操作！</sys:String>
+    <sys:String x:Key="UploadSucess">上传成功！</sys:String>
+    <sys:String x:Key="Indoor3dmodel">该建筑缺少室内三维模式！</sys:String>
+    <sys:String x:Key="Enerationfailed">部署文档生成失败！</sys:String>
+    <sys:String x:Key="Pleasedeployfirst">请先进行部署，然后生成部署文档！</sys:String>
+    <sys:String x:Key="Deploymentcomplete">部署文档生成完成！</sys:String>
+    <sys:String x:Key="Squaremeters">{0}平方米</sys:String>
+    <sys:String x:Key="Volume">体积：</sys:String>
+    <sys:String x:Key="MSpacerunning">MSpace已经运行！</sys:String>
+    <sys:String x:Key="NotsupportChinesePath">不支持中文路径！</sys:String>
+    <sys:String x:Key="NOPolygon">请先绘制多边形！</sys:String>
+    <sys:String x:Key="IPCheck"> 无法访问！</sys:String>
+    <sys:String x:Key="MappingCameraAdded">添加相机成功！</sys:String>
+	<sys:String x:Key="MappingCameraUnAdded">相机添加失败！请检查填写参数！</sys:String>
+    <sys:String x:Key="RouteUploadWarn">航线名称不能为空！</sys:String>
+    <sys:String x:Key="RouteEditWarn">请先绘制航线！</sys:String>
+    <sys:String x:Key="Warn">提示</sys:String>
+    <sys:String x:Key="DeleteRoutePoint">是否删除该航点？</sys:String>
+    <sys:String x:Key="DeviceNotOnline">设备不在线，请求操作终止！</sys:String>
+    <sys:String x:Key="DeviceUserNotLogin">设备用户无登录，请连接地面站登录设备！</sys:String>
+	<sys:String x:Key="SaveLabelfailed">此标签名不可用！</sys:String>
+	<sys:String x:Key="Savefailed">保存失败！</sys:String>
+	<sys:String x:Key="Savesuccess">保存成功！</sys:String>
+
+    <sys:String x:Key="ImagePathFaild">图片路径有误！</sys:String>
+
+    <sys:String x:Key="IllegalIntNumber">请输入合理整数！</sys:String>
+    <sys:String x:Key="IllegalDoubleNumber">请输入合理实数！</sys:String>
+    
+    <sys:String x:Key="DeleteTitle">删除</sys:String>
+    <sys:String x:Key="DeleteSuccess">删除成功！</sys:String>
+    <sys:String x:Key="DeleteFailed">删除失败！</sys:String>
+
+    <sys:String x:Key="Online">在线</sys:String>
+    <sys:String x:Key="Offline">离线</sys:String>
+
+    <!--CoordinateView-->
+    <sys:String x:Key="SV_Longitude">经度:</sys:String>
+    <sys:String x:Key="SV_Latitude">纬度:</sys:String>
+    <sys:String x:Key="SV_Altitude">海拔:</sys:String>
+    <sys:String x:Key="SV_Meter">m</sys:String>
+    <sys:String x:Key="SV_Angleofview">视角高度:</sys:String>
+
+
+    <!--NavigationView-->
+    <sys:String x:Key="Navigation_AddAnimation">新增动画</sys:String>
+    <sys:String x:Key="Navigation_Rename">修改</sys:String>
+    <sys:String x:Key="Navigation_RemoveAnimation">删除</sys:String>
+    <sys:String x:Key="Navigation_AddAnimationPoint">新增视点</sys:String>
+    <sys:String x:Key="Navigation_EndEdit">结束编辑</sys:String>
+    <sys:String x:Key="Navigation_Import">导入动画</sys:String>
+    <sys:String x:Key="Navigation_Export">导出动画</sys:String>
+    <sys:String x:Key="Navigation_Count">视点数</sys:String>
+    <sys:String x:Key="Navigation_Name">动画名称：</sys:String>
+    <sys:String x:Key="Navigation_Naming">动画命名</sys:String>
+     <!-- DatePicker-->
+    <sys:String x:Key="DatePickerEnd">结束时间</sys:String>
+    <sys:String x:Key="DatePickerStart">开始时间</sys:String>
+    <sys:String x:Key="AccountDatePicker">选择时间</sys:String>
+    <!-- MarksManagementVModel-->
+    <sys:String x:Key="MMV_ConfirmDel">确定要删除标签：</sys:String>
+    <sys:String x:Key="MMV_DelLabel">删除标签</sys:String>
+
+    <!-- AddressManagementView-->
+    <sys:String x:Key="AMV_Addafirstlevel">+ 新增一级地址</sys:String>
+    <sys:String x:Key="AMV_AddAddress">添加地址</sys:String>
+    <sys:String x:Key="AMV_RemoveAddress">移除地址</sys:String>
+    <sys:String x:Key="AMV_SetAddress">设置地址</sys:String>
+    <!-- LabelManagementView-->
+    <sys:String x:Key="LMV_AddTags">+ 新标签</sys:String>
+    
+    <!-- RoutePlanningView-->
+    <sys:String x:Key="RoutePlanningView_SendEmail">邮件地址</sys:String>
+    <sys:String x:Key="RoutePlanningView_SearchByIDorName">请输入ID或者名称</sys:String>
+    <sys:String x:Key="RoutePlanningView_EmailNotExist">邮件地址不正确！</sys:String>
+    <sys:String x:Key="RoutePlanningView_SendSuccess">发送成功</sys:String>
+    <sys:String x:Key="RoutePlanningView_SendFail">发送失败！</sys:String>
+    
+    <!--AccountListView-->
+    <sys:String x:Key="Account_ImageIsNull">图片不存在</sys:String>
+    <sys:String x:Key="TileLayerPropView_SearchByName">请输入名称</sys:String>
+    <sys:String x:Key="ExportContentisNull">列表内容为空！</sys:String>
+    <sys:String x:Key="Deletesuccess">删除成功！</sys:String>
+
+
+    <!-- PoiBaseViewModel-->
+    <sys:String x:Key="PoiBaseVM_SquareKilometer">km²</sys:String>
+    <sys:String x:Key="PoiBaseVM_SquareMeter">m²</sys:String>
+    <sys:String x:Key="PoiBaseVM_Kilometer">km</sys:String>
+    <sys:String x:Key="PoiBaseVM_Meter">m</sys:String>
+
+    <!--CharactAnalysView-->
+    <sys:String x:Key="CharactAnalysView_StreamAddress">流地址:</sys:String>
+
+    <!--SettingAddressInfoView-->
+    <sys:String x:Key="SettingAddress_NodeName">地址名称:</sys:String>
+    <sys:String x:Key="SettingAddress_OperateDescribe">将单击确定时的视角设置成为地址视角</sys:String>
+    <sys:String x:Key="SettingAddress_Set">设置</sys:String>
+    
+    <sys:String x:Key="PoiFilter_All">全部</sys:String>
+    <sys:String x:Key="PoiFilter_Label">标签 : </sys:String>
+    <sys:String x:Key="PoiFilter_Area">区域 :</sys:String>
+    <sys:String x:Key="PoiLevelText">等级：</sys:String>
+    
+</ResourceDictionary>

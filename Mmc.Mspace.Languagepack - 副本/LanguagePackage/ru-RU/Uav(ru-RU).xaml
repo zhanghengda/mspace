@@ -1,0 +1,100 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!--无人机航迹展示模块-->
+
+    <sys:String x:Key="Dronetrack">Маршрут БПЛА</sys:String>
+    <sys:String x:Key="Online">Онлайн</sys:String>
+    <sys:String x:Key="Offline">Оффлайн</sys:String>
+    <sys:String x:Key="RealtimeTrajectory">Маршрут в реальном времени</sys:String>
+    <sys:String x:Key="Realtimevideo">Видео реального времени</sys:String>
+    <sys:String x:Key="Mountcontrol">Управление полезной нагрузкой</sys:String>
+    <sys:String x:Key="Perspectivetofollow">Слежение за объеком</sys:String>
+    <sys:String x:Key="Model">Модель:</sys:String>
+    <sys:String x:Key="Type">Тип:</sys:String>
+    <sys:String x:Key="HudPanel">无人机仪表</sys:String>
+    <sys:String x:Key="Connection">Подключение:</sys:String>
+    <sys:String x:Key="Mount">Нагрузка:</sys:String>
+    <sys:String x:Key="Videostream">Передача потокового видео:</sys:String>
+    <sys:String x:Key="ConnectionContent">Подключение</sys:String>
+    <sys:String x:Key="Joystick">Joystick</sys:String>
+
+    <sys:String x:Key="Dronelist">Список БПЛА</sys:String>
+    <sys:String x:Key="Logged">Уже вошел в систему</sys:String>
+    <sys:String x:Key="Notlogged">Не вошел в систему</sys:String>
+    <sys:String x:Key="InService">Эксплоатирует</sys:String>
+
+    <sys:String x:Key="Leftlayer">Слой левого экрана</sys:String>
+    <sys:String x:Key="Rightlayer">Слой правого экрана</sys:String>
+    <sys:String x:Key="Drawtheroute">Рисовать маршрут</sys:String>
+    <sys:String x:Key="Powerroute">Маршрут инспекции ЛЭП</sys:String>
+
+    <sys:String x:Key="Routemapping">Геодезический маршрут</sys:String>
+    <sys:String x:Key="Logisticsroutes">Логистический маршрут</sys:String>
+	<sys:String x:Key="ReStartAnylyse">повторное моделирование</sys:String>
+	<sys:String x:Key="pie_chart">карта - карта</sys:String>
+	<sys:String x:Key="rect_chart">столбовая карта</sys:String>
+    <sys:String x:Key="Vehicle">Vehicle</sys:String>
+    <sys:String x:Key="BlockRouteManage">Route Manage:</sys:String>
+    <sys:String x:Key="BlockTakeOff">Take Off:</sys:String>
+    <sys:String x:Key="BlockRouteModel">Route Model:</sys:String>
+    <sys:String x:Key="BlockVehicleLand">Vehicle Land:</sys:String>
+    <sys:String x:Key="BlockJoyBtn">JoyStick Info:</sys:String>
+    <sys:String x:Key="BlockDropDumpBtn">Drop Dump:</sys:String>
+
+    <sys:String x:Key="CloudMount">Подвеска и нагрузка</sys:String>
+    <sys:String x:Key="Pitch">Тангаж</sys:String>
+    <sys:String x:Key="Roll">Крен</sys:String>
+    <sys:String x:Key="Yaw">Рыскание</sys:String>
+    <sys:String x:Key="Zoom">Зум</sys:String>
+    <sys:String x:Key="Up">Вверх</sys:String>
+    <sys:String x:Key="Left">Влево</sys:String>
+    <sys:String x:Key="Rigth">Вправо</sys:String>
+    <sys:String x:Key="Down">Вниз</sys:String>
+    <sys:String x:Key="Amplification">Увеличить</sys:String>
+    <sys:String x:Key="Narrow">Уменьшить</sys:String>
+    <sys:String x:Key="Lock">Блокировать</sys:String>
+    <sys:String x:Key="Control">Управлять</sys:String>
+    <sys:String x:Key="Intheback">Установка в среднее положение</sys:String>
+    <sys:String x:Key="Rate">Cкорость:</sys:String>
+    <sys:String x:Key="Takingpictures">Фотосъемка</sys:String>
+    <sys:String x:Key="Video">Видеосъемка</sys:String>
+    <sys:String x:Key="Gasdetection">Детектор газа</sys:String>
+    
+    <sys:String x:Key="textToGroundStation">To GS</sys:String>
+    <sys:String x:Key="textToVehicle">To Vehicle</sys:String>
+    <sys:String x:Key="textArmed">Armed</sys:String>
+    <sys:String x:Key="textTakeoff">Take Off</sys:String>
+    <sys:String x:Key="textRouteModel">Route Model</sys:String>
+    <sys:String x:Key="textLandSafty">Land Safty</sys:String>
+    <sys:String x:Key="textRTL">Return Home</sys:String>
+    <!--无人船-->
+    <sys:String x:Key="UnmannedShip">Беспилотный судно</sys:String>
+    <sys:String x:Key="shipCt">密度</sys:String>
+    <sys:String x:Key="shipDo">水中溶氧量</sys:String>
+    <sys:String x:Key="shipPh">酸碱度</sys:String>
+    <sys:String x:Key="shipTemp">温度</sys:String>
+    <sys:String x:Key="shipTur">浊度值</sys:String>
+    <sys:String x:Key="Panoramic">全景模式：</sys:String>
+
+    <sys:String x:Key="S">S</sys:String>
+    <sys:String x:Key="Name">Название</sys:String>
+    <sys:String x:Key="Numerical">Число</sys:String>
+    <sys:String x:Key="Unit">Единица</sys:String>
+    <sys:String x:Key="Warninglevel">Уровень предупреждения</sys:String>
+
+    <sys:String x:Key="Doublescreen">Двойной экран</sys:String>
+    <sys:String x:Key="Newannotation">Добавить метку</sys:String>
+    <sys:String x:Key="Exitmultiscreen">Выйти из многоэкранного сравнения</sys:String>
+    <sys:String x:Key="Updateannotation">Обновить метку</sys:String>
+    <sys:String x:Key="Removeannotation">Удалить метку</sys:String>
+
+    <sys:String x:Key="NoControlretry">Не удалось выполнить запрос нагрузки, повторите попытку!</sys:String>
+    <sys:String x:Key="Nolocationretry">Не удалось выполнить запрос данных местоположения дронов, повторите попытку!</sys:String>
+    <sys:String x:Key="Creationfailed">Не удалось создать скелетную анимацию</sys:String>
+
+    <sys:String x:Key="Currentposition">Текущее местонахождение БПЛА</sys:String>
+    <sys:String x:Key="CurrentpositionForShip">无人船当前位置</sys:String>
+    <sys:String x:Key="Loginprompt">Пожалуйста, выйдите, пожалуйста, на посадку!</sys:String>
+
+</ResourceDictionary>

@@ -1,0 +1,111 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="InspectionDom">Ортофото</sys:String>
+    <sys:String x:Key="InspectionPicture">Образ</sys:String>
+    <sys:String x:Key="InspectionVideo">видео</sys:String>
+    <sys:String x:Key="InspectionRoute">Трассировка</sys:String>
+    <sys:String x:Key="InspectionReport">отчет</sys:String>
+    <sys:String x:Key="InspectionRegion">Регион инспекции</sys:String>
+    <sys:String x:Key="InspectionUnit">Контрольный блок</sys:String>
+
+    <sys:String x:Key="DomTimeAll">Все время</sys:String>
+    <sys:String x:Key="DomTimeLastMonth">Прошлый месяц</sys:String>
+    <sys:String x:Key="DomTimeLastThreeMonth">Last Three Month</sys:String>
+    <sys:String x:Key="DomTimeLastHalfYear">Последние три месяца</sys:String>
+    <sys:String x:Key="DomTimeLastYear">Прошлый год</sys:String>
+
+    <sys:String x:Key="File">файл</sys:String>
+
+    <sys:String x:Key="TracePhotoTitle">Фото на Trace Line</sys:String>
+    <sys:String x:Key="InspectObject">Объект осмотра:</sys:String>
+    <sys:String x:Key="PhotosFolder">Папка фотографий:</sys:String>
+    <sys:String x:Key="OutputFile2">Выходной файл:</sys:String>
+    <sys:String x:Key="CreateThumb">Создать эскиз</sys:String>
+    <sys:String x:Key="CreateTraceLine">Создание линий трассировки</sys:String>
+
+    <sys:String x:Key="PhotoNum">Серийный номер</sys:String>
+    <sys:String x:Key="PhotoName">имя</sys:String>
+    <sys:String x:Key="PhotoTime">время</sys:String>
+    <sys:String x:Key="PhotoX">долгота</sys:String>
+    <sys:String x:Key="PhotoY">широта</sys:String>
+    <sys:String x:Key="PhotoA">высота</sys:String>
+    <sys:String x:Key="PhotoPath">путь</sys:String>
+
+    <sys:String x:Key="PleaseChoose">Пожалуйста, выберите</sys:String>
+    <sys:String x:Key="OutputFile">Выходной файл</sys:String>
+    <sys:String x:Key="UploadDataToUnit">Загрузка данных в блок {0}, пожалуйста, подождите...</sys:String>
+    <sys:String x:Key="TraceFile">Файл трека</sys:String>
+    <sys:String x:Key="InspectRegion">Область инспекции</sys:String>
+    <sys:String x:Key="InspectTimeUnit">Время проверки</sys:String>
+    <sys:String x:Key="ReadImageData">Чтение данных изображения, пожалуйста, подождите...</sys:String>
+
+    <sys:String x:Key="NOPERMISSION">Нет разрешения</sys:String>
+    <sys:String x:Key="LOADFAILED">Сбой чтения данных</sys:String>
+    <sys:String x:Key="LOADSUCCESSED">Данные успешно пройдены</sys:String>
+    <sys:String x:Key="DATAEXISTED">Дублирование данных</sys:String>
+    <sys:String x:Key="SAVEFAILED">Не удалось сохранить данные</sys:String>
+    <sys:String x:Key="SAVESUCCESSED">Данные успешно сохранены</sys:String>
+    <sys:String x:Key="UPLOADFAILED">Ошибка загрузки данных</sys:String>
+
+    <sys:String x:Key="LoadData">Импорт данных</sys:String>
+    <sys:String x:Key="ResultDataType">Исходные данные：</sys:String>
+    <sys:String x:Key="ResultDataLoad">Введение в результаты：</sys:String>
+
+
+    <sys:String x:Key="Puase">пауза</sys:String>
+    <sys:String x:Key="ClickPuase">Нажмите паузу</sys:String>
+    <sys:String x:Key="Play">бледный</sys:String>
+    <sys:String x:Key="ClicPlay">Нажмите, чтобы играть</sys:String>
+    <sys:String x:Key="Volume">объем</sys:String>
+	<sys:String x:Key="VideoVolume">громкость</sys:String>
+    <sys:String x:Key="schedule">график</sys:String>
+    <sys:String x:Key="Pie_result">Результат анализа части</sys:String>
+    <sys:String x:Key="Bar_result">Результат столбчатого анализа</sys:String>
+    <sys:String x:Key="Rone_analysis">Региональный анализ</sys:String>
+    <sys:String x:Key="Representation">Значок статистики:</sys:String>
+    <sys:String x:Key="RoneAnalysisView_Sort">Сортировать по времени:</sys:String>
+    <sys:String x:Key="RoneAnalysisView_Ascending">восходящая</sys:String>
+    <sys:String x:Key="RoneAnalysisView_Descending">нисходящий</sys:String>
+    <sys:String x:Key="Datatime">Статистическая дата:</sys:String>
+    <sys:String x:Key="Select_draw">Выберите инструмент рисования и выберите диапазон запросов на карте:</sys:String>
+    <sys:String x:Key="Export">экспорт</sys:String>
+    <sys:String x:Key="Circle">круглый</sys:String>
+    <sys:String x:Key="Rectang">прямоугольник</sys:String>
+    <sys:String x:Key="DIY">изготовленный на заказ</sys:String>
+
+    <sys:String x:Key="Back">отбой</sys:String>
+    <sys:String x:Key="Forword">вперед</sys:String>
+    <sys:String x:Key="ImageViewTitle">Просмотр фотографии</sys:String>
+    <sys:String x:Key="MarkBtnTxt">Вопросительный знак</sys:String>
+    <sys:String x:Key="ClearBtnTxt">Отметка маркера</sys:String>
+
+    <sys:String x:Key="InspectRegion2">Область инспекции:</sys:String>
+    <sys:String x:Key="InspectTimeUnit2">Время проверки:</sys:String>
+
+
+    <sys:String x:Key="DownLoadingReport">Загрузка отчета, пожалуйста, подождите...</sys:String>
+    <sys:String x:Key="NoDelete">Не существует</sys:String>
+    <sys:String x:Key="ReadDomData">Загрузка файла Orthophoto, пожалуйста, подождите...</sys:String>
+
+    <sys:String x:Key="DataType">Тип данных</sys:String>
+    <sys:String x:Key="NotMatchDataType">Тип данных не совпадает, пожалуйста, повторно выберите данные</sys:String>
+
+    <sys:String x:Key="CreateRegular">Новый обход</sys:String>
+    <sys:String x:Key="Regulargoal">Проверка.:</sys:String>
+    <sys:String x:Key="RegularDate">Дата осмотра.:</sys:String>
+    <sys:String x:Key="CreateRegularWater">Введите или выберите цель</sys:String>
+    <sys:String x:Key="SelectedDeleteItem">Пожалуйста, выберите пункт удаления!</sys:String>
+    <sys:String x:Key="ConfirmDeleteData">Be sure to delete{0}data?</sys:String>
+    <sys:String x:Key="InputName">Введите имя инспектора!</sys:String>
+    <sys:String x:Key="InputNameLength">Имя инспектора не более 20 слов!</sys:String>
+    <sys:String x:Key="ReSaveName">Текущая дата обхода уже существует!</sys:String>
+
+    <sys:String x:Key="ActiveScreen">Текущий экран активации</sys:String>
+
+    <sys:String x:Key="Download">скачать</sys:String>
+    <sys:String x:Key="ReadImageStatus">Всего изображений {1}. И Чтение {0}, пожалуйста, подождите ...</sys:String>
+    <sys:String x:Key="WaitAMoment">пожалуйста, подождите ...</sys:String>
+
+
+</ResourceDictionary>

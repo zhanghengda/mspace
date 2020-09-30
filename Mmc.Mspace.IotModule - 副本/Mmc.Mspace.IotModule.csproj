@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70DB019A-283F-4AE4-8174-3C448AC7D4F6}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>Mmc.Mspace.IotModule</RootNamespace>
+    <AssemblyName>Mmc.Mspace.IotModule</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF4, Version=4.3.31.28629, Culture=neutral, PublicKeyToken=1673db7d5906b0ad, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\GalaSoft.MvvmLight.Extras.WPF4.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GFramework.BlankWindow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\GFramework.BlankWindow.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Common.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Common.v8.0.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeCore.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeCore.v8.0.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeDataInterop.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeDataInterop.v8.0.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeGeometry.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeGeometry.v8.0.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeUndoRedo.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeUndoRedo.v8.0.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Math.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Math.v8.0.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.RenderControl.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.RenderControl.v8.0.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Resource.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Resource.v8.0.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="LibVLCSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibVLCSharp.3.0.0\lib\net40\LibVLCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LibVLCSharp.WPF, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibVLCSharp.WPF.3.0.0\lib\net461\LibVLCSharp.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\log4net.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\libs\Microsoft.mshtml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="QQ2564874169.Miniblink">
+      <HintPath>..\libs\QQ2564874169.Miniblink.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.5.24.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\System.Windows.Interactivity.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Core">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WebEye.Controls.Wpf.StreamPlayerControl, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\WebEye.Controls.Wpf.StreamPlayerControl.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreatePoiManager.cs" />
+    <Compile Include="DeviceDataManager.cs" />
+    <Compile Include="DeviceInfoModel.cs" />
+    <Compile Include="Dto\ItoModelCovernter.cs" />
+    <Compile Include="FaceDetection\FaceDetectionProcess.cs" />
+    <Compile Include="Models\CameraModel.cs" />
+    <Compile Include="Models\EventInfo.cs" />
+    <Compile Include="Models\GridInfo.cs" />
+    <Compile Include="Models\GridInfoModel.cs" />
+    <Compile Include="Models\GridModel.cs" />
+    <Compile Include="Models\OnlinePatrolman.cs" />
+    <Compile Include="Models\PatroledData.cs" />
+    <Compile Include="Models\PatroledDataForClient.cs" />
+    <Compile Include="Models\Patrolman.cs" />
+    <Compile Include="Models\PatrolmanDataForRender.cs" />
+    <Compile Include="Models\PatrolmanForClient.cs" />
+    <Compile Include="Models\PatrolmanStatus.cs" />
+    <Compile Include="ViewModels\AdministrativeViewModel.cs" />
+    <Compile Include="ViewModels\DeviceViewModel.cs" />
+    <Compile Include="ViewModels\EventRecordVModel.cs" />
+    <Compile Include="ViewModels\EventTimeVModel.cs" />
+    <Compile Include="ViewModels\EventTypeVModel.cs" />
+    <Compile Include="ViewModels\GpsViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ViewModels\PatrolListVModel.cs" />
+    <Compile Include="ViewModels\PatrolmanListVModel.cs" />
+    <Compile Include="ViewModels\PatrolRecordVModel.cs" />
+    <Compile Include="ViewModels\SingleViedeoViewModel.cs" />
+    <Compile Include="ViewModels\StatisticsVModel.cs" />
+    <Compile Include="ViewModels\TempAndHumViewModel.cs" />
+    <Compile Include="ViewModels\VideoStreamViewModel.cs" />
+    <Compile Include="Views\AbnormalView.xaml.cs">
+      <DependentUpon>AbnormalView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdministrativeView.xaml.cs">
+      <DependentUpon>AdministrativeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CameraDetailView.xaml.cs">
+      <DependentUpon>CameraDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeviceView.xaml.cs">
+      <DependentUpon>DeviceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EventRecordView.xaml.cs">
+      <DependentUpon>EventRecordView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EventTimeView.xaml.cs">
+      <DependentUpon>EventTimeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EventTypeView.xaml.cs">
+      <DependentUpon>EventTypeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GridInfoDetailView.xaml.cs">
+      <DependentUpon>GridInfoDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InformationTableView.xaml.cs">
+      <DependentUpon>InformationTableView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MeshView.xaml.cs">
+      <DependentUpon>MeshView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PatrolListView.xaml.cs">
+      <DependentUpon>PatrolListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PatrolmanListView.xaml.cs">
+      <DependentUpon>PatrolmanListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PatrolRecordView.xaml.cs">
+      <DependentUpon>PatrolRecordView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ResultsView.xaml.cs">
+      <DependentUpon>ResultsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SinggleVideoView.xaml.cs">
+      <DependentUpon>SinggleVideoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StatisticsView.xaml.cs">
+      <DependentUpon>StatisticsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\WindMonitorViewModel.cs" />
+    <Compile Include="Views\VideoStreamView.xaml.cs">
+      <DependentUpon>VideoStreamView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VideoVLCView.xaml.cs">
+      <DependentUpon>VideoVLCView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WishView.xaml.cs">
+      <DependentUpon>WishView.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Views\AbnormalView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AdministrativeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CameraDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DeviceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EventRecordView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EventTimeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EventTypeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GridInfoDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\InformationTableView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MeshView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PatrolListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PatrolmanListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PatrolRecordView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ResultsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SinggleVideoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\StatisticsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VideoStreamView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\VideoVLCView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WishView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FireControlModule\FireControlModule.csproj">
+      <Project>{1AD8BB6B-5896-469C-B805-6CC9B98367AE}</Project>
+      <Name>FireControlModule</Name>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.CityMaker.Extension\Gvitech.CityMaker.Extension.csproj">
+      <Project>{6024d395-ea9f-4d2d-887a-0827e16613e2}</Project>
+      <Name>Gvitech.CityMaker.Extension</Name>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.DataSourceAccess\Mmc.DataSourceAccess.csproj">
+      <Project>{24FDF0D9-FEC4-465B-915D-01FAE99E2184}</Project>
+      <Name>Mmc.DataSourceAccess</Name>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Framework\Mmc.Framework.csproj">
+      <Project>{22939209-2239-4851-8F9B-24B79823793A}</Project>
+      <Name>Mmc.Framework</Name>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Common\Mmc.Mspace.Common.csproj">
+      <Project>{CD3991ED-0326-49CD-A83C-7816AAFD88B7}</Project>
+      <Name>Mmc.Mspace.Common</Name>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Const\Mmc.Mspace.Const.csproj">
+      <Project>{149A90B6-D7BD-4B48-8DAF-2E8151C8CC6B}</Project>
+      <Name>Mmc.Mspace.Const</Name>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Services\Mmc.Mspace.Services.csproj">
+      <Project>{ADCC12CB-E1D2-436A-8C33-47484AE76E08}</Project>
+      <Name>Mmc.Mspace.Services</Name>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Theme\Mmc.Mspace.Theme.csproj">
+      <Project>{41c024cf-8b5d-4693-b3ff-8d36d2b753c4}</Project>
+      <Name>Mmc.Mspace.Theme</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Windows\Mmc.Windows.csproj">
+      <Project>{8F12BF24-3E61-46E6-8BAA-4BD059203ACA}</Project>
+      <Name>Mmc.Windows</Name>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf\Mmc.Wpf.csproj">
+      <Project>{2efe1860-3671-43c0-9e80-e0a80f438ac3}</Project>
+      <Name>Mmc.Wpf</Name>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.MathUtil\Mmc.MathUtil.csproj">
+      <Project>{BB0E5078-E0F8-43D5-8620-E11425DCB3F7}</Project>
+      <Name>Mmc.MathUtil</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.PoiManager\Mmc.Mspace.PoiManagerModule.csproj">
+      <Project>{4DD21CF7-3B94-4336-9774-AC09C552896B}</Project>
+      <Name>Mmc.Mspace.PoiManagerModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.UavModule\Mmc.Mspace.UavModule.csproj">
+      <Project>{2A47AFF8-7743-4ADF-8890-45D189F7BA45}</Project>
+      <Name>Mmc.Mspace.UavModule</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <Import Project="..\packages\VideoLAN.LibVLC.Windows.3.0.0\build\VideoLAN.LibVLC.Windows.targets" Condition="Exists('..\packages\VideoLAN.LibVLC.Windows.3.0.0\build\VideoLAN.LibVLC.Windows.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\VideoLAN.LibVLC.Windows.3.0.0\build\VideoLAN.LibVLC.Windows.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\VideoLAN.LibVLC.Windows.3.0.0\build\VideoLAN.LibVLC.Windows.targets'))" />
+  </Target>
+</Project>
