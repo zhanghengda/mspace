@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<AuditConfig Version="1.0">
+    <AuditLevel>gvAuditLevelUnknown</AuditLevel>
+    <BufferSize>1024</BufferSize>
+    <OutPuts>
+        <OutPut Type="eFile" Path="D:\\testFile1.txt" />
+	  <!---<OutPut Type="eDb" ConnectionInfo="ConnType=SQLServer; Server=192.168.2.168; Port=1433; DataBase=AuditTest; UserName=sa; Password=666666" >
+	<Table Name="AUDIT">
+		<ColMapping >
+			<Col Field="UserName" LogInfo="OsUser" />
+			<Col Field="HostName" LogInfo="HostName" />
+			<Col Field="IPAddress" LogInfo="IP" />
+			<Col Field="Mac" LogInfo="Mac" />
+			<Col Field="Actor" LogInfo="Actor" />
+			<Col Field="Action" LogInfo="Action" />
+			<Col Field="Date" LogInfo="Date" />
+			<Col Field="AuditLevel" LogInfo="AuditLevel" />
+		</ColMapping >
+	</Table>
+	  </OutPut> -->
+
+	  <OutPut Type="eDb" ConnectionInfo="ConnType=MySQL5; Server=192.168.2.122; Port=3306; DataBase=AuditTest; UserName=root; Password=666666" >
+	<Table Name="AUDIT">
+		<ColMapping >
+			<Col Field="UserName" LogInfo="OsUser" />
+			<Col Field="HostName" LogInfo="HostName" />
+			<Col Field="IPAddress" LogInfo="IP" />
+			<Col Field="Mac" LogInfo="Mac" />
+			<Col Field="Actor" LogInfo="Actor" />
+			<Col Field="Action" LogInfo="Action" />
+			<Col Field="Date" LogInfo="Date" />
+			<Col Field="AuditLevel" LogInfo="AuditLevel" />
+		</ColMapping >
+	</Table>
+	  </OutPut>
+
+	  <OutPut Type="eFile" Path="D:\\testFile2.txt" />
+	  <OutPut Type="eUDP" Port="27015" IP="192.168.2.168" />
+    </OutPuts>
+    <!--default format-->
+    <AuditFormat>UserName: %U%; HostName: %H%; IPAddress: %I%; Mac: %M%; AuditLevel: %L%; AuditTime: %T%; AuditOpCreater: %C%; AuditOp: %O%</AuditFormat>
+	
+</AuditConfig>
+
