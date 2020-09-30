@@ -1,0 +1,758 @@
+using Microsoft.CSharp.RuntimeBinder;
+using System;
+using System.IO;
+using System.Runtime.CompilerServices;
+using System.Text;
+
+public static class StringExtension
+{
+    /*
+	[CompilerGenerated]
+	private static class <>o__1<T>
+	{
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__0;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__1;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__2;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__3;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__4;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__5;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__6;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__7;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__8;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__9;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__10;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__11;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__12;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__13;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__14;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__15;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__16;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__17;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__18;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__19;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__20;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__21;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__22;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__23;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__24;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__25;
+
+		public static CallSite<Func<CallSite, Type, object, object, object>> <>p__26;
+
+		public static CallSite<Func<CallSite, object, T>> <>p__27;
+	}
+
+	public static string ReadFile(this string @this, Encoding encoding, FileMode mode = FileMode.Open)
+	{
+		bool flag = @this == null;
+		if (flag)
+		{
+			throw new ArgumentNullException("@this");
+		}
+		bool flag2 = !File.Exists(@this);
+		if (flag2)
+		{
+			throw new Exception(@this + " not exists");
+		}
+		string result = null;
+		using (FileStream fileStream = File.Open(@this, mode))
+		{
+			using (StreamReader streamReader = new StreamReader(fileStream, encoding))
+			{
+				result = streamReader.ReadToEnd();
+				streamReader.Close();
+			}
+			fileStream.Close();
+		}
+		return result;
+	}
+
+	public static T ParseTo<T>(this object @this, T defaultValue = null)
+	{
+		bool flag = @this == null;
+		T result;
+		if (!flag)
+		{
+			Type typeFromHandle = typeof(T);
+			TypeCode typeCode = Type.GetTypeCode(typeFromHandle);
+			object arg = defaultValue;
+			switch (typeCode)
+			{
+			case TypeCode.Boolean:
+			{
+				if (StringExtension.<>o__1<T>.<>p__1 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__1 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_126_0 = StringExtension.<>o__1<T>.<>p__1.Target;
+				CallSite arg_126_1 = StringExtension.<>o__1<T>.<>p__1;
+				if (StringExtension.<>o__1<T>.<>p__0 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__0 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToBoolean", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_126_0(arg_126_1, StringExtension.<>o__1<T>.<>p__0.Target(StringExtension.<>o__1<T>.<>p__0, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.Char:
+			{
+				if (StringExtension.<>o__1<T>.<>p__3 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__3 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_1DC_0 = StringExtension.<>o__1<T>.<>p__3.Target;
+				CallSite arg_1DC_1 = StringExtension.<>o__1<T>.<>p__3;
+				if (StringExtension.<>o__1<T>.<>p__2 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__2 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToChar", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_1DC_0(arg_1DC_1, StringExtension.<>o__1<T>.<>p__2.Target(StringExtension.<>o__1<T>.<>p__2, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.Byte:
+			{
+				if (StringExtension.<>o__1<T>.<>p__5 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__5 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_292_0 = StringExtension.<>o__1<T>.<>p__5.Target;
+				CallSite arg_292_1 = StringExtension.<>o__1<T>.<>p__5;
+				if (StringExtension.<>o__1<T>.<>p__4 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__4 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToByte", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_292_0(arg_292_1, StringExtension.<>o__1<T>.<>p__4.Target(StringExtension.<>o__1<T>.<>p__4, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.Int16:
+			{
+				if (StringExtension.<>o__1<T>.<>p__7 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__7 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_348_0 = StringExtension.<>o__1<T>.<>p__7.Target;
+				CallSite arg_348_1 = StringExtension.<>o__1<T>.<>p__7;
+				if (StringExtension.<>o__1<T>.<>p__6 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__6 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToInt16", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_348_0(arg_348_1, StringExtension.<>o__1<T>.<>p__6.Target(StringExtension.<>o__1<T>.<>p__6, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.UInt16:
+			{
+				if (StringExtension.<>o__1<T>.<>p__9 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__9 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_3FE_0 = StringExtension.<>o__1<T>.<>p__9.Target;
+				CallSite arg_3FE_1 = StringExtension.<>o__1<T>.<>p__9;
+				if (StringExtension.<>o__1<T>.<>p__8 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__8 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToUInt16", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_3FE_0(arg_3FE_1, StringExtension.<>o__1<T>.<>p__8.Target(StringExtension.<>o__1<T>.<>p__8, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.Int32:
+			{
+				if (StringExtension.<>o__1<T>.<>p__11 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__11 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_4B4_0 = StringExtension.<>o__1<T>.<>p__11.Target;
+				CallSite arg_4B4_1 = StringExtension.<>o__1<T>.<>p__11;
+				if (StringExtension.<>o__1<T>.<>p__10 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__10 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToInt32", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_4B4_0(arg_4B4_1, StringExtension.<>o__1<T>.<>p__10.Target(StringExtension.<>o__1<T>.<>p__10, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.UInt32:
+			{
+				if (StringExtension.<>o__1<T>.<>p__13 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__13 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_56A_0 = StringExtension.<>o__1<T>.<>p__13.Target;
+				CallSite arg_56A_1 = StringExtension.<>o__1<T>.<>p__13;
+				if (StringExtension.<>o__1<T>.<>p__12 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__12 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToUInt32", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_56A_0(arg_56A_1, StringExtension.<>o__1<T>.<>p__12.Target(StringExtension.<>o__1<T>.<>p__12, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.Int64:
+			{
+				if (StringExtension.<>o__1<T>.<>p__15 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__15 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_620_0 = StringExtension.<>o__1<T>.<>p__15.Target;
+				CallSite arg_620_1 = StringExtension.<>o__1<T>.<>p__15;
+				if (StringExtension.<>o__1<T>.<>p__14 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__14 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToInt64", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_620_0(arg_620_1, StringExtension.<>o__1<T>.<>p__14.Target(StringExtension.<>o__1<T>.<>p__14, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.UInt64:
+			{
+				if (StringExtension.<>o__1<T>.<>p__17 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__17 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_6D6_0 = StringExtension.<>o__1<T>.<>p__17.Target;
+				CallSite arg_6D6_1 = StringExtension.<>o__1<T>.<>p__17;
+				if (StringExtension.<>o__1<T>.<>p__16 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__16 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToUInt64", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_6D6_0(arg_6D6_1, StringExtension.<>o__1<T>.<>p__16.Target(StringExtension.<>o__1<T>.<>p__16, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.Single:
+			{
+				if (StringExtension.<>o__1<T>.<>p__19 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__19 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_78C_0 = StringExtension.<>o__1<T>.<>p__19.Target;
+				CallSite arg_78C_1 = StringExtension.<>o__1<T>.<>p__19;
+				if (StringExtension.<>o__1<T>.<>p__18 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__18 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToSingle", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_78C_0(arg_78C_1, StringExtension.<>o__1<T>.<>p__18.Target(StringExtension.<>o__1<T>.<>p__18, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.Double:
+			{
+				if (StringExtension.<>o__1<T>.<>p__21 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__21 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_842_0 = StringExtension.<>o__1<T>.<>p__21.Target;
+				CallSite arg_842_1 = StringExtension.<>o__1<T>.<>p__21;
+				if (StringExtension.<>o__1<T>.<>p__20 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__20 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToDouble", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_842_0(arg_842_1, StringExtension.<>o__1<T>.<>p__20.Target(StringExtension.<>o__1<T>.<>p__20, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.Decimal:
+			{
+				if (StringExtension.<>o__1<T>.<>p__23 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__23 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_8F8_0 = StringExtension.<>o__1<T>.<>p__23.Target;
+				CallSite arg_8F8_1 = StringExtension.<>o__1<T>.<>p__23;
+				if (StringExtension.<>o__1<T>.<>p__22 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__22 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToDecimal", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_8F8_0(arg_8F8_1, StringExtension.<>o__1<T>.<>p__22.Target(StringExtension.<>o__1<T>.<>p__22, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.DateTime:
+			{
+				if (StringExtension.<>o__1<T>.<>p__25 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__25 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_9AE_0 = StringExtension.<>o__1<T>.<>p__25.Target;
+				CallSite arg_9AE_1 = StringExtension.<>o__1<T>.<>p__25;
+				if (StringExtension.<>o__1<T>.<>p__24 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__24 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToDateTime", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_9AE_0(arg_9AE_1, StringExtension.<>o__1<T>.<>p__24.Target(StringExtension.<>o__1<T>.<>p__24, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			case TypeCode.String:
+			{
+				if (StringExtension.<>o__1<T>.<>p__27 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__27 = CallSite<Func<CallSite, object, T>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof(T), typeof(StringExtension)));
+				}
+				Func<CallSite, object, T> arg_A64_0 = StringExtension.<>o__1<T>.<>p__27.Target;
+				CallSite arg_A64_1 = StringExtension.<>o__1<T>.<>p__27;
+				if (StringExtension.<>o__1<T>.<>p__26 == null)
+				{
+					StringExtension.<>o__1<T>.<>p__26 = CallSite<Func<CallSite, Type, object, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ParseToString", null, typeof(StringExtension), new CSharpArgumentInfo[]
+					{
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, null),
+						CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, null)
+					}));
+				}
+				result = arg_A64_0(arg_A64_1, StringExtension.<>o__1<T>.<>p__26.Target(StringExtension.<>o__1<T>.<>p__26, typeof(StringExtension), @this, arg));
+				return result;
+			}
+			}
+			throw new Exception(string.Format("该类型:{} 未定义转换", typeFromHandle.FullName));
+		}
+		result = defaultValue;
+		return result;
+	}
+    */
+	private static short ParseToInt16(object obj, short defaultValue)
+	{
+		bool flag = obj == null;
+		short result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			short num = defaultValue;
+			bool flag2 = short.TryParse(obj.ToString(), out num);
+			if (flag2)
+			{
+				result = num;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static int ParseToInt32(object obj, int defaultValue)
+	{
+		bool flag = obj == null;
+		int result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			int num = defaultValue;
+			bool flag2 = int.TryParse(obj.ToString(), out num);
+			if (flag2)
+			{
+				result = num;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static long ParseToInt64(object obj, long defaultValue)
+	{
+		bool flag = obj == null;
+		long result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			long num = defaultValue;
+			bool flag2 = long.TryParse(obj.ToString(), out num);
+			if (flag2)
+			{
+				result = num;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static ushort ParseToUInt16(object obj, ushort defaultValue)
+	{
+		bool flag = obj == null;
+		ushort result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			ushort num = defaultValue;
+			bool flag2 = ushort.TryParse(obj.ToString(), out num);
+			if (flag2)
+			{
+				result = num;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static uint ParseToUInt32(object obj, uint defaultValue)
+	{
+		bool flag = obj == null;
+		uint result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			uint num = defaultValue;
+			bool flag2 = uint.TryParse(obj.ToString(), out num);
+			if (flag2)
+			{
+				result = num;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static ulong ParseToUInt64(object obj, ulong defaultValue)
+	{
+		bool flag = obj == null;
+		ulong result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			ulong num = defaultValue;
+			bool flag2 = ulong.TryParse(obj.ToString(), out num);
+			if (flag2)
+			{
+				result = num;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static double ParseToDouble(object obj, double defaultValue)
+	{
+		bool flag = obj == null;
+		double result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			double num = defaultValue;
+			bool flag2 = double.TryParse(obj.ToString(), out num);
+			if (flag2)
+			{
+				result = num;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static float ParseToSingle(object obj, float defaultValue)
+	{
+		bool flag = obj == null;
+		float result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			float num = defaultValue;
+			bool flag2 = float.TryParse(obj.ToString(), out num);
+			if (flag2)
+			{
+				result = num;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static string ParseToString(object obj, string defaultValue)
+	{
+		bool flag = obj == null;
+		string result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			result = obj.ToString();
+		}
+		return result;
+	}
+
+	private static decimal ParseToDecimal(object obj, decimal defaultValue)
+	{
+		bool flag = obj == null;
+		decimal result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			decimal num = defaultValue;
+			bool flag2 = decimal.TryParse(obj.ToString(), out num);
+			if (flag2)
+			{
+				result = num;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static DateTime ParseToDateTime(object obj, DateTime defaultValue)
+	{
+		bool flag = obj == null;
+		DateTime result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			DateTime dateTime = defaultValue;
+			bool flag2 = DateTime.TryParse(obj.ToString(), out dateTime);
+			if (flag2)
+			{
+				result = dateTime;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static byte ParseToByte(object obj, byte defaultValue)
+	{
+		bool flag = obj == null;
+		byte result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			byte b = defaultValue;
+			bool flag2 = byte.TryParse(obj.ToString(), out b);
+			if (flag2)
+			{
+				result = b;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static sbyte ParseToSByte(object obj, sbyte defaultValue)
+	{
+		bool flag = obj == null;
+		sbyte result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			sbyte b = defaultValue;
+			bool flag2 = sbyte.TryParse(obj.ToString(), out b);
+			if (flag2)
+			{
+				result = b;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static bool ParseToBoolean(object obj, bool defaultValue)
+	{
+		bool flag = obj == null;
+		bool result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			bool flag2 = defaultValue;
+			bool flag3 = bool.TryParse(obj.ToString(), out flag2);
+			if (flag3)
+			{
+				result = flag2;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	private static char ParseToChar(object obj, char defaultValue)
+	{
+		bool flag = obj == null;
+		char result;
+		if (flag)
+		{
+			result = defaultValue;
+		}
+		else
+		{
+			char c = defaultValue;
+			bool flag2 = char.TryParse(obj.ToString(), out c);
+			if (flag2)
+			{
+				result = c;
+			}
+			else
+			{
+				result = defaultValue;
+			}
+		}
+		return result;
+	}
+
+	public static TEnum ToEnum<TEnum>(this string @this, bool ignoreCase = true) where TEnum : struct
+	{
+		TEnum result;
+		Enum.TryParse<TEnum>(@this, ignoreCase, out result);
+		return result;
+	}
+
+	public static string[] Split(this string @this, string separator, StringSplitOptions option = StringSplitOptions.None)
+	{
+		return @this.Split(new string[]
+		{
+			separator
+		}, option);
+	}
+}
