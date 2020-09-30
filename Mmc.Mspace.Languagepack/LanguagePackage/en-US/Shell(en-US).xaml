@@ -1,0 +1,112 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="LogoText">MSpace uav cloud scheduling platform</sys:String>
+    <sys:String x:Key="Location">Coordinate Positioning</sys:String>
+    <sys:String x:Key="BackStart">Back Start</sys:String>
+    <sys:String x:Key="Query">Query</sys:String>
+    <sys:String x:Key="Areameasurement">Area measurement</sys:String>
+    <sys:String x:Key="Levelmeasurement">Level measurement</sys:String>
+    <sys:String x:Key="Verticalmeasurement">Vertical measurement</sys:String>
+    <sys:String x:Key="Topview">Top view</sys:String>
+    <sys:String x:Key="Lookingdown">Looking down</sys:String>
+    <sys:String x:Key="Northarrow">North arrow</sys:String>
+    <sys:String x:Key="Peopleview">People view</sys:String>
+    <sys:String x:Key="Drawingboard">Drawing board</sys:String>
+    <sys:String x:Key="Fullscreen">Full screen</sys:String>
+    <sys:String x:Key="AnimatedNavigation">Animated Navigation</sys:String>
+    <sys:String x:Key="Traildisplay">Trail display</sys:String>
+    <sys:String x:Key="Pathplanning">Route planning</sys:String>
+    <sys:String x:Key="Volumecalculating">Volume calculating</sys:String>
+    <sys:String x:Key="Splitscreen">Split screen</sys:String>
+    <sys:String x:Key="Scale">Scale</sys:String>
+    <sys:String x:Key="GridPatrol">Grid patroling</sys:String>
+    <sys:String x:Key="Videomonitoring">Video monitoring</sys:String>
+    <sys:String x:Key="securityguards">Security guards</sys:String>
+    <sys:String x:Key="windspeeddata">Wind speed data</sys:String>
+    <sys:String x:Key="Temperaturedata">Temperature and humidity data</sys:String>
+    <sys:String x:Key="Statistics">statistics</sys:String>
+    <sys:String x:Key="Cityoverview">City overview</sys:String>
+    <sys:String x:Key="UAV">UAV</sys:String>
+    <sys:String x:Key="WireLinePatrol">Wire Line Patrol</sys:String>
+    <sys:String x:Key="Intelligentanalysis">analysis</sys:String>
+    <sys:String x:Key="Smartdevices">Smart devices</sys:String>
+    <sys:String x:Key="Querylayer">Query layer：</sys:String>
+    <sys:String x:Key="Keyword">Keyword：</sys:String>
+    <sys:String x:Key="Scopequery">Query Scope ：</sys:String>
+    <sys:String x:Key="QueryResult">A total of </sys:String>
+    <sys:String x:Key="Records">records were queried</sys:String>
+    <sys:String x:Key="Off">Off</sys:String>
+    <sys:String x:Key="Turnon">Open</sys:String>
+
+    <sys:String x:Key="Characteristicsanalysis">Characteristics analysis</sys:String>
+    <sys:String x:Key="Characteristicstype">Characteristics of the type：</sys:String>
+    <sys:String x:Key="Analysisobject">Analysis object：</sys:String>
+    <sys:String x:Key="Imagetif">Image.(tif)</sys:String>
+    <sys:String x:Key="Video">Video</sys:String>
+    <sys:String x:Key="Splitscreenlinkage">Split screen linkage</sys:String>
+    <sys:String x:Key="Elevationthan">Elevation than</sys:String>
+
+    <!--inkpadwindow-->
+    <sys:String x:Key="Stylusmodel">Stylus model</sys:String>
+    <sys:String x:Key="Thebrush">Brush</sys:String>
+    <sys:String x:Key="Eraser">Eraser</sys:String>
+    <sys:String x:Key="Choose">Choose</sys:String>
+    <sys:String x:Key="NewCreate">New</sys:String>
+    <sys:String x:Key="Save">Save</sys:String>
+    <sys:String x:Key="Open">Open</sys:String>
+    <sys:String x:Key="Cut">Cut</sys:String>
+    <sys:String x:Key="Copy">Copy</sys:String>
+    <sys:String x:Key="Paste">Paste</sys:String>
+    <sys:String x:Key="Delete">Delete</sys:String>
+
+    <sys:String x:Key="Set">Set</sys:String>
+    <sys:String x:Key="Shutdown">Shut down</sys:String>
+    <sys:String x:Key="Ignorethepressure">Ignore the pressure</sys:String>
+    <sys:String x:Key="Highlighted">Highlighted</sys:String>
+
+    <sys:String x:Key="Play">Play</sys:String>
+    <sys:String x:Key="Stop">Stop</sys:String>
+    <sys:String x:Key="VideoImage">Image...</sys:String>
+
+    <sys:String x:Key="Coordinatesetting">Coordinate setting:</sys:String>
+    <sys:String x:Key="Originset">Set the origin:</sys:String>
+    <sys:String x:Key="Settheorigin">Set the origin</sys:String>
+    <sys:String x:Key="Thecustom">The custom</sys:String>
+    <sys:String x:Key="Blueceiling">Blue ceiling</sys:String>
+    <sys:String x:Key="Insulator">Insulator</sys:String>
+    <sys:String x:Key="Importdata">Import data</sys:String>
+
+
+    <sys:String x:Key="Version">Version information:</sys:String>
+    <sys:String x:Key="CkeckUpdater">Check Updater</sys:String>
+
+    <sys:String x:Key="FloodAnalysis">Flood Analysis</sys:String>
+    <sys:String x:Key="DynamicClip">New Profile</sys:String>
+    <sys:String x:Key="ClippingPlanes">Clipping Planes</sys:String>
+    <sys:String x:Key="Draping">Draping</sys:String>
+    <sys:String x:Key="RegularInspection">Regular Inspection</sys:String>
+    <sys:String x:Key="AddInspection">Add Inspection</sys:String>
+    <sys:String x:Key="HistoryDom">History Dom</sys:String>
+    <sys:String x:Key="PhotosTrace">Photos Trace</sys:String>
+    <sys:String x:Key="ScreenCompare">Screen Compare</sys:String>
+    <sys:String x:Key="RoneAnalysis">Rone Analysis</sys:String>
+    <sys:String x:Key="Groundstationkit">Ground Station Package：</sys:String>
+    <sys:String x:Key="Clickdownload">Click to download</sys:String>
+	<sys:String x:Key="Floodanalysis">Flood</sys:String>
+	<sys:String x:Key="UpEveTimes">Eachrise：</sys:String>
+	<sys:String x:Key="Frequency">Freq：</sys:String>
+	<sys:String x:Key="TimesInSeconds">Times/Sec</sys:String>
+	<sys:String x:Key="LoopPlayback">LoopPlay</sys:String>
+	<sys:String x:Key="CurrentSurfaceHeight">CurrentHeight</sys:String>
+	<sys:String x:Key="DynamicClips">DynamicProfile</sys:String>
+	<sys:String x:Key="ClipName">ClippingName</sys:String>
+	<sys:String x:Key="Modify">Modify</sys:String>
+	<sys:String x:Key="PlaneCutting">PlaneCut</sys:String>
+	<sys:String x:Key="VolumeCutting">VolumeCut</sys:String>
+	<sys:String x:Key="Attribute">Attribute</sys:String>
+	<sys:String x:Key="AttributeValue">Value</sys:String>
+	<sys:String x:Key="Number">Number</sys:String>
+	<sys:String x:Key="ClipsName">ClipsName</sys:String>
+</ResourceDictionary>

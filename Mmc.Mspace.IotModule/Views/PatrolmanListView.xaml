@@ -1,0 +1,106 @@
+﻿<blankWindow:BlankWindow x:Class="Mmc.Mspace.IotModule.Views.PatrolmanListView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mmc.Mspace.IotModule.Views"
+        xmlns:blankWindow="http://GFramework.org"
+        xmlns:mvvm="http://www.galasoft.ch/mvvmlight"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:Helper="clr-namespace:Mmc.Mspace.Theme.Helper;assembly=Mmc.Mspace.Theme"
+        mc:Ignorable="d"
+        Title="PatrolmanListView" MaxHeight="480"  Width="323" Style="{StaticResource baseWindowStyle}" ResizeMode="NoResize">
+    <Window.Resources>
+        <DataTemplate x:Key="InspectorData">
+            <Border x:Name="PersonBorder" Margin="0,4" Height="100" Width="296" Cursor="Hand" CornerRadius="3" BorderBrush="LightBlue" BorderThickness="1" Background="{StaticResource LeftWindowBg}" >
+                <!--<i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseLeftButtonDown">
+                        <mvvm:EventToCommand Command="{Binding DataContext.ButtonDownCommand, RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type Window}}}"  PassEventArgsToCommand="True"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Margin="10,16,0,0"  HorizontalAlignment="Left"  Text="{Binding Name}" Style="{StaticResource TextBlock12Style}"/>
+                    <TextBlock Grid.Row="0" Margin="60,16,16,0" Style="{StaticResource TextBlock12Style}"   Text="{Binding Status}"/>
+                    <CheckBox  x:Name="PeoplePosition" Height="23" Width="56"   Margin="10,16,56,0"
+							  Content="位置"
+                              ToolTip="位置"
+                              HorizontalAlignment="Right"							   
+                              Foreground="#50ABFF"
+                              Command="{Binding DataContext.QueryPositionCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type Window}}}" 	       CommandParameter="{Binding .}"				 
+                              Style="{StaticResource FilterLabelCBStyle}"
+						      Visibility="{Binding People_Visibility}"/>
+                    <CheckBox  x:Name="Route" Height="23" Width="56"   Margin="30,16,16,0"
+							  Content="轨迹"
+                              ToolTip="轨迹"
+                              HorizontalAlignment="Right"							   
+                              Foreground="#50ABFF"                             
+                               Command="{Binding DataContext.QueryRouteCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type Window}}}" 
+                                CommandParameter="{Binding .}"
+                               Style="{StaticResource FilterLabelCBStyle}"
+						     />
+                    <!--HorizontalAlignment="Right"  Visibility="{Binding People_Visibility}" {Binding DataContext,RelativeSource={RelativeSource TemplatedParent}}"-->
+                    <TextBlock Grid.Row="1" Style="{StaticResource TextBlock12Style}"  Margin="10,4,0,4"  Text="电话："/>
+                    <TextBlock Grid.Row="1" Style="{StaticResource TextBlock12Style}"  Margin="56,4,0,4"  Text="{Binding Phone}"/>
+                    <TextBlock Grid.Row="2" Style="{StaticResource TextBlock12Style}"  Margin="10,4,0,4"  Text="打卡时间："/>
+                    <TextBlock Grid.Row="2"  Margin="74,4,0,4" Style="{StaticResource TextBlock12Style}" Text="{Binding SignInTime}"/>
+                </Grid>
+            </Border>
+
+            <DataTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="#50ABFF" TargetName="PersonBorder"/>
+                    <Setter Property="BorderThickness" Value="1" TargetName="PersonBorder"/>
+                </Trigger>
+                <DataTrigger Binding="{Binding IsSelected}" Value="True">
+                    <!--<Setter Property="Visibility" Value="Visible" TargetName="PoiTool"/>-->
+                    <Setter Property="BorderBrush" Value="#00F5FF" TargetName="PersonBorder"/>
+                    <Setter Property="BorderThickness" Value="1" TargetName="PersonBorder"/>
+                </DataTrigger>
+            </DataTemplate.Triggers>
+        </DataTemplate>
+        <Setter x:Name="btnColor" x:Key="blackBackground" Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border  BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Window.Resources>
+
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"  CornerRadius="5,5,0,0" blankWindow:BlankWindow.Draggable="True" Background="#292C35"/>
+        <TextBlock Grid.Row="0" x:Name="TitleName" blankWindow:BlankWindow.Draggable="True" Margin="8,0,0,0"  HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontSize="14" Text="{Binding PatrolmanTableTitle}"/>
+        <Button Grid.Row="0" x:Name="CloseButton" Command="{Binding CloseCmd}" Style="{DynamicResource ButtonCloseStyle}" Height="24" Width="24" Panel.ZIndex="10" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,8,0"/>
+        <Button Grid.Row="0" x:Name="foldButton" Command="{Binding FoldCmd}"  BorderThickness="0"  Height="24" Width="24" Panel.ZIndex="10" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,40,0">
+            <Button.Background>
+                <ImageBrush x:Name="FoldImage" Stretch="Fill" ImageSource="{StaticResource packdown_H}"/>
+            </Button.Background>
+        </Button>
+        <TextBox Grid.Row="1"  HorizontalAlignment="Stretch"  Style="{DynamicResource AddressTbxSearchStyle}"
+                     Width="265" Height="32" 
+                     Helper:TextBoxHelper.IsNeedClearButton="False" Helper:TextBoxHelper.ButtonCommand="{Binding SearchCommand}"
+                     Text="{Binding SearchText,UpdateSourceTrigger=PropertyChanged}" Margin="16,8,16,8" Grid.ColumnSpan="2"/>
+        <ScrollViewer  Grid.Row="2" VerticalScrollBarVisibility="Visible" HorizontalAlignment="Stretch" VerticalAlignment="Top"  >
+            <ItemsControl  Name="PatrolSV" ItemTemplate="{StaticResource InspectorData}" ItemsSource="{Binding PatrolmanSet}" >
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate >
+                        <StackPanel Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</blankWindow:BlankWindow>

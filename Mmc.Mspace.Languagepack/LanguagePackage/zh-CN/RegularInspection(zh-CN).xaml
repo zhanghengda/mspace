@@ -1,0 +1,109 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="InspectionDom">正射</sys:String>
+    <sys:String x:Key="InspectionPicture">图片</sys:String>
+    <sys:String x:Key="InspectionVideo">视频</sys:String>
+    <sys:String x:Key="InspectionRoute">航线</sys:String>
+    <sys:String x:Key="InspectionReport">报告</sys:String>
+    <sys:String x:Key="InspectionRegion">区域</sys:String>
+    <sys:String x:Key="InspectionUnit">巡检单元</sys:String>
+
+    <sys:String x:Key="DomTimeAll">全部</sys:String>
+    <sys:String x:Key="DomTimeLastMonth">近一个月</sys:String>
+    <sys:String x:Key="DomTimeLastThreeMonth">近三个月</sys:String>
+    <sys:String x:Key="DomTimeLastHalfYear">近半年</sys:String>
+    <sys:String x:Key="DomTimeLastYear">近一年</sys:String>
+
+    <sys:String x:Key="File">文件</sys:String>
+
+    <sys:String x:Key="TracePhotoTitle">照片生成轨迹</sys:String>
+    <sys:String x:Key="InspectObject">巡检对象:</sys:String>
+    <sys:String x:Key="PhotosFolder">照片目录:</sys:String>
+    <sys:String x:Key="OutputFile2">输出文件:</sys:String>
+    <sys:String x:Key="CreateThumb">生成缩略图</sys:String>
+    <sys:String x:Key="CreateTraceLine">生成轨迹线</sys:String>
+
+    <sys:String x:Key="PhotoNum">序号</sys:String>
+    <sys:String x:Key="PhotoName">名称</sys:String>
+    <sys:String x:Key="PhotoTime">时间</sys:String>
+    <sys:String x:Key="PhotoX">经度</sys:String>
+    <sys:String x:Key="PhotoY">纬度</sys:String>
+    <sys:String x:Key="PhotoA">高度</sys:String>
+    <sys:String x:Key="PhotoPath">路径</sys:String>
+
+    <sys:String x:Key="PleaseChoose">请选择</sys:String>
+    <sys:String x:Key="OutputFile">输出文件</sys:String>
+    <sys:String x:Key="UploadDataToUnit">正在导入{0}数据,请稍候...</sys:String>
+    <sys:String x:Key="TraceFile">轨迹文件</sys:String>
+    <sys:String x:Key="InspectRegion">巡检区域</sys:String>
+    <sys:String x:Key="InspectTimeUnit">巡检时间</sys:String>
+    <sys:String x:Key="ReadImageData">正在读取图片数据，请稍候...</sys:String>
+
+    <sys:String x:Key="NOPERMISSION">没有权限</sys:String>
+    <sys:String x:Key="LOADFAILED">数据读取失败</sys:String>
+    <sys:String x:Key="LOADSUCCESSED">数据读取成功</sys:String>
+    <sys:String x:Key="DATAEXISTED">数据重复</sys:String>
+    <sys:String x:Key="SAVEFAILED">数据保存失败</sys:String>
+    <sys:String x:Key="SAVESUCCESSED">数据保存成功</sys:String>
+    <sys:String x:Key="UPLOADFAILED">数据上传失败</sys:String>
+
+    <sys:String x:Key="LoadData">导入数据</sys:String>
+    <sys:String x:Key="ResultDataType">成果数据：</sys:String>
+    <sys:String x:Key="ResultDataLoad">成果导入：</sys:String>
+	<sys:String x:Key="Puase">暂停</sys:String>
+	<sys:String x:Key="ClickPuase">点击暂停</sys:String>
+	<sys:String x:Key="Play">播放</sys:String>
+	<sys:String x:Key="ClicPlay">点击播放</sys:String>
+	<sys:String x:Key="Back">后退</sys:String>
+	<sys:String x:Key="Forword">前进</sys:String>
+	<sys:String x:Key="VideoVolume">音量</sys:String>
+	<sys:String x:Key="Volume">体积</sys:String>
+	<sys:String x:Key="schedule">进度</sys:String>
+	<sys:String x:Key="Pie_result">饼状分析结果</sys:String>
+	<sys:String x:Key="Bar_result">柱状分析结果</sys:String>
+	<sys:String x:Key="Rone_analysis">区域分析</sys:String>
+	<sys:String x:Key="Representation">统计图示:</sys:String>
+    <sys:String x:Key="RoneAnalysisView_Sort">按时间排序:</sys:String>
+    <sys:String x:Key="RoneAnalysisView_Ascending">升序</sys:String>
+    <sys:String x:Key="RoneAnalysisView_Descending">降序</sys:String>
+    <sys:String x:Key="Datatime">统计日期:</sys:String>
+	<sys:String x:Key="Select_draw">请选择绘制工具，在地图上选择查询范围:</sys:String>
+
+	<sys:String x:Key="Circle">圆形</sys:String>
+	<sys:String x:Key="Rectang">矩形</sys:String>
+	<sys:String x:Key="DIY">自定义</sys:String>
+	<sys:String x:Key="Export">导出</sys:String>
+	
+	<sys:String x:Key="ImageViewTitle">查看照片</sys:String>
+    <sys:String x:Key="MarkBtnTxt">问题标记</sys:String>
+    <sys:String x:Key="ClearBtnTxt">标记清除</sys:String>
+
+    <sys:String x:Key="InspectRegion2">巡检区域:</sys:String>
+    <sys:String x:Key="InspectTimeUnit2">巡检时间:</sys:String>
+
+    <sys:String x:Key="DownLoadingReport">正在下载报告，请稍候...</sys:String>
+    <sys:String x:Key="NoDelete">没有可删除的</sys:String>
+    <sys:String x:Key="ReadDomData">正在加载正射数据，请稍候...</sys:String>
+
+    <sys:String x:Key="DataType">数据类型</sys:String>
+    <sys:String x:Key="NotMatchDataType">数据类型不匹配，请重新选择数据</sys:String>
+
+
+    <sys:String x:Key="CreateRegular">新增巡检</sys:String>
+    <sys:String x:Key="Regulargoal">巡检目标：</sys:String>
+    <sys:String x:Key="RegularDate">巡检时间：</sys:String>
+    <sys:String x:Key="CreateRegularWater">请输入或者选中目标</sys:String>
+    <sys:String x:Key="SelectedDeleteItem">请选中删除项！</sys:String>
+    <sys:String x:Key="ConfirmDeleteData">确定删除{0}数据？</sys:String>
+    <sys:String x:Key="InputName">请输入巡检名称!</sys:String>
+    <sys:String x:Key="InputNameLength">巡检名称不大于20个字！</sys:String>
+    <sys:String x:Key="ReSaveName">当前巡检日期已经存在！</sys:String>
+
+    <sys:String x:Key="ActiveScreen">当前激活屏幕</sys:String>
+    <sys:String x:Key="Download">下载</sys:String>
+    
+    <sys:String x:Key="ReadImageStatus">共{1}张图片，正读取第{0}张，请等待...</sys:String>
+    <sys:String x:Key="WaitAMoment">请等待...</sys:String>
+</ResourceDictionary>

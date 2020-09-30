@@ -1,0 +1,112 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="LogoText">MSpace облачная платформа диспетчерского управления</sys:String>
+    <sys:String x:Key="BackStart">Назад в начало</sys:String>
+    <sys:String x:Key="Location">Координатное позиционирование</sys:String>
+    <sys:String x:Key="Query">Поиск</sys:String>
+    <sys:String x:Key="Areameasurement">Измерение площади</sys:String>
+    <sys:String x:Key="Levelmeasurement">Измерение горизонтального размера</sys:String>
+    <sys:String x:Key="Verticalmeasurement">Измерение вертикального размера</sys:String>
+    <sys:String x:Key="Topview">Вид сверху</sys:String>
+    <sys:String x:Key="Lookingdown">Вид в плане</sys:String>
+    <sys:String x:Key="Northarrow">Ориентировать по северу</sys:String>
+    <sys:String x:Key="Peopleview">Вид с земли</sys:String>
+    <sys:String x:Key="Drawingboard">Рисовальный блок</sys:String>
+    <sys:String x:Key="Fullscreen">Полноэкранный режим</sys:String>
+    <sys:String x:Key="AnimatedNavigation">Анимированная навигация</sys:String>
+    <sys:String x:Key="Traildisplay">Отображение маршрута</sys:String>
+    <sys:String x:Key="Pathplanning">Планирование маршрутов</sys:String>
+    <sys:String x:Key="Volumecalculating">Измерение объема</sys:String>
+    <sys:String x:Key="GridPatrol">Сетка тур</sys:String>
+    <sys:String x:Key="Splitscreen">Сравнение экранов</sys:String>
+    <sys:String x:Key="securityguards">Персонал службы безопасности</sys:String>
+    <sys:String x:Key="windspeeddata">Данные о скорости ветра</sys:String>
+    <sys:String x:Key="Temperaturedata">Данные температурной влажности</sys:String>
+    <sys:String x:Key="Statistics">Статистические данные</sys:String>
+    <sys:String x:Key="Videomonitoring">видеонаблюдение</sys:String>
+    <sys:String x:Key="Scale">Шкала</sys:String>
+    <sys:String x:Key="Cityoverview">Обзор города</sys:String>
+    <sys:String x:Key="UAV">БПЛА</sys:String>
+    <sys:String x:Key="WireLinePatrol">电力巡航</sys:String>
+    <sys:String x:Key="Intelligentanalysis">Интеллектуальный анализ</sys:String>
+    <sys:String x:Key="Smartdevices">Интеллектуальное оборудование</sys:String>
+    <sys:String x:Key="Querylayer">Поиск слоя:</sys:String>
+    <sys:String x:Key="Keyword">ключевое слово:</sys:String>
+    <sys:String x:Key="Scopequery">Диапазон поиска:</sys:String>
+    <sys:String x:Key="QueryResult">Нашел</sys:String>
+    <sys:String x:Key="Records">записей</sys:String>
+    <sys:String x:Key="Off">Закрыть</sys:String>
+    <sys:String x:Key="Turnon">Открыть</sys:String>
+
+
+    <sys:String x:Key="Characteristicsanalysis">Функциональный анализ</sys:String>
+    <sys:String x:Key="Characteristicstype">Особенность:</sys:String>
+    <sys:String x:Key="Analysisobject">Анализ объекта:</sys:String>
+    <sys:String x:Key="Imagetif">Изображение.(tif)</sys:String>
+    <sys:String x:Key="Video">Видео</sys:String>
+    <sys:String x:Key="Splitscreenlinkage">Разделение экрана</sys:String>
+    <sys:String x:Key="Elevationthan">Сравнение высот</sys:String>
+
+    <!--inkpadwindow-->
+    <sys:String x:Key="Stylusmodel">Режим стилуса</sys:String>
+    <sys:String x:Key="Thebrush">Ручка</sys:String>
+    <sys:String x:Key="Eraser">Ластик</sys:String>
+    <sys:String x:Key="Choose">Выбрать</sys:String>
+    <sys:String x:Key="NewCreate">Создать</sys:String>
+    <sys:String x:Key="Save">Сохранить</sys:String>
+    <sys:String x:Key="Open">Открыть</sys:String>
+    <sys:String x:Key="Cut">Вырезать</sys:String>
+    <sys:String x:Key="Copy">Копировать</sys:String>
+    <sys:String x:Key="Paste">Вставить</sys:String>
+    <sys:String x:Key="Delete">Удалить</sys:String>
+
+    <sys:String x:Key="Set">Настройка</sys:String>
+    <sys:String x:Key="Shutdown">Закрыть</sys:String>
+    <sys:String x:Key="Ignorethepressure">Игнорировать стресс</sys:String>
+    <sys:String x:Key="Highlighted">Выделить</sys:String>
+
+    <sys:String x:Key="Play">воспроизведение</sys:String>
+    <sys:String x:Key="Stop">стоп</sys:String>
+    <sys:String x:Key="VideoImage">изображения...</sys:String>
+
+    <sys:String x:Key="Coordinatesetting">Координата координат:</sys:String>
+    <sys:String x:Key="Originset">Установка исходной точки:</sys:String>
+    <sys:String x:Key="Settheorigin">Установить исходную точку</sys:String>
+    <sys:String x:Key="Thecustom">самоопределение</sys:String>
+    <sys:String x:Key="Blueceiling">Голубой потолок</sys:String>
+    <sys:String x:Key="Insulator">изолятор</sys:String>
+    <sys:String x:Key="Importdata">Импортируемые данные</sys:String>
+
+    <sys:String x:Key="Version">Информационная версия:</sys:String>
+    <sys:String x:Key="CkeckUpdater">Проверьте наличие обновлений</sys:String>
+
+    <sys:String x:Key="FloodAnalysis">Анализ наводнений</sys:String>
+    <sys:String x:Key="DynamicClip">Новый профиль</sys:String>
+    <sys:String x:Key="ClippingPlanes">плоские ножницы</sys:String>
+    <sys:String x:Key="Draping">стереоскопические ножницы</sys:String>
+    <sys:String x:Key="RegularInspection">Регулярный осмотр</sys:String>
+    <sys:String x:Key="AddInspection">Добавить инспекцию</sys:String>
+    <sys:String x:Key="HistoryDom">история Ортофото</sys:String>
+    <sys:String x:Key="PhotosTrace">фото трек</sys:String>
+    <sys:String x:Key="ScreenCompare">Сравнить</sys:String>
+    <sys:String x:Key="RoneAnalysis">Анализ Rone</sys:String>
+    <sys:String x:Key="Groundstationkit">Пакет наземной станции：</sys:String>
+    <sys:String x:Key="Clickdownload">Click to download</sys:String>
+	<sys:String x:Key="Floodanalysis">анализ затопления</sys:String>
+	<sys:String x:Key="UpEveTimes">каждый раз, когда он поднимется：</sys:String>
+	<sys:String x:Key="Frequency">частота воспроизведения ：</sys:String>
+	<sys:String x:Key="TimesInSeconds">раз / с</sys:String>
+	<sys:String x:Key="LoopPlayback">повторное воспроизведение</sys:String>
+	<sys:String x:Key="CurrentSurfaceHeight">текущая высота поверхности воды</sys:String>
+	<sys:String x:Key="DynamicClips">динамический разрез</sys:String>
+	<sys:String x:Key="ClipName">имя стрижки</sys:String>
+	<sys:String x:Key="Modify">изменение</sys:String>
+	<sys:String x:Key="PlaneCutting">плоская резка</sys:String>
+	<sys:String x:Key="VolumeCutting">резка на теле</sys:String>
+	<sys:String x:Key="Attribute">атрибут</sys:String>
+	<sys:String x:Key="AttributeValue">значение</sys:String>
+	<sys:String x:Key="Number">а</sys:String>
+	<sys:String x:Key="ClipsName">Название профиля</sys:String>
+</ResourceDictionary>

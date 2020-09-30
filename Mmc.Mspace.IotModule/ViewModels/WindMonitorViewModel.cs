@@ -1,0 +1,183 @@
+﻿using FireControlModule.FireIot;
+using Gvitech.CityMaker.Controls;
+using Gvitech.CityMaker.FdeCore;
+using Gvitech.CityMaker.FdeGeometry;
+using Gvitech.CityMaker.RenderControl;
+using Mmc.DataSourceAccess;
+using Mmc.Framework.Services;
+using Mmc.Mspace.Common.Models;
+using Mmc.Mspace.Const.ConstPath;
+using Mmc.Mspace.Services.DataSourceServices;
+using Mmc.Mspace.Services.HttpService;
+using Mmc.Mspace.Theme.Pop;
+using Mmc.Windows.Services;
+using Mmc.Windows.Utils;
+using Mmc.Wpf.Commands;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace Mmc.Mspace.IotModule
+{
+    public class WindMonitorViewModel: CheckedToolItemModel
+    {
+        private List<IRenderable> _renderableList;
+        private Dictionary<string,ITableLabel> _tableLabelDic;
+        private Dictionary<string, DeviceInfoModel> _deviceInfoList;
+        private System.Timers.Timer timer = new System.Timers.Timer(3000);//实例化Timer类
+        private readonly object SynObject = new object();
+        private CreatePoiManager _poiManager;
+        private DeviceDataManager _deviceManager;
+        private Dictionary<string, IRenderPOI> _rPoiDic;
+
+        private static bool ShowState = false;
+        public override void Initialize()
+        {
+            base.Initialize();
+            base.ViewType = ViewType.CheckedIcon;
+            this._renderableList = new List<IRenderable>();
+            this._tableLabelDic= new Dictionary<string, ITableLabel>();
+
+            timer.Elapsed += new System.Timers.ElapsedEventHandler(theout);
+            //this.Command = new RelayCommand(GetSource);
+            _deviceInfoList = new Dictionary<string, DeviceInfoModel>();
+            _poiManager = new CreatePoiManager();
+            _deviceManager = new DeviceDataManager();
+            _rPoiDic = new Dictionary<string, IRenderPOI>();
+        }
+
+        public override void OnChecked()
+        {
+            base.OnChecked();
+            ShowData();
+        }
+
+
+        public override void OnUnchecked()
+        {
+            base.OnUnchecked();
+            HiddenData();
+        }
+
+        //private void GetSource()
+        //{
+        //    if (ShowState)
+        //        HiddenData();
+        //    else
+        //        ShowData();
+        //}
+        private void ShowData()
+        {
+            IsSelected = true; 
+            ShowState = true;
+            Task.Run(() =>
+            {
+                try
+                {
+                    try
+                    {
+                        _deviceManager.GetDeviceInfoList("windSpeed", ref _deviceInfoList);
+                    }
+                    catch { }
+
+                    foreach (var item in _deviceInfoList.ToArray())
+                    {
+                        var rPoi = _poiManager.CreatePoi(item.Value, "风速");
+                        if (Convert.ToDouble(item.Value.datainfo) > 1.2)
+                            _poiManager.ChangePoiImage(rPoi, "风速Warning");
+                        _rPoiDic.Add(item.Key, rPoi);
+                        _renderableList.Add(rPoi);
+                        var point = GviMap.GeoFactory.CreatePoint(gviVertexAttribute.gviVertexAttributeZ);
+                        point.X = item.Value.longitude;
+                        point.Y = item.Value.latitude;
+                        point.SpatialCRS = GviMap.SpatialCrs;
+                        var table = createTableLable(point, item.Value.device_name);
+                        table.SetRecord(0, 1, item.Value.datainfo + " m/s");
+                        table.VisibleMask = gviViewportMask.gviViewAllNormalView;
+                        _tableLabelDic.Add(item.Key, table);
+                        _renderableList.Add(table);
+                    }
+                    timer.Start();
+                }
+                catch (Exception ex)
+                {
+                    Console.Write(ex.StackTrace);
+                }
+            });
+        }
+
+        private void HiddenData()
+        {
+            IsSelected = false;
+            ShowState = false;
+            timer.Stop();
+            GviMap.ObjectManager.ReleaseRenderObject(_renderableList?.ToArray());
+            _renderableList?.Clear();
+            _tableLabelDic?.Clear();
+            _deviceInfoList?.Clear();
+            _rPoiDic?.Clear();
+        }
+
+
+        //public override void OnChecked()
+        //{
+        //    base.OnChecked();
+        
+        //}
+
+        private  void theout(object source, System.Timers.ElapsedEventArgs e)
+        {
+            lock (SynObject)
+            {
+                Task.Run(() =>
+                {
+                    try
+                    {
+                        _deviceManager.GetDeviceInfoList("windSpeed", ref _deviceInfoList);
+                    }
+                    catch { }
+
+                    foreach (var item in _deviceInfoList.ToArray())
+                    {
+                        if (this._tableLabelDic.ContainsKey(item.Key))
+                            this._tableLabelDic[item.Key].SetRecord(0, 1, item.Value.datainfo + " m/s");
+                        if (this._rPoiDic.ContainsKey(item.Key))
+                            if (Convert.ToDouble(item.Value.datainfo) > 1.2)
+                                _poiManager.ChangePoiImage(this._rPoiDic[item.Key], "风速Warning");
+                            else
+                                _poiManager.ChangePoiImage(this._rPoiDic[item.Key], "风速");
+                    }
+                });
+            }
+        }
+        
+        private ITableLabel createTableLable(IPoint pt,string device_name)
+        {
+            var tableLabel = TableLabelFactory.CreateWindTable(GviMap.ObjectManager,1,2);
+            tableLabel.Position = pt;
+            tableLabel.VisibleMask = gviViewportMask.gviViewAllNormalView;
+            tableLabel.TitleText = device_name;
+            // 设定表格中第1行，第1列的显示文字
+            tableLabel.SetRecord(0, 0, "风速:");
+            // 第1行，第2列
+            tableLabel.SetRecord(0, 1, "0"+" m/s");
+
+            return tableLabel;
+        }
+
+        //public override void OnUnchecked()
+        //{
+        //    base.OnUnchecked();
+        //}
+
+        public override void Reset()
+        {
+            base.Reset();
+            base.IsChecked = false;
+        }
+
+    }
+}
