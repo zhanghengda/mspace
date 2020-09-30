@@ -1,0 +1,19 @@
+<UserControl
+	x:Class="Mmc.Mspace.PoliceDeployedModule.PoliceDeployed.ExportProgressView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:gvifm="http://schemas.mmc.com/wpf" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:policedeployed="clr-namespace:Mmc.Mspace.PoliceDeployedModule.PoliceDeployed">
+	<Grid
+		Background="#4F000000">
+		<StackPanel
+			VerticalAlignment="Center">
+			<progress:ProgressRing
+				FrameworkElement.Width="400"
+				FrameworkElement.Height="150"
+				Control.Foreground="#FFFFA500" xmlns:progress="clr-namespace:Mmc.Wpf.Toolkit.Controls.Progress;assembly=Mmc.Wpf.Toolkit" />
+			<TextBlock
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				FontSize="30"
+				Foreground="#FFFFA500"
+				Text="{Binding ProgressValue}" />
+		</StackPanel>
+	</Grid>
+</UserControl>
