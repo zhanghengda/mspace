@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{8F12BF24-3E61-46E6-8BAA-4BD059203ACA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Mmc.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>..\binPath\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\binPath\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\libs\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gvitech.Windows.Attributes\AliasAttribute.cs" />
+    <Compile Include="Gvitech.Windows.Core\LanguageType.cs" />
+    <Compile Include="Gvitech.Windows.Design\Singleton.cs" />
+    <Compile Include="Gvitech.Windows.Events\WorkerCompletedEventHandler.cs" />
+    <Compile Include="Gvitech.Windows.Services\AppLogService.cs" />
+    <Compile Include="Gvitech.Windows.Services\AppService.cs" />
+    <Compile Include="Gvitech.Windows.Services\IAppLogService.cs" />
+    <Compile Include="Gvitech.Windows.Services\IServiceProvider.cs" />
+    <Compile Include="Gvitech.Windows.Services\LogMessageType.cs" />
+    <Compile Include="Gvitech.Windows.Services\ProvideService.cs" />
+    <Compile Include="Gvitech.Windows.Services\ServiceManager.cs" />
+    <Compile Include="Gvitech.Windows.Services\SystemLog.cs" />
+    <Compile Include="Gvitech.Windows.Utils\ColorConvert.cs" />
+    <Compile Include="Gvitech.Windows.Utils\ComFactory.cs" />
+    <Compile Include="Gvitech.Windows.Utils\ConfigHelper.cs" />
+    <Compile Include="Gvitech.Windows.Utils\DataTableFactory.cs" />
+    <Compile Include="Gvitech.Windows.Utils\EncryptUtil.cs" />
+    <Compile Include="Gvitech.Windows.Utils\FileExtensions.cs" />
+    <Compile Include="Gvitech.Windows.Utils\FileFilterStrings.cs" />
+    <Compile Include="Gvitech.Windows.Utils\FileUtil.cs" />
+    <Compile Include="Gvitech.Windows.Utils\HtmlEntities.cs" />
+    <Compile Include="Gvitech.Windows.Utils\HttpRequestMethod.cs" />
+    <Compile Include="Gvitech.Windows.Utils\HttpUtility.cs" />
+    <Compile Include="Gvitech.Windows.Utils\HttpWebRequestUtil.cs" />
+    <Compile Include="Gvitech.Windows.Utils\ImageUtil.cs" />
+    <Compile Include="Gvitech.Windows.Utils\JsonTool.cs" />
+    <Compile Include="Gvitech.Windows.Utils\JsonUtil.cs" />
+    <Compile Include="Gvitech.Windows.Utils\SerializationUtil.cs" />
+    <Compile Include="Gvitech.Windows.Utils\SoftKeyBoard.cs" />
+    <Compile Include="Gvitech.Windows.Utils\TimeStamp.cs" />
+    <Compile Include="Gvitech.Windows.Utils\TxtFileUtil.cs" />
+    <Compile Include="Gvitech.Windows.Utils\UrlDecoder.cs" />
+    <Compile Include="Gvitech.Windows.Utils\WindowsApi.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyInfoArrayExtension.cs" />
+    <Compile Include="PropertyInfoExtension.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Extensions\System.Extensions.csproj">
+      <Project>{a3f5fb96-7422-4f2f-a996-2c5aa2f5d798}</Project>
+      <Name>System.Extensions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

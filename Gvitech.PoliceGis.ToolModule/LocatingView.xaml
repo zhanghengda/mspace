@@ -1,0 +1,104 @@
+﻿<blankWindow:BlankWindow x:Class="Mmc.Mspace.ToolModule.LocatingView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mmc.Mspace.ToolModule"
+         xmlns:blankWindow="http://GFramework.org"
+        mc:Ignorable="d"
+        Title="LocatingView" Height="192" Width="290" Style="{DynamicResource baseWindowStyle}">
+    <Grid  Background="#1E2026">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#292C35" Grid.Column="0" Grid.ColumnSpan="2" CornerRadius="5,5,0,0" blankWindow:BlankWindow.Draggable="True" />
+        <TextBlock x:Name="TitleName" blankWindow:BlankWindow.Draggable="True"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="坐标定位" Margin="18,0,0,0" Foreground="White"  FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Grid.Row="0" x:Name="CloseButton" Grid.Column="0" Grid.ColumnSpan="2" Command="{Binding CloseCmd}"  Style="{DynamicResource ButtonCloseStyle}" Height="24" Width="24" HorizontalAlignment="Right" VerticalAlignment="Top"  Margin="0,2,8,0" />
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TabControl  Grid.Row="0"  Background="#1E2026" Style="{DynamicResource TabControlStyle}" SelectedIndex="{Binding Index}" >
+
+                <TabItem    Header="十进制"  Style="{DynamicResource TabItemStyle}" Height="24" FontSize="13">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="32"/>
+                            <RowDefinition Height="32"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="58"/>
+                            <ColumnDefinition Width="128"/>
+                            <ColumnDefinition Width="104*"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="1" Grid.Column="0" Foreground="#B3BBC5"  Margin="10,4" VerticalAlignment="Center"  Content="经度:" FontSize="13" />
+                        <TextBox Grid.Row="1" Grid.Column="1" Width="128" Height="24" Margin="0,4"  Background="#16181B" Foreground="#B3BBC5" Text="{Binding Longitude}"/>
+                        <Label Grid.Row="1" Grid.Column="2" Margin="4"  VerticalAlignment="Center"  Foreground="#B3BBC5" Content="(-180°~180°)" FontSize="13"/>
+
+                        <Label Grid.Row="2" Grid.Column="0" Foreground="#B3BBC5"  Margin="10,4" VerticalAlignment="Center"  Content="纬度:" FontSize="13"/>
+                        <TextBox Grid.Row="2" Grid.Column="1" Width="128" Height="24" Margin="0,4" Background="#16181B" Foreground="#B3BBC5" Text="{Binding Latitude}" />
+                        <Label Grid.Row="2" Grid.Column="2" Margin="4"  VerticalAlignment="Center"  Foreground="#B3BBC5" Content="(-90°~90°)" FontSize="13"/>
+
+                    </Grid>
+                </TabItem>
+                <TabItem Header="度分秒" Style="{DynamicResource TabItemStyle}" Height="24" FontSize="13" >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="32"/>
+                            <RowDefinition Height="32"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="58"/>
+                            <ColumnDefinition Width="78"/>
+                            <ColumnDefinition Width="78"/>
+                            <ColumnDefinition Width="auto"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="1" Grid.Column="0" Foreground="#B3BBC5"  Margin="10,4" VerticalAlignment="Center" FontSize="13"  Content="经度:"/>
+                        <TextBox Grid.Row="1" Grid.Column="1" Width="64" Height="24" HorizontalAlignment="Left" Margin="0,4"  Background="#16181B" Foreground="#B3BBC5" Text="{Binding LonDegree}"/>
+                        <Label Grid.Row="1" Grid.Column="1" Margin="4" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="#B3BBC5" FontSize="13" Content="°" />
+                        <TextBox Grid.Row="1" Grid.Column="2" Width="64" Height="24" HorizontalAlignment="Left" Margin="0,4"  Background="#16181B" Foreground="#B3BBC5" Text="{Binding LonMinute}"/>
+                        <Label Grid.Row="1" Grid.Column="2" Margin="4" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="#B3BBC5" FontSize="13" Content="′" />
+                        <TextBox Grid.Row="1" Grid.Column="3" Width="64" Height="24" HorizontalAlignment="Left" Margin="0,4"  Background="#16181B" Foreground="#B3BBC5" Text="{Binding LonSecond}"/>
+                        <Label Grid.Row="1" Grid.Column="3" Margin="64,4,0,4" HorizontalAlignment="Left"  VerticalAlignment="Center"  Foreground="#B3BBC5" FontSize="13"  Content="″" />
+
+                        <Label Grid.Row="2" Grid.Column="0" Foreground="#B3BBC5"  Margin="10,4" VerticalAlignment="Center" FontSize="13"  Content="纬度:"/>
+                        <TextBox Grid.Row="2" Grid.Column="1" Width="64" Height="24" HorizontalAlignment="Left" Margin="0,4"  Background="#16181B" Foreground="#B3BBC5" Text="{Binding LatDegree}"/>
+                        <Label Grid.Row="2" Grid.Column="1" Margin="4" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="#B3BBC5" FontSize="13"  Content="°" />
+                        <TextBox Grid.Row="2" Grid.Column="2" Width="64" Height="24" HorizontalAlignment="Left" Margin="0,4"  Background="#16181B" Foreground="#B3BBC5" Text="{Binding LatMinute}" />
+                        <Label Grid.Row="2" Grid.Column="2" Margin="4" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="#B3BBC5" FontSize="13"   Content="′" />
+                        <TextBox Grid.Row="2" Grid.Column="3" Width="64" Height="24" HorizontalAlignment="Left" Margin="0,4"  Background="#16181B" Foreground="#B3BBC5" Text="{Binding LatSecond}" />
+                        <Label Grid.Row="2" Grid.Column="3" Margin="64,4,0,4" HorizontalAlignment="Left"  VerticalAlignment="Center"  Foreground="#B3BBC5" FontSize="13" Content="″" />
+
+                    </Grid>
+                </TabItem>
+            </TabControl>
+
+            <Label Grid.Row="1"  Foreground="#B3BBC5" Width="58"  Margin="0,4,0,4" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Center" FontSize="13"  Content="海拔:"/>
+            <TextBox Grid.Row="1"  Width="128" Height="24" Margin="58,4,0,4"  HorizontalAlignment="Left" Background="#16181B" Foreground="#B3BBC5" Text="{Binding Altitude}"  />
+            <Label Grid.Row="1" Margin="192,4,0,4"  HorizontalAlignment="Left" VerticalAlignment="Center"  Foreground="#B3BBC5" FontSize="13"  Content="m" />
+
+            <!--<CheckBox Grid.Row="2"  Height="16" Width="16" HorizontalAlignment="Left" Margin="16,8,16,8"  IsChecked="{Binding IsAddPoi}" />
+            <Label Grid.Row="2" Margin="36,4,0,4"  HorizontalAlignment="Left" VerticalAlignment="Center"  Foreground="#B3BBC5" FontSize="13" Content="添加至点标注" />-->
+
+			<CheckBox Grid.Row="2"  Height="16" Width="16" HorizontalAlignment="Left" Margin="16,8,16,8"  IsChecked="{Binding OpenStation}" />
+			<Label Grid.Row="2" Margin="36,4,0,4"  HorizontalAlignment="Left" VerticalAlignment="Center"  Foreground="#B3BBC5" FontSize="13" Content="定位后关闭" />
+
+			<CheckBox Grid.Row="2"  Height="16" Width="16" HorizontalAlignment="Left" Margin="125,8,16,8"  IsChecked="{Binding VisibleStation}"/>
+			<!-- Command="{Binding LabelVisiblelCmd}"   CommandParameter="{Binding IsChecked,RelativeSource={RelativeSource Self}}"-->
+			<Label Grid.Row="2" Margin="145,4,0,4"  HorizontalAlignment="Left" VerticalAlignment="Center"  Foreground="#B3BBC5" FontSize="13" Content="注记显示"  />
+			<Button x:Name="okBtn" Grid.Column="1" Grid.Row="2" Content="{DynamicResource OK}" HorizontalAlignment="Right" Height="24" Margin="0,8,16,8" VerticalAlignment="Bottom" Width="64"  Style="{DynamicResource DefaultButtonStyle}"  Command="{Binding OkCmd}"/>
+            
+        </Grid>
+  
+    </Grid>
+</blankWindow:BlankWindow>

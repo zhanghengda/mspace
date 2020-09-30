@@ -1,0 +1,52 @@
+<Window
+	x:Class="Mmc.Mspace.ToolModule.LayerController.StatisticLegened" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:gvifm="http://schemas.mmc.com/wpf" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	AllowsTransparency="True"
+	Background="#00FFFFFF"
+	ShowInTaskbar="False"
+	SizeToContent="Height"
+	WindowStartupLocation="Manual"
+	WindowStyle="None" xmlns:layercontroller="clr-namespace:Mmc.Mspace.ToolModule.LayerController">
+	<FrameworkElement.Resources>
+		<ResourceDictionary>
+			<DataTemplate
+				x:Key="legenedDT">
+				<StackPanel
+					Orientation="Horizontal">
+					<Rectangle
+						Width="30"
+                        Shape.Fill="{Binding Color}">
+						<!--<Shape.Fill>
+							<Binding>
+								<Ctor xmlns="https://github.com/0xd4d/dnSpy">Color</Ctor>
+								<Binding.Converter>
+									<converters:HexNumberToColorConverter xmlns:converters="clr-namespace:Mmc.Wpf.Toolkit.Converters;assembly=Mmc.Wpf.Toolkit" />
+								</Binding.Converter>
+							</Binding>
+						</Shape.Fill>-->
+					</Rectangle>
+					<TextBlock
+						Margin="5,0,0,0"
+						Foreground="{DynamicResource NormalTextBrush}"
+						Text="{Binding Item}" />
+				</StackPanel>
+			</DataTemplate>
+		</ResourceDictionary>
+	</FrameworkElement.Resources>
+	<Border
+		Width="150"
+		HorizontalAlignment="Left"
+		BorderThickness="2"
+		CornerRadius="6"
+		Padding="5"
+		Style="{DynamicResource BorderPanelStyle}">
+		<StackPanel>
+			<TextBlock
+				HorizontalAlignment="Center"
+				Foreground="{DynamicResource NormalTextBrush}"
+				Text="案件数量(单位:件)" />
+			<ItemsControl
+				ItemTemplate="{StaticResource legenedDT}"
+				ItemsSource="{Binding ChromatographyItems}" />
+		</StackPanel>
+	</Border>
+</Window>

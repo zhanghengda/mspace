@@ -1,0 +1,47 @@
+<UserControl
+	x:Class="Mmc.Mspace.ToolModule.Scale.ScaleView" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:gvifm="http://schemas.mmc.com/wpf" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:scale="clr-namespace:Mmc.Mspace.ToolModule.Scale"
+    xmlns:controls="clr-namespace:Mmc.Mspace.Theme.Controls;assembly=Mmc.Mspace.Theme">
+    <Grid Margin="0,0,0,0">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <controls:Buttons
+				Command="{Binding ScaleChangedCmd}"
+				FrameworkElement.DataContext="{Binding ScaleItems[0]}"
+				RIcon="{Binding Icon}"
+                Content="{Binding Content}"
+                GroupName="CityGroup" Margin="0"
+				MouseOverRIcon="{Binding MouseOverIcon}"
+                PressedRIcon="{Binding MouseOverIcon}"
+                 HasPathData="True" Height="24" Width="77" Foreground="#ffffff"
+                   Style="{DynamicResource CityMenuStyle}"/>
+                <controls:Buttons
+				Command="{Binding ScaleChangedCmd}"
+				FrameworkElement.DataContext="{Binding ScaleItems[1]}"
+				RIcon="{Binding Icon}" Margin="0"
+                Content="{Binding Content}"
+                Height="24" Width="77" Foreground="#ffffff"
+                GroupName="CityGroup" 
+				MouseOverRIcon="{Binding MouseOverIcon}"
+                PressedRIcon="{Binding MouseOverIcon}"
+                  HasPathData="True"
+                   Style="{DynamicResource CityMenuStyle}"/>
+                <controls:Buttons 
+				Command="{Binding ScaleChangedCmd}"
+				FrameworkElement.DataContext="{Binding ScaleItems[2]}"
+				RIcon="{Binding Icon}" Margin="0"
+                Content="{Binding Content}"
+                GroupName="CityGroup"
+				MouseOverRIcon="{Binding MouseOverIcon}"
+                PressedRIcon="{Binding MouseOverIcon}"
+                 HasPathData="True" Height="24" Width="77" Foreground="#ffffff"
+                   Style="{DynamicResource CityMenuStyle}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

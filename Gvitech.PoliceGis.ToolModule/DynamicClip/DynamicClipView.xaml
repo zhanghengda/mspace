@@ -1,0 +1,79 @@
+﻿<blankWindow:BlankWindow x:Class="Mmc.Mspace.ToolModule.DynamicClip.DynamicClip"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mmc.Mspace.ToolModule.DynamicClip"
+        mc:Ignorable="d"
+		xmlns:blankWindow="http://GFramework.org"
+        Title="DynamicClip" Height="500" Width="450">
+	<Grid Margin="0,0,2,0">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="40"></RowDefinition>
+			<RowDefinition Height="360" MinHeight="20"></RowDefinition>
+			
+			
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+
+		<Border  Grid.Row="0" Background="#292C35" Grid.Column="0" Grid.ColumnSpan="7" CornerRadius="5,5,0,0" blankWindow:BlankWindow.Draggable="True" Margin="0,0,-1,0" />
+		<TextBlock Text="{DynamicResource DynamicClips}"  Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{DynamicResource DefaultTextBlockStyle}" Margin="10,12,11,12"  />
+		<Button Grid.Row="0" x:Name="CloseButton" Grid.Column="5"  Command="{Binding DisposeCmd2}"   Style="{StaticResource ButtonCloseStyle}" Height="36" Width="36" HorizontalAlignment="Right"  VerticalAlignment="Top" Margin="5,2"  />
+
+		<StackPanel Orientation="Horizontal" Grid.Row="1"  Grid.Column="1"  >
+			<!--	<ComboBox  x:Name="ClipList"  Width="160" HorizontalAlignment="Center"  SelectedItem="{Binding SelectClip,UpdateSourceTrigger=PropertyChanged}" Style="{DynamicResource DefaultComboBoxStyle}" Margin="10,0,0,0" />
+			<Button    Content="删除选中" Command="{Binding DeleteClipCmd}" Grid.Row="2" Style="{StaticResource DefaultButtonStyle}" Height="35" Width="65" Margin="5,5,5,5"/>
+			<TextBox x:Name="Renametextbox"  Width="100" Grid.Row="2" Style="{DynamicResource TbxWaterStyle}" TextWrapping="Wrap" Text="{Binding NewName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  RenderTransformOrigin="0.5,0.5"  />
+				
+			-->
+
+
+
+		</StackPanel>
+		<Grid Margin="0" Grid.Row="1">
+			<DataGrid x:Name="datagrid" Width="430" Height="360" CanUserAddRows="True" 
+					  ItemsSource="{Binding ClipDataColletion}"
+					  HorizontalAlignment="Center" HorizontalContentAlignment="Center"    AutoGenerateColumns="False" >
+				<!--ItemsSource="{Binding}"-->
+				<DataGrid.InputBindings>
+					<MouseBinding MouseAction="LeftDoubleClick" Command="{Binding DoubleClickCommand}"/>
+				</DataGrid.InputBindings>
+				<DataGrid.Columns>
+
+					<DataGridTemplateColumn Header="{DynamicResource ClipName}" Width="295">
+						<DataGridTemplateColumn.CellTemplate>
+							<DataTemplate>
+								<Label Foreground="White" FontSize="14" Content="{Binding Name}" HorizontalContentAlignment="Center" />
+							</DataTemplate>
+						</DataGridTemplateColumn.CellTemplate>
+					</DataGridTemplateColumn>
+
+					<DataGridTemplateColumn  Header="{DynamicResource Modify}" Width="65" >
+						<DataGridTemplateColumn.CellTemplate>
+							<DataTemplate>
+								<!--	<Image  Width="150" Height="150" Source="{Binding crime,Mode=OneWay}"/>-->
+								<Button   Command="{Binding DataContext.RenameCmd, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=DataGrid}}" Height="20" Width="35" Content="{DynamicResource Modify}" Margin="5"  ></Button>
+							</DataTemplate>
+						</DataGridTemplateColumn.CellTemplate>
+					</DataGridTemplateColumn>
+					<DataGridTemplateColumn  Header="{DynamicResource Delete}" Width="65">
+						<DataGridTemplateColumn.CellTemplate>
+							<DataTemplate>
+								<!--	<Image  Width="150" Height="150" Source="{Binding crime,Mode=OneWay}"/>-->
+								<Button  Command="{Binding DataContext.DelClipCmd, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=DataGrid}}"  Height="20" Width="35" Content="{DynamicResource Delete}" Margin="5"   ></Button>
+							</DataTemplate>
+						</DataGridTemplateColumn.CellTemplate>
+					</DataGridTemplateColumn>
+				</DataGrid.Columns>
+			</DataGrid>
+
+		</Grid>
+		<StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,-0.8,0" >
+			<Button   x:Name="PolygonClip" Content="{DynamicResource PlaneCutting}" Command="{Binding PolygonClipCmd}"   Style="{StaticResource DefaultButtonStyle}" Height="50" Width="70" Margin="60,0,0,0"/>
+			<Button   x:Name="NewClipData" Content="{DynamicResource DynamicClip}" Command="{Binding SaveClipCmd}"  Style="{StaticResource DefaultButtonStyle}" Height="50" Width="70" Margin="60,0,0,0"/>
+			<!--<Button    Content="保存状态" Command="{Binding SaveClipCmd}" Grid.Row="2" Style="{StaticResource DefaultButtonStyle}" Height="35" Width="65" Margin="0,5,5,5"/>-->
+			<Button   x:Name="VolumeClip" Content="{DynamicResource VolumeCutting}" Command="{Binding VolumeClipCmd}"  Style="{StaticResource DefaultButtonStyle}" Height="50" Width="70" Margin="60,0,0,0"/>
+		</StackPanel>
+
+	</Grid>
+</blankWindow:BlankWindow>

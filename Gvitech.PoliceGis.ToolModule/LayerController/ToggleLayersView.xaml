@@ -1,0 +1,80 @@
+<UserControl
+	x:Class="Mmc.Mspace.ToolModule.LayerController.ToggleLayersView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:gvifm="http://schemas.mmc.com/wpf" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:layercontroller="clr-namespace:Mmc.Mspace.ToolModule.LayerController"
+    xmlns:panels="clr-namespace:Mmc.Wpf.Toolkit.Controls.Panels;assembly=Mmc.Wpf.Toolkit">
+	<FrameworkElement.Resources>
+		<ResourceDictionary>
+			<DataTemplate
+				x:Key="IconRadioBtnDataTemplate">
+				<controls:IconRadioButton xmlns:controls="clr-namespace:Mmc.Wpf.Toolkit.Controls;assembly=Mmc.Wpf.Toolkit" />
+			</DataTemplate>
+		</ResourceDictionary>
+	</FrameworkElement.Resources>
+    <gvifm:IconPopupButton
+		FrameworkElement.Name="layers"
+		gvifm:IconPopupButton.Placement="Left">
+		<!--x:Name="layers"-->
+		<Border
+			Style="{DynamicResource BorderPanelStyle}">
+			<ItemsControl
+				ItemTemplate="{StaticResource IconRadioBtnDataTemplate}"
+				ItemsSource="{Binding Items}">
+				<FrameworkElement.Resources>
+					<ResourceDictionary>
+						<Style
+							TargetType="{x:Type ContentPresenter}"
+							x:Key="{x:Type ContentPresenter}">
+							<Setter
+								Property="MinWidth"
+								Value="160" />
+						</Style>
+						<Style
+							TargetType="{x:Type gvifm:IconRadioButton}"
+							x:Key="{x:Type gvifm:IconRadioButton}">
+							<Setter
+								Property="Content"
+								Value="{Binding Name}" />
+							<Setter
+								Property="RadioButton.GroupName"
+								Value="{Binding Group}" />
+							<Setter
+								Property="ToggleButton.IsChecked"
+								Value="{Binding IsVisible}" />
+							<Setter
+								Property="Visibility"
+								Value="Visible" />
+							<Setter
+								Property="Template">
+								<Setter.Value>
+									<ControlTemplate>
+										<DockPanel
+											Margin="10,4">
+											<CheckBox
+												Margin="5,0,0,0"
+												DockPanel.Dock="Right"
+												Style="{DynamicResource SwitchCheckStyle}"
+												Command="{Binding DataContext.CheckCommand, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}}"
+												CommandParameter="{Binding}"
+												IsChecked="{Binding IsVisible}" />
+											<TextBlock
+												HorizontalAlignment="Left"
+												VerticalAlignment="Center"
+												Foreground="{DynamicResource NormalTextBrush}"
+												Text="{Binding Name}" />
+										</DockPanel>
+									</ControlTemplate>
+								</Setter.Value>
+							</Setter>
+						</Style>
+					</ResourceDictionary>
+				</FrameworkElement.Resources>
+				<ItemsControl.ItemsPanel>
+					<ItemsPanelTemplate>
+						<panels:StackPanelWithSpacing
+							SpaceBetweenItems="1"  />
+					</ItemsPanelTemplate>
+				</ItemsControl.ItemsPanel>
+			</ItemsControl>
+		</Border>
+	</gvifm:IconPopupButton>
+</UserControl>

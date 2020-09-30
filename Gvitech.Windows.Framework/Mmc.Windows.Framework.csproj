@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{AAC59B9F-0157-479B-869E-808E3BDEAE8A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Mmc.Windows.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>..\binPath\</OutputPath>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\binPath\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DateTimeExtensions.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Attached\AttachedProperties.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Commands\AsyncCommand.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Commands\AsyncCommandBase.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Commands\CommandFactory.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Commands\IAsyncCommand.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Commands\NotifyTaskCompletion.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Commands\ParameterCommand.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Commands\RelayCommand.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Commands\SimpleCommand.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls.InkPad\InkPadWindow.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls.InkPad\StylusSettings.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls.Panels\ExtendGrid.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls.Panels\StackPanelWithSpacing.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls.Panels\UniformGridWithSpacing.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls.Progress\ProgressRing.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls\IconButton.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls\IconDataButton.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls\IconDataButtonTypes.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls\IconPopupButton.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls\IconRadioButton.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls\IconToggleButton.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Controls\SearchTextBox.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Converters\CoreConverter.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Converters\FormImageConverter.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Converters\HexNumberToColorConverter.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Converters\NullOrEmptyStringToInvertVisibilityConverter.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Converters\NullOrEmptyStringToVisibilityConverter.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Core\NotifyObject.cs" />
+    <Compile Include="Gvitech.Windows.Framework.GlobalVersion\AssemblyInfo.cs" />
+    <Compile Include="Gvitech.Windows.Framework.MarkupExtensions\EnumNamesExtension.cs" />
+    <Compile Include="Gvitech.Windows.Framework.MarkupExtensions\EnumProvider.cs" />
+    <Compile Include="Gvitech.Windows.Framework.MarkupExtensions\SetMargin.cs" />
+    <Compile Include="Gvitech.Windows.Framework.MarkupExtensions\SetX.cs" />
+    <Compile Include="Gvitech.Windows.Framework.MarkupExtensions\SetY.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Properties\Resources.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Properties\Settings.cs" />
+    <Compile Include="Gvitech.Windows.Framework.Utils\ScreenHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Gvitech.Windows.Framework.Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="controls\inkpad\inkpadwindow.baml" />
+    <Resource Include="controls\inkpad\stylussettings.baml" />
+    <Resource Include="fonts\new%20x%20digital%20tfb.ttf" />
+    <Resource Include="themes\generic.baml" />
+    <Resource Include="themes\progressringstyle.baml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Theme\Mmc.Mspace.Theme.csproj">
+      <Project>{41C024CF-8B5D-4693-B3FF-8D36D2B753C4}</Project>
+      <Name>Mmc.Mspace.Theme</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Windows\Mmc.Windows.csproj">
+      <Project>{8f12bf24-3e61-46e6-8baa-4bd059203aca}</Project>
+      <Name>Mmc.Windows</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

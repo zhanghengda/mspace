@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9B0F837-5EB0-42B1-9020-4214D038C0DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mmc.Mspace.ToolModule</RootNamespace>
+    <AssemblyName>Mmc.Mspace.ToolModule</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v11.2.Core">
+      <HintPath>..\libs\DX\DevExpress.Charts.v11.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2">
+      <HintPath>..\libs\DX\DevExpress.Data.v11.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Charts.v11.2">
+      <HintPath>..\libs\DX\DevExpress.Xpf.Charts.v11.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v11.2">
+      <HintPath>..\libs\DX\DevExpress.Xpf.Core.v11.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GFramework.BlankWindow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\GFramework.BlankWindow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Common.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Common.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeCore.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeCore.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeGeometry.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeGeometry.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Math.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Math.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.RenderControl.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.RenderControl.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\System.Windows.Interactivity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebEye.Controls.Wpf.StreamPlayerControl">
+      <HintPath>..\libs\WebEye.Controls.Wpf.StreamPlayerControl.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Extensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Extension">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmStatisticLayerController\DemoValuesProvider.cs" />
+    <Compile Include="AlarmStatisticLayerController\StatisticLegened.xaml.cs">
+      <DependentUpon>statisticlegened.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmStatisticLayerController\StatisticsView.xaml.cs">
+      <DependentUpon>StatisticsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicClip\ClipData.cs" />
+    <Compile Include="DynamicClip\ClipDataSet.cs" />
+    <Compile Include="DynamicClip\ClipDataXMLProvider.cs" />
+    <Compile Include="DynamicClip\ClipManagerCmd.cs" />
+    <Compile Include="DynamicClip\ClipManagerConst.cs" />
+    <Compile Include="DynamicClip\ClipRename.xaml.cs">
+      <DependentUpon>ClipRename.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicClip\ClipRenameModel.cs" />
+    <Compile Include="DynamicClip\DynamicClipView.xaml.cs">
+      <DependentUpon>DynamicClipView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicClip\DynamicClipVModel.cs" />
+    <Compile Include="DynamicClip\IClipDataProvider.cs" />
+    <Compile Include="DynamicClip\NewClipObjectView.xaml.cs">
+      <DependentUpon>NewClipObjectView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicClip\NewClipObjectViewModel.cs" />
+    <Compile Include="DynamicClip\NewClipObjectVModel.cs" />
+    <Compile Include="DynamicClip\PlaneClipVModel.cs" />
+    <Compile Include="DynamicClip\RenameObjectView.xaml.cs">
+      <DependentUpon>RenameObjectView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicClip\RenameObjectVModel.cs" />
+    <Compile Include="LayerController\ActualLayerItem.cs" />
+    <Compile Include="LayerController\ActualViewModel.cs" />
+    <Compile Include="LayerController\LayerControllerBase.cs" />
+    <Compile Include="LayerController\LayersView.xaml.cs">
+      <DependentUpon>LayersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayerController\TerrainLayerItem.cs" />
+    <Compile Include="LayerController\ToggleLayerControllerBase.cs" />
+    <Compile Include="LayerController\ToggleLayersView.xaml.cs">
+      <DependentUpon>ToggleLayersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocatingView.xaml.cs">
+      <DependentUpon>LocatingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaintViewModel.cs" />
+    <Compile Include="Progress\ExportProgressView.xaml.cs">
+      <DependentUpon>ExportProgressView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Progress\ExportProgressViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertySearchCmd.cs" />
+    <Compile Include="Scale\MeasuringScaleViewModel.cs" />
+    <Compile Include="Scale\ScaleItem.cs" />
+    <Compile Include="Scale\ScaleType.cs" />
+    <Compile Include="Scale\ScaleView.xaml.cs">
+      <DependentUpon>ScaleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search\KeyWordSearchView.xaml.cs">
+      <DependentUpon>KeyWordSearchView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search\KeyWordSearchViewModel.cs" />
+    <Compile Include="LocatingViewModel.cs" />
+    <Compile Include="VideoControl\StreamPlayerView.xaml.cs">
+      <DependentUpon>StreamPlayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VideoControl\VideoControl.xaml.cs">
+      <DependentUpon>VideoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControl\AreaMeasurationViewModel.cs" />
+    <Compile Include="ViewControl\FullScreenCmd.cs" />
+    <Compile Include="ViewControl\FullScreenViewModel.cs" />
+    <Compile Include="ViewControl\HMeasurationViewModel.cs" />
+    <Compile Include="ViewControl\HomeCmd.cs" />
+    <Compile Include="ViewControl\HomeViewModel.cs" />
+    <Compile Include="ViewControl\LookAtNorthViewModel.cs" />
+    <Compile Include="ViewControl\PersonAngleViewModel.cs" />
+    <Compile Include="ViewControl\PerspectiveViewModel.cs" />
+    <Compile Include="ViewControl\ProjectAreaCmd.cs" />
+    <Compile Include="ViewControl\PropertySearchViewModel.cs" />
+    <Compile Include="ViewControl\TopViewViewModel.cs" />
+    <Compile Include="ViewControl\VMeasurationViewModel.cs" />
+    <Compile Include="ViewControl\VolumeCalcViewModel.cs" />
+    <Compile Include="DynamicClip\VolumeClipVModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gvitech.DataSourceAccess\Mmc.DataSourceAccess.csproj">
+      <Project>{24FDF0D9-FEC4-465B-915D-01FAE99E2184}</Project>
+      <Name>Mmc.DataSourceAccess</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Framework.Wpf\Mmc.Framework.Wpf.csproj">
+      <Project>{beaaacd8-efed-4e68-9165-1fb9bbd7c2b8}</Project>
+      <Name>Mmc.Framework.Wpf</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Framework\Mmc.Framework.csproj">
+      <Project>{22939209-2239-4851-8f9b-24b79823793a}</Project>
+      <Name>Mmc.Framework</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Common\Mmc.Mspace.Common.csproj">
+      <Project>{cd3991ed-0326-49cd-a83c-7816aafd88b7}</Project>
+      <Name>Mmc.Mspace.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Const\Mmc.Mspace.Const.csproj">
+      <Project>{149A90B6-D7BD-4B48-8DAF-2E8151C8CC6B}</Project>
+      <Name>Mmc.Mspace.Const</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Models\Mmc.Mspace.Models.csproj">
+      <Project>{EAB6D6D4-7D10-4999-BB95-9E5D1003F062}</Project>
+      <Name>Mmc.Mspace.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Services\Mmc.Mspace.Services.csproj">
+      <Project>{adcc12cb-e1d2-436a-8c33-47484ae76e08}</Project>
+      <Name>Mmc.Mspace.Services</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Theme\Mmc.Mspace.Theme.csproj">
+      <Project>{41c024cf-8b5d-4693-b3ff-8d36d2b753c4}</Project>
+      <Name>Mmc.Mspace.Theme</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Windows.Framework\Mmc.Windows.Framework.csproj">
+      <Project>{aac59b9f-0157-479b-869e-808e3bdeae8a}</Project>
+      <Name>Mmc.Windows.Framework</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Windows\Mmc.Windows.csproj">
+      <Project>{8f12bf24-3e61-46e6-8baa-4bd059203aca}</Project>
+      <Name>Mmc.Windows</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf.Toolkit\Mmc.Wpf.Toolkit.csproj">
+      <Project>{0faaf359-fce7-4c30-aede-1b290abce6de}</Project>
+      <Name>Mmc.Wpf.Toolkit</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf\Mmc.Wpf.csproj">
+      <Project>{2efe1860-3671-43c0-9e80-e0a80f438ac3}</Project>
+      <Name>Mmc.Wpf</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.MathUtil\Mmc.MathUtil.csproj">
+      <Project>{BB0E5078-E0F8-43D5-8620-E11425DCB3F7}</Project>
+      <Name>Mmc.MathUtil</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.Languagepack\Mmc.Mspace.Languagepack.csproj">
+      <Project>{240a74af-ede0-4c47-97e0-f485afeb69bf}</Project>
+      <Name>Mmc.Mspace.Languagepack</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.PoiManager\Mmc.Mspace.PoiManagerModule.csproj">
+      <Project>{4DD21CF7-3B94-4336-9774-AC09C552896B}</Project>
+      <Name>Mmc.Mspace.PoiManagerModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="AlarmStatisticLayerController\statisticlegened.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AlarmStatisticLayerController\StatisticsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DynamicClip\ClipRename.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DynamicClip\DynamicClipView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DynamicClip\NewClipObjectView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DynamicClip\RenameObjectView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayerController\LayersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayerController\ToggleLayersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LocatingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Progress\ExportProgressView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scale\ScaleView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Search\KeyWordSearchView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VideoControl\StreamPlayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VideoControl\VideoControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

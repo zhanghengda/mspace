@@ -1,0 +1,14 @@
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Windows.dll
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Windows.pdb
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csprojAssemblyReference.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CoreCompileInputs.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CopyComplete
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.dll
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.pdb
+D:\Mspace\mspace\mspace\binPath\Mmc.Windows.dll
+D:\Mspace\mspace\mspace\binPath\Mmc.Windows.pdb
+D:\Mspace\mspace\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csprojAssemblyReference.cache
+D:\Mspace\mspace\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CoreCompileInputs.cache
+D:\Mspace\mspace\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CopyComplete
+D:\Mspace\mspace\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.dll
+D:\Mspace\mspace\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.pdb

@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Mmc.Mspace.ToolModule.VideoControl.VideoControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:gvifm="http://schemas.mmc.com/wpf"
+            >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*" />
+            <RowDefinition Height="10*" />
+        </Grid.RowDefinitions>
+        <MediaElement Name="mediaCtrl" Grid.Row="0" LoadedBehavior="Manual" Stretch="None" UnloadedBehavior="Manual" MinHeight="400" MinWidth="400" />
+        <Button Name="btnPlay" Grid.Row="1" Width="75" HorizontalAlignment="Left" Content="播放" Style="{StaticResource ButtonStyle}" Click="btnPlay_Click" />
+        <Button Name="btnStop" Grid.Row="1" Width="75" HorizontalAlignment="Right" Content="暂停" Style="{StaticResource ButtonStyle}" Click="btnStop_Click" />
+    </Grid>
+</UserControl>

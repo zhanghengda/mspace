@@ -1,0 +1,43 @@
+﻿<blankWindow:BlankWindow x:Class="Mmc.Mspace.ToolModule.DynamicClip.NewClipObjectView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mmc.Mspace.ToolModule.DynamicClip"
+        xmlns:blankWindow="http://GFramework.org"
+        mc:Ignorable="d"
+        Title="NewClipObjectView" Height="300" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Background="#292C35"  Grid.Row="0" blankWindow:BlankWindow.Draggable="True">
+            <Button x:Name="CloseButton" Grid.Column="5"  Command="{Binding DisposeCmd2}"   Style="{StaticResource ButtonCloseStyle}" Height="36" Width="36" HorizontalAlignment="Right"  VerticalAlignment="Top" Margin="5,2"  />
+        </Grid>
+        <StackPanel Grid.Row="1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="50">
+				<TextBlock Text="{DynamicResource ClipsName}"  HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource DefaultTextBlockStyle}" Margin="0,0,10,0"  />
+                <TextBox Name="tb1"  TextWrapping="Wrap" Width="160" Height="35"   Style="{DynamicResource TbxWaterStyle}" Text="{Binding ClipName}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+				<Button  x:Name="PolygonClip" Content="{DynamicResource Cancel}" Command="{Binding CloseClipViewCmd}" Margin="0,0,20,0"  Style="{StaticResource DefaultButtonStyle}" Height="30" Width="70" />
+				<Button  x:Name="NewClipData" Content="{DynamicResource OK}" Command="{Binding NewClipDataCmd}" Margin="20,0,0,0"  Style="{StaticResource DefaultButtonStyle}" Height="30" Width="70" />
+            </StackPanel>
+        </StackPanel>
+		<!--<Grid.RowDefinitions>
+			<RowDefinition Height="40"></RowDefinition>
+			<RowDefinition Height="Auto" MinHeight="20"></RowDefinition>
+			<RowDefinition Height="Auto" MinHeight="20"></RowDefinition>
+			<RowDefinition Height="Auto" MinHeight="20"></RowDefinition>
+			<RowDefinition Height="Auto" MinHeight="20"></RowDefinition>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<TextBlock Text="剖面类型"  Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource DefaultTextBlockStyle}" Margin="0,0,100,0"  />
+		<ComboBox  x:Name="ClipType"  Width="160" Height="35" HorizontalAlignment="Center"  SelectedItem="{Binding SelectType,UpdateSourceTrigger=PropertyChanged}" Style="{DynamicResource DefaultComboBoxStyle}" Margin="150,0,0,0" />
+		<TextBlock Text="剖面类型"  Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource DefaultTextBlockStyle}" Margin="0,0,100,0"  />
+		<TextBox  Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Width="160" Height="35"  Margin="150,0,0,0" Style="{DynamicResource TbxWaterStyle}" Text="{Binding ClipName}" />
+		<Button  Grid.Row="4" Grid.Column="0"  x:Name="PolygonClip" Content="取消" Command="{Binding PolygonClipCmd}"  Style="{StaticResource DefaultButtonStyle}" Height="30" Width="70" Margin="50,0,200,0"/>
+		<Button   Grid.Row="4" Grid.Column="0" x:Name="NewClipData" Content="确定" Command="{Binding NewClipDataCmd}"   Style="{StaticResource DefaultButtonStyle}" Height="30" Width="70" Margin="50,0,0,0"/>-->
+	</Grid>
+</blankWindow:BlankWindow>
