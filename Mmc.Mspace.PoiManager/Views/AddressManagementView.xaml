@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="Mmc.Mspace.PoiManagerModule.Views.AddressManagementView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Mmc.Mspace.PoiManagerModule.Views"
+             xmlns:controls="clr-namespace:Mmc.Mspace.Theme.Controls;assembly=Mmc.Mspace.Theme"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:Helper="clr-namespace:Mmc.Mspace.Theme.Helper;assembly=Mmc.Mspace.Theme"
+             xmlns:converter="clr-namespace:Mmc.Mspace.Theme.Converter;assembly=Mmc.Mspace.Theme"
+             mc:Ignorable="d" >
+    <UserControl.Resources>
+        <converter:AddressMarginLevelConverter x:Key="AddressMarginLevelConverter"/>
+    </UserControl.Resources>
+	
+    <StackPanel>
+        <!--<TextBox Width="331" Height="32" HorizontalAlignment="Stretch"  Style="{DynamicResource AddressTbxSearchStyle}"  
+                 Helper:TextBoxHelper.IsNeedClearButton="False" Helper:TextBoxHelper.ButtonCommand="{Binding SearchCommand}" 
+                 Text="{Binding SearchAddressText,UpdateSourceTrigger=PropertyChanged}"  Margin="16,8" />-->
+        <Border BorderThickness="0,1,0,0" BorderBrush="Black"/>
+        <controls:Buttons Content="{DynamicResource AMV_Addafirstlevel}" Margin="16,6" Width="331" Height="36" IsEnabled="{Binding AddressBtnEnable}" 
+                          Style="{StaticResource AddressAddNewBtnStyle}" 
+                          Command="{Binding AddFirstLevelCmd}"
+                          HorizontalAlignment="Left" DockPanel.Dock="Top"/>
+        <Border BorderThickness="0,1,0,0" BorderBrush="Black" />
+        <!--Style="{StaticResource AddressTreeViewStyle}" ItemContainerStyle="{DynamicResource TreeViewItemStyle1}" ItemsPanel="{DynamicResource ItemsPanelTemplate1}"-->
+        <TreeView x:Name="departmentTree" Background="Transparent" Height="864" Width="375" ItemsSource="{Binding AddressInfoCollection}"
+                  TreeViewItem.Selected="DepartmentTree_Selected"  Opacity="0.95"
+                  Style="{DynamicResource AddressTreeViewStyle}" 
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                  ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                  DragOver="TreeViewItem_DragOver" Drop="TreeViewItem_Drop" MouseMove="TreeViewItem_MouseMove"
+                   AllowDrop="{Binding AddressBtnEnable}" IsEnabled="{Binding AddressBtnEnable}">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding DataContext.LeftDoubleClickCmd,RelativeSource={RelativeSource AncestorType=TreeView,Mode=FindAncestor}}" 
+                                           CommandParameter="{Binding SelectedItem,ElementName=departmentTree }"/>
+                </i:EventTrigger>
+				
+            </i:Interaction.Triggers>
+			
+            <TreeView.ItemTemplate >
+                <HierarchicalDataTemplate ItemsSource="{Binding ChlidList}" >
+                    <StackPanel Orientation="Horizontal" Height="36" Width="375">
+                        
+                        <!--<StackPanel Width="375" Orientation="Horizontal">
+                            <TextBlock Width="80" TextTrimming="WordEllipsis"  VerticalAlignment="Center" Foreground="#B3BBC5" FontSize="14" ToolTip="{Binding NodeName}" Text="{Binding NodeName}" ></TextBlock>
+                            <Border  Opacity="0.7">
+                                <StackPanel Orientation="Horizontal"  Background ="#50ABFF"  Margin="{Binding AddressLevel, Converter={StaticResource AddressMarginLevelConverter}}">
+                                    <controls:Buttons AllowDrop="False" IsEnabled="{Binding AddressBtnEnable}" Visibility ="{Binding AddBtnVisibility}" 
+                                      ToolTip="{DynamicResource AMV_AddAddress}"
+                                      RIcon="{DynamicResource Address_Add}"
+                                      MouseOverRIcon="{DynamicResource Address_Add_H}"
+                                      PressedRIcon="{DynamicResource Address_Add_C}"
+                                      Style="{StaticResource AddressBtnStyle}" 
+                                      Command="{Binding DataContext.AddChildNodeCmd,RelativeSource={RelativeSource AncestorType=TreeView ,Mode=FindAncestor}}" 
+                                      CommandParameter="{Binding}"/>
+                                    <controls:Buttons  AllowDrop="False" IsEnabled="{Binding AddressBtnEnable}" 
+                                      ToolTip="{DynamicResource AMV_RemoveAddress}"
+                                      RIcon="{DynamicResource Address_Delete}"
+                                      MouseOverRIcon="{DynamicResource Address_Delete_H}"
+                                      PressedRIcon="{DynamicResource Address_Delete_C}"
+                                      Style="{StaticResource AddressBtnStyle}" 
+                                      Command="{Binding DataContext.DeleteChildNodeCmd,RelativeSource={RelativeSource AncestorType=TreeView ,Mode=FindAncestor}}"
+                                      CommandParameter="{Binding}"/>
+                                    <controls:Buttons  AllowDrop="False" IsEnabled="{Binding AddressBtnEnable}" 
+                                      ToolTip="{DynamicResource AMV_SetAddress}"
+                                      RIcon="{DynamicResource Address_Set}"
+                                      MouseOverRIcon="{DynamicResource Address_Set_H}"
+                                      PressedRIcon="{DynamicResource Address_Set_C}"
+                                      Style="{StaticResource AddressBtnStyle}" 
+                                      Command="{Binding DataContext.SetNodeInfoCmd,RelativeSource={RelativeSource AncestorType=TreeView ,Mode=FindAncestor}}"
+                                      CommandParameter="{Binding}"/>
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>-->
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+            <TreeView.ItemContainerStyle>
+                <Style BasedOn="{StaticResource TreeViewItemStyle1}" TargetType="{x:Type TreeViewItem}">
+                    <!--<EventSetter Event="MouseEnter" Handler="TreeViewItem_MouseEnter"/>
+                    <EventSetter Event="TreeViewItem.Drop" Handler="TreeViewItem_Drop"/>
+                    <EventSetter Event="TreeViewItem.MouseMove" Handler="TreeViewItem_MouseMove"/>-->
+                </Style>
+            </TreeView.ItemContainerStyle>
+        </TreeView>
+    </StackPanel>
+</UserControl>

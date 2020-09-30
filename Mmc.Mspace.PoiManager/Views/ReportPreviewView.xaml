@@ -1,0 +1,75 @@
+﻿<blankWindow:BlankWindow x:Class="Mmc.Mspace.PoiManagerModule.Views.ReportPreviewView"
+                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                         xmlns:blankWindow="http://GFramework.org"
+                         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                         xmlns:controls="clr-namespace:Mmc.Mspace.Theme.Controls;assembly=Mmc.Mspace.Theme"
+		                 xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+                         mc:Ignorable="d"
+                         Title="ReportPreviewView" Height="900" Width="600" >
+    <Border Background="{StaticResource LeftWindowBg}" CornerRadius="5,5,5,5">
+        <Grid  x:Name="reportCollection">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="#292C35" blankWindow:BlankWindow.Draggable="True"  Height="32"  x:Name="Titles">
+                <TextBlock x:Name="TitleName" blankWindow:BlankWindow.Draggable="True"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding ViewTitle}" Margin="18,0,0,0" Foreground="White"  FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Button Grid.Row="0" x:Name="CloseButton" Grid.Column="0" Grid.ColumnSpan="2" Command="{Binding CancelCommand}"  Style="{DynamicResource ButtonCloseStyle}" Height="24" Width="24" HorizontalAlignment="Right" VerticalAlignment="Center"  Margin="8" />
+            </Grid>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,4,24,4"  HorizontalAlignment="Right"  x:Name="DownLoadBtn">
+                <TextBlock Width="56"  Text="报告详情" Style="{StaticResource DefaultTextBlockStyle}"/>
+                <controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="15,0,0,0" 
+                         RIcon="{DynamicResource ExportPoi}" 
+                         MouseOverRIcon="{DynamicResource ExportPoi_H}" ToolTip="{DynamicResource WTOutput}"
+                         PressedRIcon="{DynamicResource ExportPoi_C}"  Command="{Binding OutputCommand}"  Style="{StaticResource HomeLeftButtonStyle}"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Orientation="Vertical" Background="#FFFFFF" Margin="24,4,24,32" Height="780" >
+                <TextBlock  Margin="57,140,57,10" HorizontalAlignment="Center" Foreground="Black" Text="{Binding ReportHead}" Style="{StaticResource DefaultTextBlockStyle}" FontSize="30"/>
+                <TextBlock FontSize="20" Margin="57,10" TextWrapping="Wrap" Foreground="Black" HorizontalAlignment="Center"  Text="{Binding FirstPart}"
+                           Style="{StaticResource DefaultTextBlockStyle}">
+                </TextBlock>
+                <Border BorderBrush="Black" BorderThickness="1" Margin="10">
+                    <Grid Height="350" Width="500">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.ColumnSpan="1" Grid.RowSpan="2" Grid.Row="0" Grid.Column="0" ScrollViewer.VerticalScrollBarVisibility="Auto" >
+                            <lvc:CartesianChart LegendLocation="Bottom" Hoverable="False"  Series="{Binding BarSeriesCollections}" >
+                                <lvc:CartesianChart.AxisX>
+                                    <lvc:Axis Labels=" " >
+                                        <lvc:Axis.Separator>
+                                            <lvc:Separator Step="1" ></lvc:Separator>
+                                        </lvc:Axis.Separator>
+                                    </lvc:Axis>
+                                </lvc:CartesianChart.AxisX>
+                                <lvc:CartesianChart.AxisY>
+                                    <lvc:Axis MinValue="0" >
+                                        <lvc:Axis.Separator>
+                                            <lvc:Separator Step="1" ></lvc:Separator>
+                                        </lvc:Axis.Separator>
+                                    </lvc:Axis>
+                                </lvc:CartesianChart.AxisY>
+                            </lvc:CartesianChart>
+                        </Grid>
+                        <!--<controls:Buttons  Style="{DynamicResource HomeLeftButtonStyle}" Grid.Row="0"  HasPathData="True" GroupName="roneAnalysis" IsNeedSelected="True" RIcon="{DynamicResource download_n}" MouseOverRIcon="{DynamicResource download_p}" PressedRIcon="{DynamicResource download_n}" Command="{Binding ExportCommand}" CommandParameter="{Binding .,ElementName=Bartotal}"
+                                     HorizontalAlignment="Right"  Margin="20,20,20,20"   VerticalAlignment="Top" Width="20" Height="20"/>-->
+                    </Grid>
+                </Border>
+                <TextBlock FontSize="20"  Margin="57,10"  TextWrapping="Wrap" Foreground="Black"
+                           HorizontalAlignment="Center"  Text="{Binding LastPart}"
+                           Style="{StaticResource DefaultTextBlockStyle}"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</blankWindow:BlankWindow>

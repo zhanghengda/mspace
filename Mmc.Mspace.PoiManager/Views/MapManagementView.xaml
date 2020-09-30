@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="Mmc.Mspace.PoiManagerModule.Views.MapManagementView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                 xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:local="clr-namespace:Mmc.Mspace.PoiManagerModule.Views"
+			 xmlns:conrols="clr-namespace:Mmc.Mspace.Theme.Controls;assembly=Mmc.Mspace.Theme"
+			   xmlns:Helper="clr-namespace:Mmc.Mspace.Theme.Helper;assembly=Mmc.Mspace.Theme"
+			 mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedCommand}"/>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Unloaded">
+            <i:InvokeCommandAction Command="{Binding UnloadedCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid Margin="3" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition/>
+        </Grid.RowDefinitions>
+		<TextBox Grid.Row="0"  HorizontalAlignment="Stretch"  Style="{DynamicResource AddressTbxSearchStyle}"
+                     Width="321" Height="32" 
+                     Helper:TextBoxHelper.IsNeedClearButton="False" Helper:TextBoxHelper.ButtonCommand="{Binding SearchCommand}"
+                     Text="{Binding SearchText,UpdateSourceTrigger=PropertyChanged}" Margin="16,8,16,8" Grid.ColumnSpan="2"/>
+		<conrols:Buttons Content="添加数据"
+                             Grid.Row="1"  Margin="16,7,16,8"
+                             Width="321" Height="36" IsEnabled="{Binding AddressBtnEnable}" 
+                             Style="{StaticResource AddressAddNewBtnStyle}" 
+                             Command="{Binding AddDataSourceCmd}"
+                             HorizontalAlignment="Left"
+						    Visibility="{Binding UnScreenVisibility}"/>
+		<Border Grid.Row="1" Margin="0,49,0,0" Width="363" BorderBrush="Black" BorderThickness="0,1,0,0"/>
+		<Border Grid.Row="1" Visibility="{Binding ScreenVisibility}">
+			
+            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center" Height="64">
+                <TextBlock  Margin="0,0,20,0"
+                        FontSize="14"  Text="{DynamicResource Splitscreen}" Style="{StaticResource DefaultTextBlockStyle}"></TextBlock>
+                <RadioButton Style="{DynamicResource TwoscreensRadioStyle}" IsChecked="{Binding TwoScreenStatus}"
+						Margin="10,0" Command="{Binding SplitScreenCommand}" CommandParameter="2"
+						/>
+                <RadioButton Style="{DynamicResource ThreescreensRadioStyle}" IsChecked="{Binding ThreeScreenStatus}"
+						Margin="10,0" Command="{Binding SplitScreenCommand}" CommandParameter="3"/>
+                <RadioButton Style="{DynamicResource FourscreensRadioStyle}" IsChecked="{Binding FourScreenStatus}"
+						Margin="10,0" Command="{Binding SplitScreenCommand}" CommandParameter="4"/>
+            </StackPanel>
+
+        </Border>
+        <ListBox x:Name="MenuListBox"  Grid.Row="2"
+                 Width="Auto" 
+                 Style="{DynamicResource MenuListBoxStyle}"
+                 SelectedIndex="0" Background="Transparent"
+                 ItemContainerStyle="{DynamicResource MenuListBoxItemStyle}" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                 ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                 ItemsSource="{Binding MapSource}">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction  Command="{Binding SelectCommand}" CommandParameter="{Binding SelectedItem, ElementName=MenuListBox}"/>
+                </i:EventTrigger>
+                <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                    <i:InvokeCommandAction  Command="{Binding SelectCommand}" CommandParameter="{Binding SelectedItem, ElementName=MenuListBox}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ListBox>
+    </Grid>
+</UserControl>

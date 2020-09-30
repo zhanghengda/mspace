@@ -1,0 +1,53 @@
+﻿<blankWindow:BlankWindow x:Class="Mmc.Mspace.PoiManagerModule.Views.VideoPlayView"
+                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                         xmlns:blankWindow="http://GFramework.org"
+                         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                         mc:Ignorable="d"
+        Title="VideoPlayView" Height="450" Width="800">
+	<Window.Resources>
+		<Style x:Key="btnStyle" TargetType="Button">
+			<Setter Property="Background">
+				<Setter.Value>
+					<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+						<GradientStop Offset="0" Color="White"/>
+						<GradientStop Offset="0.5" Color="#FF554D4A"/>
+					</LinearGradientBrush>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="FontStyle" Value="Italic"/>
+			<Setter Property="Margin" Value="5"/>
+			<Setter Property="Width" Value="60"/>
+			<Setter Property="Foreground" Value="Gold"/>
+			<Style.Triggers>
+				<Trigger Property="Button.IsMouseOver" Value="True">
+					<Setter Property="Foreground" Value="Black"/>
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+
+	</Window.Resources>
+	<Grid>
+		<Border Grid.Row="0" Background="#292C35" Grid.Column="0" Grid.ColumnSpan="2" CornerRadius="5,5,0,0" blankWindow:BlankWindow.Draggable="True" />
+
+		<Button Grid.Row="0" x:Name="CloseButton" Grid.Column="0" Grid.ColumnSpan="2" Command="{Binding CancelCmd}"  Style="{DynamicResource ButtonCloseStyle}" Height="24" Width="24" HorizontalAlignment="Right" VerticalAlignment="Top"  Margin="0,2,8,0" />
+		<MediaElement x:Name="Media"  LoadedBehavior="Manual" UnloadedBehavior="Stop"  
+		 Volume="{Binding ElementName=volumeSlider, Path=Value}" Position="8"
+              MouseLeftButtonUp="mediaElement_MouseLeftButtonUp" Source="{Binding VideoPath}" Margin="0,30,0,50" MediaOpened="Media_MediaOpened" ></MediaElement>
+		<StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="60,100,60,10">
+			<TextBlock Text="{DynamicResource schedule}" Foreground="Gold" VerticalAlignment="Center"/>
+			<Slider x:Name="ProgressSlider"    Width="200" VerticalAlignment="Center"   Background="Transparent" Maximum="1"  Value="{Binding Playtime}" SmallChange="0.01" IsMoveToPointEnabled="False"  />
+			<!--Value="{Binding Playtime}"-->
+			<Button x:Name="playBtn" Content="{DynamicResource Play}" Style="{StaticResource btnStyle}" Click="playBtn_Click"/>
+
+			<Button x:Name="backBtn" Content="{DynamicResource Back}" Style="{StaticResource btnStyle}" Click="backBtn_Click" Margin="5"/>
+			<Button x:Name="forwardBtn" Content="{DynamicResource Forword}"  Style="{StaticResource btnStyle}" Click="forwardBtn_Click"/>
+			<TextBlock Text="{DynamicResource VideoVolume}" Foreground="Gold" VerticalAlignment="Center"/>
+			<Slider x:Name="volumeSlider" Minimum="0" Maximum="1" Value="0.5" Width="200" VerticalAlignment="Center" />
+		</StackPanel>
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="5,5,5,5">
+		</StackPanel>
+
+	</Grid>
+</blankWindow:BlankWindow>

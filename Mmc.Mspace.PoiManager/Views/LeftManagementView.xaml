@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="Mmc.Mspace.PoiManagerModule.Views.LeftManagementView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Mmc.Mspace.PoiManagerModule.Views"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+              Width="363">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedCommand}"/>
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Unloaded">
+            <i:InvokeCommandAction Command="{Binding UnloadedCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Border Grid.Row="2"  Width="363" BorderBrush="Black"  BorderThickness="0,1,0,0"/>
+        <TabControl x:Name="_TabControl"  SelectedIndex="{Binding SelectedIndex,Mode=TwoWay}" Grid.Row="1" Background="#1E2026" MinHeight="250" HorizontalAlignment="Stretch" Style="{DynamicResource TabControlStyle1}">
+            <TabItem Header="{DynamicResource AddressColumn}" Height="32" Style="{DynamicResource CenterTabItemStyle}">
+                <TabItem.Content>
+                    <local:AddressManagementView  DataContext="{Binding AddressManagementVModel}"/>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem Header="{DynamicResource Baselayer}" Height="32" Style="{DynamicResource CenterTabItemStyle}">
+                <TabItem.Content>
+                    <local:MapManagementView  DataContext="{Binding MapManagementVModel}"/>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem Header="{DynamicResource Labeling}" Height="32" Style="{DynamicResource CenterTabItemStyle}">
+                <TabItem.Content>
+                    <local:MarksManagementView  DataContext="{Binding MarksManagementVModel}"/>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem Header="{DynamicResource Labelmanagement}" Height="32" Style="{DynamicResource CenterTabItemStyle}">
+                <TabItem.Content>
+                    <local:LabelManagementView  DataContext="{Binding LabelManagementVModel}"/>
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
+        <Border Grid.Row="2" Margin="0,33,0,0" Width="363" BorderBrush="Black" BorderThickness="0,1,0,0"/>
+    </Grid>
+</UserControl>

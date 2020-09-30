@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4DD21CF7-3B94-4336-9774-AC09C552896B}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>Mmc.Mspace.PoiManagerModule</RootNamespace>
+    <AssemblyName>Mmc.Mspace.PoiManagerModule</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CaptureLib">
+      <HintPath>..\libs\CaptureLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF4, Version=4.3.31.28629, Culture=neutral, PublicKeyToken=1673db7d5906b0ad, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\GalaSoft.MvvmLight.Extras.WPF4.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GFramework.BlankWindow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\GFramework.BlankWindow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Common.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Common.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeCore.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeGeometry.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeGeometry.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Math.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Math.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.RenderControl.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.RenderControl.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.ExcelAdaptorLib">
+      <HintPath>..\binPath\libs\Interop.ExcelAdaptorLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\binPath\libs\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\binPath\libs\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.18\lib\net\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit">
+      <HintPath>..\libs\WPFToolkit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid, Version=3.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.3.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\LayerQueryWktGroup.cs" />
+    <Compile Include="Models\LoadType.cs" />
+    <Compile Include="Models\QueryWktGroup.cs" />
+    <Compile Include="Models\TagTypeModel.cs" />
+    <Compile Include="ViewModels\EditNameVModel.cs" />
+    <Compile Include="ViewModels\LabelTypeAddOrEditViewModel.cs" />
+    <Compile Include="ViewModels\LabelTypeManagementViewModel.cs" />
+    <Compile Include="ViewModels\LayersQueryManagementVModel.cs" />
+    <Compile Include="ViewModels\QueryEnvelopeManagementVModel.cs" />
+    <Compile Include="ViewModels\QueryWktGroupVModel.cs" />
+    <Compile Include="Models\LevelInfoModel.cs" />
+    <Compile Include="ViewModels\ReportRankingViewModel.cs" />
+    <Compile Include="ViewModels\UpLoadAccountImageViewModel.cs" />
+    <Compile Include="ViewModels\VideoPlayViewVMdel.cs" />
+    <Compile Include="Views\EditNameView.xaml.cs">
+      <DependentUpon>EditNameView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LabelFilterPopupView.xaml.cs">
+      <DependentUpon>LabelFilterPopupView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LabelTypeAddOrEditView.xaml.cs">
+      <DependentUpon>LabelTypeAddOrEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LabelTypeManagementView.xaml.cs">
+      <DependentUpon>LabelTypeManagementView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LayersQueryManagementView.xaml.cs">
+      <DependentUpon>LayersQueryManagementView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MultiDataLoadView.xaml.cs">
+      <DependentUpon>MultiDataLoadView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QueryEnvelopeManagementView.xaml.cs">
+      <DependentUpon>QueryEnvelopeManagementView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QueryWktGroupView.xaml.cs">
+      <DependentUpon>QueryWktGroupView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportRankingView.xaml.cs">
+      <DependentUpon>ReportRankingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpLoadAccountImageView.xaml.cs">
+      <DependentUpon>UpLoadAccountImageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VideoPlayView.xaml.cs">
+      <DependentUpon>VideoPlayView.xaml</DependentUpon>
+    </Compile>
+    <None Include="CreateLineViewModel.cs" />
+    <Compile Include="Dto\AccountModel.cs" />
+    <Compile Include="Dto\HeightType.cs" />
+    <Compile Include="Dto\MarksModelsConverter.cs" />
+    <Compile Include="Dto\PostAccountModel.cs" />
+    <Compile Include="Dto\MarkerModel.cs" />
+    <Compile Include="Dto\PoiCategory.cs" />
+    <Compile Include="Dto\PoiDetail.cs" />
+    <Compile Include="Dto\PoiInfo.cs" />
+    <Compile Include="Dto\PoiItem.cs" />
+    <Compile Include="Dto\PoiPositon.cs" />
+    <Compile Include="Dto\PoiType.cs" />
+    <Compile Include="Dto\PostPoi.cs" />
+    <Compile Include="Dto\PostTag.cs" />
+    <Compile Include="Dto\RenderGeometryStyle.cs" />
+    <Compile Include="Dto\RenderLayerDto.cs" />
+    <Compile Include="Dto\TagItem.cs" />
+    <Compile Include="ExportProgressView.xaml.cs">
+      <DependentUpon>ExportProgressView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExportProgressViewModel.cs" />
+    <Compile Include="MakerLine\MakerLineViewModel.cs" />
+    <Compile Include="MakerPolygon\MakerPolygonView.xaml.cs">
+      <DependentUpon>MakerPolygonView.xaml</DependentUpon>
+    </Compile>
+    <None Include="MarkerBaseViewModel.cs" />
+    <Compile Include="MarkerHelper.cs" />
+    <Compile Include="Models\AccountNew.cs" />
+    <Compile Include="Models\AddressInfoModel.cs" />
+    <Compile Include="Models\AreaPoiSelectedModel.cs" />
+    <Compile Include="Models\BaseRenderLayer.cs" />
+    <Compile Include="Models\ImageAccountModel.cs" />
+    <Compile Include="Models\FeatureSelectedModel.cs" />
+    <Compile Include="Models\PlotFeatureSelectedModel.cs" />
+    <Compile Include="Models\LabelInfoModel.cs" />
+    <Compile Include="Models\PostMarkerNew.cs" />
+    <Compile Include="Models\PostAccountNew.cs" />
+    <Compile Include="Models\MarkerNew.cs" />
+    <Compile Include="Models\RenderLayerModel.cs" />
+    <Compile Include="MultiSelectComboBox.xaml.cs" />
+    <Compile Include="OperationStatus.cs" />
+    <Compile Include="PoiBaseViewModel.cs" />
+    <Compile Include="MakerLine\MakerLineView.xaml.cs">
+      <DependentUpon>MakerLineView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MakerPoi\PoiDetailView.xaml.cs">
+      <DependentUpon>PoiDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MakerPoi\PoiDetailViewModel.cs" />
+    <Compile Include="MakerPolygon\MakerPolygonViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ViewModels\AccountListVModel.cs" />
+    <Compile Include="ViewModels\AccountViewModel.cs" />
+    <Compile Include="ViewModels\AddAccountVModel.cs" />
+    <Compile Include="ViewModels\AddressManagementVModel.cs" />
+    <Compile Include="ViewModels\AnalysisiBarChartVModel.cs" />
+    <Compile Include="ViewModels\EditAccountVModel.cs" />
+    <Compile Include="ViewModels\ImageShowViewModel.cs" />
+    <Compile Include="ViewModels\FeatureSelectVModel.cs" />
+    <Compile Include="ViewModels\LabelManagementVModel.cs" />
+    <Compile Include="ViewModels\LeftManagementVModel.cs" />
+    <Compile Include="ViewModels\LineMarkerViewModel.cs" />
+    <Compile Include="ViewModels\MapManagementVModel.cs" />
+    <Compile Include="ViewModels\MarkerViewModel.cs" />
+    <Compile Include="ViewModels\MarksManagementVModel.cs" />
+    <Compile Include="ViewModels\ReportPreViewModel.cs" />
+    <Compile Include="ViewModels\SettingAddressInfoVModel.cs" />
+    <Compile Include="ViewModels\PlotFeatureSelectVModel.cs" />
+    <Compile Include="ViewModels\PoiMarkerViewModel.cs" />
+    <Compile Include="ViewModels\FaceMarkerViewModel.cs" />
+    <Compile Include="ViewModels\TileModifyGeoVModel.cs" />
+    <Compile Include="Views\AccountListView.xaml.cs">
+      <DependentUpon>AccountListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AccountView.xaml.cs">
+      <DependentUpon>AccountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddAccountView.xaml.cs">
+      <DependentUpon>AddAccountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddressManagementView.xaml.cs">
+      <DependentUpon>AddressManagementView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AnalysisiBarChartDisplayView.xaml.cs">
+      <DependentUpon>AnalysisiBarChartDisplayView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditAccountView.xaml.cs">
+      <DependentUpon>EditAccountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ImageShowView.xaml.cs">
+      <DependentUpon>ImageShowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FeatureSelectView.xaml.cs">
+      <DependentUpon>FeatureSelectView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LabelManagementView.xaml.cs">
+      <DependentUpon>LabelManagementView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LeftManagementView.xaml.cs">
+      <DependentUpon>LeftManagementView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoadDataView.xaml.cs">
+      <DependentUpon>LoadDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MapManagementView.xaml.cs">
+      <DependentUpon>MapManagementView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MarkerView.xaml.cs">
+      <DependentUpon>MarkerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MarksManagementView.xaml.cs">
+      <DependentUpon>MarksManagementView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportPreviewView.xaml.cs">
+      <DependentUpon>ReportPreviewView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingAddressInfoView.xaml.cs">
+      <DependentUpon>SettingAddressInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlotFeatureSelectView.xaml.cs">
+      <DependentUpon>PlotFeatureSelectView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TileLayerPropView.xaml.cs">
+      <DependentUpon>TileLayerPropView.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ExportProgressView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MakerPolygon\MakerPolygonView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MakerLine\MakerLineView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MakerPoi\PoiDetailView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MultiSelectComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AccountListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AccountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddAccountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddressManagementView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AnalysisiBarChartDisplayView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\EditAccountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EditNameView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ImageShowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FeatureSelectView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LabelFilterPopupView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LabelManagementView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LabelTypeAddOrEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LabelTypeManagementView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LayersQueryManagementView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LeftManagementView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoadDataView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MapManagementView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MarkerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MarksManagementView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MultiDataLoadView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QueryEnvelopeManagementView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QueryWktGroupView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportPreviewView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportRankingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SettingAddressInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PlotFeatureSelectView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TileLayerPropView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UpLoadAccountImageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VideoPlayView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationConfig\ApplicationConfig.csproj">
+      <Project>{d917d046-2ba8-49da-aeb9-c59db342bb71}</Project>
+      <Name>ApplicationConfig</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.CityMaker.Extension\Gvitech.CityMaker.Extension.csproj">
+      <Project>{6024d395-ea9f-4d2d-887a-0827e16613e2}</Project>
+      <Name>Gvitech.CityMaker.Extension</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.DataSourceAccess\Mmc.DataSourceAccess.csproj">
+      <Project>{24fdf0d9-fec4-465b-915d-01fae99e2184}</Project>
+      <Name>Mmc.DataSourceAccess</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Framework\Mmc.Framework.csproj">
+      <Project>{22939209-2239-4851-8F9B-24B79823793A}</Project>
+      <Name>Mmc.Framework</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Common\Mmc.Mspace.Common.csproj">
+      <Project>{CD3991ED-0326-49CD-A83C-7816AAFD88B7}</Project>
+      <Name>Mmc.Mspace.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Const\Mmc.Mspace.Const.csproj">
+      <Project>{149A90B6-D7BD-4B48-8DAF-2E8151C8CC6B}</Project>
+      <Name>Mmc.Mspace.Const</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.CoreModule\Mmc.Mspace.CoreModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0d5}</Project>
+      <Name>Mmc.Mspace.CoreModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Models\Mmc.Mspace.Models.csproj">
+      <Project>{eab6d6d4-7d10-4999-bb95-9e5d1003f062}</Project>
+      <Name>Mmc.Mspace.Models</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Services\Mmc.Mspace.Services.csproj">
+      <Project>{ADCC12CB-E1D2-436A-8C33-47484AE76E08}</Project>
+      <Name>Mmc.Mspace.Services</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Theme\Mmc.Mspace.Theme.csproj">
+      <Project>{41c024cf-8b5d-4693-b3ff-8d36d2b753c4}</Project>
+      <Name>Mmc.Mspace.Theme</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Windows\Mmc.Windows.csproj">
+      <Project>{8F12BF24-3E61-46E6-8BAA-4BD059203ACA}</Project>
+      <Name>Mmc.Windows</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf.Toolkit\Mmc.Wpf.Toolkit.csproj">
+      <Project>{0faaf359-fce7-4c30-aede-1b290abce6de}</Project>
+      <Name>Mmc.Wpf.Toolkit</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf\Mmc.Wpf.csproj">
+      <Project>{2EFE1860-3671-43C0-9E80-E0A80F438AC3}</Project>
+      <Name>Mmc.Wpf</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.MathUtil\Mmc.MathUtil.csproj">
+      <Project>{BB0E5078-E0F8-43D5-8620-E11425DCB3F7}</Project>
+      <Name>Mmc.MathUtil</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Extensions\System.Extensions.csproj">
+      <Project>{a3f5fb96-7422-4f2f-a996-2c5aa2f5d798}</Project>
+      <Name>System.Extensions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
