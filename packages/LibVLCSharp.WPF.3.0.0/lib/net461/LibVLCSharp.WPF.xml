@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibVLCSharp.WPF</name>
+    </assembly>
+    <members>
+        <member name="M:LibVLCSharp.WPF.ForegroundWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>
