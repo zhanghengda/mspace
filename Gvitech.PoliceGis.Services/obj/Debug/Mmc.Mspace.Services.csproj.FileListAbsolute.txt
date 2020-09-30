@@ -24,3 +24,16 @@ D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Services\obj\Debug\Mmc.Mspace.Services
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Services\obj\Debug\Mmc.Mspace.Services.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Services\obj\Debug\Mmc.Mspace.Services.dll
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Services\obj\Debug\Mmc.Mspace.Services.pdb
+D:\GitHub\mspace\binPath\Mmc.Mspace.Services.dll
+D:\GitHub\mspace\binPath\Mmc.Mspace.Services.pdb
+D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\Mmc.Mspace.Services.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\Controls\SearchControl.baml
+D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\Controls\SearchControl.g.cs
+D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\ShowCaptureObjectService\ShowCaptureObjectServiceView.g.cs
+D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\Mmc.Mspace.Services_MarkupCompile.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\Mmc.Mspace.Services_MarkupCompile.lref
+D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\ShowCaptureObjectService\ShowCaptureObjectServiceView.baml
+D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\Mmc.Mspace.Services.g.resources
+D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\Mmc.Mspace.Services.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\Mmc.Mspace.Services.dll
+D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\Mmc.Mspace.Services.pdb

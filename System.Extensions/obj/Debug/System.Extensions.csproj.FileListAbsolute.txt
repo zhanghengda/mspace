@@ -10,3 +10,9 @@ D:\Mspace\mspace\mspace\System.Extensions\obj\Debug\System.Extensions.csprojAsse
 D:\Mspace\mspace\mspace\System.Extensions\obj\Debug\System.Extensions.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\System.Extensions\obj\Debug\System.Extensions.dll
 D:\Mspace\mspace\mspace\System.Extensions\obj\Debug\System.Extensions.pdb
+D:\GitHub\mspace\binPath\System.Extensions.dll
+D:\GitHub\mspace\binPath\System.Extensions.pdb
+D:\GitHub\mspace\System.Extensions\obj\Debug\System.Extensions.csprojAssemblyReference.cache
+D:\GitHub\mspace\System.Extensions\obj\Debug\System.Extensions.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\System.Extensions\obj\Debug\System.Extensions.dll
+D:\GitHub\mspace\System.Extensions\obj\Debug\System.Extensions.pdb

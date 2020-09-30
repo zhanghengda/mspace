@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Mspace\mspace\mspace\Mmc.Mspace.RegularInspectionModule\obj\Debug\
+D:\GitHub\mspace\Mmc.Mspace.RegularInspectionModule\obj\Debug\
 Mmc.Mspace.RegularInspectionModule
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 1332547769
 
 371418536167
-461086400948
+46-379761219
 Views\AnalysisiBarChartDisplayView.xaml;Views\AnalysisiChartDisplayView.xaml;Views\ChangeRegInsNameView.xaml;Views\HistoryDomView.xaml;Views\ImageDisplayView.xaml;Views\NewInspectionView.xaml;Views\PhotosToTraceView.xaml;Views\RegInsImportDataView.xaml;Views\RegularInspectionView.xaml;Views\RoneAnalysisView.xaml;Views\ScreenHintView.xaml;Views\UploadView.xaml;Views\VideoPlayView.xaml;
 
 False

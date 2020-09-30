@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Theme\obj\Debug\
+D:\GitHub\mspace\Gvitech.PoliceGis.Theme\obj\Debug\
 Mmc.Mspace.Theme
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 641698183325
 
 37-1059354956
-12808034870
+12-2122876107
 BootstrapStyles\BootstrapBaseStyle.xaml;BootstrapStyles\BootstrapButton.xaml;BootstrapStyles\BootstrapColors.xaml;BootstrapStyles\BootstrapFonts.xaml;BootstrapStyles\BootstrapFormControl.xaml;BootstrapStyles\BootstrapInputGroup.xaml;BootstrapStyles\BootstrapLabel.xaml;BootstrapStyles\BootstrapPanel.xaml;BootstrapStyles\BootstrapPath.xaml;BootstrapStyles\BootstrapProgressBar.xaml;BootstrapStyles\BootstrapSizes.xaml;BootstrapStyles\BootstrapWindow.xaml;brushesstyle.xaml;buttonstyle.xaml;checkboxstyle.xaml;comboboxstyle.xaml;commondatatemplate.xaml;Controls\BatteryView.xaml;Controls\DashboardAvoidance.xaml;Controls\DashboardDirection.xaml;Controls\DashboardHeight.xaml;Controls\DashboardMain.xaml;Controls\DashboardRoll.xaml;Controls\DashboardSpeed.xaml;Controls\DashboardTilt.xaml;Controls\ImageSwitchView.xaml;Controls\PictureView.xaml;converters.xaml;custom.xaml;datagridstyle.xaml;geodatastyle.xaml;groupboxstyle.xaml;LabelStyle.xaml;listboxstyle.xaml;Pop\DefaultSecondWindow.xaml;Pop\MmcCombox.xaml;Pop\MmcConfirmationBox.xaml;Pop\MmcMsBox.xaml;Pop\MmcTopCombox.xaml;Pop\NewMmcCombobox.xaml;Pop\UcDatePickerEnd.xaml;Pop\UcDatePickerStart.xaml;scrollviewerstyle.xaml;styles.xaml;Styles\BaseColor.xaml;Styles\BorderStyle.xaml;Styles\Button.xaml;Styles\Calendar.xaml;Styles\CheckBox.xaml;Styles\ComboBox.xaml;Styles\DataGrid.xaml;Styles\Icons.xaml;Styles\LabelStyle.xaml;Styles\ListBox.xaml;Styles\RadioButton.xaml;Styles\ScrollViewer.xaml;Styles\SliderStyle.xaml;Styles\TabControl.xaml;Styles\TextBlock.xaml;Styles\TextBox.xaml;Styles\TreeView.xaml;Styles\Window.xaml;textblockstyle.xaml;textboxstyle.xaml;
 
 False

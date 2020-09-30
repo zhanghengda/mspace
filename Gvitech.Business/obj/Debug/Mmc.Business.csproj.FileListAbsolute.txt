@@ -10,3 +10,9 @@ D:\Mspace\mspace\mspace\Gvitech.Business\obj\Debug\Mmc.Business.csprojAssemblyRe
 D:\Mspace\mspace\mspace\Gvitech.Business\obj\Debug\Mmc.Business.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.Business\obj\Debug\Mmc.Business.dll
 D:\Mspace\mspace\mspace\Gvitech.Business\obj\Debug\Mmc.Business.pdb
+D:\GitHub\mspace\binPath\Mmc.Business.dll
+D:\GitHub\mspace\binPath\Mmc.Business.pdb
+D:\GitHub\mspace\Gvitech.Business\obj\Debug\Mmc.Business.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.Business\obj\Debug\Mmc.Business.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.Business\obj\Debug\Mmc.Business.dll
+D:\GitHub\mspace\Gvitech.Business\obj\Debug\Mmc.Business.pdb

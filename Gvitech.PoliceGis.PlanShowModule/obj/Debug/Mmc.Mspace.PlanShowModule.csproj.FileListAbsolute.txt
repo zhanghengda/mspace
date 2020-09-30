@@ -20,3 +20,14 @@ D:\Mspace\mspace\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.Pl
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.dll
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.pdb
+D:\GitHub\mspace\binPath\Mmc.Mspace.PlanShowModule.dll
+D:\GitHub\mspace\binPath\Mmc.Mspace.PlanShowModule.pdb
+D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\PlanShow\PreviewView.g.cs
+D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule_MarkupCompile.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule_MarkupCompile.lref
+D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\PlanShow\PreviewView.baml
+D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.g.resources
+D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.dll
+D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.pdb

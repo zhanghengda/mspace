@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\
 Mmc.Mspace.CoreModule
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 2-1774955217
 
 8-1826281425
-152005172001
+15-1843301098
 PoliceCommon\PoliceCommonView.xaml;WebView\WebView.xaml;
 
 False

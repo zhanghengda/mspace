@@ -12,3 +12,10 @@ D:\Mspace\mspace\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CoreCompile
 D:\Mspace\mspace\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CopyComplete
 D:\Mspace\mspace\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.dll
 D:\Mspace\mspace\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.pdb
+D:\GitHub\mspace\binPath\Mmc.Windows.dll
+D:\GitHub\mspace\binPath\Mmc.Windows.pdb
+D:\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CopyComplete
+D:\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.dll
+D:\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.pdb

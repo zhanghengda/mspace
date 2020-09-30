@@ -24,3 +24,16 @@ D:\Mspace\mspace\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateRes
 D:\Mspace\mspace\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.dll
 D:\Mspace\mspace\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+D:\GitHub\mspace\binPath\RisCaptureLib.dll
+D:\GitHub\mspace\binPath\RisCaptureLib.pdb
+D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.csprojAssemblyReference.cache
+D:\GitHub\mspace\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+D:\GitHub\mspace\RisCaptureLib\obj\Debug\Themes\Generic.baml
+D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.cache
+D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.dll
+D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.pdb

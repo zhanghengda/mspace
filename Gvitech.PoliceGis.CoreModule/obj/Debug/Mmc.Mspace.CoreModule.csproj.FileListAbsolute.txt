@@ -24,3 +24,16 @@ D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreMo
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.dll
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.pdb
+D:\GitHub\mspace\binPath\Mmc.Mspace.CoreModule.dll
+D:\GitHub\mspace\binPath\Mmc.Mspace.CoreModule.pdb
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\PoliceCommon\PoliceCommonView.g.cs
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\WebView\WebView.g.cs
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule_MarkupCompile.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule_MarkupCompile.lref
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\PoliceCommon\PoliceCommonView.baml
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\WebView\WebView.baml
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.g.resources
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.dll
+D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.pdb

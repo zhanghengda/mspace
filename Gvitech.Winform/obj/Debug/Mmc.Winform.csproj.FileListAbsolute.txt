@@ -20,3 +20,14 @@ D:\Mspace\mspace\mspace\Gvitech.Winform\obj\Debug\Mmc.Winform.csproj.GenerateRes
 D:\Mspace\mspace\mspace\Gvitech.Winform\obj\Debug\Mmc.Winform.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.Winform\obj\Debug\Mmc.Winform.dll
 D:\Mspace\mspace\mspace\Gvitech.Winform\obj\Debug\Mmc.Winform.pdb
+D:\GitHub\mspace\binPath\Mmc.Winform.dll
+D:\GitHub\mspace\binPath\Mmc.Winform.pdb
+D:\GitHub\mspace\Gvitech.Winform\obj\Debug\Mmc.Winform.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.Winform\obj\Debug\Interop.WMPLib.dll
+D:\GitHub\mspace\Gvitech.Winform\obj\Debug\AxInterop.WMPLib.dll
+D:\GitHub\mspace\Gvitech.Winform\obj\Debug\Mmc.Winform.csproj.ResolveComReference.cache
+D:\GitHub\mspace\Gvitech.Winform\obj\Debug\Mmc.Winform.MediaLib.resources
+D:\GitHub\mspace\Gvitech.Winform\obj\Debug\Mmc.Winform.csproj.GenerateResource.cache
+D:\GitHub\mspace\Gvitech.Winform\obj\Debug\Mmc.Winform.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.Winform\obj\Debug\Mmc.Winform.dll
+D:\GitHub\mspace\Gvitech.Winform\obj\Debug\Mmc.Winform.pdb

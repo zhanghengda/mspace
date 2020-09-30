@@ -10,3 +10,9 @@ D:\Mspace\mspace\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.
 D:\Mspace\mspace\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.dll
 D:\Mspace\mspace\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.pdb
+D:\GitHub\mspace\binPath\Gvitech.CityMaker.Extension.dll
+D:\GitHub\mspace\binPath\Gvitech.CityMaker.Extension.pdb
+D:\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.dll
+D:\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.pdb

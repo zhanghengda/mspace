@@ -16,3 +16,12 @@ D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.csproj.
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.dll
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.pdb
+D:\GitHub\mspace\binPath\Mmc.Mspace.Main.dll
+D:\GitHub\mspace\binPath\Mmc.Mspace.Main.pdb
+D:\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.g.resources
+D:\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.Properties.Resources.resources
+D:\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.csproj.GenerateResource.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.dll
+D:\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.pdb

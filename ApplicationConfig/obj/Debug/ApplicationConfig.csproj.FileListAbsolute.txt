@@ -10,3 +10,9 @@ D:\Mspace\mspace\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.csprojAsse
 D:\Mspace\mspace\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.dll
 D:\Mspace\mspace\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.pdb
+D:\GitHub\mspace\binPath\ApplicationConfig.dll
+D:\GitHub\mspace\binPath\ApplicationConfig.pdb
+D:\GitHub\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.csprojAssemblyReference.cache
+D:\GitHub\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.dll
+D:\GitHub\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.pdb

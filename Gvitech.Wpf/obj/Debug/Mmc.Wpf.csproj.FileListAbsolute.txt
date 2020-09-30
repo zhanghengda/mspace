@@ -10,3 +10,9 @@ D:\Mspace\mspace\mspace\Gvitech.Wpf\obj\Debug\Mmc.Wpf.csprojAssemblyReference.ca
 D:\Mspace\mspace\mspace\Gvitech.Wpf\obj\Debug\Mmc.Wpf.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.Wpf\obj\Debug\Mmc.Wpf.dll
 D:\Mspace\mspace\mspace\Gvitech.Wpf\obj\Debug\Mmc.Wpf.pdb
+D:\GitHub\mspace\binPath\Mmc.Wpf.dll
+D:\GitHub\mspace\binPath\Mmc.Wpf.pdb
+D:\GitHub\mspace\Gvitech.Wpf\obj\Debug\Mmc.Wpf.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.Wpf\obj\Debug\Mmc.Wpf.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.Wpf\obj\Debug\Mmc.Wpf.dll
+D:\GitHub\mspace\Gvitech.Wpf\obj\Debug\Mmc.Wpf.pdb

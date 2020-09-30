@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Mspace\mspace\mspace\FireControlModule\obj\Debug\
+D:\GitHub\mspace\FireControlModule\obj\Debug\
 FireControlModule
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 13-1803367912
 
 581471939771
-37-256438831
+3781007058
 BuildContentView.xaml;BuildInfo\BuildDetailView.xaml;BuildInfo\ArchivesView.xaml;FireIot\FloorMapView.xaml;FireIot\PoliceEventExView.xaml;InsideBuild\InsideBuildView.xaml;PeopleInfo\PeopleDetailView.xaml;statisticlegened.xaml;SupervisoryReview\ToggleLayersView.xaml;UnitInfo\Full3dView.xaml;UnitInfo\UnitDetailView.xaml;VideoMonitor\VideoMonitorView.xaml;VideoMonitor\VideoMonitorExView.xaml;
 
 False

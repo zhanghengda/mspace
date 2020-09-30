@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Mspace\mspace\mspace\Mmc.Mspace.PoiManager\obj\Debug\
+D:\GitHub\mspace\Mmc.Mspace.PoiManager\obj\Debug\
 Mmc.Mspace.PoiManagerModule
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 34-1153708382
 
 106-1240400887
-54540130811
+54404108162
 ExportProgressView.xaml;MakerPolygon\MakerPolygonView.xaml;MakerLine\MakerLineView.xaml;MakerPoi\PoiDetailView.xaml;MultiSelectComboBox.xaml;Views\AccountListView.xaml;Views\AccountView.xaml;Views\AddAccountView.xaml;Views\AddressManagementView.xaml;Views\AnalysisiBarChartDisplayView.xaml;Views\EditAccountView.xaml;Views\EditNameView.xaml;Views\ImageShowView.xaml;Views\FeatureSelectView.xaml;Views\LabelFilterPopupView.xaml;Views\LabelManagementView.xaml;Views\LabelTypeAddOrEditView.xaml;Views\LabelTypeManagementView.xaml;Views\LayersQueryManagementView.xaml;Views\LeftManagementView.xaml;Views\LoadDataView.xaml;Views\MapManagementView.xaml;Views\MarkerView.xaml;Views\MarksManagementView.xaml;Views\MultiDataLoadView.xaml;Views\QueryEnvelopeManagementView.xaml;Views\QueryWktGroupView.xaml;Views\ReportPreviewView.xaml;Views\ReportRankingView.xaml;Views\SettingAddressInfoView.xaml;Views\PlotFeatureSelectView.xaml;Views\TileLayerPropView.xaml;Views\UpLoadAccountImageView.xaml;Views\VideoPlayView.xaml;
 
 False

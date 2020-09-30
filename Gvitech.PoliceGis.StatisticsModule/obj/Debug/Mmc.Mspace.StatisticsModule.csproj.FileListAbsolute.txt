@@ -24,3 +24,16 @@ D:\Mspace\mspace\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.dll
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.pdb
+D:\GitHub\mspace\binPath\Mmc.Mspace.StatisticsModule.dll
+D:\GitHub\mspace\binPath\Mmc.Mspace.StatisticsModule.pdb
+D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\StatisticsWebView.g.cs
+D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule_MarkupCompile.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule_MarkupCompile.lref
+D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\StatisticsWebView.baml
+D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.g.resources
+D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.Properties.Resources.resources
+D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.csproj.GenerateResource.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.dll
+D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.pdb

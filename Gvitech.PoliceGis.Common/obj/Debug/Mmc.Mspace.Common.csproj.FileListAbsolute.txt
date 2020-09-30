@@ -12,3 +12,10 @@ D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Common\obj\Debug\Mmc.Mspace.Common.csp
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Common\obj\Debug\Mmc.Mspace.Common.csproj.CopyComplete
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Common\obj\Debug\Mmc.Mspace.Common.dll
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Common\obj\Debug\Mmc.Mspace.Common.pdb
+D:\GitHub\mspace\binPath\Mmc.Mspace.Common.dll
+D:\GitHub\mspace\binPath\Mmc.Mspace.Common.pdb
+D:\GitHub\mspace\Gvitech.PoliceGis.Common\obj\Debug\Mmc.Mspace.Common.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.Common\obj\Debug\Mmc.Mspace.Common.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.Common\obj\Debug\Mmc.Mspace.Common.csproj.CopyComplete
+D:\GitHub\mspace\Gvitech.PoliceGis.Common\obj\Debug\Mmc.Mspace.Common.dll
+D:\GitHub\mspace\Gvitech.PoliceGis.Common\obj\Debug\Mmc.Mspace.Common.pdb

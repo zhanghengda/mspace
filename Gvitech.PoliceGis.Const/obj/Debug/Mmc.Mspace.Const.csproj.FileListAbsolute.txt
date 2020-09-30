@@ -10,3 +10,9 @@ D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.cspro
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.dll
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.pdb
+D:\GitHub\mspace\binPath\Mmc.Mspace.Const.dll
+D:\GitHub\mspace\binPath\Mmc.Mspace.Const.pdb
+D:\GitHub\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.dll
+D:\GitHub\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.pdb

@@ -10,3 +10,9 @@ D:\Mspace\mspace\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.csprojAssembly
 D:\Mspace\mspace\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.dll
 D:\Mspace\mspace\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.pdb
+D:\GitHub\mspace\binPath\Mmc.Framework.dll
+D:\GitHub\mspace\binPath\Mmc.Framework.pdb
+D:\GitHub\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.dll
+D:\GitHub\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.pdb

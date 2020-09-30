@@ -10,3 +10,9 @@ D:\Mspace\mspace\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.
 D:\Mspace\mspace\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.dll
 D:\Mspace\mspace\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.pdb
+D:\GitHub\mspace\binPath\Mmc.DataSourceAccess.dll
+D:\GitHub\mspace\binPath\Mmc.DataSourceAccess.pdb
+D:\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.dll
+D:\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.pdb

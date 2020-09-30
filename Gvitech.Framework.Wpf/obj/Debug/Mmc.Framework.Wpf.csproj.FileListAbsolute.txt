@@ -14,3 +14,11 @@ D:\Mspace\mspace\mspace\Gvitech.Framework.Wpf\obj\Debug\Mmc.Framework.Wpf.csproj
 D:\Mspace\mspace\mspace\Gvitech.Framework.Wpf\obj\Debug\Mmc.Framework.Wpf.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.Framework.Wpf\obj\Debug\Mmc.Framework.Wpf.dll
 D:\Mspace\mspace\mspace\Gvitech.Framework.Wpf\obj\Debug\Mmc.Framework.Wpf.pdb
+D:\GitHub\mspace\binPath\Mmc.Framework.Wpf.dll
+D:\GitHub\mspace\binPath\Mmc.Framework.Wpf.pdb
+D:\GitHub\mspace\Gvitech.Framework.Wpf\obj\Debug\Mmc.Framework.Wpf.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.Framework.Wpf\obj\Debug\Mmc.Framework.Wpf.Properties.Resources.resources
+D:\GitHub\mspace\Gvitech.Framework.Wpf\obj\Debug\Mmc.Framework.Wpf.csproj.GenerateResource.cache
+D:\GitHub\mspace\Gvitech.Framework.Wpf\obj\Debug\Mmc.Framework.Wpf.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.Framework.Wpf\obj\Debug\Mmc.Framework.Wpf.dll
+D:\GitHub\mspace\Gvitech.Framework.Wpf\obj\Debug\Mmc.Framework.Wpf.pdb

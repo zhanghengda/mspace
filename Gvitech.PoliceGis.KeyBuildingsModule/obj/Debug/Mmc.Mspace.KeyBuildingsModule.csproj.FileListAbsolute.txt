@@ -20,3 +20,14 @@ D:\Mspace\mspace\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspac
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.dll
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.pdb
+D:\GitHub\mspace\binPath\Mmc.Mspace.KeyBuildingsModule.dll
+D:\GitHub\mspace\binPath\Mmc.Mspace.KeyBuildingsModule.pdb
+D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\KeyBuildings\KeyBuildinsView.g.cs
+D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule_MarkupCompile.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule_MarkupCompile.lref
+D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\KeyBuildings\KeyBuildinsView.baml
+D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.g.resources
+D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.dll
+D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.pdb

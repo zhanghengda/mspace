@@ -10,3 +10,9 @@ D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.Ci
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.csproj.CoreCompileInputs.cache
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.dll
 D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.pdb
+D:\GitHub\mspace\binPath\Mmc.Mspace.CityViewModule.dll
+D:\GitHub\mspace\binPath\Mmc.Mspace.CityViewModule.pdb
+D:\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.csprojAssemblyReference.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.dll
+D:\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.pdb

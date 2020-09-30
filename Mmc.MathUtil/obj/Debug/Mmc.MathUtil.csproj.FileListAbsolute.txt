@@ -12,3 +12,10 @@ D:\Mspace\mspace\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.csproj.CoreCompileIn
 D:\Mspace\mspace\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.csproj.CopyComplete
 D:\Mspace\mspace\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.dll
 D:\Mspace\mspace\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.pdb
+D:\GitHub\mspace\binPath\Mmc.MathUtil.dll
+D:\GitHub\mspace\binPath\Mmc.MathUtil.pdb
+D:\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.csprojAssemblyReference.cache
+D:\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.csproj.CoreCompileInputs.cache
+D:\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.csproj.CopyComplete
+D:\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.dll
+D:\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.pdb

@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Mspace\mspace\mspace\Mmc.Mspace.RoutePlanning\obj\Debug\
+D:\GitHub\mspace\Mmc.Mspace.RoutePlanning\obj\Debug\
 Mmc.Mspace.RoutePlanning
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 12-327120620
 
 52999641904
-411022072082
+41-207958818
 Design\RouteDesignView.xaml;FlySimulateParameterView.xaml;Grid\GridUI.xaml;MappingCameraAddView.xaml;PathplanningView.xaml;RoutePlanShowPageView.xaml;RoutePlanView.xaml;RoutePointEditView.xaml;UploadRouteTipsView.xaml;Views\RouteAdjustmentView.xaml;Views\RoutePlanDetailView.xaml;Views\RoutePlanningView.xaml;
 
 False
