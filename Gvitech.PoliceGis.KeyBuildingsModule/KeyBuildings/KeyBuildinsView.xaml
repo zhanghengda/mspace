@@ -1,0 +1,72 @@
+<UserControl
+	x:Class="Mmc.Mspace.KeyBuildingsModule.KeyBuildings.KeyBuildinsView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:gvi="http://schemas.mmc.com" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	Style="{DynamicResource ViewUIStyle}" xmlns:keybuildings="clr-namespace:Mmc.Mspace.KeyBuildingsModule.KeyBuildings">
+	<FrameworkElement.Resources>
+		<ResourceDictionary>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+            <DataTemplate
+				x:Key="LayerDataTemplate">
+				<DockPanel
+					Margin="3">
+					<CheckBox
+						VerticalAlignment="Center"
+						VerticalContentAlignment="Center"
+						DockPanel.Dock="Right"
+						Style="{DynamicResource SwitchCheckStyle}"
+						IsChecked="{Binding IsVisible}" />
+					<TextBlock
+						HorizontalAlignment="Left"
+						VerticalAlignment="Center"
+						FontSize="16"
+						Foreground="#FFFFFFFF"
+						Text="{Binding Name}" />
+				</DockPanel>
+			</DataTemplate>
+		</ResourceDictionary>
+	</FrameworkElement.Resources>
+	<StackPanel>
+		<Border
+			Background="{DynamicResource P75BlackBrush}"
+			CornerRadius="4">
+			<GroupBox
+				Padding="5">
+				<HeaderedContentControl.Header>
+					<TextBlock
+						Style="{DynamicResource ViewHeaderStyle}"
+						Text="{Binding Content}" />
+				</HeaderedContentControl.Header>
+				<StackPanel>
+					<ItemsControl
+						ItemTemplate="{StaticResource LayerDataTemplate}"
+						ItemsSource="{Binding Layers}" />
+					<ItemsControl
+						Name="otherLayers"
+						ItemTemplate="{StaticResource LayerDataTemplate}"
+						ItemsSource="{Binding OtherLayers}"
+						Visibility="{Binding IsChecked, ElementName=tg, Converter={StaticResource BooleanToVisibilityConverter}}" />
+					<ToggleButton
+						Name="tg"
+						Background="#00FFFFFF"
+						BorderBrush="#00FFFFFF"
+						Content="........."
+						Foreground="#FFF5F5F5"
+						Style="{DynamicResource ExToggleButtonStyle}" />
+				</StackPanel>
+			</GroupBox>
+		</Border>
+		<Border
+			Margin="0,5,0,0"
+			Background="{DynamicResource P75BlackBrush}"
+			CornerRadius="4">
+			<GroupBox
+				Padding="5">
+				<HeaderedContentControl.Header>
+					<TextBlock
+						Style="{DynamicResource ViewHeaderStyle}"
+						Text="{DynamicResource Query}" />
+				</HeaderedContentControl.Header>
+				<gvi:SearchControl />
+			</GroupBox>
+		</Border>
+	</StackPanel>
+</UserControl>
