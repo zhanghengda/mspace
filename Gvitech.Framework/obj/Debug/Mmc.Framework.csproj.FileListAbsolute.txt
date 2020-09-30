@@ -1,0 +1,12 @@
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Framework.dll
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Framework.pdb
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.csprojAssemblyReference.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.csproj.CoreCompileInputs.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.dll
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.pdb
+D:\Mspace\mspace\mspace\binPath\Mmc.Framework.dll
+D:\Mspace\mspace\mspace\binPath\Mmc.Framework.pdb
+D:\Mspace\mspace\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.csprojAssemblyReference.cache
+D:\Mspace\mspace\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.csproj.CoreCompileInputs.cache
+D:\Mspace\mspace\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.dll
+D:\Mspace\mspace\mspace\Gvitech.Framework\obj\Debug\Mmc.Framework.pdb

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{22939209-2239-4851-8F9B-24B79823793A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Mmc.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>..\binPath\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\binPath\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gvitech.CityMaker.Common.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Common.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeCore.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeCore.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeGeometry.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeGeometry.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeUndoRedo.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeUndoRedo.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Math.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Math.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.RenderControl.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.RenderControl.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Resource.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Resource.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Extensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gvitech.Framework.Draw\CreateGeometryTool.cs" />
+    <Compile Include="Gvitech.Framework.Draw\CreateRenderTool.cs" />
+    <Compile Include="Gvitech.Framework.Draw\DrawCustomer.cs" />
+    <Compile Include="Gvitech.Framework.Draw\DrawObject.cs" />
+    <Compile Include="Gvitech.Framework.Draw\DrawSegmentsTool.cs" />
+    <Compile Include="Gvitech.Framework.Draw\RCDrawManager.cs" />
+    <Compile Include="Gvitech.Framework.Core\FCObject.cs" />
+    <Compile Include="Gvitech.Framework.Core\FrameCallback.cs" />
+    <Compile Include="Gvitech.Framework.Core\FrameHandler.cs" />
+    <Compile Include="Gvitech.Framework.Core\KeyHandler.cs" />
+    <Compile Include="Gvitech.Framework.Core\MapViewportModeChangedEventHandler.cs" />
+    <Compile Include="Gvitech.Framework.Core\MouseButtonHandler.cs" />
+    <Compile Include="Gvitech.Framework.enums\CursorStyle.cs" />
+    <Compile Include="Gvitech.Framework.Services\BaseFeatureLayer.cs" />
+    <Compile Include="Gvitech.Framework.Services\GviMap.cs" />
+    <Compile Include="Gvitech.Framework.Services\IBaseFeatureLayer.cs" />
+    <Compile Include="Gvitech.Framework.Services\ImageLabelManager.cs" />
+    <Compile Include="Gvitech.Framework.Services\ISymbolManager.cs" />
+    <Compile Include="Gvitech.Framework.Services\LinePolyManager.cs" />
+    <Compile Include="Gvitech.Framework.Services\PoiManager.cs" />
+    <Compile Include="Gvitech.Framework.Services\PointManager.cs" />
+    <Compile Include="Gvitech.Framework.Services\RenderObjManager.cs" />
+    <Compile Include="Gvitech.Framework.Services\SkyBox.cs" />
+    <Compile Include="Gvitech.Framework.Services\SkyBoxService.cs" />
+    <Compile Include="Gvitech.Framework.Services\SymbolManager.cs" />
+    <Compile Include="Gvitech.Framework.Version\AssemblyInfo.cs" />
+    <Compile Include="IFeatureClassExtension.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gvitech.CityMaker.Extension\Gvitech.CityMaker.Extension.csproj">
+      <Project>{6024d395-ea9f-4d2d-887a-0827e16613e2}</Project>
+      <Name>Gvitech.CityMaker.Extension</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Common\Mmc.Mspace.Common.csproj">
+      <Project>{CD3991ED-0326-49CD-A83C-7816AAFD88B7}</Project>
+      <Name>Mmc.Mspace.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Const\Mmc.Mspace.Const.csproj">
+      <Project>{149A90B6-D7BD-4B48-8DAF-2E8151C8CC6B}</Project>
+      <Name>Mmc.Mspace.Const</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Windows\Mmc.Windows.csproj">
+      <Project>{8f12bf24-3e61-46e6-8baa-4bd059203aca}</Project>
+      <Name>Mmc.Windows</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
