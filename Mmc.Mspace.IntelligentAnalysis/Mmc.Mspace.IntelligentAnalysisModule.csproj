@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9342BC75-2640-44B9-B3D9-9CEF16362481}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>Mmc.Mspace.IntelligentAnalysisModule</RootNamespace>
+    <AssemblyName>Mmc.Mspace.IntelligentAnalysisModule</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GFramework.BlankWindow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\GFramework.BlankWindow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Common.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Common.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeGeometry.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeGeometry.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Math.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Math.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.RenderControl.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.RenderControl.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Resource.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Resource.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CharacterAnalysis\CharacAnalyPythonProcess.cs" />
+    <Compile Include="CharacterAnalysis\CharacAnalysModel.cs" />
+    <Compile Include="CharacterAnalysis\CharactAnalysView.xaml.cs">
+      <DependentUpon>CharactAnalysView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterAnalysis\CharactAnalysViewModel.cs" />
+    <Compile Include="CharacterAnalysis\ImgCharactAnalys.cs" />
+    <Compile Include="CharacterAnalysis\AnalysisView.xaml.cs">
+      <DependentUpon>AnalysisView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterAnalysis\VideoAnalys.cs" />
+    <Compile Include="DemCompare\DemCompareViewModel.cs" />
+    <Compile Include="DemCompare\DsmSubStarct.cs" />
+    <Compile Include="CharacterAnalysis\ImportImgView.xaml.cs">
+      <DependentUpon>ImportImgView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FloodAnalysis\FloodView.xaml.cs" />
+    <Compile Include="FloodAnalysis\FloodViewModel.cs" />
+    <Compile Include="MultiViewCompare\CompareViewExModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationConfig\ApplicationConfig.csproj">
+      <Project>{D917D046-2BA8-49DA-AEB9-C59DB342BB71}</Project>
+      <Name>ApplicationConfig</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.CityMaker.Extension\Gvitech.CityMaker.Extension.csproj">
+      <Project>{6024d395-ea9f-4d2d-887a-0827e16613e2}</Project>
+      <Name>Gvitech.CityMaker.Extension</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.DataSourceAccess\Mmc.DataSourceAccess.csproj">
+      <Project>{24FDF0D9-FEC4-465B-915D-01FAE99E2184}</Project>
+      <Name>Mmc.DataSourceAccess</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Framework\Mmc.Framework.csproj">
+      <Project>{22939209-2239-4851-8f9b-24b79823793a}</Project>
+      <Name>Mmc.Framework</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Common\Mmc.Mspace.Common.csproj">
+      <Project>{cd3991ed-0326-49cd-a83c-7816aafd88b7}</Project>
+      <Name>Mmc.Mspace.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Const\Mmc.Mspace.Const.csproj">
+      <Project>{149a90b6-d7bd-4b48-8daf-2e8151c8cc6b}</Project>
+      <Name>Mmc.Mspace.Const</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Services\Mmc.Mspace.Services.csproj">
+      <Project>{adcc12cb-e1d2-436a-8c33-47484ae76e08}</Project>
+      <Name>Mmc.Mspace.Services</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Theme\Mmc.Mspace.Theme.csproj">
+      <Project>{41c024cf-8b5d-4693-b3ff-8d36d2b753c4}</Project>
+      <Name>Mmc.Mspace.Theme</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.ToolModule\Mmc.Mspace.ToolModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0dd}</Project>
+      <Name>Mmc.Mspace.ToolModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Windows\Mmc.Windows.csproj">
+      <Project>{8f12bf24-3e61-46e6-8baa-4bd059203aca}</Project>
+      <Name>Mmc.Windows</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf\Mmc.Wpf.csproj">
+      <Project>{2efe1860-3671-43c0-9e80-e0a80f438ac3}</Project>
+      <Name>Mmc.Wpf</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.MathUtil\Mmc.MathUtil.csproj">
+      <Project>{BB0E5078-E0F8-43D5-8620-E11425DCB3F7}</Project>
+      <Name>Mmc.MathUtil</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="CharacterAnalysis\CharactAnalysView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CharacterAnalysis\ImportImgView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CharacterAnalysis\AnalysisView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FloodAnalysis\FloodView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
