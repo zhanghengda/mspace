@@ -1,0 +1,12 @@
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Business.dll
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Business.pdb
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Business\obj\Debug\Mmc.Business.csprojAssemblyReference.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Business\obj\Debug\Mmc.Business.csproj.CoreCompileInputs.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Business\obj\Debug\Mmc.Business.dll
+D:\GitDemo\ant-design-vue\mspace\Gvitech.Business\obj\Debug\Mmc.Business.pdb
+D:\Mspace\mspace\mspace\binPath\Mmc.Business.dll
+D:\Mspace\mspace\mspace\binPath\Mmc.Business.pdb
+D:\Mspace\mspace\mspace\Gvitech.Business\obj\Debug\Mmc.Business.csprojAssemblyReference.cache
+D:\Mspace\mspace\mspace\Gvitech.Business\obj\Debug\Mmc.Business.csproj.CoreCompileInputs.cache
+D:\Mspace\mspace\mspace\Gvitech.Business\obj\Debug\Mmc.Business.dll
+D:\Mspace\mspace\mspace\Gvitech.Business\obj\Debug\Mmc.Business.pdb
