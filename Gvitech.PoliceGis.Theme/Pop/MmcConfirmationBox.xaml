@@ -1,0 +1,58 @@
+﻿<Window x:Class="Mmc.Mspace.Theme.Pop.MmcConfirmationBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"  
+        mc:Ignorable="d"
+        Title="MmcConfirmationBox" Height="240" Width="480"  WindowStyle="None" Background="Transparent" ShowInTaskbar="False"
+        AllowsTransparency="True" WindowStartupLocation="CenterScreen" WindowState="Normal">
+    <Window.Resources>
+        <Storyboard x:Key="ShowMessage1">
+            <DoubleAnimation Storyboard.TargetName="Br1"
+                        Storyboard.TargetProperty="RenderTransform.Children[0].ScaleX"
+                         From="1" To="1.1" Duration="0:0:0.05" BeginTime="0:0:0.1" AutoReverse="True" >
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="Br1"
+                        Storyboard.TargetProperty="RenderTransform.Children[0].ScaleY"
+                        From="1"  To="1.1" Duration="0:0:0.05" BeginTime="0:0:0.1" AutoReverse="True">
+            </DoubleAnimation>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger SourceName="Br1" RoutedEvent="Window.Loaded">
+            <BeginStoryboard  Storyboard="{StaticResource ShowMessage1}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid Name="Br1" ZIndex="10" Background="#1E2026" Margin="5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform CenterX="100" CenterY="50"></ScaleTransform>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Border BorderBrush="Black" BorderThickness="1">
+            <Grid Background="#1E2026">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="36"/>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Border Background="#292C35"/>
+                <Button HorizontalAlignment="Right" Click="BtnCancle_Click"  Height="36" Width="36" Style="{StaticResource ButtonCloseStyle}">
+ 
+                </Button>
+                <TextBlock x:Name="tbTitle" Grid.Row="0" Text="" FontSize="16" Foreground="{StaticResource DefaultForeground}" Margin="20,0,0,0" Style="{StaticResource DefaultTextBlockStyle}"/>
+
+
+                <TextBlock x:Name="tbMessage" Grid.Row="1" Text="" FontSize="18" TextWrapping="Wrap" Foreground="{StaticResource DefaultForeground}" HorizontalAlignment="Center"  Style="{StaticResource DefaultTextBlockStyle}" Margin="20,0"/>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,10,0,30">
+                    <Button Content="{DynamicResource OK}" Margin="20,2" Style="{StaticResource DefaultButtonStyle}" Click="Button_Click" Cursor="Hand"/>
+                    <Button Content="{DynamicResource Cancel}" Margin="20,2" x:Name="BtnCancle" Style="{StaticResource DefaultButtonStyle}" Click="BtnCancle_Click" Cursor="Hand"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Grid.Effect>
+            <DropShadowEffect Color="Black" Direction="315" ShadowDepth="2" BlurRadius="10" Opacity="1" RenderingBias="Quality"/>
+        </Grid.Effect>
+    </Grid>
+</Window>

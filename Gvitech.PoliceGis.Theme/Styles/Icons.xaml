@@ -1,0 +1,506 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ImageSource x:Key="Mmc_Seach">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Seach.png</ImageSource>
+
+    <ImageSource x:Key="LoadingAnimate">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LoadingAnimate.gif</ImageSource>
+    <ImageSource x:Key="LoadingLabels">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LoadingLabels.gif</ImageSource>
+    <ImageSource x:Key="xiala">pack://application:,,,/Mmc.Mspace.Theme;component/Images/xiala.png</ImageSource>
+    <ImageSource x:Key="Mmc_Logo">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Logo.png</ImageSource>
+    <ImageSource x:Key="Mmc_uav">pack://application:,,,/Mmc.Mspace.Theme;component/Images/uav_N.png</ImageSource>
+    <ImageSource x:Key="packdown_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/packdown_H.png</ImageSource>
+    <ImageSource x:Key="packdown_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/packdown_N.png</ImageSource>
+    <ImageSource x:Key="packup_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/packup_H.png</ImageSource>
+    <ImageSource x:Key="packup_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/packup_N.png</ImageSource>
+    <ImageSource x:Key="buttom">pack://application:,,,/Mmc.Mspace.Theme;component/Images/buttom.png</ImageSource>
+    <ImageSource x:Key="buttom_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/buttom_C.png</ImageSource>
+    <ImageSource x:Key="buttom_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/buttom_H.png</ImageSource>
+    <ImageSource x:Key="top">pack://application:,,,/Mmc.Mspace.Theme;component/Images/top.png</ImageSource>
+    <ImageSource x:Key="top_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/top_C.png</ImageSource>
+    <ImageSource x:Key="top_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/top_H.png</ImageSource>
+    <ImageSource x:Key="userImg">pack://application:,,,/Mmc.Mspace.Theme;component/Images/userImg.png</ImageSource>
+    <ImageSource x:Key="userImg_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/userImg_C.png</ImageSource>
+    <ImageSource x:Key="userImg_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/userImg_H.png</ImageSource>
+    
+    <ImageSource x:Key="up_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/up_N.png</ImageSource>
+    <ImageSource x:Key="up_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/up_H.png</ImageSource>
+    <ImageSource x:Key="down_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/down_N.png</ImageSource>
+    <ImageSource x:Key="down_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/down_H.png</ImageSource>
+
+    <ImageSource x:Key="Mmc_winclose">pack://application:,,,/Mmc.Mspace.Theme;component/Images/winclose.png</ImageSource>
+    <ImageSource x:Key="Mmc_win-min">pack://application:,,,/Mmc.Mspace.Theme;component/Images/win-min.png</ImageSource>
+    <ImageSource x:Key="Mmc_setting_resize">pack://application:,,,/Mmc.Mspace.Theme;component/Images/setting_resize.png</ImageSource>
+
+    <ImageSource x:Key="Notice">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Notice_.png</ImageSource>
+    <ImageSource x:Key="Notice_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Notice_C.png</ImageSource>
+    <ImageSource x:Key="Notice_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Notice_H.png</ImageSource>
+
+    <ImageSource x:Key="DelNotice">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Notice/DelNotice.png</ImageSource>
+    <ImageSource x:Key="DelNotice_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Notice/DelNotice_C.png</ImageSource>
+    <ImageSource x:Key="DelNotice_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Notice/DelNotice_H.png</ImageSource>
+
+    <ImageSource x:Key="set_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/set_N.png</ImageSource>
+    <ImageSource x:Key="set_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/set_D.png</ImageSource>
+    <ImageSource x:Key="set_M">pack://application:,,,/Mmc.Mspace.Theme;component/Images/set_M.png</ImageSource>
+
+    <ImageSource x:Key="close_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/close_N.png</ImageSource>
+    <ImageSource x:Key="close_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/close_D.png</ImageSource>
+    <ImageSource x:Key="close_M">pack://application:,,,/Mmc.Mspace.Theme;component/Images/close_M.png</ImageSource>
+
+    <ImageSource x:Key="min_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/min_N.png</ImageSource>
+    <ImageSource x:Key="min_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/min_D.png</ImageSource>
+    <ImageSource x:Key="min_M">pack://application:,,,/Mmc.Mspace.Theme;component/Images/min_M.png</ImageSource>
+
+    <ImageSource x:Key="user_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/user_D.png</ImageSource>
+    <ImageSource x:Key="user_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/user_N.png</ImageSource>
+    <ImageSource x:Key="user_M">pack://application:,,,/Mmc.Mspace.Theme;component/Images/user_M.png</ImageSource>
+
+    <ImageSource x:Key="pause">pack://application:,,,/Mmc.Mspace.Theme;component/Images/pause.png</ImageSource>
+    <ImageSource x:Key="pause_h">pack://application:,,,/Mmc.Mspace.Theme;component/Images/pause_h.png</ImageSource>
+    <ImageSource x:Key="pause_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/pause_p.png</ImageSource>
+    <ImageSource x:Key="play">pack://application:,,,/Mmc.Mspace.Theme;component/Images/play.png</ImageSource>
+    <ImageSource x:Key="play_h">pack://application:,,,/Mmc.Mspace.Theme;component/Images/play_h.png</ImageSource>
+    <ImageSource x:Key="play_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/play_p.png</ImageSource>
+
+    <ImageSource x:Key="screenshots">pack://application:,,,/Mmc.Mspace.Theme;component/Images/screenshots.png</ImageSource>
+    <ImageSource x:Key="playscreenshots_h">pack://application:,,,/Mmc.Mspace.Theme;component/Images/playscreenshots_h.png</ImageSource>
+    <ImageSource x:Key="screenshots_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/screenshots_p.png</ImageSource>
+
+    <!--勾选框图标样式-->
+    <ImageSource x:Key="CheckBox_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Controls/checkBox_n.png</ImageSource>
+    <ImageSource x:Key="CheckBox_P">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Controls/checkBox_p.png</ImageSource>
+    <ImageSource x:Key="CheckBox_F">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Controls/checkBox_f.png</ImageSource>
+    <ImageSource x:Key="CheckBox_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Controls/checkBox_d.png</ImageSource>
+
+
+    <ImageSource x:Key="PrePoint">pack://application:,,,/Mmc.Mspace.Theme;component/Images/PrePoint.png</ImageSource>
+    <ImageSource x:Key="PrePoint_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/PrePoint_H.png</ImageSource>
+    <ImageSource x:Key="NextPoint">pack://application:,,,/Mmc.Mspace.Theme;component/Images/NextPoint.png</ImageSource>
+    <ImageSource x:Key="NextPoint_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/NextPoint_H.png</ImageSource>
+    <ImageSource x:Key="DeletePoint">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DeletePoint.png</ImageSource>
+    <ImageSource x:Key="DeletePoint_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DeletePoint_H.png</ImageSource>
+	<ImageSource x:Key="SavePoint">pack://application:,,,/Mmc.Mspace.Theme;component/Images/SavePoint.png</ImageSource>
+	<ImageSource x:Key="SavePoint_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/SavePoint_H.png</ImageSource>
+	<ImageSource x:Key="AddPoint">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddPoint.png</ImageSource>
+	<ImageSource x:Key="AddPoint_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddPoint_H.png</ImageSource>
+	<ImageSource x:Key="DeletePointNew">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DeletePointNew.png</ImageSource>
+	<ImageSource x:Key="DeletePointNew_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DeletePointNew_H.png</ImageSource>
+	<ImageSource x:Key="ResetPoint">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ResetPoint.png</ImageSource>
+	<ImageSource x:Key="ResetPoint_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ResetPoint_H.png</ImageSource>
+	<ImageSource x:Key="Editwaypoint_M">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Editwaypoint_M.png</ImageSource>
+    <ImageSource x:Key="Editwaypoint_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Editwaypoint_N.png</ImageSource>
+
+    <ImageSource x:Key="Importroutes_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Importroutes_N.png</ImageSource>
+    <ImageSource x:Key="Importroutes_M">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Importroutes_M.png</ImageSource>
+
+    <ImageSource x:Key="Drawarea_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Drawarea_N.png</ImageSource>
+    <ImageSource x:Key="Drawarea_M">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Drawarea_M.png</ImageSource>
+
+    <ImageSource x:Key="ExportKML_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ExportKML_N.png</ImageSource>
+    <ImageSource x:Key="ExportKML_M">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ExportKML_M.png</ImageSource>
+
+    <ImageSource x:Key="Uploadserver_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Uploadserver_N.png</ImageSource>
+    <ImageSource x:Key="Uploadserver_M">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Uploadserver_M.png</ImageSource>
+
+    <ImageSource x:Key="Drawroute_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Drawroute_N.png</ImageSource>
+    <ImageSource x:Key="Drawroute_M">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Drawroute_M.png</ImageSource>
+
+    <ImageSource x:Key="Flyinto_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Flyinto_H.png</ImageSource>
+    <ImageSource x:Key="Flyinto_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Flyinto_N.png</ImageSource>
+
+    <ImageSource x:Key="updateAddress">pack://application:,,,/Mmc.Mspace.Theme;component/Images/updateAddress.png</ImageSource>
+    <ImageSource x:Key="updateAddress_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/updateAddress_C.png</ImageSource>
+    <ImageSource x:Key="updateAddress_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/updateAddress_H.png</ImageSource>
+
+    <ImageSource x:Key="Update_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Update_H.png</ImageSource>
+    <ImageSource x:Key="Update_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Update_N.png</ImageSource>
+
+    <ImageSource x:Key="add_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/add_n.png</ImageSource>
+    <ImageSource x:Key="delete_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/delete_n.png</ImageSource>
+    <ImageSource x:Key="clip">pack://application:,,,/Mmc.Mspace.Theme;component/Images/clip.png</ImageSource>
+    <ImageSource x:Key="clip_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/clip_n.png</ImageSource>
+    <ImageSource x:Key="closecheck_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/closecheck_N.png</ImageSource>
+    <ImageSource x:Key="closecheck_P">pack://application:,,,/Mmc.Mspace.Theme;component/Images/closecheck_P.png</ImageSource>
+    <ImageSource x:Key="symbolic">pack://application:,,,/Mmc.Mspace.Theme;component/Images/symbolic.png</ImageSource>
+
+    <ImageSource x:Key="annotations_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/annotations_n.png</ImageSource>
+    <ImageSource x:Key="annotations_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/annotations_p.png</ImageSource>
+    <ImageSource x:Key="dotlabeling">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/dotlabeling.png</ImageSource>
+    <ImageSource x:Key="linemark">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/linemark.png</ImageSource>
+    <ImageSource x:Key="surfacemarking">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/surfacemarking.png</ImageSource>
+
+    <ImageSource x:Key="account_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/account_n.png</ImageSource>
+    <ImageSource x:Key="account_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/account_p.png</ImageSource>
+    <ImageSource x:Key="edit_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/edit_n.png</ImageSource>
+    <ImageSource x:Key="exportDoc_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/exportDoc.png</ImageSource>
+
+    
+    <ImageSource x:Key="edit_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/edit_p.png</ImageSource>
+    <ImageSource x:Key="deletepoi_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/deletepoi_n.png</ImageSource>
+    <ImageSource x:Key="deletepoi_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/deletepoi_p.png</ImageSource>
+    <ImageSource x:Key="report">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/report.png</ImageSource>
+
+    <ImageSource x:Key="2dIcon">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/2dIcon.png</ImageSource>
+    <ImageSource x:Key="3dIcon">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/3dIcon.png</ImageSource>
+    
+    <ImageSource x:Key="image">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/image.png</ImageSource>
+    <ImageSource x:Key="photography">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/photography.png</ImageSource>
+
+    <ImageSource x:Key="leftdown_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/leftdown_n.png</ImageSource>
+    <ImageSource x:Key="leftdown_f">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/leftdown_f.png</ImageSource>
+    <ImageSource x:Key="leftdown_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/leftdown_p.png</ImageSource>
+    <ImageSource x:Key="leftup_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/leftup_n.png</ImageSource>
+    <ImageSource x:Key="leftup_f">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/leftup_f.png</ImageSource>
+    <ImageSource x:Key="leftup_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/leftup_p.png</ImageSource>
+   
+
+    <ImageSource x:Key="Twoscreens_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/Twoscreens_n.png</ImageSource>
+    <ImageSource x:Key="Twoscreens_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/Twoscreens_p.png</ImageSource>
+    <ImageSource x:Key="Threescreens_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/Threescreens_n.png</ImageSource>
+    <ImageSource x:Key="Threescreens_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/Threescreens_p.png</ImageSource>
+    <ImageSource x:Key="Fourscreens_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/Fourscreens_n.png</ImageSource>
+    <ImageSource x:Key="Fourscreens_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/Fourscreens_p.png</ImageSource>
+
+    <ImageSource x:Key="Fileforder">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/Folder.png</ImageSource>
+    <ImageSource x:Key="Fileforder_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/Folder_C.png</ImageSource>
+    <ImageSource x:Key="Fileforder_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/Folder_H.png</ImageSource>
+
+    <ImageSource x:Key="LMove">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ActionsIcon/LMove.png</ImageSource>
+    <ImageSource x:Key="LMove_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ActionsIcon/LMove_C.png</ImageSource>
+    <ImageSource x:Key="LMove_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ActionsIcon/LMove_H.png</ImageSource>
+    <ImageSource x:Key="RMove">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ActionsIcon/RMove.png</ImageSource>
+    <ImageSource x:Key="RMove_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ActionsIcon/RMove_C.png</ImageSource>
+    <ImageSource x:Key="RMove_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ActionsIcon/RMove_H.png</ImageSource>
+
+    <ImageSource x:Key="circular_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/circular_n.png</ImageSource>
+    <ImageSource x:Key="circular_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/circular_p.png</ImageSource>
+    <ImageSource x:Key="polygon_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/polygon_n.png</ImageSource>
+    <ImageSource x:Key="polygon_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/polygon_p.png</ImageSource>
+
+	<ImageSource x:Key="download_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/download_n.png</ImageSource>
+	<ImageSource x:Key="download_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/download_p.png</ImageSource>
+	
+	<ImageSource x:Key="rectangle_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/rectangle_n.png</ImageSource>
+    <ImageSource x:Key="rectangle_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/rectangle_p.png</ImageSource>
+
+    <ImageSource x:Key="Datetime_n">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/Datetime_n.png</ImageSource>
+    <ImageSource x:Key="Datetime_p">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LeftIcon/Datetime_p.png</ImageSource>
+
+
+    <ImageSource x:Key="Screenshots_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Screenshots_H.png</ImageSource>
+    <ImageSource x:Key="Screenshots_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Screenshots_N.png</ImageSource>
+
+    <ImageSource x:Key="Courselist_N">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Courselist_N.png</ImageSource>
+    <ImageSource x:Key="Courselist_M">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Courselist_M.png</ImageSource>
+    
+    <!--远程控制-->
+    <ImageSource x:Key="load-route-n">pack://siteoforigin:,,,/Resources/mount/load-route.png</ImageSource>
+    <ImageSource x:Key="load-route-p">pack://siteoforigin:,,,/Resources/mount/load-route-hover.png</ImageSource>
+
+    <ImageSource x:Key="send-vehicle-n">pack://siteoforigin:,,,/Resources/mount/send-vehicle.png</ImageSource>
+    <ImageSource x:Key="send-vehicle-p">pack://siteoforigin:,,,/Resources/mount/send-vehicle-hover.png</ImageSource>
+    
+    <ImageSource x:Key="vehicle-takeoff-n">pack://siteoforigin:,,,/Resources/mount/vehicle-takeoff.png</ImageSource>
+    <ImageSource x:Key="vehicle-takeoff-p">pack://siteoforigin:,,,/Resources/mount/vehicle-takeoff-hover.png</ImageSource>
+
+    <ImageSource x:Key="route-n">pack://siteoforigin:,,,/Resources/mount/route.png</ImageSource>
+    <ImageSource x:Key="route-p">pack://siteoforigin:,,,/Resources/mount/route-hover.png</ImageSource>
+
+    <ImageSource x:Key="land-n">pack://siteoforigin:,,,/Resources/mount/land.png</ImageSource>
+    <ImageSource x:Key="land-p">pack://siteoforigin:,,,/Resources/mount/land-hover.png</ImageSource>
+
+    <ImageSource x:Key="unlock-n">pack://siteoforigin:,,,/Resources/mount/unlock.png</ImageSource>
+    <ImageSource x:Key="unlock-p">pack://siteoforigin:,,,/Resources/mount/unlock-hover.png</ImageSource>
+
+    <ImageSource x:Key="vehicle-return-n">pack://siteoforigin:,,,/Resources/mount/vehicle-return.png</ImageSource>
+    <ImageSource x:Key="vehicle-return-p">pack://siteoforigin:,,,/Resources/mount/vehicle-return-hover.png</ImageSource>
+
+    <!--AI-->
+    <ImageSource x:Key="aiLabel">pack://siteoforigin:,,,/Resources/mount/AI.png</ImageSource>
+    <ImageSource x:Key="aiSwitch-open">pack://siteoforigin:,,,/Resources/mount/SwitchOpen.png</ImageSource>
+    <ImageSource x:Key="aiSwitch-close">pack://siteoforigin:,,,/Resources/mount/SwitchClose.png</ImageSource>
+
+    <ImageSource x:Key="FirstPage">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/FirstPage.png</ImageSource>
+    <ImageSource x:Key="FirstPage_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/FirstPage_C.png</ImageSource>
+    <ImageSource x:Key="FirstPage_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/FirstPage_H.png</ImageSource>
+    <ImageSource x:Key="PrevPage">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/PrevPage.png</ImageSource>
+    <ImageSource x:Key="PrevPage_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/PrevPage_C.png</ImageSource>
+    <ImageSource x:Key="PrevPage_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/PrevPage_H.png</ImageSource>
+    <ImageSource x:Key="NextPage">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/NextPage.png</ImageSource>
+    <ImageSource x:Key="NextPage_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/NextPage_C.png</ImageSource>
+    <ImageSource x:Key="NextPage_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/NextPage_H.png</ImageSource>
+    <ImageSource x:Key="LastPage">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/LastPage.png</ImageSource>
+    <ImageSource x:Key="LastPage_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/LastPage_C.png</ImageSource>
+    <ImageSource x:Key="LastPage_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/LastPage_H.png</ImageSource>
+    <ImageSource x:Key="PageTo">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/PageTo.png</ImageSource>
+    <ImageSource x:Key="PageTo_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/PageTo_C.png</ImageSource>
+    <ImageSource x:Key="PageTo_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Buttons/PageTo_H.png</ImageSource>
+	<!-- 台账&航线列表翻页-->
+	<ImageSource x:Key="FinalPageNew">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/FinalPage.png</ImageSource>
+	<ImageSource x:Key="FinalPageNew_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/FinalPage_C.png</ImageSource>
+	<ImageSource x:Key="FinalPageNew_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/FinalPage_D.png</ImageSource>
+	<ImageSource x:Key="FinalPageNew_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/FinalPage_H.png</ImageSource>
+	<ImageSource x:Key="FirstPageNew">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/FirstPage.png</ImageSource>
+	<ImageSource x:Key="FirstPageNew_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/FirstPage_C.png</ImageSource>
+	<ImageSource x:Key="FirstPageNew_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/FirstPage_D.png</ImageSource>
+	<ImageSource x:Key="FirstPageNew_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/FirstPage_H.png</ImageSource>
+	<ImageSource x:Key="LastPageNew">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/LastPage.png</ImageSource>
+	<ImageSource x:Key="LastPageNew_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/LastPage_C.png</ImageSource>
+	<ImageSource x:Key="LastPageNew_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/LastPage_D.png</ImageSource>
+	<ImageSource x:Key="LastPageNew_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/LastPage_H.png</ImageSource>
+	<ImageSource x:Key="NextPageNew">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/NextPage.png</ImageSource>
+	<ImageSource x:Key="NextPageNew_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/NextPage_C.png</ImageSource>
+	<ImageSource x:Key="NextPageNew_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/NextPage_D.png</ImageSource>
+	<ImageSource x:Key="NextPageNew_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/NextPage_H.png</ImageSource>
+	<ImageSource x:Key="DeleteAccountItem">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/DeleteAccountItem.png</ImageSource>
+	<ImageSource x:Key="DeleteAccountItem_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/DeleteAccountItem_C.png</ImageSource>
+	<ImageSource x:Key="DeleteAccountItem_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/DeleteAccountItem_H.png</ImageSource>
+    <ImageSource x:Key="Account_Edit">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Account/Account_Edit.png</ImageSource>
+    <ImageSource x:Key="Account_Edit_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Account/Account_Edit_H.png</ImageSource>
+    <ImageSource x:Key="Account_Edit_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Account/Account_Edit_C.png</ImageSource>
+	<ImageSource x:Key="Account_View">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Account_View.png</ImageSource>
+	<ImageSource x:Key="Account_View_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Account_View_H.png</ImageSource>
+	<ImageSource x:Key="Account_View_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Account_View_C.png</ImageSource>
+
+	<ImageSource x:Key="FlySiumlate">pack://application:,,,/Mmc.Mspace.Theme;component/Images/RoutePanning/FlySiumlate.png</ImageSource>
+	<ImageSource x:Key="FlySiumlate_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/RoutePanning/FlySiumlate_C.png</ImageSource>
+	<ImageSource x:Key="FlySiumlate_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/RoutePanning/FlySiumlate_H.png</ImageSource>
+	<ImageSource x:Key="ViewRoute">pack://application:,,,/Mmc.Mspace.Theme;component/Images/RoutePanning/ViewRoute.png</ImageSource>
+	<ImageSource x:Key="ViewRoute_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/RoutePanning/ViewRoute_C.png</ImageSource>
+	<ImageSource x:Key="ViewRoute_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/RoutePanning/ViewRoute_H.png</ImageSource>
+	<ImageSource x:Key="EditRouteItem">pack://application:,,,/Mmc.Mspace.Theme;component/Images/RoutePanning/EditRouteItem.png</ImageSource>
+	<ImageSource x:Key="EditRouteItem_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/RoutePanning/EditRouteItem_C.png</ImageSource>
+	<ImageSource x:Key="EditRouteItem_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/RoutePanning/EditRouteItem_H.png</ImageSource>
+	<!-- 动画导航-->
+
+    <ImageSource x:Key="AddNavigationPoint">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/AddNavigationPoint.png</ImageSource>
+    <ImageSource x:Key="AddNavigationPoint_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/AddNavigationPoint_D.png</ImageSource>
+    <ImageSource x:Key="AddNavigationPoint_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/AddNavigationPoint_H.png</ImageSource>
+    <ImageSource x:Key="AddNavigationPoint_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/AddNavigationPoint_C.png</ImageSource>
+    <ImageSource x:Key="RemoveNavigation">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/RemoveNavigation.png</ImageSource>
+    <ImageSource x:Key="RemoveNavigation_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/RemoveNavigation_D.png</ImageSource>
+    <ImageSource x:Key="RemoveNavigation_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/RemoveNavigation_H.png</ImageSource>
+    <ImageSource x:Key="RemoveNavigation_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/RemoveNavigation_C.png</ImageSource>
+    <ImageSource x:Key="RenameNavigation">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/RenameNavigation.png</ImageSource>
+    <ImageSource x:Key="RenameNavigation_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/RenameNavigation_D.png</ImageSource>
+    <ImageSource x:Key="RenameNavigation_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/RenameNavigation_H.png</ImageSource>
+    <ImageSource x:Key="RenameNavigation_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/RenameNavigation_C.png</ImageSource>
+
+    <ImageSource x:Key="PlayNavigation">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/PlayNavigation.png</ImageSource>
+    <ImageSource x:Key="PlayNavigation_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/PlayNavigation_C.png</ImageSource>
+    <ImageSource x:Key="PlayNavigation_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/PlayNavigation_D.png</ImageSource>
+    <ImageSource x:Key="PlayNavigation_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/PlayNavigation_H.png</ImageSource>
+
+    <ImageSource x:Key="PauseNavigation">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/PauseNavigation.png</ImageSource>
+    <ImageSource x:Key="PauseNavigation_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/PauseNavigation_C.png</ImageSource>
+    <ImageSource x:Key="PauseNavigation_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/PauseNavigation_D.png</ImageSource>
+    <ImageSource x:Key="PauseNavigation_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/PauseNavigation_H.png</ImageSource>
+
+    <ImageSource x:Key="StopNavigation">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/StopNavigation.png</ImageSource>
+    <ImageSource x:Key="StopNavigation_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/StopNavigation_C.png</ImageSource>
+    <ImageSource x:Key="StopNavigation_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/StopNavigation_D.png</ImageSource>
+    <ImageSource x:Key="StopNavigation_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/StopNavigation_H.png</ImageSource>
+
+    <ImageSource x:Key="AddNavigation">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/AddNavigation.png</ImageSource>
+    <ImageSource x:Key="AddNavigation_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/AddNavigation_D.png</ImageSource>
+    <ImageSource x:Key="AddNavigation_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/AddNavigation_H.png</ImageSource>
+    <ImageSource x:Key="AddNavigation_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/AddNavigation_C.png</ImageSource>
+
+    <ImageSource x:Key="ExportNavigation">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/ExportNavigation.png</ImageSource>
+    <ImageSource x:Key="ExportNavigation_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/ExportNavigation_D.png</ImageSource>
+    <ImageSource x:Key="ExportNavigation_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/ExportNavigation_H.png</ImageSource>
+    <ImageSource x:Key="ExportNavigation_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/ExportNavigation_C.png</ImageSource>
+
+    <ImageSource x:Key="ImportNavigation">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/ImportNavigation.png</ImageSource>
+    <ImageSource x:Key="ImportNavigation_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/ImportNavigation_D.png</ImageSource>
+    <ImageSource x:Key="ImportNavigation_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/ImportNavigation_H.png</ImageSource>
+    <ImageSource x:Key="ImportNavigation_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AnimationNavigation/ImportNavigation_C.png</ImageSource>
+
+    <!--用户-->
+    <PathGeometry x:Key="glyphicon-user">F1M14,21C20.436,21 24.885,25.197 26.779,31 26.779,31 24.651,31 24.651,31 22.843,26.323 19.315,23 14,23 8.685,23 5.156,26.323 3.348,31 3.348,31 1.221,31 1.221,31 3.115,25.197 7.564,21 14,21z M14.5,4C11.186,4 8.5,6.686 8.5,10 8.5,13.314 11.186,16 14.5,16 17.814,16 20.5,13.314 20.5,10 20.5,6.686 17.814,4 14.5,4z M14.5,2C18.918,2 22.5,5.582 22.5,10 22.5,14.418 18.918,18 14.5,18 10.082,18 6.5,14.418 6.5,10 6.5,5.582 10.082,2 14.5,2z</PathGeometry>
+    <!--上-->
+    <PathGeometry x:Key="glyphicon-up">F1M2.134,9.998C2.134,9.998 1.997,9.998 1.997,9.998 1.997,9.998 8.001,1.999 8.001,1.999 8.001,1.999 14.005,9.998 14.005,9.998 14.005,9.998 14.001,9.998 14.001,9.998 14.001,9.998 2.134,9.998 2.134,9.998z</PathGeometry>
+    <!--下-->
+    <PathGeometry x:Key="glyphicon-down">F1M13.866,1.002C13.866,1.002 14.003,1.002 14.003,1.002 14.003,1.002 7.999,9.001 7.999,9.001 7.999,9.001 1.995,1.002 1.995,1.002 1.995,1.002 1.999,1.002 1.999,1.002 1.999,1.002 13.866,1.002 13.866,1.002z</PathGeometry>
+    <!--清空按钮-->
+    <PathGeometry x:Key="glyphicon-clear">F1M8.394,6.984C8.394,6.984 6.98,8.398 6.98,8.398 6.98,8.398 8.471,9.89 10.336,11.754L11.585,13.004 10.355,14.234C8.491,16.099 6.999,17.59 6.999,17.59 6.999,17.59 8.414,19.005 8.414,19.005 8.414,19.005 9.905,17.513 11.77,15.649L13,14.419 14.23,15.649C16.095,17.513 17.586,19.005 17.586,19.005 17.586,19.005 19.001,17.59 19.001,17.59 19.001,17.59 17.509,16.099 15.645,14.234L14.415,13.004 15.664,11.754C17.529,9.89 19.02,8.398 19.02,8.398 19.02,8.398 17.606,6.984 17.606,6.984 17.606,6.984 16.114,8.475 14.25,10.34L13,11.59 11.75,10.34C9.886,8.475,8.394,6.984,8.394,6.984z M13,1C19.627,1 25,6.373 25,13 25,19.627 19.627,25 13,25 6.373,25 1,19.627 1,13 1,6.373 6.373,1 13,1z</PathGeometry>
+    <!--下拉箭头-->
+    <PathGeometry x:Key="glyphicon-xiala">F1M15.349,1.596C15.349,1.596 15.504,1.596 15.504,1.596 15.504,1.596 8.749,9.095 8.749,9.095 8.749,9.095 1.994,1.596 1.994,1.596 1.994,1.596 1.999,1.596 1.999,1.596 1.999,1.596 8.749,4.926 8.749,4.926 8.749,4.926 15.349,1.596 15.349,1.596z</PathGeometry>
+
+
+    <PathGeometry x:Key="glyphicon-left">F1M8,14C8,14 1.999,8 1.999,8 1.999,8 8,1.999 8,1.999 8,1.999 8,14 8,14z</PathGeometry>
+    <PathGeometry x:Key="glyphicon-right">F1M1,14C1,14 7.001,8 7.001,8 7.001,8 1,1.999 1,1.999 1,1.999 1,14 1,14z</PathGeometry>
+    <!--编辑-->
+    <PathGeometry x:Key="glyphicon-edit">F1M10.67,11.824C10.67,11.824 8.999,14.58 8.999,14.58 8.882,14.815 9.107,15.057 9.359,14.94 9.359,14.94 10.049,14.523 10.74,14.106L11.251,13.797 11.322,14.039C11.322,14.039 12.12,13.272 12.12,13.272 12.12,13.272 11.947,13.376 11.689,13.533L11.251,13.797 11.22,13.693C11.037,13.07,10.67,11.824,10.67,11.824z M16.978,5.171C16.978,5.171 16.181,5.938 16.181,5.938 16.181,5.938 11.215,10.925 11.215,10.925 11.406,11.117 12.343,12.052 13.02,12.728 13.02,12.728 18.797,6.96 18.797,6.96 18.797,6.96 16.978,5.171 16.978,5.171z M2,4C2,4 11,4 11,4 11,4 11,6 11,6 11,6 3.999,6 3.999,6 3.999,6 3.999,20 3.999,20 3.999,20 17.999,20 17.999,20 17.999,20 17.999,15 17.999,15 17.999,15 20,15 20,15 20,15 20,22 20,22 20,22 2,22 2,22 2,22 2,4 2,4z M18.797,3.356C18.797,3.356 17.999,4.123 17.999,4.123 17.999,4.123 17.739,4.411 17.739,4.411 17.739,4.411 19.519,6.239 19.519,6.239 19.519,6.239 20.602,5.158 20.602,5.158 20.801,4.959 20.801,4.636 20.602,4.437 20.602,4.437 19.519,3.356 19.519,3.356 19.319,3.156 18.996,3.156 18.797,3.356z M19.158,1.975C19.419,1.975 19.681,2.075 19.88,2.274 19.88,2.274 21.685,4.076 21.685,4.076 22.084,4.475 22.084,5.12 21.685,5.518 21.685,5.518 13.742,13.449 13.742,13.449 13.592,13.598 13.405,13.673 13.213,13.71 13.213,13.71 8.741,15.917 8.741,15.917 8.238,16.15 7.835,15.699 8.02,15.197 8.02,15.197 10.231,10.733 10.231,10.733 10.231,10.733 9.433,11.5 9.433,11.5 9.471,11.307 10.343,10.354 10.492,10.205 10.492,10.205 18.436,2.274 18.436,2.274 18.635,2.075 18.896,1.975 19.158,1.975z</PathGeometry>
+    <!--删除-->
+    <PathGeometry x:Key="glyphicon-delete">F1M17,12C17.552,12 18,12.447 18,13 18,13 18,20 18,20 18,20.552 17.552,21 17,21 16.447,21 16,20.552 16,20 16,20 16,13 16,13 16,12.447 16.447,12 17,12z M13,12C13.552,12 13.999,12.447 13.999,13 13.999,13 13.999,20 13.999,20 13.999,20.552 13.552,21 13,21 12.447,21 11.999,20.552 11.999,20 11.999,20 11.999,13 11.999,13 11.999,12.447 12.447,12 13,12z M9,12C9.552,12 9.999,12.447 9.999,13 9.999,13 9.999,20 9.999,20 9.999,20.552 9.552,21 9,21 8.447,21 8,20.552 8,20 8,20 8,13 8,13 8,12.447 8.447,12 9,12z M5,10C5.552,10 5.999,10.447 5.999,11 5.999,11 5.999,11.172 5.999,11.469 5.999,11.539 5.999,11.615 5.999,11.473L5.999,11.636 5.999,11.787 5.999,11.821 5.999,12.5C5.999,12.594,5.999,12.688,5.999,12.719L5.999,12.738 5.999,12.949 5.999,13.531 5.999,14 5.999,14.48C5.999,17.703 5.999,22 5.999,22 5.999,22.769 6.255,23 6.999,23 6.999,23 18.999,23 18.999,23 19.726,22.856 19.996,22.742 19.999,22 19.999,22 19.999,17.703 19.999,14.48L19.999,13 19.999,12.719 19.999,12.688 19.999,12 19.999,11.473 19.999,11.312C19.999,11.125 19.999,11 19.999,11 19.999,10.447 20.447,10 20.999,10 21.552,10 21.999,10.447 21.999,11 21.999,11 21.999,11.172 21.999,11.312 21.999,11.406 21.999,11.516 21.999,11.473L21.999,11.567 21.999,11.925C21.999,12.045,21.999,12.102,21.999,12L21.999,12.688C21.999,12.781 21.999,12.859 21.999,12.719 21.999,12.859 21.999,12.898 21.999,12.879L21.999,13 21.999,14.48C21.999,17.703 21.999,22 21.999,22 21.999,23.543 20.315,24.999 18.827,24.999 18.827,24.999 5.999,25 5.999,25 4.512,25 3.999,23.543 3.999,22 3.999,22 3.999,17.703 3.999,14.48L3.999,14 3.999,13.531 3.999,12.719 3.999,12.5 3.999,11.473 3.999,11.469C3.999,11.188 3.999,11 3.999,11 3.999,10.447 4.447,10 5,10z M10.999,4C10.624,4 9.932,4.091 9.999,5 9.999,5 9.999,6 9.999,6 9.999,6 11.499,6 12.999,6L15.062,6C15.625,6 16,6 16,6 16,6 16,5 16,5 15.857,4.126 15.366,3.99 15,4 15,4 10.999,4 10.999,4z M9.867,2C9.867,2 16.12,2 16.12,2 17.24,2 18.027,2.588 18,4 18,4 18,6 18,6 18,6 18.853,6 19.705,6L19.874,6 20.877,6C21.197,6 21.41,6 21.41,6 21.41,6 21.609,6 21.807,6L22.14,6 22.205,6 22.774,6C22.921,6 22.999,6 22.999,6 23.552,6 23.999,6.447 23.999,7 23.999,7.552 23.552,8 22.999,8 22.999,8 3,8 3,8 2.447,8 2,7.552 2,7 2,6.447 2.447,6 3,6 3,6 3.078,6 3.136,6L3.225,6 3.345,6 3.859,6 3.896,6C4.352,6,4.96,6,5.568,6L6.125,6 7.24,6C7.468,6,7.658,6,7.791,6L8,6C8,6 8,4 8,4 8,2.838 8.477,2 9.867,2z</PathGeometry>
+    <!--保存-->
+    <PathGeometry x:Key="glyphicon-save">F1M16.596,1.74C16.596,1.74 18.01,3.154 18.01,3.154 18.01,3.154 12.044,9.12 9.061,12.103L8.914,12.25 9.01,12.346C9.01,12.346,7.596,13.76,7.596,13.76L7.5,13.664 7.404,13.76C7.404,13.76,5.99,12.346,5.99,12.346L6.086,12.25 4.793,10.957C3.391,9.556 1.99,8.154 1.99,8.154 1.99,8.154 3.404,6.74 3.404,6.74 3.404,6.74 4.806,8.141 6.207,9.543L7.5,10.836 7.647,10.689C10.63,7.706,16.596,1.74,16.596,1.74z</PathGeometry>
+    <!--取消-->
+    <PathGeometry x:Key="glyphicon-cancel">F1M3.404,1.74C3.404,1.74,4.895,3.231,6.76,5.096L8,6.336 9.24,5.096C11.105,3.231 12.596,1.74 12.596,1.74 12.596,1.74 14.01,3.154 14.01,3.154 14.01,3.154 12.519,4.645 10.654,6.51L9.414,7.75 10.654,8.99C12.519,10.855 14.01,12.346 14.01,12.346 14.01,12.346 12.596,13.76 12.596,13.76 12.596,13.76 11.105,12.269 9.24,10.404L8,9.164 6.76,10.404C4.895,12.269 3.404,13.76 3.404,13.76 3.404,13.76 1.99,12.346 1.99,12.346 1.99,12.346 3.481,10.855 5.346,8.99L6.586,7.75 5.346,6.51C3.481,4.645 1.99,3.154 1.99,3.154 1.99,3.154 3.404,1.74 3.404,1.74z</PathGeometry>
+    <!--下载-->
+    <PathGeometry x:Key="glyphicon-download">F1M2,15C2,15 2.938,15 4,15 4,15 4.156,15 4.344,15 4.432,15 4.521,15 4.43,15L4.555,15 4.856,15 5.122,15C5.236,15,5.246,15,5.189,15L5.562,15C6.031,15 6.578,15 6.746,15 6.966,15 7.189,15 7.164,15L7.379,15C7.568,15,7.724,15,7.809,15L7.812,15 9,15C9.312,15,9.625,15,9.5,15L9.766,15C9.836,15,9.863,15,9.826,15L10.722,15C10.864,15 10.96,15 10.836,15 10.971,15 11.013,15 10.986,15L11.658,15C11.903,15 12.111,15 12.254,15 12.364,15 12.473,15 12.438,15 12.564,15 12.573,15 12.523,15L12.867,15 13.172,15 13.244,15 13.57,15C13.844,15,14,15,14,15L14.656,15C16.062,15 17,15 17,15 17,15 17,17 17,17 17,17 2,17 2,17 2,17 2,15 2,15z M8,2C8,2 11,2 11,2 11,2 11,5.516 11,8.152L11,9 11.152,9C12.734,9 14,9 14,9 14,9 9.5,14 9.5,14 9.5,14 5,9 5,9 5,9 6.266,9 7.848,9L8,9 8,8.152C8,5.516,8,2,8,2z</PathGeometry>
+
+    
+    <!--DatePicker-->
+    <ImageSource x:Key="UcDP_DateDel">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DatePicker/DateDel.png</ImageSource>
+    <ImageSource x:Key="UcDP_DateDel_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DatePicker/DateDel_C.png</ImageSource>
+    <ImageSource x:Key="UcDP_DateDel_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DatePicker/DateDel_H.png</ImageSource>
+    <ImageSource x:Key="UcDP_DatePicker">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DatePicker/DatePicker.png</ImageSource>
+    <ImageSource x:Key="UcDP_DatePicker_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DatePicker/DatePicker_H.png</ImageSource>
+    <ImageSource x:Key="UcDP_DatePicker_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DatePicker/DatePicker_C.png</ImageSource>
+    <ImageSource x:Key="UcDP_DateRangePicker">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DatePicker/DateRangePicker.png</ImageSource>
+    <ImageSource x:Key="UcDP_DateRangePicker_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DatePicker/DateRangePicker_H.png</ImageSource>
+    <ImageSource x:Key="UcDP_DateRangePicker_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DatePicker/DateRangePicker_C.png</ImageSource>
+     <!--TileLayerPropView-->
+    <ImageSource x:Key="TLPV_Del">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_Del.png</ImageSource>
+    <ImageSource x:Key="TLPV_Del_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_Del_C.png</ImageSource>
+    <ImageSource x:Key="TLPV_Del_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_Del_H.png</ImageSource>
+    <ImageSource x:Key="TLPVEdit">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_Edit.png</ImageSource>
+    <ImageSource x:Key="TLPV_Edit_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_Edit_H.png</ImageSource>
+    <ImageSource x:Key="TLPV_Edit_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_Edit_C.png</ImageSource>
+    <ImageSource x:Key="TLPV_FlyTo">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_FlyTo.png</ImageSource>
+    <ImageSource x:Key="TLPV_FlyTo_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_FlyTo_H.png</ImageSource>
+    <ImageSource x:Key="TLPV_FlyTo_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_FlyTo_C.png</ImageSource>
+    <ImageSource x:Key="TLPV_Move">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_Move.png</ImageSource>
+    <ImageSource x:Key="TLPV_Move_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_Move_C.png</ImageSource>
+    <ImageSource x:Key="TLPV_Move_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/TileLayer/TLPV_Move_H.png</ImageSource>
+
+    <!-- WireTower -->
+    <ImageSource x:Key="WT_Add">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Add.png</ImageSource>
+    <ImageSource x:Key="WT_Add_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Add_C.png</ImageSource>
+    <ImageSource x:Key="WT_Add_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Add_D.png</ImageSource>
+    <ImageSource x:Key="WT_Add_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Add_H.png</ImageSource>
+    <ImageSource x:Key="WT_BuildLine">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/BuildLine.png</ImageSource>
+    <ImageSource x:Key="WT_BuildLine_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/BuildLine_C.png</ImageSource>
+    <ImageSource x:Key="WT_BuildLine_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/BuildLine_D.png</ImageSource>
+    <ImageSource x:Key="WT_BuildLine_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/BuildLine_H.png</ImageSource>
+    <ImageSource x:Key="WT_DownMove">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/DownMove.png</ImageSource>
+    <ImageSource x:Key="WT_DownMove_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/DownMove_C.png</ImageSource>
+    <ImageSource x:Key="WT_DownMove_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/DownMove_D.png</ImageSource>
+    <ImageSource x:Key="WT_DownMove_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/DownMove_H.png</ImageSource>
+    <ImageSource x:Key="WT_Insert">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Insert.png</ImageSource>
+    <ImageSource x:Key="WT_Insert_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Insert_C.png</ImageSource>
+    <ImageSource x:Key="WT_Insert_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Insert_D.png</ImageSource>
+    <ImageSource x:Key="WT_Insert_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Insert_H.png</ImageSource>
+    <ImageSource x:Key="WT_Location">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Location.png</ImageSource>
+    <ImageSource x:Key="WT_Location_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Location_C.png</ImageSource>
+    <ImageSource x:Key="WT_Location_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Location_D.png</ImageSource>
+    <ImageSource x:Key="WT_Location_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Location_H.png</ImageSource>
+    <ImageSource x:Key="WT_OpenFile">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/OpenFile.png</ImageSource>
+    <ImageSource x:Key="WT_OpenFile_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/OpenFile_C.png</ImageSource>
+    <ImageSource x:Key="WT_OpenFile_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/OpenFile_D.png</ImageSource>
+    <ImageSource x:Key="WT_OpenFile_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/OpenFile_H.png</ImageSource>
+    <ImageSource x:Key="WT_Save">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Save.png</ImageSource>
+    <ImageSource x:Key="WT_Save_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Save_C.png</ImageSource>
+    <ImageSource x:Key="WT_Save_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Save_D.png</ImageSource>
+    <ImageSource x:Key="WT_Save_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Save_H.png</ImageSource>
+    <ImageSource x:Key="WT_Search">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Search.png</ImageSource>
+    <ImageSource x:Key="WT_Search_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Search_C.png</ImageSource>
+    <ImageSource x:Key="WT_Search_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Search_D.png</ImageSource>
+    <ImageSource x:Key="WT_Search_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Search_H.png</ImageSource>
+    <ImageSource x:Key="WT_UpMove">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/UpMove.png</ImageSource>
+    <ImageSource x:Key="WT_UpMove_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/UpMove_C.png</ImageSource>
+    <ImageSource x:Key="WT_UpMove_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/UpMove_D.png</ImageSource>
+    <ImageSource x:Key="WT_UpMove_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/UpMove_H.png</ImageSource>
+    <ImageSource x:Key="WT_Delete">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Delete.png</ImageSource>
+    <ImageSource x:Key="WT_Delete_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Delete_C.png</ImageSource>
+    <ImageSource x:Key="WT_Delete_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Delete_D.png</ImageSource>
+    <ImageSource x:Key="WT_Delete_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Delete_H.png</ImageSource>
+    <ImageSource x:Key="WT_Edit">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Edit.png</ImageSource>
+    <ImageSource x:Key="WT_Edit_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Edit_C.png</ImageSource>
+    <ImageSource x:Key="WT_Edit_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Edit_D.png</ImageSource>
+    <ImageSource x:Key="WT_Edit_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Edit_H.png</ImageSource>
+    <ImageSource x:Key="WT_Input">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Input.png</ImageSource>
+    <ImageSource x:Key="WT_Input_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Input_C.png</ImageSource>
+    <ImageSource x:Key="WT_Input_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Input_D.png</ImageSource>
+    <ImageSource x:Key="WT_Input_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Input_H.png</ImageSource>
+    <ImageSource x:Key="WT_Output">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Output.png</ImageSource>
+    <ImageSource x:Key="WT_Output_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Output_C.png</ImageSource>
+    <ImageSource x:Key="WT_Output_D">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Output_D.png</ImageSource>
+    <ImageSource x:Key="WT_Output_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/Output_H.png</ImageSource>
+    <ImageSource x:Key="WT_ToStation">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/ToStation.png</ImageSource>
+    <ImageSource x:Key="WT_ToStation_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/ToStation_C.png</ImageSource>
+    <ImageSource x:Key="WT_ToStation_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/WirTower/ToStation_H.png</ImageSource>
+    <!-- RoutePlanningView-->
+    <ImageSource x:Key="RoutePlan_Down">pack://application:,,,/Mmc.Mspace.Theme;component/Images/RoutePanning/DownSort.png</ImageSource>
+    <ImageSource x:Key="RoutePlan_Up">pack://application:,,,/Mmc.Mspace.Theme;component/Images/RoutePanning/UpSort.png</ImageSource>
+
+    <!-- AddressCollumn-->
+    <ImageSource x:Key="Address_Add">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Add.png</ImageSource>
+    <ImageSource x:Key="Address_Add_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Add_C.png</ImageSource>
+    <ImageSource x:Key="Address_Add_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Add_H.png</ImageSource>
+    <ImageSource x:Key="Address_Delete">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Delete.png</ImageSource>
+    <ImageSource x:Key="Address_Delete_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Delete_C.png</ImageSource>
+    <ImageSource x:Key="Address_Delete_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Delete_H.png</ImageSource>
+    <ImageSource x:Key="Address_Fold">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Fold.png</ImageSource>
+    <ImageSource x:Key="Address_Fold_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Fold_C.png</ImageSource>
+    <ImageSource x:Key="Address_Fold_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Fold_H.png</ImageSource>
+    <ImageSource x:Key="Address_UnFold">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_UnFold.png</ImageSource>
+    <ImageSource x:Key="Address_UnFold_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_UnFold_C.png</ImageSource>
+    <ImageSource x:Key="Address_UnFold_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_UnFold_H.png</ImageSource>
+    <ImageSource x:Key="Address_Search">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Search.png</ImageSource>
+    <ImageSource x:Key="Address_Search_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Search_C.png</ImageSource>
+    <ImageSource x:Key="Address_Search_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Search_H.png</ImageSource>
+    <ImageSource x:Key="Address_Set">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Set.png</ImageSource>
+    <ImageSource x:Key="Address_Set_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Set_C.png</ImageSource>
+    <ImageSource x:Key="Address_Set_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/AddressColumn/Address_Set_H.png</ImageSource>
+    <!-- poifilter-->
+    <ImageSource x:Key="Poi_Filter">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_Filter.png</ImageSource>
+    <ImageSource x:Key="Poi_Filter_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_Filter_H.png</ImageSource>
+    <ImageSource x:Key="Poi_Filter_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_Filter_C.png</ImageSource>
+
+    <ImageSource x:Key="Poi_Add">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_Add.png</ImageSource>
+    <ImageSource x:Key="Poi_Add_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_Add_H.png</ImageSource>
+    <ImageSource x:Key="Poi_Add_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_Add_C.png</ImageSource>
+
+    <ImageSource x:Key="Poi_Delete">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_Delete.png</ImageSource>
+    <ImageSource x:Key="Poi_Delete_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_Delete.png</ImageSource>
+    <ImageSource x:Key="Poi_Delete_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_Delete.png</ImageSource>
+
+    <ImageSource x:Key="Poi_ExportReport">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_ExportReport.png</ImageSource>
+    <ImageSource x:Key="Poi_ExportReport_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_ExportReport_H.png</ImageSource>
+    <ImageSource x:Key="Poi_ExportReport_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_ExportReport_C.png</ImageSource>
+
+    <ImageSource x:Key="Poi_InverseSelection">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_InverseSelection.png</ImageSource>
+    <ImageSource x:Key="Poi_InverseSelection_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_InverseSelection_H.png</ImageSource>
+    <ImageSource x:Key="Poi_InverseSelection_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_InverseSelection_C.png</ImageSource>
+
+    <ImageSource x:Key="Poi_SelectAll">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_SelectAll.png</ImageSource>
+    <ImageSource x:Key="Poi_SelectAll_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_SelectAll_H.png</ImageSource>
+    <ImageSource x:Key="Poi_SelectAll_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/POIFilter/Poi_SelectAll_C.png</ImageSource>
+      <ImageSource x:Key="BuildImage">pack://application:,,,/Mmc.Mspace.Theme;component/Images/BuildImage.png</ImageSource>
+
+    <ImageSource x:Key="Account_Delphoto">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Account/Account_Delphoto.png</ImageSource>
+    <ImageSource x:Key="Account_Delphoto_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Account/Account_Delphoto_H.png</ImageSource>
+    <ImageSource x:Key="Account_Delphoto_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Account/Account_Delphoto_C.png</ImageSource>
+
+    <ImageSource x:Key="ExportPoi">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ExportPoi.png</ImageSource>
+    <ImageSource x:Key="ExportPoi_H">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ExportPoi_H.png</ImageSource>
+    <ImageSource x:Key="ExportPoi_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ExportPoi_C.png</ImageSource>
+
+    <ImageSource x:Key="LoginTopTitle">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LoginView/TopTitleBg.png</ImageSource>
+    <ImageSource x:Key="LoginBottomIcon">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LoginView/BottomIcon.png</ImageSource>
+    <ImageSource x:Key="LoginCloseIcon">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LoginView/Close.png</ImageSource>
+    <ImageSource x:Key="LoginCloseIcon_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LoginView/Close_C.png</ImageSource>
+    <ImageSource x:Key="LoginLogo">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LoginView/Logo.png</ImageSource>
+    <ImageSource x:Key="LoginMspaceIcon">pack://application:,,,/Mmc.Mspace.Theme;component/Images/LoginView/MSpace.png</ImageSource>
+    <!-- 网格-->
+    <ImageSource x:Key="Dbanjie">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Dbanjie.png</ImageSource>
+    <ImageSource x:Key="Dfenpai">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Dfenpai.png</ImageSource>
+    <ImageSource x:Key="Dshenhe">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Dshenhe.png</ImageSource>
+    <ImageSource x:Key="Dshouli">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Dshouli.png</ImageSource>
+    <ImageSource x:Key="Dwanjie">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Dwanjie.png</ImageSource>
+    <ImageSource x:Key="DYguidang">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DYguidang.png</ImageSource>
+    <ImageSource x:Key="ShowAll">pack://application:,,,/Mmc.Mspace.Theme;component/Images/ShowAll.png</ImageSource>
+
+
+    <ImageSource x:Key="Device">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Device.png</ImageSource>
+    <ImageSource x:Key="Device_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DeviceC.png</ImageSource>
+    <ImageSource x:Key="Device_S">pack://application:,,,/Mmc.Mspace.Theme;component/Images/DeviceS.png</ImageSource>
+
+    <ImageSource x:Key="Filter">pack://application:,,,/Mmc.Mspace.Theme;component/Images/Filter.png</ImageSource>
+    <ImageSource x:Key="Filter_C">pack://application:,,,/Mmc.Mspace.Theme;component/Images/FilterC.png</ImageSource>
+    <ImageSource x:Key="Filter_S">pack://application:,,,/Mmc.Mspace.Theme;component/Images/FilterS.png</ImageSource>
+</ResourceDictionary>
+    

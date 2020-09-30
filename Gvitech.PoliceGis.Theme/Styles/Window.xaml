@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:blankWindow="http://GFramework.org">
+    <!--加透明色不可以最大化-->
+    <Style x:Key="baseWindowStyle" TargetType="{x:Type blankWindow:BlankWindow}">
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property ="Background" Value="#1E2026" />
+        <Setter Property="AllowsTransparency" Value="False"/>
+        <Setter Property="ShowInTaskbar" Value="False"/>
+       
+    </Style>
+    <!--加透明色不可以最大化-->
+    <Style x:Key="AllowsTransparencyWindowStyle" TargetType="{x:Type blankWindow:BlankWindow}">
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property ="Background" Value="#1E2026" />
+        <Setter Property="AllowsTransparency" Value="True"/>
+        <Setter Property="ShowInTaskbar" Value="False"/>
+        <Setter Property="IgnoreTaskbarOnMaximize" Value="True"/>
+        
+    </Style>
+</ResourceDictionary>

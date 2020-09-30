@@ -1,0 +1,482 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="CheckBoxFillNormal" Color="#F4F4F4"/>
+    <SolidColorBrush x:Key="CheckBoxStroke" Color="#8E8F8F"/>
+    <SolidColorBrush x:Key="TextDisable" Color="#ffffff" Opacity="0.2"/>
+
+    <Style x:Key="PoiCheckBoxStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="Foreground" Value="{DynamicResource DefaultButtonForeground}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="IsThreeState" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="21"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Background="Transparent" Grid.Column="0" Grid.ColumnSpan="2" />
+                        <Image x:Name="Image_PressOver" Height="15"  Width="15" Margin="3" Stretch="UniformToFill" HorizontalAlignment="Right" VerticalAlignment="Center" Source="{StaticResource CheckBox_N}" />
+                        <ContentPresenter Grid.Column="1"  HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_F}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_P}"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_P}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_D}"/>
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsEnabled" Value="False"/>
+                                <Condition Property="IsChecked" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_P}"/>
+                            <Setter TargetName="Image_PressOver" Property="Opacity" Value="0.5"/>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="CheckBoxStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="Foreground" Value="{DynamicResource DefaultButtonForeground}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="IsThreeState" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="21"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Background="Transparent" Grid.Column="0" Grid.ColumnSpan="2" />
+                        <Image x:Name="Image_PressOver" Height="15"  Width="15" Margin="3" Stretch="UniformToFill" HorizontalAlignment="Right" VerticalAlignment="Center" Source="{StaticResource CheckBox_N}" />
+                        <ContentPresenter Grid.Column="1"  HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_F}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_P}"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_P}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_D}"/>
+                            <Setter Property="Foreground" Value="{StaticResource TextDisable}"/>
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsEnabled" Value="False"/>
+                                <Condition Property="IsChecked" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_P}"/>
+                            <Setter TargetName="Image_PressOver" Property="Opacity" Value="0.5"/>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="CheckBoxStyle2" TargetType="{x:Type CheckBox}">
+        <Setter Property="Foreground" Value="{DynamicResource DefaultButtonForeground}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="IsThreeState" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="21"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Background="Transparent" Grid.Column="0" Grid.ColumnSpan="2" />
+                        <Image x:Name="Image_PressOver" Height="15"  Width="15" Margin="3" Stretch="UniformToFill" HorizontalAlignment="Right" VerticalAlignment="Center" Source="{StaticResource CheckBox_N}" />
+                        <ContentPresenter Grid.Column="1"  HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_F}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_P}"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_P}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_D}"/>
+                            <Setter Property="Foreground" Value="{StaticResource TextDisable}"/>
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsEnabled" Value="False"/>
+                                <Condition Property="IsChecked" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource CheckBox_P}"/>
+                            <Setter TargetName="Image_PressOver" Property="Opacity" Value="0.5"/>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+<!--开始暂停播放按钮样式-->
+    <Style x:Key="NavigatioCheckBoxStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="Foreground" Value="{DynamicResource DefaultButtonForeground}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="IsThreeState" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="21"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Background="Transparent" Grid.Column="0" Grid.ColumnSpan="2" />
+                        <Image x:Name="Image_PressOver" Source="{StaticResource PlayNavigation}" Height="16"  Width="16" Stretch="UniformToFill" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                        <ContentPresenter Grid.Column="1"  HorizontalAlignment="Left" Margin="7,0,0,0" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource PlayNavigation_H}"/>
+                        </Trigger>
+
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsChecked" Value="False"/>
+                                <Condition Property="IsPressed" Value="true"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource PlayNavigation_C}"/>
+                        </MultiTrigger>
+
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsChecked" Value="False"/>
+                                <Condition Property="IsEnabled" Value="False"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource PlayNavigation_D}"/>
+                        </MultiTrigger>
+
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsChecked" Value="True"/>
+                                <Condition Property="IsPressed" Value="false"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource PauseNavigation}"/>
+                        </MultiTrigger>
+
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsChecked" Value="True"/>
+                                <Condition Property="IsMouseOver" Value="true"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource PauseNavigation_H}"/>
+                        </MultiTrigger>
+                        
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsChecked" Value="True"/>
+                                <Condition Property="IsPressed" Value="true"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource PauseNavigation_C}"/>
+                        </MultiTrigger>
+                        
+                        <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                <Condition Property="IsChecked" Value="True"/>
+                                <Condition Property="IsEnabled" Value="false"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource PauseNavigation_D}"/>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- 新增动画导航-->
+    <Style x:Key="AddCBStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="Foreground" Value="{DynamicResource DefaultButtonForeground}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="IsThreeState" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="150">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  Height ="120"></RowDefinition>
+                            <RowDefinition  Height ="30"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Border Background="Transparent" Grid.Column="0" Grid.ColumnSpan="2" >
+                        </Border>
+                        <Image Grid.Row="0" x:Name="Image_PressOver" Height="120"  Width="120" Stretch="UniformToFill" VerticalAlignment="Center" Source="{StaticResource AddNavigation}" />
+                        <TextBlock Grid.Row="1" HorizontalAlignment="Center" Margin="0,2,0,2"
+						   VerticalAlignment="Center" Height="19" x:Name="PART_Pcontent"
+						   FontSize="14" Foreground="#B3BBC5" Background="Black"
+						   Text="{DynamicResource Navigation_AddAnimation}" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource AddNavigation_H}"/>
+                            <Setter TargetName="PART_Pcontent" Property="Foreground" Value="#ffffff"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource AddNavigation_C}"/>
+                            <Setter TargetName="PART_Pcontent" Property="Foreground" Value="#50ABFF"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource AddNavigation_C}"/>
+                            <Setter TargetName="PART_Pcontent" Property="Foreground" Value="#50ABFF"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource AddNavigation_D}"/>
+                            <Setter Property="Foreground" Value="{StaticResource TextDisable}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+ <Style x:Key="DatePickerCheckBoxStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="Foreground" Value="{DynamicResource DefaultButtonForeground}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="IsThreeState" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image x:Name="Image_PressOver" Height="24"  Width="24" Stretch="UniformToFill" HorizontalAlignment="Right" VerticalAlignment="Center" Source="{StaticResource UcDP_DatePicker}" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource UcDP_DatePicker_H}"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource UcDP_DatePicker_C}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <Style x:Key="AddressInfoCheckBoxStyle" TargetType="{x:Type CheckBox}">
+
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource CheckBoxFocusVisual}" />
+        <Setter Property="Height" Value="16"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Height="{TemplateBinding Height}" Width="{TemplateBinding Height}" Grid.Column="0" >
+                            <Rectangle x:Name="CheckBoxRectangle" Fill="#16181B" />
+                            <Rectangle x:Name="CheckBoxRectangleOut" Stroke="#5C6881" StrokeThickness="1" />
+                            <Grid x:Name="CheckedMark" Width="16" Height="16" Visibility="Collapsed">
+                                <Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M2,6 L9,12" Stroke="#50ABFF"/>
+                                <Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M8,12 L17,0" Stroke="#50ABFF"/>
+                                <Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M2,6 L9,12" Stroke="#50ABFF"/>
+                                <Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M8,12 L17,0" Stroke="#50ABFF"/>
+                            </Grid>
+                        </Grid>
+                        <!--<ContentPresenter Grid.Column="1"  HorizontalAlignment="Left"  VerticalAlignment="Center" Content="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Content}"/>-->
+                        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Content}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="CheckedMark" Property="Visibility" Value="Visible"></Setter>
+                            <!--<Setter TargetName="CheckBoxRectangle" Property="Fill" Value="#FF00A8E0"></Setter>-->
+                            <Setter TargetName="CheckBoxRectangle" Property="Opacity" Value="1"></Setter>
+                            <!--<Setter TargetName="CheckBoxRectangleOut" Property="Stroke" Value="Transparent"></Setter>-->
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="FilterCBStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="Foreground" Value="{DynamicResource DefaultButtonForeground}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="IsThreeState" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image x:Name="Image_PressOver" Height="24"  Width="24" Stretch="UniformToFill" HorizontalAlignment="Right" VerticalAlignment="Center" Source="{StaticResource Poi_Filter}" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource Poi_Filter_H}"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource Poi_Filter_C}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="LabelSelectAllCBStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="Foreground" Value="{DynamicResource DefaultButtonForeground}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="IsThreeState" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image x:Name="Image_PressOver" Height="24"  Width="24" Stretch="UniformToFill" HorizontalAlignment="Right" VerticalAlignment="Center" Source="{StaticResource Poi_SelectAll}" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource Poi_SelectAll_H}"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Image_PressOver" Property="Source" Value="{StaticResource Poi_SelectAll_C}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="CheckBoxSwitchStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <Border>
+                        <Grid>
+                            <Image x:Name="ImgUnSelected" Height="16" Width="25" Stretch="Fill" Source="{StaticResource closecheck_P}"/>
+
+                            <Image x:Name="ImgSelected" Height="16" Width="25"  Stretch="Fill" Visibility="Collapsed" Source="{StaticResource closecheck_N}"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="ImgSelected" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="ImgUnSelected" Property="Visibility" Value="Collapsed"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="FilterLabelCBStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="Foreground" Value="{DynamicResource DefaultButtonForeground}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="IsThreeState" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock x:Name="tb1" Text="{TemplateBinding Content}" FontSize="14" TextAlignment="Center" Foreground="#50ABFF"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="tb1" Property="Foreground" Value="White"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="tb1" Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="FilterLabelCheckBoxStyle" TargetType="{x:Type CheckBox}">
+
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource CheckBoxFocusVisual}" />
+        <Setter Property="Height" Value="16"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Height="{TemplateBinding Height}" Width="{TemplateBinding Height}" Grid.Column="0" >
+                            <Rectangle x:Name="CheckBoxRectangle" Fill="#16181B" />
+                            <Rectangle x:Name="CheckBoxRectangleOut" Stroke="#5C6881" StrokeThickness="1" />
+                            <Grid x:Name="CheckedMark" Width="16" Height="16" Visibility="Collapsed">
+                                <Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M2,6 L9,12" Stroke="#50ABFF"/>
+                                <Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M8,12 L17,0" Stroke="#50ABFF"/>
+                                <Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M2,6 L9,12" Stroke="#50ABFF"/>
+                                <Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M8,12 L17,0" Stroke="#50ABFF"/>
+                                <!--<Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M1,9 L10,17" Stroke="#50ABFF"/>
+                                <Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M8,17 L20,3" Stroke="#50ABFF"/>-->
+                            </Grid>
+                        </Grid>
+                        <!--<ContentPresenter Grid.Column="1"  HorizontalAlignment="Left"  VerticalAlignment="Center" Content="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Content}"/>-->
+                        <TextBlock Grid.Column="1" Margin="4,0,0,0" VerticalAlignment="Center" Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Content}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="CheckedMark" Property="Visibility" Value="Visible"></Setter>
+                            <!--<Setter TargetName="CheckBoxRectangle" Property="Fill" Value="#FF00A8E0"></Setter>-->
+                            <Setter TargetName="CheckBoxRectangle" Property="Opacity" Value="1"></Setter>
+                            <!--<Setter TargetName="CheckBoxRectangleOut" Property="Stroke" Value="Transparent"></Setter>-->
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

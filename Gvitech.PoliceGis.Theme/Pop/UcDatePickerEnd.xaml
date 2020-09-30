@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Mmc.Mspace.Theme.Pop.UcDatePickerEnd"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Mmc.Mspace.Theme.Pop"
+             mc:Ignorable="d" >
+    <Grid>
+        <TextBox Padding="12,0,0,0" Foreground="#D7DBE1" Background="#16181B" Style="{StaticResource DatePickerEndTextBoxStyle}" VerticalContentAlignment="Center" x:Name="tb1" Height="32"  Width="137">
+        </TextBox>
+        <CheckBox  x:Name="cb1" Height="24" Width="24" Margin="110,0,0,0" Style="{StaticResource DatePickerCheckBoxStyle}"/>
+        <Button Margin="70,0,0,0" Width="16" Height="16" VerticalContentAlignment="Center" VerticalAlignment="Center"  Click="Button_Click" Style="{StaticResource DateDelBtnStyle}"/>
+        <Popup IsOpen="{Binding IsChecked ,ElementName=cb1,Mode=TwoWay}"  Placement="Bottom" PlacementTarget="{Binding ElementName=tb1}" StaysOpen="False">
+            <Border>
+                <Calendar x:Name="cd1" Height="324" Width="288" CalendarDayButtonStyle="{StaticResource DatePickerCalendarDayButtonStyle }" CalendarButtonStyle="{StaticResource DatePickerCalendarButtonStyle }" CalendarItemStyle="{StaticResource DatePickerCalendarItemStyle}" Style="{StaticResource DatePickerCalendarStyle}" SelectedDatesChanged="Calendar_SelectedDatesChanged"/>
+            </Border>
+        </Popup>
+    </Grid>
+</UserControl>

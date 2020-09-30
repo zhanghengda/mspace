@@ -1,0 +1,995 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41C024CF-8B5D-4693-B3FF-8D36D2B753C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mmc.Mspace.Theme</RootNamespace>
+    <AssemblyName>Mmc.Mspace.Theme</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GFramework.BlankWindow">
+      <HintPath>..\libs\GFramework.BlankWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Expression.Drawing.3.0.0\lib\net45\Microsoft.Expression.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\libs\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\BatteryView.xaml.cs">
+      <DependentUpon>BatteryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Buttons.cs" />
+    <Compile Include="Controls\DashboardAvoidance.xaml.cs">
+      <DependentUpon>DashboardAvoidance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DashboardDirection.xaml.cs">
+      <DependentUpon>DashboardDirection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DashboardHeight.xaml.cs">
+      <DependentUpon>DashboardHeight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DashboardMain.xaml.cs">
+      <DependentUpon>DashboardMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DashboardRoll.xaml.cs">
+      <DependentUpon>DashboardRoll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DashboardSpeed.xaml.cs">
+      <DependentUpon>DashboardSpeed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DashboardTilt.xaml.cs">
+      <DependentUpon>DashboardTilt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DragAdorner.cs" />
+    <Compile Include="Controls\ImageSwitchView.xaml.cs">
+      <DependentUpon>ImageSwitchView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IndentConverter.cs" />
+    <Compile Include="Controls\PictureView.xaml.cs">
+      <DependentUpon>PictureView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TreeViewItemExt.cs" />
+    <Compile Include="Controls\VisualTreeEx.cs" />
+    <Compile Include="Converter\AddressMarginLevelConverter.cs" />
+    <Compile Include="Converter\BoolToVisibleConverter.cs" />
+    <Compile Include="Converter\CalerdarSelectedDateCoverter.cs" />
+    <Compile Include="Converter\InspectionParameterConverter.cs" />
+    <Compile Include="Converter\MapParameterConverter.cs" />
+    <Compile Include="Helper\LinearMatrixAnimation.cs" />
+    <Compile Include="Helper\PopupEx.cs" />
+    <Compile Include="Helper\PopupHelper.cs" />
+    <Compile Include="Converter\TreeViewUIConverter.cs" />
+    <Compile Include="Helper\TextBoxHelper.cs" />
+    <Compile Include="Helper\TreeItemShowBackground.cs" />
+    <Compile Include="Pop\DefaultSecondWindow.xaml.cs">
+      <DependentUpon>DefaultSecondWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pop\Messages.cs" />
+    <Compile Include="Pop\MmcComboboxData.cs" />
+    <Compile Include="Pop\MmcCombox.xaml.cs">
+      <DependentUpon>MmcCombox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pop\MmcConfirmationBox.xaml.cs">
+      <DependentUpon>MmcConfirmationBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pop\MmcMsBox.xaml.cs">
+      <DependentUpon>MmcMsBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pop\MmcTopCombox.xaml.cs">
+      <DependentUpon>MmcTopCombox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pop\NewMmcCombobox.xaml.cs">
+      <DependentUpon>NewMmcCombobox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pop\UcDatePickerEnd.xaml.cs">
+      <DependentUpon>UcDatePickerEnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pop\UcDatePickerStart.xaml.cs">
+      <DependentUpon>UcDatePickerStart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="BootstrapStyles\BootstrapBaseStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootstrapStyles\BootstrapButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootstrapStyles\BootstrapColors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootstrapStyles\BootstrapFonts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootstrapStyles\BootstrapFormControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootstrapStyles\BootstrapInputGroup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootstrapStyles\BootstrapLabel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootstrapStyles\BootstrapPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootstrapStyles\BootstrapPath.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootstrapStyles\BootstrapProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootstrapStyles\BootstrapSizes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BootstrapStyles\BootstrapWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="brushesstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="buttonstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="checkboxstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="comboboxstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="commondatatemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BatteryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DashboardAvoidance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DashboardDirection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DashboardHeight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DashboardMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DashboardRoll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DashboardSpeed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DashboardTilt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ImageSwitchView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PictureView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="converters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="custom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="datagridstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="geodatastyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="groupboxstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LabelStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="listboxstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pop\DefaultSecondWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pop\MmcCombox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pop\MmcConfirmationBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pop\MmcMsBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pop\MmcTopCombox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pop\NewMmcCombobox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pop\UcDatePickerEnd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pop\UcDatePickerStart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="scrollviewerstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\BaseColor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\BorderStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Calendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\CheckBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Icons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\LabelStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ListBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\RadioButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ScrollViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\SliderStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TabControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TreeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="textblockstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="textboxstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gvitech.Wpf.Toolkit\Mmc.Wpf.Toolkit.csproj">
+      <Project>{0faaf359-fce7-4c30-aede-1b290abce6de}</Project>
+      <Name>Mmc.Wpf.Toolkit</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Seach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\setting_resize.png" />
+    <Resource Include="Images\win-min.png" />
+    <Resource Include="Images\winclose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\libs\GFramework.BlankWindow.dll" />
+    <Analyzer Include="..\libs\System.Windows.Interactivity.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close_D.png" />
+    <Resource Include="Images\close_M.png" />
+    <Resource Include="Images\close_N.png" />
+    <Resource Include="Images\min_D.png" />
+    <Resource Include="Images\min_M.png" />
+    <Resource Include="Images\min_N.png" />
+    <Resource Include="Images\set_D.png" />
+    <Resource Include="Images\set_M.png" />
+    <Resource Include="Images\set_N.png" />
+    <Resource Include="Images\user_D.png" />
+    <Resource Include="Images\user_M.png" />
+    <Resource Include="Images\user_N.png" />
+    <Resource Include="Images\Editwaypoint_M.png" />
+    <Resource Include="Images\Editwaypoint_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Courselist_M.png" />
+    <Resource Include="Images\Courselist_N.png" />
+    <Resource Include="Images\Drawarea_M.png" />
+    <Resource Include="Images\Drawarea_N.png" />
+    <Resource Include="Images\Drawroute_M.png" />
+    <Resource Include="Images\Drawroute_N.png" />
+    <Resource Include="Images\ExportKML_M.png" />
+    <Resource Include="Images\ExportKML_N.png" />
+    <Resource Include="Images\Importroutes_M.png" />
+    <Resource Include="Images\Importroutes_N.png" />
+    <Resource Include="Images\Uploadserver_M.png" />
+    <Resource Include="Images\Uploadserver_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\packdown_H.png" />
+    <Resource Include="Images\packdown_N.png" />
+    <Resource Include="Images\packup_H.png" />
+    <Resource Include="Images\packup_N.png" />
+    <Resource Include="Images\uav_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\down_H.png" />
+    <Resource Include="Images\down_N.png" />
+    <Resource Include="Images\up_H.png" />
+    <Resource Include="Images\up_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\NextPoint.png" />
+    <Resource Include="Images\NextPoint_H.png" />
+    <Resource Include="Images\PrePoint.png" />
+    <Resource Include="Images\PrePoint_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DeletePoint.png" />
+    <Resource Include="Images\DeletePoint_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Flyinto_H.png" />
+    <Resource Include="Images\Flyinto_N.png" />
+    <Resource Include="Images\Screenshots_H.png" />
+    <Resource Include="Images\Screenshots_N.png" />
+    <Resource Include="Images\Update_H.png" />
+    <Resource Include="Images\Update_N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\xiala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pause.png" />
+    <Resource Include="Images\pause_h.png" />
+    <Resource Include="Images\pause_p.png" />
+    <Resource Include="Images\play.png" />
+    <Resource Include="Images\playscreenshots_h.png" />
+    <Resource Include="Images\play_h.png" />
+    <Resource Include="Images\play_p.png" />
+    <Resource Include="Images\screenshots.png" />
+    <Resource Include="Images\screenshots_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add_n.png" />
+    <Resource Include="Images\delete_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\closecheck_N.png" />
+    <Resource Include="Images\closecheck_P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\symbolic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Controls\checkBox_d.png" />
+    <Resource Include="Images\Controls\checkBox_f.png" />
+    <Resource Include="Images\Controls\checkBox_n.png" />
+    <Resource Include="Images\Controls\checkBox_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftIcon\annotations_n.png" />
+    <Resource Include="Images\LeftIcon\annotations_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftIcon\dotlabeling.png" />
+    <Resource Include="Images\LeftIcon\linemark.png" />
+    <Resource Include="Images\LeftIcon\surfacemarking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftIcon\account_n.png" />
+    <Resource Include="Images\LeftIcon\account_p.png" />
+    <Resource Include="Images\LeftIcon\deletepoi_n.png" />
+    <Resource Include="Images\LeftIcon\deletepoi_p.png" />
+    <Resource Include="Images\LeftIcon\edit_n.png" />
+    <Resource Include="Images\LeftIcon\edit_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftIcon\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftIcon\2dIcon.png" />
+    <Resource Include="Images\LeftIcon\3dIcon.png" />
+    <Resource Include="Images\LeftIcon\image.png" />
+    <Resource Include="Images\LeftIcon\photography.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftIcon\leftdown_f.png" />
+    <Resource Include="Images\LeftIcon\leftdown_n.png" />
+    <Resource Include="Images\LeftIcon\leftdown_p.png" />
+    <Resource Include="Images\LeftIcon\leftup_f.png" />
+    <Resource Include="Images\LeftIcon\leftup_n.png" />
+    <Resource Include="Images\LeftIcon\leftup_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftIcon\Fourscreens_n.png" />
+    <Resource Include="Images\LeftIcon\Fourscreens_p.png" />
+    <Resource Include="Images\LeftIcon\Threescreens_n.png" />
+    <Resource Include="Images\LeftIcon\Threescreens_p.png" />
+    <Resource Include="Images\LeftIcon\Twoscreens_n.png" />
+    <Resource Include="Images\LeftIcon\Twoscreens_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\circular_n.png" />
+    <Resource Include="Images\Buttons\circular_p.png" />
+    <Resource Include="Images\Buttons\polygon_n.png" />
+    <Resource Include="Images\Buttons\polygon_p.png" />
+    <Resource Include="Images\Buttons\rectangle_n.png" />
+    <Resource Include="Images\Buttons\rectangle_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\Folder.png" />
+    <Resource Include="Images\Buttons\Folder_C.png" />
+    <Resource Include="Images\Buttons\Folder_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ActionsIcon\LMove.png" />
+    <Resource Include="Images\ActionsIcon\LMove_C.png" />
+    <Resource Include="Images\ActionsIcon\LMove_H.png" />
+    <Resource Include="Images\ActionsIcon\RMove.png" />
+    <Resource Include="Images\ActionsIcon\RMove_C.png" />
+    <Resource Include="Images\ActionsIcon\RMove_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftIcon\Datetime_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftIcon\Datetime_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LeftIcon\exportDoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\download_n.png" />
+    <Resource Include="Images\Buttons\download_p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\FirstPage.png" />
+    <Resource Include="Images\Buttons\FirstPage_C.png" />
+    <Resource Include="Images\Buttons\FirstPage_H.png" />
+    <Resource Include="Images\Buttons\LastPage.png" />
+    <Resource Include="Images\Buttons\LastPage_C.png" />
+    <Resource Include="Images\Buttons\LastPage_H.png" />
+    <Resource Include="Images\Buttons\NextPage.png" />
+    <Resource Include="Images\Buttons\NextPage_C.png" />
+    <Resource Include="Images\Buttons\NextPage_H.png" />
+    <Resource Include="Images\Buttons\PageTo.png" />
+    <Resource Include="Images\Buttons\PageTo_C.png" />
+    <Resource Include="Images\Buttons\PageTo_H.png" />
+    <Resource Include="Images\Buttons\PrevPage.png" />
+    <Resource Include="Images\Buttons\PrevPage_C.png" />
+    <Resource Include="Images\Buttons\PrevPage_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AnimationNavigation\AddNavigationPoint.png" />
+    <Resource Include="Images\AnimationNavigation\RemoveNavigation.png" />
+    <Resource Include="Images\AnimationNavigation\RenameNavigation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AnimationNavigation\AddNavigationPoint_D.png" />
+    <Resource Include="Images\AnimationNavigation\AddNavigationPoint_C.png" />
+    <Resource Include="Images\AnimationNavigation\AddNavigationPoint_H.png" />
+    <Resource Include="Images\AnimationNavigation\RemoveNavigation_D.png" />
+    <Resource Include="Images\AnimationNavigation\RemoveNavigation_C.png" />
+    <Resource Include="Images\AnimationNavigation\RemoveNavigation_H.png" />
+    <Resource Include="Images\AnimationNavigation\RenameNavigation_D.png" />
+    <Resource Include="Images\AnimationNavigation\RenameNavigation_C.png" />
+    <Resource Include="Images\AnimationNavigation\RenameNavigation_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AnimationNavigation\PauseNavigation.png" />
+    <Resource Include="Images\AnimationNavigation\PauseNavigation_C.png" />
+    <Resource Include="Images\AnimationNavigation\PauseNavigation_D.png" />
+    <Resource Include="Images\AnimationNavigation\PauseNavigation_H.png" />
+    <Resource Include="Images\AnimationNavigation\PlayNavigation.png" />
+    <Resource Include="Images\AnimationNavigation\PlayNavigation_C.png" />
+    <Resource Include="Images\AnimationNavigation\PlayNavigation_D.png" />
+    <Resource Include="Images\AnimationNavigation\PlayNavigation_H.png" />
+    <Resource Include="Images\AnimationNavigation\StopNavigation.png" />
+    <Resource Include="Images\AnimationNavigation\StopNavigation_D.png" />
+    <Resource Include="Images\AnimationNavigation\StopNavigation_H.png" />
+    <Resource Include="Images\AnimationNavigation\StopNavigation_C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AnimationNavigation\AddNavigation.png" />
+    <Resource Include="Images\AnimationNavigation\AddNavigation_C.png" />
+    <Resource Include="Images\AnimationNavigation\AddNavigation_D.png" />
+    <Resource Include="Images\AnimationNavigation\AddNavigation_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AnimationNavigation\ExportNavigation.png" />
+    <Resource Include="Images\AnimationNavigation\ExportNavigation_C.png" />
+    <Resource Include="Images\AnimationNavigation\ExportNavigation_D.png" />
+    <Resource Include="Images\AnimationNavigation\ExportNavigation_H.png" />
+    <Resource Include="Images\AnimationNavigation\ImportNavigation.png" />
+    <Resource Include="Images\AnimationNavigation\ImportNavigation_C.png" />
+    <Resource Include="Images\AnimationNavigation\ImportNavigation_D.png" />
+    <Resource Include="Images\AnimationNavigation\ImportNavigation_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DatePicker\DateRangePicker.png" />
+    <Resource Include="Images\DatePicker\DateRangePicker_C.png" />
+    <Resource Include="Images\DatePicker\DateRangePicker_H.png" />
+    <Resource Include="Images\DatePicker\DatePicker.png" />
+    <Resource Include="Images\DatePicker\DatePicker_C.png" />
+    <Resource Include="Images\DatePicker\DatePicker_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DatePicker\DateDel.png" />
+    <Resource Include="Images\DatePicker\DateDel_C.png" />
+    <Resource Include="Images\DatePicker\DateDel_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Notice.png" />
+    <Resource Include="Images\Notice_C.png" />
+    <Resource Include="Images\Notice_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Notice_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Notice\DelNotice.png" />
+    <Resource Include="Images\Notice\DelNotice_C.png" />
+    <Resource Include="Images\Notice\DelNotice_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RoutePanning\DownSort.png" />
+    <Resource Include="Images\RoutePanning\UpSort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AnimationNavigation\FinalPage.png" />
+    <Resource Include="Images\AnimationNavigation\FinalPage_C.png" />
+    <Resource Include="Images\AnimationNavigation\FinalPage_D.png" />
+    <Resource Include="Images\AnimationNavigation\FinalPage_H.png" />
+    <Resource Include="Images\AnimationNavigation\FirstPage.png" />
+    <Resource Include="Images\AnimationNavigation\FirstPage_C.png" />
+    <Resource Include="Images\AnimationNavigation\FirstPage_D.png" />
+    <Resource Include="Images\AnimationNavigation\FirstPage_H.png" />
+    <Resource Include="Images\AnimationNavigation\LastPage.png" />
+    <Resource Include="Images\AnimationNavigation\LastPage_C.png" />
+    <Resource Include="Images\AnimationNavigation\LastPage_D.png" />
+    <Resource Include="Images\AnimationNavigation\LastPage_H.png" />
+    <Resource Include="Images\AnimationNavigation\NextPage.png" />
+    <Resource Include="Images\AnimationNavigation\NextPage_C.png" />
+    <Resource Include="Images\AnimationNavigation\NextPage_D.png" />
+    <Resource Include="Images\AnimationNavigation\NextPage_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AnimationNavigation\DeleteAccountItem.png" />
+    <Resource Include="Images\AnimationNavigation\DeleteAccountItem_C.png" />
+    <Resource Include="Images\AnimationNavigation\DeleteAccountItem_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RoutePanning\EditRouteItem.png" />
+    <Resource Include="Images\RoutePanning\EditRouteItem_C.png" />
+    <Resource Include="Images\RoutePanning\EditRouteItem_H.png" />
+    <Resource Include="Images\RoutePanning\FlySiumlate.png" />
+    <Resource Include="Images\RoutePanning\FlySiumlate_C.png" />
+    <Resource Include="Images\RoutePanning\FlySiumlate_H.png" />
+    <Resource Include="Images\RoutePanning\ViewRoute.png" />
+    <Resource Include="Images\RoutePanning\ViewRoute_C.png" />
+    <Resource Include="Images\RoutePanning\ViewRoute_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\TileLayer\TLPV_Del.png" />
+    <Resource Include="Images\TileLayer\TLPV_Del_C.png" />
+    <Resource Include="Images\TileLayer\TLPV_Del_H.png" />
+    <Resource Include="Images\TileLayer\TLPV_Edit_C.png" />
+    <Resource Include="Images\TileLayer\TLPV_Edit_H.png" />
+    <Resource Include="Images\TileLayer\TLPV_FlyTo.png" />
+    <Resource Include="Images\TileLayer\TLPV_FlyTo_C.png" />
+    <Resource Include="Images\TileLayer\TLPV_FlyTo_H.png" />
+    <Resource Include="Images\TileLayer\TLPV_Move.png" />
+    <Resource Include="Images\TileLayer\TLPV_Move_C.png" />
+    <Resource Include="Images\TileLayer\TLPV_Move_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\TileLayer\TLPV_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WirTower\Delete.png" />
+    <Resource Include="Images\WirTower\Delete_C.png" />
+    <Resource Include="Images\WirTower\Delete_D.png" />
+    <Resource Include="Images\WirTower\Delete_H.png" />
+    <Resource Include="Images\WirTower\Edit.png" />
+    <Resource Include="Images\WirTower\Edit_C.png" />
+    <Resource Include="Images\WirTower\Edit_D.png" />
+    <Resource Include="Images\WirTower\Edit_H.png" />
+    <Resource Include="Images\WirTower\Input.png" />
+    <Resource Include="Images\WirTower\Input_C.png" />
+    <Resource Include="Images\WirTower\Input_D.png" />
+    <Resource Include="Images\WirTower\Input_H.png" />
+    <Resource Include="Images\WirTower\Output.png" />
+    <Resource Include="Images\WirTower\Output_C.png" />
+    <Resource Include="Images\WirTower\Output_D.png" />
+    <Resource Include="Images\WirTower\Output_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WirTower\Add.png" />
+    <Resource Include="Images\WirTower\Add_C.png" />
+    <Resource Include="Images\WirTower\Add_D.png" />
+    <Resource Include="Images\WirTower\Add_H.png" />
+    <Resource Include="Images\WirTower\BuildLine.png" />
+    <Resource Include="Images\WirTower\BuildLine_C.png" />
+    <Resource Include="Images\WirTower\BuildLine_D.png" />
+    <Resource Include="Images\WirTower\BuildLine_H.png" />
+    <Resource Include="Images\WirTower\DownMove.png" />
+    <Resource Include="Images\WirTower\DownMove_C.png" />
+    <Resource Include="Images\WirTower\DownMove_D.png" />
+    <Resource Include="Images\WirTower\DownMove_H.png" />
+    <Resource Include="Images\WirTower\Insert.png" />
+    <Resource Include="Images\WirTower\Insert_C.png" />
+    <Resource Include="Images\WirTower\Insert_D.png" />
+    <Resource Include="Images\WirTower\Insert_H.png" />
+    <Resource Include="Images\WirTower\Location.png" />
+    <Resource Include="Images\WirTower\Location_C.png" />
+    <Resource Include="Images\WirTower\Location_D.png" />
+    <Resource Include="Images\WirTower\Location_H.png" />
+    <Resource Include="Images\WirTower\OpenFile.png" />
+    <Resource Include="Images\WirTower\OpenFile_C.png" />
+    <Resource Include="Images\WirTower\OpenFile_D.png" />
+    <Resource Include="Images\WirTower\OpenFile_H.png" />
+    <Resource Include="Images\WirTower\Save.png" />
+    <Resource Include="Images\WirTower\Save_C.png" />
+    <Resource Include="Images\WirTower\Save_D.png" />
+    <Resource Include="Images\WirTower\Save_H.png" />
+    <Resource Include="Images\WirTower\Search.png" />
+    <Resource Include="Images\WirTower\Search_C.png" />
+    <Resource Include="Images\WirTower\Search_D.png" />
+    <Resource Include="Images\WirTower\Search_H.png" />
+    <Resource Include="Images\WirTower\UpMove.png" />
+    <Resource Include="Images\WirTower\UpMove_C.png" />
+    <Resource Include="Images\WirTower\UpMove_D.png" />
+    <Resource Include="Images\WirTower\UpMove_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WirTower\ToStation.png" />
+    <Resource Include="Images\WirTower\ToStation_C.png" />
+    <Resource Include="Images\WirTower\ToStation_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AddressColumn\Address_Delete_C.png" />
+    <Resource Include="Images\AddressColumn\Address_Delete_H.png" />
+    <Resource Include="Images\AddressColumn\Address_UnFold.png" />
+    <Resource Include="Images\AddressColumn\Address_UnFold_C.png" />
+    <Resource Include="Images\AddressColumn\Address_UnFold_H.png" />
+    <Resource Include="Images\AddressColumn\Address_Search.png" />
+    <Resource Include="Images\AddressColumn\Address_Search_C.png" />
+    <Resource Include="Images\AddressColumn\Address_Search_H.png" />
+    <Resource Include="Images\AddressColumn\Address_Fold.png" />
+    <Resource Include="Images\AddressColumn\Address_Fold_C.png" />
+    <Resource Include="Images\AddressColumn\Address_Fold_H.png" />
+    <Resource Include="Images\AddressColumn\Address_Set.png" />
+    <Resource Include="Images\AddressColumn\Address_Set_C.png" />
+    <Resource Include="Images\AddressColumn\Address_Set_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AddressColumn\Address_Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AddressColumn\Address_Add.png" />
+    <Resource Include="Images\AddressColumn\Address_Add_C.png" />
+    <Resource Include="Images\AddressColumn\Address_Add_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\POIFilter\Poi_Filter.png" />
+    <Resource Include="Images\POIFilter\Poi_Filter_C.png" />
+    <Resource Include="Images\POIFilter\Poi_Filter_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\POIFilter\Poi_Add.png" />
+    <Resource Include="Images\POIFilter\Poi_Add_C.png" />
+    <Resource Include="Images\POIFilter\Poi_Add_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\POIFilter\Poi_Delete.png" />
+    <Resource Include="Images\POIFilter\Poi_Delete_C.png" />
+    <Resource Include="Images\POIFilter\Poi_Delete_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\POIFilter\Poi_ExportReport.png" />
+    <Resource Include="Images\POIFilter\Poi_ExportReport_C.png" />
+    <Resource Include="Images\POIFilter\Poi_ExportReport_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\POIFilter\Poi_SelectAll.png" />
+    <Resource Include="Images\POIFilter\Poi_SelectAll_C.png" />
+    <Resource Include="Images\POIFilter\Poi_SelectAll_H.png" />
+    <Resource Include="Images\POIFilter\Poi_InverseSelection.png" />
+    <Resource Include="Images\POIFilter\Poi_InverseSelection_C.png" />
+    <Resource Include="Images\POIFilter\Poi_InverseSelection_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Account\Account_Addphoto.png" />
+    <Resource Include="Images\Account\Account_Addphoto_C.png" />
+    <Resource Include="Images\Account\Account_Addphoto_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Account\Account_Delphoto.png" />
+    <Resource Include="Images\Account\Account_Delphoto_C.png" />
+    <Resource Include="Images\Account\Account_Delphoto_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Account\Account_Edit.png" />
+    <Resource Include="Images\Account\Account_Edit_C.png" />
+    <Resource Include="Images\Account\Account_Edit_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\updateAddress.png" />
+    <Resource Include="Images\updateAddress_C.png" />
+    <Resource Include="Images\updateAddress_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ExportPoi.png" />
+    <Resource Include="Images\ExportPoi_C.png" />
+    <Resource Include="Images\ExportPoi_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\EditLine\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AddPoint.png" />
+    <Resource Include="Images\AddPoint_H.png" />
+    <Resource Include="Images\ResetPoint.png" />
+    <Resource Include="Images\ResetPoint_H.png" />
+    <Resource Include="Images\SavePoint.png" />
+    <Resource Include="Images\SavePoint_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DeletePointNew.png" />
+    <Resource Include="Images\DeletePointNew_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Account_View.png" />
+    <Resource Include="Images\Account_View_C.png" />
+    <Resource Include="Images\Account_View_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\buttom.png" />
+    <Resource Include="Images\buttom_C.png" />
+    <Resource Include="Images\buttom_H.png" />
+    <Resource Include="Images\top.png" />
+    <Resource Include="Images\top_C.png" />
+    <Resource Include="Images\top_H.png" />
+    <Resource Include="Images\userImg.png" />
+    <Resource Include="Images\userImg_C.png" />
+    <Resource Include="Images\userImg_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LoadingAnimate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LoginView\Close.png" />
+    <Resource Include="Images\LoginView\Close_C.png" />
+    <Resource Include="Images\LoginView\BottomIcon.png" />
+    <Resource Include="Images\LoginView\Logo.png" />
+    <Resource Include="Images\LoginView\MSpace.png" />
+    <Resource Include="Images\LoginView\TopTitleBg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ReportTemplate\haining.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ReportTemplate\changgui.png" />
+    <Resource Include="Images\ReportTemplate\danhe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LoadingLabels.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\clip.png" />
+    <Resource Include="Images\clip_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Controls\Battery\battery1.png" />
+    <Resource Include="Images\Controls\Battery\battery2.png" />
+    <Resource Include="Images\Controls\Battery\battery3.png" />
+    <Resource Include="Images\Controls\Battery\battery4.png" />
+    <Resource Include="Images\Controls\Battery\battery5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dashboard\BackgroundSpeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dashboard\CursorAirSpeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dashboard\CursorGroundSpeed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dashboard\BackgroundMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dashboard\CursorMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dashboard\RollMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dashboard\TiltMain1.png" />
+    <Resource Include="Images\Dashboard\TiltMain2.png" />
+    <Resource Include="Images\Dashboard\TiltMain3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dashboard\BackgroundAvoid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dashboard\FrontAvoid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ReportTemplate\tongji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dashboard\BackgroundHeight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dbanjie.png" />
+    <Resource Include="Images\Dfenpai.png" />
+    <Resource Include="Images\Dshenhe.png" />
+    <Resource Include="Images\Dshouli.png" />
+    <Resource Include="Images\Dwanjie.png" />
+    <Resource Include="Images\DYguidang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ShowAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Device.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\DeviceC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\DeviceS.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Filter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\FilterC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\FilterS.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

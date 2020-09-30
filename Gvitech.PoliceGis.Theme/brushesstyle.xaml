@@ -1,0 +1,56 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<SolidColorBrush
+		Color="#99000000"
+		x:Key="P60BlackBrush" />
+	<SolidColorBrush
+		Color="#BF000000"
+		x:Key="P75BlackBrush" />
+	<SolidColorBrush
+		Color="#BFFFFFFF"
+		x:Key="P75WhiteBrush" />
+	<SolidColorBrush
+		Color="#D8023AA3"
+		x:Key="MouseOverBrush" />
+	<SolidColorBrush
+		Color="#D8023AA3"
+		x:Key="MousePressedBrush" />
+	<SolidColorBrush
+		Color="#D8023AA3"
+		x:Key="CheckedBrush" />
+	<SolidColorBrush
+		Color="#99000000"
+		x:Key="NormalButtonBrush" />
+	<SolidColorBrush
+		Color="#FF626262"
+		x:Key="NormalBorderBrush" />
+	<SolidColorBrush
+		Color="WhiteSmoke"
+		x:Key="NormalTextBrush" />
+	<SolidColorBrush
+		Color="#E5FFFFFF"
+		x:Key="NormalButtonForegroundBrush" />
+	<SolidColorBrush
+		Opacity="0.9"
+		Color="DimGray"
+		x:Key="ButtonBackBrush" />
+    
+    <SolidColorBrush
+		Opacity="0.4"
+		Color="#FF176eed"
+		x:Key="HighlightBackBrush" />
+    <SolidColorBrush
+		Opacity="0.6"
+		Color="#FF176eed"
+		x:Key="HoverHighlightBackBrush" />
+    <!--<SolidColorBrush
+		Opacity="0.6"
+		Color="#FF01BF45"
+		x:Key="HighlightBackExBrush" />-->
+	<!--<SolidColorBrush
+		Opacity="0.4"
+		Color="#FF01BF45"
+		x:Key="HoverHighlightBackBrush" />-->
+	<SolidColorBrush
+		Color="White"
+		x:Key="HighlightForeBrush" />
+</ResourceDictionary>

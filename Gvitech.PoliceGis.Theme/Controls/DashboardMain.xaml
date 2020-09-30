@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="Mmc.Mspace.Theme.Controls.DashboardMain"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Mmc.Mspace.Theme.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Viewbox Stretch="Uniform">
+        <Grid>
+            <Image Source="../Images/Dashboard/BackgroundMain.png"/>
+            <Image x:Name="Cursor" Source="../Images/Dashboard/CursorMain.png" RenderTransformOrigin=".5,.5"/>
+            <Image x:Name="RollCursor" Source="../Images/Dashboard/RollMain.png" RenderTransformOrigin=".5,.5"/>
+
+            <Image x:Name="TiltCursor1" Source="../Images/Dashboard/TiltMain1.png"/>
+            <Image x:Name="TiltCursor2" Source="../Images/Dashboard/TiltMain2.png">
+                <Image.RenderTransform>
+                    <TranslateTransform Y="7"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="TiltCursor3" Source="../Images/Dashboard/TiltMain3.png">
+                <Image.RenderTransform>
+                    <TranslateTransform Y="12"/>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+    </Viewbox>
+</UserControl>

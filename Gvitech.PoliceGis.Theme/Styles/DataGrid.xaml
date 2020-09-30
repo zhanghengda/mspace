@@ -1,0 +1,360 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:Mmc.Mspace.Theme.Controls">
+    <Style
+		TargetType="{x:Type DataGridColumnHeader}"
+		x:Key="DataGridColumnHeaderStyle">
+        <Setter
+			Property="Background"
+			Value="{StaticResource DefaultDatagridBackground}" />
+        <Setter
+			Property="Foreground"
+			Value="#B3BBC5" />
+        <Setter Property="HorizontalContentAlignment"
+                Value="Center"/>
+        <Setter Property="VerticalContentAlignment"
+                Value="Center"/>
+        <Setter 
+            Property="FontSize"
+            Value="12"/>
+        <Setter
+            Property="VerticalAlignment"
+            Value="Stretch"/>
+        <Setter
+            Property="HorizontalAlignment"
+            Value="Stretch"/>
+        <Setter
+			Property="Height"
+			Value="24" />
+    </Style>
+    <Style
+		TargetType="{x:Type DataGridCell}"
+		x:Key="DataGridCellStyle">
+        <Style.Resources>
+            <ResourceDictionary>
+                <Style
+					TargetType="{x:Type ContentPresenter}"
+					x:Key="{x:Type ContentPresenter}">
+                    <Setter
+						Property="VerticalAlignment"
+						Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </Style.Resources>
+        <Setter
+			Property="Background"
+			Value="#00FFFFFF" />
+        <Setter
+			Property="BorderBrush"
+			Value="#00FFFFFF" />
+        <Setter
+			Property="BorderThickness"
+			Value="1" />
+        <Setter
+			Property="Template">
+            <Setter.Value>
+                <ControlTemplate
+					TargetType="{x:Type DataGridCell}">
+                    <Border
+						Background="{TemplateBinding Background}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}"
+						SnapsToDevicePixels="True">
+                        <ContentPresenter
+							SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger
+				Property="DataGridCell.IsSelected"
+				Value="True">
+                <Setter
+					Property="Background"
+					Value="{DynamicResource HighlightBackBrush}" />
+                <Setter
+					Property="Foreground"
+					Value="{DynamicResource HighlightForeBrush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style
+		TargetType="{x:Type DataGridCell}"
+		x:Key="DataGridCellCheckboxStyle">
+        <Style.Resources>
+            <ResourceDictionary>
+                <Style
+					TargetType="{x:Type ContentPresenter}"
+					x:Key="{x:Type ContentPresenter}">
+                    <Setter
+						Property="VerticalAlignment"
+						Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </Style.Resources>
+        <Setter
+			Property="Background"
+			Value="#00FFFFFF" />
+        <Setter
+			Property="BorderBrush"
+			Value="#00FFFFFF" />
+        <Setter
+			Property="BorderThickness"
+			Value="1" />
+        <Setter
+			Property="Template">
+            <Setter.Value>
+                <ControlTemplate
+					TargetType="{x:Type DataGridCell}">
+                    <Border 
+						Background="{TemplateBinding Background}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}"
+						SnapsToDevicePixels="True">
+                        <!--<ContentPresenter
+							SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />-->
+
+                        <CheckBox Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="{Binding IsSelected,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger
+				Property="DataGridCell.IsSelected"
+				Value="True">
+                <Setter
+					Property="Background"
+					Value="{DynamicResource HighlightBackBrush}" />
+                <Setter
+					Property="Foreground"
+					Value="{DynamicResource HighlightForeBrush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style
+		TargetType="{x:Type DataGridCell}"
+		x:Key="DataGridCellOperateStyle">
+        <Style.Resources>
+            <ResourceDictionary>
+                <Style
+					TargetType="{x:Type ContentPresenter}"
+					x:Key="{x:Type ContentPresenter}">
+                    <Setter
+						Property="VerticalAlignment"
+						Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </Style.Resources>
+        <Setter
+			Property="Background"
+			Value="#00FFFFFF" />
+        <Setter
+			Property="BorderBrush"
+			Value="#00FFFFFF" />
+        <Setter
+			Property="BorderThickness"
+			Value="1" />
+        <Setter
+			Property="Template">
+            <Setter.Value>
+                <ControlTemplate
+					TargetType="{x:Type DataGridCell}">
+                    <Border 
+						Background="{TemplateBinding Background}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}"
+						SnapsToDevicePixels="True">
+                        <!--<ContentPresenter
+							SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />-->
+
+                        <StackPanel Margin="4" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <!--<Button Margin="3" Width="32" FontSize="11" Style="{DynamicResource DefaultButtonStyle}"  Content="详情" Cursor="Hand" Command="{Binding DataContext.DetailCommand,RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding .}"/>-->
+                            <controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="2,0" 
+                                                RIcon="{DynamicResource WT_Edit}" 
+                                                MouseOverRIcon="{DynamicResource WT_Edit_H}" ToolTip="{DynamicResource WTEdit}"
+                                                PressedRIcon="{DynamicResource WT_Edit_C}" Command="{Binding DataContext.EditCommand,RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding .}"  Style="{StaticResource HomeLeftButtonStyle}"></controls:Buttons>
+                            
+                            <controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="2,0" 
+                                                RIcon="{DynamicResource WT_Delete}" 
+                                                MouseOverRIcon="{DynamicResource WT_Delete_H}" ToolTip="{DynamicResource WTDelete}"
+                                                PressedRIcon="{DynamicResource WT_Delete_C}" Command="{Binding DataContext.DeleteCommand,RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding .}"  Style="{StaticResource HomeLeftButtonStyle}"></controls:Buttons>
+                            <!--<Button Margin="3" Width="32" FontSize="11" Style="{DynamicResource DefaultButtonStyle}"  Content="编辑" Cursor="Hand" Command="{Binding DataContext.EditCommand,RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding .}"/>-->
+                            <!--<Button Margin="3" Width="32" FontSize="11" Style="{DynamicResource DefaultButtonStyle}" Content="删除" Cursor="Hand" Command="{Binding DataContext.DeleteCommand,RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding .}"/>-->
+                        </StackPanel>
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger
+				Property="DataGridCell.IsSelected"
+				Value="True">
+                <Setter
+					Property="Background"
+					Value="{DynamicResource HighlightBackBrush}" />
+                <Setter
+					Property="Foreground"
+					Value="{DynamicResource HighlightForeBrush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style
+		TargetType="{x:Type DataGridCell}"
+		x:Key="DataGridCellDetailOperateStyle">
+        <Style.Resources>
+            <ResourceDictionary>
+                <Style
+					TargetType="{x:Type ContentPresenter}"
+					x:Key="{x:Type ContentPresenter}">
+                    <Setter
+						Property="VerticalAlignment"
+						Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </Style.Resources>
+        <Setter
+			Property="Background"
+			Value="#00FFFFFF" />
+        <Setter
+			Property="BorderBrush"
+			Value="#00FFFFFF" />
+        <Setter
+			Property="BorderThickness"
+			Value="1" />
+        <Setter
+			Property="Template">
+            <Setter.Value>
+                <ControlTemplate
+					TargetType="{x:Type DataGridCell}">
+                    <Border 
+						Background="{TemplateBinding Background}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}"
+						SnapsToDevicePixels="True">
+                        <!--<ContentPresenter
+							SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />-->
+
+                        <StackPanel Margin="4" Orientation="Horizontal" HorizontalAlignment="Center">                          
+                            <controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="2,0" 
+                                                RIcon="{DynamicResource WT_Edit}" 
+                                                MouseOverRIcon="{DynamicResource WT_Edit_H}" ToolTip="{DynamicResource WTDetail}"
+                                                PressedRIcon="{DynamicResource WT_Edit_C}" Command="{Binding DataContext.DetailCommand,RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding .}"  Style="{StaticResource HomeLeftButtonStyle}"/>
+
+                            <controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="2,0" 
+                                                RIcon="{DynamicResource WT_Output}" 
+                                                MouseOverRIcon="{DynamicResource WT_Output_H}" ToolTip="{DynamicResource WTOutput}"
+                                                PressedRIcon="{DynamicResource WT_Output_C}" Command="{Binding DataContext.OutputCommand,RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding .}"  Style="{StaticResource HomeLeftButtonStyle}"/>
+
+                            <controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="2,0" 
+                                                RIcon="{DynamicResource WT_Delete}" 
+                                                MouseOverRIcon="{DynamicResource WT_Delete_H}" ToolTip="{DynamicResource WTDelete}"
+                                                PressedRIcon="{DynamicResource WT_Delete_C}" Command="{Binding DataContext.DeleteCommand,RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding .}"  Style="{StaticResource HomeLeftButtonStyle}"/>
+                            <!--暂时 屏蔽导出到地面站功能 liangms 2019-7-31-->
+                            <!--<controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="2,0" 
+                                                RIcon="{DynamicResource WT_ToStation}" 
+                                                MouseOverRIcon="{DynamicResource WT_ToStation_H}" ToolTip="{DynamicResource WTToStation}"
+                                                PressedRIcon="{DynamicResource WT_ToStation_C}" Command="{Binding DataContext.OutputMissionCommand,RelativeSource={RelativeSource AncestorLevel=1,AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding .}"  Style="{StaticResource HomeLeftButtonStyle}"/>-->
+
+                        </StackPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger
+				Property="DataGridCell.IsSelected"
+				Value="True">
+                <Setter
+					Property="Background"
+					Value="{DynamicResource HighlightBackBrush}" />
+                <Setter
+					Property="Foreground"
+					Value="{DynamicResource HighlightForeBrush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <Style
+		TargetType="{x:Type DataGridRow}"
+		x:Key="DataGridRowStyle">
+        <Setter
+			Property="MinHeight"
+			Value="26" />
+        <Style.Triggers>
+            <Trigger
+				Property="UIElement.IsMouseOver"
+				Value="True">
+                <Setter
+					Property="Background"
+					Value="{DynamicResource HoverHighlightBackBrush}" />
+                <Setter
+					Property="Foreground"
+					Value="{DynamicResource HighlightForeBrush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style
+		TargetType="{x:Type DataGridRowHeader}"
+		x:Key="DataGridRowHeaderStyle">
+        <Setter
+			Property="Background"
+			Value="#00FFFFFF" />
+    </Style>
+    <Style
+		TargetType="{x:Type DataGrid}"
+		x:Key="{x:Type DataGrid}">
+        <Setter
+			Property="DataGrid.AutoGenerateColumns"
+			Value="True" />
+        <Setter
+			Property="Background"
+			Value="{x:Null}" />
+        <Setter
+			Property="BorderBrush"
+			Value="#FF808080" />
+        <Setter
+			Property="DataGrid.CanUserAddRows"
+			Value="False" />
+        <Setter
+			Property="DataGrid.CanUserDeleteRows"
+			Value="False" />
+        <Setter
+			Property="Foreground"
+			Value="#FFFFFFFF" />
+        <Setter
+			Property="DataGrid.HorizontalGridLinesBrush"
+			Value="#FF808080" />
+        <Setter
+			Property="DataGrid.VerticalGridLinesBrush"
+			Value="#FF808080" />
+        <Setter
+			Property="DataGrid.IsReadOnly"
+			Value="True" />
+        <Setter
+			Property="DataGrid.RowBackground"
+			Value="#00FFFFFF" />
+        <Setter
+			Property="DataGrid.ColumnHeaderStyle"
+			Value="{DynamicResource DataGridColumnHeaderStyle}" />
+        <Setter
+			Property="DataGrid.CellStyle"
+			Value="{DynamicResource DataGridCellStyle}" />
+        <Setter
+			Property="DataGrid.RowStyle"
+			Value="{DynamicResource DataGridRowStyle}" />
+        <Setter
+			Property="DataGrid.RowHeaderStyle"
+			Value="{DynamicResource DataGridRowHeaderStyle}" />
+    </Style>
+    
+    
+    
+    
+</ResourceDictionary>

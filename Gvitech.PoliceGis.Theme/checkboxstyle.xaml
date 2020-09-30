@@ -1,0 +1,96 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Style
+		TargetType="{x:Type CheckBox}"
+		x:Key="SwitchCheckStyle">
+		<Setter
+			Property="VerticalAlignment"
+			Value="Center" />
+		<Setter
+			Property="VerticalContentAlignment"
+			Value="Center" />
+		<Setter
+			Property="Width"
+			Value="48" />
+		<Setter
+			Property="Height"
+			Value="20" />
+		<Setter
+			Property="Template">
+			<Setter.Value>
+				<ControlTemplate
+					TargetType="{x:Type CheckBox}">
+					<Grid>
+						<Border
+							Name="ForegroundPanel"
+							BorderBrush="#000000"
+							BorderThickness="1"
+							CornerRadius="9"
+							Padding="0" />
+						<DockPanel
+							LastChildFill="True">
+							<Ellipse
+								Name="CheckFlag"
+								Width="18"
+								Height="18"
+								VerticalAlignment="Center" />
+							<TextBlock
+								Name="Content"
+								HorizontalAlignment="Center"
+								VerticalAlignment="Center" />
+						</DockPanel>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger
+							Property="ToggleButton.IsChecked"
+							Value="True">
+							<Setter
+								Property="ToolTip"
+								Value="{DynamicResource Turnon}" />
+							<Setter
+								TargetName="ForegroundPanel"
+								Property="Background"
+								Value="#50ABFF" />
+							<Setter
+								TargetName="CheckFlag"
+								Property="Fill"
+								Value="#EBF5FF" />
+                            <Setter
+								TargetName="Content"
+								Property="DockPanel.Dock"
+								Value="Left" />
+							<Setter
+								TargetName="CheckFlag"
+								Property="DockPanel.Dock"
+								Value="Right" />
+						</Trigger>
+						<Trigger
+							Property="ToggleButton.IsChecked"
+							Value="False">
+							<Setter
+								Property="ToolTip"
+								Value="{DynamicResource Off}" />
+							<Setter
+								TargetName="ForegroundPanel"
+								Property="Background"
+								Value="#16181B" />
+							<Setter
+								TargetName="CheckFlag"
+								Property="Fill"
+								Value="#B3BBC5" />
+							<Setter
+								TargetName="Content"
+								Property="DockPanel.Dock"
+								Value="Right" />
+							<Setter
+								TargetName="CheckFlag"
+								Property="DockPanel.Dock"
+								Value="Left" />
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

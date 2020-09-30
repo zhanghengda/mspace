@@ -1,0 +1,27 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:gvi="http://schemas.mmc.com" xmlns:gvifm="http://schemas.mmc.com/wpf">
+	<ItemsPanelTemplate
+		x:Key="HorizontalPanelTemplate">
+		<VirtualizingStackPanel
+			Orientation="Horizontal" />
+	</ItemsPanelTemplate>
+	<ItemsPanelTemplate
+		x:Key="VirtualizingStackPanel">
+		<VirtualizingStackPanel
+			Orientation="{Binding Path=(gvifm:AttachedProperties.Orientation), RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ItemsControl}}" />
+	</ItemsPanelTemplate>
+	<ItemsPanelTemplate
+		x:Key="ListBoxVirtualizingStackPanel">
+		<VirtualizingStackPanel
+			Orientation="{Binding Path=(gvifm:AttachedProperties.Orientation), RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListBox}}" />
+	</ItemsPanelTemplate>
+	<Style
+		TargetType="{x:Type ItemsControl}"
+		x:Key="{x:Type ItemsControl}">
+		<Setter 
+			Property="gvifm:AttachedProperties.Orientation"
+			Value="Vertical" />
+		<Setter
+			Property="ItemsPanel"
+			Value="{StaticResource VirtualizingStackPanel}" />
+	</Style>
+</ResourceDictionary>

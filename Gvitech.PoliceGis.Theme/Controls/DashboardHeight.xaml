@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="Mmc.Mspace.Theme.Controls.DashboardHeight"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Mmc.Mspace.Theme.Controls"
+             xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="ScaleTextStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#B3BBC5"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+    </UserControl.Resources>
+    <Viewbox Stretch="Uniform">
+        <Grid>
+            <Image Source="../Images/Dashboard/BackgroundHeight.png"/>
+            <Ellipse Width="105" Height="105" Stroke="#B3BBC5" StrokeThickness="2" Opacity="0.5"/>
+
+            <Border Width="105" Height="105" RenderTransformOrigin=".5,.5">
+                <ed:Arc x:Name="ArcHeight" ArcThickness="0" ArcThicknessUnit="Pixel" StrokeThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="None" UseLayoutRounding="False" Width="105" Height="105" StartAngle="-90" EndAngle="90"  Stroke="DodgerBlue" RenderTransformOrigin=".5,.5"/>
+            </Border>
+
+            <Border Width="105" Height="105" RenderTransformOrigin=".5,.5">
+                <ed:Arc x:Name="ArcAltitude" ArcThickness="0" ArcThicknessUnit="Pixel" StrokeThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="None" UseLayoutRounding="False" Width="105" Height="105" StartAngle="-90" EndAngle="90"  Stroke="#94D855" RenderTransformOrigin=".5,.5">
+                    <ed:Arc.RenderTransform>
+                        <ScaleTransform ScaleY="-1" ScaleX="1"/>
+                    </ed:Arc.RenderTransform>
+                </ed:Arc>
+            </Border>
+
+            <Image x:Name="CursorHeight" Source="../Images/Dashboard/CursorAirSpeed.png" RenderTransformOrigin=".5,.5"/>
+            <Image x:Name="CursorAltitude" Source="../Images/Dashboard/CursorGroundSpeed.png" RenderTransformOrigin=".5,.5"/>
+
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,30" TextAlignment="Right" Width="80">
+                <Run x:Name="runHeight" FontSize="20" Foreground="#08FFFF"/>
+                <Run x:Name="runHeightUnit" Text="m" FontSize="12" Foreground="#B3BBC5"/>
+            </TextBlock>
+
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,-20" TextAlignment="Right" Width="80">
+                <Run x:Name="runAltitude" FontSize="20" Foreground="#08FFFF"/>
+                <Run x:Name="runAltitudeUnit" Text="m" FontSize="12" Foreground="#B3BBC5"/>
+            </TextBlock>
+
+            <TextBlock Text="0" HorizontalAlignment="Left" Style="{StaticResource ScaleTextStyle}" Margin="5,0"/>
+
+            <TextBlock x:Name="txtUp1" Style="{StaticResource ScaleTextStyle}" Text="5" Margin="0,0,140,80"/>
+            <TextBlock x:Name="txtUp2" Style="{StaticResource ScaleTextStyle}" Text="10" Margin="0,0,80,140"/>
+            <TextBlock x:Name="txtUp3" Style="{StaticResource ScaleTextStyle}" Text="15" Margin="0,0,0,160"/>
+            <TextBlock x:Name="txtUp4" Style="{StaticResource ScaleTextStyle}" Text="20" Margin="80,0,0,140"/>
+            <TextBlock x:Name="txtUp5" Style="{StaticResource ScaleTextStyle}" Text="25" Margin="145,0,0,80"/>
+            <TextBlock x:Name="txtUp6" Style="{StaticResource ScaleTextStyle}" Text="30" Margin="165,0,0,20"/>
+
+            <TextBlock x:Name="txtDown1" Style="{StaticResource ScaleTextStyle}" Text="5" Margin="0,80,140,0"/>
+            <TextBlock x:Name="txtDown2" Style="{StaticResource ScaleTextStyle}" Text="10" Margin="0,140,80,0"/>
+            <TextBlock x:Name="txtDown3" Style="{StaticResource ScaleTextStyle}" Text="15" Margin="0,160,0,0"/>
+            <TextBlock x:Name="txtDown4" Style="{StaticResource ScaleTextStyle}" Text="20" Margin="80,140,0,0"/>
+            <TextBlock x:Name="txtDown5" Style="{StaticResource ScaleTextStyle}" Text="25" Margin="145,80,0,0"/>
+            <TextBlock x:Name="txtDown6" Style="{StaticResource ScaleTextStyle}" Text="30" Margin="165,20,0,0"/>
+        </Grid>
+    </Viewbox>
+</UserControl>

@@ -1,0 +1,37 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="DefaultForeground" Color="#EBF5FF"/>
+
+    <SolidColorBrush x:Key="DefaultButtonBackground" Color="#50ABFF"/>
+    <SolidColorBrush x:Key="DefaultButtonMouseOver" Color="#1890FF"/>
+    <SolidColorBrush x:Key="DefaultButtonForeground" Color="#EBF5FF"/>
+    <SolidColorBrush x:Key="DefaultButtonPressed" Color="#1890FF"/>
+    <SolidColorBrush x:Key="DefaultButtonIsEnabled" Color="#5D6168"/>
+
+    <SolidColorBrush x:Key="DefaultOpacityButtonBackground" Color="#292C35" Opacity="0.8"/>
+    <SolidColorBrush x:Key="DefaultOpacityButtonMouseOver" Color="#50ABFF"/>
+    <SolidColorBrush x:Key="DefaultOpacityButtonForeground" Color="#EBF5FF"/>
+    <SolidColorBrush x:Key="DefaultOpacityButtonPressed" Color="#50ABFF"/>
+    <SolidColorBrush x:Key="DefaultOpacityButtonIsEnabled" Color="#5D6168"/>
+
+    
+
+    <SolidColorBrush x:Key="DefaultTextBoxForeground" Color="#B3BBC5"/>
+    <SolidColorBrush x:Key="DefaultTextBoxBackground" Color="#16181B"/>
+    <SolidColorBrush x:Key="DefaultTextBoxIsEnabledB" Color="#2D3038"/>
+    <SolidColorBrush x:Key="DefaultTextBoxIsEnabledF" Color="#45474D"/>
+    <SolidColorBrush x:Key="DefaultTextBoxMouseOverBorder" Color="#336696"/>
+    <LinearGradientBrush x:Key="tabItemBackground" StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Color="#282A30" Offset="0"/>
+        <GradientStop Color="#1E2026" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="LeftWindowTitleBg" Color="#1E2026" Opacity="0.5"/>
+    <SolidColorBrush x:Key="LeftWindowBg" Color="#1E2026" Opacity="0.7"/>
+    <SolidColorBrush x:Key="WindowTitleBg" Color="#292C35" Opacity="0.5"/>
+
+    <SolidColorBrush x:Key="DefaultDatagridBackground" Color="#1E2026"/>
+    <SolidColorBrush x:Key="DefaultTextBlockBackground" Color="#16181B"/>
+
+    <SolidColorBrush x:Key="PageBackground" Color="#1E2026" Opacity="0.8"/>
+    <SolidColorBrush x:Key="PageIsEnabledBackground" Color="#1E2026" Opacity="0.3"/>
+</ResourceDictionary>
