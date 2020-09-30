@@ -1,0 +1,12 @@
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.DataSourceAccess.dll
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.DataSourceAccess.pdb
+D:\GitDemo\ant-design-vue\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.csprojAssemblyReference.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.csproj.CoreCompileInputs.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.dll
+D:\GitDemo\ant-design-vue\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.pdb
+D:\Mspace\mspace\mspace\binPath\Mmc.DataSourceAccess.dll
+D:\Mspace\mspace\mspace\binPath\Mmc.DataSourceAccess.pdb
+D:\Mspace\mspace\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.csprojAssemblyReference.cache
+D:\Mspace\mspace\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.csproj.CoreCompileInputs.cache
+D:\Mspace\mspace\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.dll
+D:\Mspace\mspace\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.pdb
