@@ -1,0 +1,28 @@
+﻿using System;
+using Gvitech.CityMaker.RenderControl;
+using Mmc.Framework.Wpf.Core;
+
+namespace Mmc.Framework.Wpf.Commands
+{
+	/// <summary>
+	/// </summary>
+	// Token: 0x0200000D RID: 13
+	public class VerticalDistanceCmd : MapCommand
+	{
+		// Token: 0x06000020 RID: 32 RVA: 0x0000258C File Offset: 0x0000078C
+		public override void Execute(object parameter)
+		{
+			bool flag = parameter.ParseTo(false);
+			bool flag2 = flag;
+			if (flag2)
+			{
+				base.MapControl.InteractMode = gviInteractMode.gviInteractMeasurement;
+				base.MapControl.MeasurementMode = gviMeasurementMode.gviMeasureVerticalDistance;
+			}
+			else
+			{
+				base.MapControl.InteractMode = gviInteractMode.gviInteractNormal;
+			}
+		}
+	}
+}
