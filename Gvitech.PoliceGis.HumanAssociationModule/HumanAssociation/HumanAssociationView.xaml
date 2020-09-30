@@ -1,0 +1,238 @@
+<UserControl
+	x:Class="Mmc.Mspace.HumanAssociationModule.HumanAssociation.HumanAssociationView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	MaxWidth="1000"
+	MaxHeight="400"
+	Margin="0"
+	HorizontalAlignment="Left"
+	VerticalAlignment="Top"
+	Foreground="#FFF5F5F5" xmlns:humanassociation="clr-namespace:Mmc.Mspace.HumanAssociationModule.HumanAssociation"
+	Canvas.Left="{Binding Left}"
+	Canvas.Top="{Binding Top}">
+	<Popup
+		Focusable="False"
+		Placement="MousePoint"
+		StaysOpen="False"
+		IsOpen="{Binding IsOpen}">
+		<DockPanel
+			Background="#88000000">
+			<GroupBox
+				DockPanel.Dock="Top"
+				Padding="5">
+				<HeaderedContentControl.Header>
+					<TextBlock
+						Style="{DynamicResource ViewHeaderStyle}"
+						Text="{Binding Content}" />
+				</HeaderedContentControl.Header>
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition
+							Width="auto" />
+						<ColumnDefinition />
+						<ColumnDefinition
+							Width="auto" />
+						<ColumnDefinition />
+						<ColumnDefinition
+							Width="auto" />
+						<ColumnDefinition />
+						<ColumnDefinition
+							Width="auto" />
+						<ColumnDefinition />
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition
+							Height="auto" />
+						<RowDefinition
+							Height="auto" />
+						<RowDefinition
+							Height="auto" />
+						<RowDefinition
+							Height="auto" />
+					</Grid.RowDefinitions>
+					<TextBlock
+						Grid.Row="0"
+						Grid.Column="0"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="档案号:" />
+					<TextBlock
+						Grid.Row="0"
+						Grid.Column="1"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.ID}" />
+					<TextBlock
+						Grid.Row="0"
+						Grid.Column="2"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="采集日期:" />
+					<TextBlock
+						Grid.Row="0"
+						Grid.Column="3"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.RecordDate, StringFormat={}{0:yyyy-MM-dd}}" />
+					<TextBlock
+						Grid.Row="0"
+						Grid.Column="4"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="登记人:" />
+					<TextBlock
+						Grid.Row="0"
+						Grid.Column="5"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.Recorder}" />
+					<TextBlock
+						Grid.Row="1"
+						Grid.Column="0"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="房主姓名:" />
+					<TextBlock
+						Grid.Row="1"
+						Grid.Column="1"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.Owner}" />
+					<TextBlock
+						Grid.Row="1"
+						Grid.Column="2"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="房主电话:" />
+					<TextBlock
+						Grid.Row="1"
+						Grid.Column="3"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.Tel}" />
+					<TextBlock
+						Grid.Row="1"
+						Grid.Column="4"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="性别:" />
+					<TextBlock
+						Grid.Row="1"
+						Grid.Column="5"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.Sex}" />
+					<TextBlock
+						Grid.Row="1"
+						Grid.Column="6"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="房主身份证号码:" />
+					<TextBlock
+						Grid.Row="1"
+						Grid.Column="7"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.OwnerID}" />
+					<TextBlock
+						Grid.Row="2"
+						Grid.Column="0"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="出租房屋地址:" />
+					<TextBlock
+						Grid.Row="2"
+						Grid.Column="1"
+						Grid.ColumnSpan="3"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.Address}" />
+					<TextBlock
+						Grid.Row="2"
+						Grid.Column="4"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="起租日期:" />
+					<TextBlock
+						Grid.Row="2"
+						Grid.Column="5"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.StartDate, StringFormat={}{0:yyyy-MM-dd}}" />
+					<TextBlock
+						Grid.Row="2"
+						Grid.Column="6"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="租赁到期日期:" />
+					<TextBlock
+						Grid.Row="2"
+						Grid.Column="7"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.EndDate, StringFormat={}{0:yyyy-MM-dd}}" />
+					<TextBlock
+						Grid.Row="3"
+						Grid.Column="0"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="管理人姓名:" />
+					<TextBlock
+						Grid.Row="3"
+						Grid.Column="1"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.ManagerName}" />
+					<TextBlock
+						Grid.Row="3"
+						Grid.Column="2"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="管理人联系电话:" />
+					<TextBlock
+						Grid.Row="3"
+						Grid.Column="3"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.ManagerTel}" />
+					<TextBlock
+						Grid.Row="3"
+						Grid.Column="4"
+						Style="{StaticResource HRVC@TextBlockStyle}"
+						Text="管理人地址:" />
+					<TextBlock
+						Grid.Row="3"
+						Grid.Column="5"
+						Grid.ColumnSpan="3"
+						Style="{StaticResource HLVC@TextBlockStyle}"
+						Text="{Binding House.ManagerAddress}" />
+				</Grid>
+			</GroupBox>
+			<ListBox
+				ScrollViewer.CanContentScroll="True"
+				ScrollViewer.VerticalScrollBarVisibility="Auto"
+				ItemsSource="{Binding House.Peoples}">
+				<ItemsControl.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel
+							MaxWidth="{Binding ActualWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListBox}}" />
+					</ItemsPanelTemplate>
+				</ItemsControl.ItemsPanel>
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<DockPanel
+							Margin="2"
+							Background="#A8000000">
+							<Image
+								Width="100"
+								Height="120"
+								DockPanel.Dock="Left"
+								Source="{Binding Photo}" />
+							<StackPanel>
+								<TextBlock
+									FontSize="15"
+									Foreground="#FFF5F5F5"
+									Text="{Binding Name}" />
+								<Grid>
+									<Grid.RowDefinitions>
+										<RowDefinition />
+										<RowDefinition />
+									</Grid.RowDefinitions>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition
+											Width="auto" />
+										<ColumnDefinition />
+									</Grid.ColumnDefinitions>
+									<TextBlock
+										Grid.Row="0"
+										Grid.Column="1"
+										Foreground="#FFF5F5F5"
+										Text="{Binding ID}" />
+									<TextBlock
+										Grid.Row="1"
+										Grid.Column="1"
+										Foreground="#FFF5F5F5"
+										Text="{Binding Tel}" />
+								</Grid>
+							</StackPanel>
+						</DockPanel>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ListBox>
+		</DockPanel>
+	</Popup>
+</UserControl>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9B0F837-5EB0-42B1-9020-4214D038C0D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mmc.Mspace.HumanAssociationModule</RootNamespace>
+    <AssemblyName>Mmc.Mspace.HumanAssociationModule</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FindPeopleCmd.cs" />
+    <Compile Include="FindPeopleViewModel.cs" />
+    <Compile Include="findpeople\FindPeopleView.xaml.cs">
+      <DependentUpon>findpeopleview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="findpeople\FindPeopleWebView.xaml.cs">
+      <DependentUpon>FindPeopleWebView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="House.cs" />
+    <Compile Include="HumanAssociation\HumanAssociationCmd.cs" />
+    <Compile Include="HumanAssociation\HumanAssociationView.xaml.cs">
+      <DependentUpon>HumanAssociationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HumanAssociation\HumanAssociationViewModel.cs" />
+    <Compile Include="People.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gvitech.DataSourceAccess\Mmc.DataSourceAccess.csproj">
+      <Project>{24FDF0D9-FEC4-465B-915D-01FAE99E2184}</Project>
+      <Name>Mmc.DataSourceAccess</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Framework\Mmc.Framework.csproj">
+      <Project>{22939209-2239-4851-8f9b-24b79823793a}</Project>
+      <Name>Mmc.Framework</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Common\Mmc.Mspace.Common.csproj">
+      <Project>{cd3991ed-0326-49cd-a83c-7816aafd88b7}</Project>
+      <Name>Mmc.Mspace.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.CoreModule\Mmc.Mspace.CoreModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0d5}</Project>
+      <Name>Mmc.Mspace.CoreModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Models\Mmc.Mspace.Models.csproj">
+      <Project>{eab6d6d4-7d10-4999-bb95-9e5d1003f062}</Project>
+      <Name>Mmc.Mspace.Models</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Services\Mmc.Mspace.Services.csproj">
+      <Project>{adcc12cb-e1d2-436a-8c33-47484ae76e08}</Project>
+      <Name>Mmc.Mspace.Services</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Windows\Mmc.Windows.csproj">
+      <Project>{8f12bf24-3e61-46e6-8baa-4bd059203aca}</Project>
+      <Name>Mmc.Windows</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf.Toolkit\Mmc.Wpf.Toolkit.csproj">
+      <Project>{0faaf359-fce7-4c30-aede-1b290abce6de}</Project>
+      <Name>Mmc.Wpf.Toolkit</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf\Mmc.Wpf.csproj">
+      <Project>{2efe1860-3671-43c0-9e80-e0a80f438ac3}</Project>
+      <Name>Mmc.Wpf</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ReferencePath Include="F:\mmcode\Mspace1\libs\citymaker8\Gvitech.CityMaker.FdeCore.v8.0.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\libs\citymaker8\Gvitech.CityMaker.FdeGeometry.v8.0.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\libs\citymaker8\Gvitech.CityMaker.RenderControl.v8.0.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\libs\log4net.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\PublicAssemblies\Microsoft.mshtml.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\binPath\Mmc.DataSourceAccess.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\binPath\Mmc.Framework.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\binPath\Mmc.Mspace.Common.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\binPath\Mmc.Mspace.CoreModule.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\binPath\Mmc.Mspace.Models.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\binPath\Mmc.Mspace.Services.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\binPath\Mmc.Windows.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\binPath\Mmc.Wpf.dll" />
+    <ReferencePath Include="F:\mmcode\Mspace1\binPath\Mmc.Wpf.Toolkit.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\PresentationFramework.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xaml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\WindowsBase.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="F:\mmcode\Mspace1\Gvitech.PoliceGis.HumanAssociationModule\obj\Debug\findpeople\findpeopleview.g.cs" />
+    <Compile Include="F:\mmcode\Mspace1\Gvitech.PoliceGis.HumanAssociationModule\obj\Debug\findpeople\FindPeopleWebView.g.cs" />
+    <Compile Include="F:\mmcode\Mspace1\Gvitech.PoliceGis.HumanAssociationModule\obj\Debug\HumanAssociation\HumanAssociationView.g.cs" />
+  </ItemGroup>
+</Project>
