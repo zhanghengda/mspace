@@ -1,0 +1,261 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:Gvitech.Wpf.Toolkit.Controls">
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary
+			Source="/Gvitech.Wpf.Toolkit;component/Themes/ProgressRingStyle.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+	<Style
+		TargetType="{x:Type local:IconToggleButton}"
+		x:Key="{x:Type local:IconToggleButton}">
+		<Setter
+			Property="UIElement.SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="Template">
+			<Setter.Value>
+				<ControlTemplate
+					TargetType="{x:Type local:IconToggleButton}">
+					<Border
+						Background="{TemplateBinding Background}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}">
+						<Image
+							Name="img"
+							SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+							Source="{Binding Icon, RelativeSource={RelativeSource TemplatedParent}}" />
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger
+							Property="UIElement.IsMouseOver"
+							Value="True">
+							<Setter
+								TargetName="img"
+								Property="Source"
+								Value="{Binding MouseOverIcon, RelativeSource={RelativeSource TemplatedParent}}" />
+						</Trigger>
+						<Trigger
+							Property="ToggleButton.IsChecked"
+							Value="true">
+							<Setter
+								TargetName="img"
+								Property="Source"
+								Value="{Binding CheckedIcon, RelativeSource={RelativeSource TemplatedParent}}" />
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style
+		TargetType="{x:Type local:IconPopupButton}"
+		x:Key="{x:Type local:IconPopupButton}">
+		<Setter
+			Property="UIElement.SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="Template">
+			<Setter.Value>
+				<ControlTemplate
+					TargetType="{x:Type local:IconPopupButton}">
+					<Border
+						Background="{TemplateBinding Background}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}">
+						<Grid>
+							<Image
+								Name="img"
+								SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+								Stretch="Fill"
+								Source="{Binding Icon, RelativeSource={RelativeSource TemplatedParent}}" />
+							<Popup
+								AllowsTransparency="True"
+								Placement="{TemplateBinding local:Placement}"
+								StaysOpen="False"
+								IsOpen="{Binding IsChecked, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+								PlacementTarget="{Binding ElementName=img}">
+								<Border
+									Background="#00FFFFFF">
+									<ContentPresenter />
+								</Border>
+							</Popup>
+						</Grid>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger
+							Property="UIElement.IsMouseOver"
+							Value="True">
+							<Setter
+								TargetName="img"
+								Property="Source"
+								Value="{Binding MouseOverIcon, RelativeSource={RelativeSource TemplatedParent}}" />
+						</Trigger>
+						<Trigger
+							Property="ToggleButton.IsChecked"
+							Value="true">
+							<Setter
+								TargetName="img"
+								Property="Source"
+								Value="{Binding MouseOverIcon, RelativeSource={RelativeSource TemplatedParent}}" />
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style
+		TargetType="{x:Type local:IconDataButton}"
+		x:Key="{x:Type local:IconDataButton}">
+		<Setter
+			Property="Padding"
+			Value="11" />
+		<Setter
+			Property="Background"
+			Value="#00FFFFFF" />
+		<Setter
+			Property="Width"
+			Value="48" />
+		<Setter
+			Property="Height"
+			Value="48" />
+		<Setter
+			Property="Template">
+			<Setter.Value>
+				<ControlTemplate
+					TargetType="{x:Type local:IconDataButton}">
+					<Border>
+						<Grid
+							Width="{TemplateBinding Width}"
+							Height="{TemplateBinding Height}">
+							<Ellipse
+								Name="circle"
+								Fill="{TemplateBinding Background}" />
+							<Border
+								Name="rect"
+								Background="{TemplateBinding Background}" />
+							<Path
+								Name="data"
+								Margin="{TemplateBinding Padding}"
+								Data="{TemplateBinding local:IconGeoData}"
+								Fill="{TemplateBinding Foreground}"
+								RenderTransformOrigin="0.5,0.5"
+								Stretch="Uniform" />
+						</Grid>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger
+							Property="local:IconDataButton.IconDataButtonType"
+							Value="Circle">
+							<Setter
+								TargetName="circle"
+								Property="Visibility"
+								Value="Visible" />
+							<Setter
+								TargetName="rect"
+								Property="Visibility"
+								Value="Collapsed" />
+						</Trigger>
+						<Trigger
+							Property="local:IconDataButton.IconDataButtonType"
+							Value="Rect">
+							<Setter
+								TargetName="circle"
+								Property="Visibility"
+								Value="Collapsed" />
+							<Setter
+								TargetName="rect"
+								Property="Visibility"
+								Value="Visible" />
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style
+		TargetType="{x:Type local:IconRadioButton}"
+		x:Key="{x:Type local:IconRadioButton}">
+		<Setter
+			Property="UIElement.SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="Template">
+			<Setter.Value>
+				<ControlTemplate
+					TargetType="{x:Type local:IconRadioButton}">
+					<Border
+						Background="{TemplateBinding Background}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}">
+						<Image
+							Name="img"
+							SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+							Stretch="Fill"
+							Source="{Binding Icon, RelativeSource={RelativeSource TemplatedParent}}" />
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger
+							Property="UIElement.IsMouseOver"
+							Value="True">
+							<Setter
+								TargetName="img"
+								Property="Source"
+								Value="{Binding MouseOverIcon, RelativeSource={RelativeSource TemplatedParent}}" />
+						</Trigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition
+									Property="ToggleButton.IsChecked"
+									Value="true" />
+								<Condition
+									Property="local:IconRadioButton.CheckedIcon"
+									Value="{x:Null}" />
+							</MultiTrigger.Conditions>
+							<Setter
+								TargetName="img"
+								Property="Source"
+								Value="{Binding MouseOverIcon, RelativeSource={RelativeSource TemplatedParent}}" />
+						</MultiTrigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style
+		TargetType="{x:Type local:IconButton}"
+		x:Key="{x:Type local:IconButton}">
+		<Setter
+			Property="UIElement.SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="Template">
+			<Setter.Value>
+				<ControlTemplate
+					TargetType="{x:Type local:IconButton}">
+					<Border
+						Background="{TemplateBinding Background}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}">
+						<Image
+							Name="img"
+							SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+							Stretch="Fill"
+							Source="{Binding Icon, RelativeSource={RelativeSource TemplatedParent}}" />
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger
+							Property="UIElement.IsMouseOver"
+							Value="True">
+							<Setter
+								TargetName="img"
+								Property="Source"
+								Value="{Binding MouseOverIcon, RelativeSource={RelativeSource TemplatedParent}}" />
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style
+		BasedOn="{StaticResource {x:Type TextBox}}"
+		TargetType="{x:Type local:SearchTextBox}"
+		x:Key="{x:Type local:SearchTextBox}" />
+</ResourceDictionary>

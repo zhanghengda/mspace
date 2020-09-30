@@ -1,0 +1,105 @@
+<Window
+	x:Class="Mmc.Wpf.Toolkit.Controls.InkPad.StylusSettings" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="{DynamicResource Set}"
+	Background="#FF3B3737"
+	ResizeMode="NoResize"
+	SizeToContent="WidthAndHeight"
+	WindowStartupLocation="CenterScreen" xmlns:inkpad="clr-namespace:Mmc.Wpf.Toolkit.Controls.InkPad">
+	<DockPanel
+		Name="LayoutRoot">
+		<Button
+			Name="btnOk"
+			Width="100"  Style="{StaticResource DefaultButtonStyle}"
+			Height="36"
+			Margin="50,10"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Bottom"
+			Content="{DynamicResource OK}"
+			DockPanel.Dock="Bottom"
+			Click="btnOk_Click" />
+		<StackPanel
+			HorizontalAlignment="Center"
+			DockPanel.Dock="Bottom"
+			Orientation="Horizontal">
+			<FrameworkElement.Resources>
+				<ResourceDictionary>
+					<Style
+						TargetType="{x:Type CheckBox}"
+						x:Key="{x:Type CheckBox}">
+						<Setter
+							Property="VerticalContentAlignment"
+							Value="Center" />
+						<Setter
+							Property="FontSize"
+							Value="18" />
+						<Setter
+							Property="Foreground"
+							Value="#FFF5F5F5" />
+					</Style>
+				</ResourceDictionary>
+			</FrameworkElement.Resources>
+			<CheckBox
+				Name="chkPressure"
+				Content="{DynamicResource Ignorethepressure}" />
+			<CheckBox
+				Name="chkHighlight"
+				Margin="50,0,0,0"
+				Content="{DynamicResource Highlighted}" />
+		</StackPanel>
+		<UniformGrid
+			Name="ugColors"
+			Margin="15"
+			Columns="15"
+			Rows="10">
+			<FrameworkElement.Resources>
+				<ResourceDictionary>
+					<Style
+						TargetType="{x:Type Button}"
+						x:Key="{x:Type Button}">
+						<Setter
+							Property="Width"
+							Value="32" />
+						<Setter
+							Property="Height"
+							Value="32" />
+						<Setter
+							Property="Foreground"
+							Value="#00FFFFFF" />
+						<Setter
+							Property="BorderBrush"
+							Value="#00FFFFFF" />
+						<Setter
+							Property="Template">
+							<Setter.Value>
+								<ControlTemplate
+									TargetType="{x:Type Button}">
+									<Border
+										Background="{TemplateBinding Background}"
+										BorderBrush="{TemplateBinding BorderBrush}"
+										BorderThickness="{TemplateBinding BorderThickness}">
+										<ContentPresenter />
+									</Border>
+									<ControlTemplate.Triggers>
+										<Trigger
+											Property="UIElement.IsMouseOver"
+											Value="True">
+											<Setter
+												Property="BorderBrush"
+												Value="#FFFF4500" />
+											<Setter
+												Property="BorderThickness"
+												Value="2" />
+											<Setter
+												Property="Background"
+												Value="#00FFFFFF" />
+										</Trigger>
+									</ControlTemplate.Triggers>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+					</Style>
+				</ResourceDictionary>
+			</FrameworkElement.Resources>
+		</UniformGrid>
+	</DockPanel>
+</Window>
