@@ -1,0 +1,12 @@
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Mspace.Const.dll
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Mspace.Const.pdb
+D:\GitDemo\ant-design-vue\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.csproj.CoreCompileInputs.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.dll
+D:\GitDemo\ant-design-vue\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.pdb
+D:\GitDemo\ant-design-vue\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.csprojAssemblyReference.cache
+D:\Mspace\mspace\mspace\binPath\Mmc.Mspace.Const.dll
+D:\Mspace\mspace\mspace\binPath\Mmc.Mspace.Const.pdb
+D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.csprojAssemblyReference.cache
+D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.csproj.CoreCompileInputs.cache
+D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.dll
+D:\Mspace\mspace\mspace\Gvitech.PoliceGis.Const\obj\Debug\Mmc.Mspace.Const.pdb
