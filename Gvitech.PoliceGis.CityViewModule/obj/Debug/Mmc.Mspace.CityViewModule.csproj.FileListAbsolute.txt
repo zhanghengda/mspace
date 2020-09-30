@@ -1,0 +1,12 @@
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Mspace.CityViewModule.dll
+D:\GitDemo\ant-design-vue\mspace\binPath\Mmc.Mspace.CityViewModule.pdb
+D:\GitDemo\ant-design-vue\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.csproj.CoreCompileInputs.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.dll
+D:\GitDemo\ant-design-vue\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.pdb
+D:\GitDemo\ant-design-vue\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.csprojAssemblyReference.cache
+D:\Mspace\mspace\mspace\binPath\Mmc.Mspace.CityViewModule.dll
+D:\Mspace\mspace\mspace\binPath\Mmc.Mspace.CityViewModule.pdb
+D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.csprojAssemblyReference.cache
+D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.csproj.CoreCompileInputs.cache
+D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.dll
+D:\Mspace\mspace\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.pdb
