@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:fm="clr-namespace:System.Windows;assembly=PresentationFramework"
+                    xmlns:ms="clr-namespace:System;assembly=mscorlib">
+    <ms:Double x:Key="IconWidth">25</ms:Double>
+    <ms:Double x:Key="IconHeight">25</ms:Double>
+    <fm:Thickness x:Key="ToolIconMargin">0,1,0,0</fm:Thickness>
+    <fm:Thickness x:Key="BottomToolIconMargin">0,0,1,0</fm:Thickness>
+    <ms:Double x:Key="ScaleIconWidth">12</ms:Double>
+    <ms:Double x:Key="ScaleIconHeight">20</ms:Double>
+    <fm:Thickness x:Key="MenuMargin">210,90</fm:Thickness>
+</ResourceDictionary>

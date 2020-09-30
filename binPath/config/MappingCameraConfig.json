@@ -1,0 +1,56 @@
+[
+  {
+    "Name": "MMC OPE",
+    "Width": 8.0,
+    "Height": 1.0,
+    "Focus": 12.0
+  },
+  {
+    "Name": "手动栅格(无相机规格)",
+    "Width": 8.0,
+    "Height": 1.0,
+    "Focus": 12.0
+  },
+  {
+    "Name": "自定义相机网格",
+    "Width": 8.0,
+    "Height": 1.0,
+    "Focus": 12.0
+  },
+  {
+    "Name": "索尼A7R",
+    "Width": 8.0,
+    "Height": 1.0,
+    "Focus": 12.0
+  },
+  {
+    "Name": "MMC 5100",
+    "Width": 8.0,
+    "Height": 1.0,
+    "Focus": 12.0
+  },
+  {
+    "Name": "qq",
+    "Width": 0.0,
+    "Height": 0.0,
+    "Focus": 0.0
+  },
+  {
+    "Name": "test",
+    "Width": 0.0,
+    "Height": 0.0,
+    "Focus": 0.0
+  },
+  {
+    "Name": "12",
+    "Width": 1.0,
+    "Height": 4.0,
+    "Focus": 3.0
+  },
+  {
+    "Name": "1",
+    "Width": 1.0,
+    "Height": 1.0,
+    "Focus": 1.0
+  }
+]

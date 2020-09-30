@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LayersConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LayerGroups>
+    <LayerGroup GroupName="警力" Layers="派出所辖区,公安分局,派出所,移动警员,移动警车" />
+    <LayerGroup GroupName="重点场所" Layers="宾馆酒店,政府机构,交通设施,道路,生活服务,汽车服务,医疗,购物" />
+    <LayerGroup GroupName="城市总览" Layers="视频监控,公安分局,人民团体与民主党派,宗教场所,住宿服务场所,互联网上网服务营业场所,其他场所" />
+    <LayerGroup GroupName="警物" Layers="防暴物资,警力器械,视频监控" />
+    <LayerGroup GroupName="查询图层" Layers="禁飞区,采样点,湖荡点,点云" />
+  </LayerGroups>
+</LayersConfig>

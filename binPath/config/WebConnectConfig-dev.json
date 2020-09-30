@@ -1,0 +1,17 @@
+{
+  //"poiUrl": "http://gistest.testmmc.top",
+   "poiUrl": "http://mspace.mmcuav.cn",
+  //"poiUrl":"http://gistest.mmcuav.cn:6001",
+  "mspaceVersion": "v1.5",
+  "labelMaxDistance": 1000,
+  "tracePoiMaxDistance": 5000,
+  "aiUrl":"http://ai.stream.mmcuav.cn:8082/",
+  "openMultiScreen": "true",
+  //"aiUrl":"http://192.168.4.146:8082/stream/?streamUrl=",
+  "uavSocketUri": "ws://47.99.46.38:1937",
+  // "uavSocketUri": "ws://119.23.242.172:1935",
+  "joyUdpServer": {
+    "ip": "127.0.0.1",
+    "port": 8888
+  }
+}

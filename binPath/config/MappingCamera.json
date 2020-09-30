@@ -1,0 +1,36 @@
+{
+    "Name": "MMC OPE",
+    "Width": 12,
+    "Height": 8,
+    "Focus": 1.2
+},
+{
+    "Name": "手动栅格(无相机规格)",
+    "Width": 12,
+    "Height": 8,
+    "Focus": 1.2
+},
+{
+    "Name": "自定义相机网格",
+    "Width": 12,
+    "Height": 8,
+    "Focus": 1.2
+},
+{
+    "Name": "索尼A7R",
+    "Width": 12,
+    "Height": 8,
+    "Focus": 1.2
+},
+{
+    "Name": "MMC 5100",
+    "Width": 12,
+    "Height": 8,
+    "Focus": 1.2
+},
+{
+    "Name": "MMC 51",
+    "Width": 12,
+    "Height": 8,
+    "Focus": 1.2
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorkSpaceConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SysPoiLibs />
+  <SysActualityLibs>
+  </SysActualityLibs>
+  <SysShps>
+     <ShpLibraryConfig AliasName="禁飞区" ConnInfoString="ConnType=ShapeFile; DataBase=项目数据\shp\禁飞区\禁飞区.shp" GeometryRenderXmlFile="项目数据\shp\禁飞区\禁飞区几何样式.xml" TextRenderXmlFile="项目数据\shp\禁飞区\禁飞区文本样式.xml" />
+     <ShpLibraryConfig AliasName="湖荡点" ConnInfoString="ConnType=ShapeFile; DataBase=项目数据\shp\湖荡\湖荡点.shp"  />
+     <ShpLibraryConfig AliasName="采样点" ConnInfoString="ConnType=ShapeFile; DataBase=项目数据\shp\湖荡\采样点.shp"  />
+  </SysShps>
+  <Sys3DTileLayers>
+  </Sys3DTileLayers>
+  <SysImageLayers>
+     <ImageLayerConfig AliasName="天地图影像" ConnInfoString="http://t0.tianditu.com/img_c/wmts" ConType="WMTS" AlphaEnabled="false"/>
+      <ImageLayerConfig AliasName="天地图注记" ConnInfoString="http://t0.tianditu.com/cia_w/wmts" ConType="WMTS" AlphaEnabled="true"/>
+  </SysImageLayers>
+</WorkSpaceConfig>

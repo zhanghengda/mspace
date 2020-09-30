@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HttpServiceConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <HttpServices>
+    <HttpServiceParam Name="警员信息服务" Url="http://10.197.7.33:20031/policeDataService-yc/BSV_YC_016" JsonFile="\\data\\HttpResult\\警员数据.json" Unobstructed="false" />
+    <HttpServiceParam Name="警员警车信息服务" Url="http://10.197.7.33:20031/policeDataService-yc/BSV_YC_026" JsonFile="\\data\\HttpResult\\警员数据.json" Unobstructed="false" />
+    <HttpServiceParam Name="视频信息服务" Url="http://10.197.7.33:20031/policeDataService-yc/BSV_YC_017" JsonFile="\\data\\HttpResult\\视频数据.json" Unobstructed="false" />
+    <HttpServiceParam Name="人口信息服务" Url="http://10.197.7.33:20031/policeDataService-yc/BSV_YC_018" JsonFile="\\data\\HttpResult\\人口数据.json" Unobstructed="false" />
+    <HttpServiceParam Name="案件信息服务" Url="http://10.197.7.33:20031/policeDataService-yc/BSV_YC_019" JsonFile="\\data\\HttpResult\\案件数据.json" Unobstructed="false" />
+    <HttpServiceParam Name="专题案件信息服务" Url="http://10.197.7.33:20031/policeDataService-yc/BSV_YC_020" JsonFile="\\data\\HttpResult\\专题案件数据.json" Unobstructed="false" />
+  </HttpServices>
+</HttpServiceConfig>

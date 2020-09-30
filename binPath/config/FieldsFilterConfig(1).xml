@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldsFilterConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FieldsFilters>
+    <FieldsFilter TableName="公安分局" FilterFields="名称,地址,类型" />
+    <FieldsFilter TableName="派出所" FilterFields="名称,地址,类型" />
+    <FieldsFilter TableName="移动警车" FilterFields="车牌号,警车品牌,所属单位" />
+    <FieldsFilter TableName="移动警员" FilterFields="警员编号,警员名称,所属单位" />
+
+  <FieldsFilter TableName="派出所辖区" FilterFields="mc,szddz,fj" />
+  <FieldsFilter TableName="重点场所" FilterFields="名称,地址" />
+ <FieldsFilter TableName="公共活动场所" FilterFields="名称,地址" />
+ <FieldsFilter TableName="交通场所" FilterFields="名称,地址" />
+ <FieldsFilter TableName="娱乐场所" FilterFields="名称,地址" />
+  <FieldsFilter TableName="体育场所" FilterFields="名称,地址" />
+ <FieldsFilter TableName="文化场所" FilterFields="名称,地址" />
+ <FieldsFilter TableName="宗教场所" FilterFields="名称,地址" />
+ <FieldsFilter TableName="互联网上网服务营业场所" FilterFields="名称,地址" />
+ <FieldsFilter TableName="住宿服务场所" FilterFields="名称,地址" />
+ <FieldsFilter TableName="其他场所" FilterFields="名称,地址" />
+ <FieldsFilter TableName="党政机关" FilterFields="名称,地址" />
+ <FieldsFilter TableName="人民团体与民主党派" FilterFields="名称,地址" />
+ <FieldsFilter TableName="教育" FilterFields="名称,地址" />
+ <FieldsFilter TableName="医疗卫生" FilterFields="名称,地址" />
+  </FieldsFilters>
+</FieldsFilterConfig>

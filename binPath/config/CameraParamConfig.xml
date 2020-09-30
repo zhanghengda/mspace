@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CameraParamCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<CameraParams>
+<CameraParam LensLength="2.8" SensorType="1/3" HeadRange="82"  TiltRange="67" TestDistance="1371"/>
+<CameraParam LensLength="2.8" SensorType="1/4" HeadRange="65"  TiltRange="51" TestDistance="1866"/>
+<CameraParam LensLength="3.6" SensorType="1/3" HeadRange="68"  TiltRange="54" TestDistance="1763"/>
+<CameraParam LensLength="3.6" SensorType="1/4" HeadRange="53"  TiltRange="41" TestDistance="2400"/>
+<CameraParam LensLength="4" SensorType="1/3" HeadRange="63"  TiltRange="50" TestDistance="1959"/>
+<CameraParam LensLength="4" SensorType="1/4" HeadRange="48"  TiltRange="37" TestDistance="2666"/>
+<CameraParam LensLength="6" SensorType="1/3" HeadRange="44"  TiltRange="34" TestDistance="2938"/>
+<CameraParam LensLength="6" SensorType="1/4" HeadRange="33"  TiltRange="25" TestDistance="4000"/>
+<CameraParam LensLength="8" SensorType="1/3" HeadRange="34"  TiltRange="26" TestDistance="3918"/>
+<CameraParam LensLength="8" SensorType="1/4" HeadRange="25"  TiltRange="19" TestDistance="5333"/>
+<CameraParam LensLength="12" SensorType="1/3" HeadRange="23"  TiltRange="18" TestDistance="5877"/>
+<CameraParam LensLength="12" SensorType="1/4" HeadRange="17"  TiltRange="13" TestDistance="8000"/>
+<CameraParam LensLength="16" SensorType="1/3" HeadRange="17"  TiltRange="13" TestDistance="7836"/>
+<CameraParam LensLength="16" SensorType="1/4" HeadRange="13"  TiltRange="10" TestDistance="10666"/>
+<CameraParam LensLength="25" SensorType="1/3" HeadRange="11"  TiltRange="8" TestDistance="12244"/>
+<CameraParam LensLength="25" SensorType="1/4" HeadRange="8"  TiltRange="6" TestDistance="16666"/>
+</CameraParams>
+</CameraParamCollection>

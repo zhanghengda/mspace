@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<ShellModel RowCount="4" ColumnCount="6" BackImage="back.png" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BarMenuItems>
+
+    <ToolItemModel xsi:type="CityViewViewModel" Content="Cityoverview" ToolTip="城市总览" Icon="City_N.png" MouseOverIcon="City_M.png" PressedOverIcon="City_M.png" Background="#ff3a89ff"   GroupName="城市总览"/>
+    <ToolItemModel xsi:type="BaseViewModel" Content="UAV" ToolTip="无人机" Icon="uav_N.png" MouseOverIcon="uav_M.png" Background="#ff3a89ff"  PressedOverIcon="uav_M.png" GroupName="UavModule"/>
+      <ToolItemModel xsi:type="BaseViewModel" Content="Intelligentanalysis" ToolTip="智能分析" Icon="Analysis_N.png" MouseOverIcon="Analysis_M.png" PressedOverIcon="Analysis_M.png" Background="#ff3a89ff"   GroupName="IntelligentAnalysis"/>
+      <ToolItemModel xsi:type="BaseViewModel" Content="RegularInspection" ToolTip="常态化巡检" Icon="常态巡检.png" MouseOverIcon="常态巡检H.png" PressedOverIcon="常态巡检C.png" Background="#ff3a89ff"   GroupName="RegularInspection"/>
+      <ToolItemModel xsi:type="BaseViewModel" Content="Smartdevices"  Icon="智能设备.png" MouseOverIcon="智能设备H.png" PressedOverIcon="智能设备C.png" Background="#ff3a89ff"   GroupName="Cityoverview"/>
+
+  </BarMenuItems>
+
+
+  <BottomToolMenuItems>
+    <!-- 通用 -->
+    <ToolItemModel xsi:type="ReturnOriginViewModel"   MouseOverIcon="回到原点H.png" Icon="回到原点.png" ToolTip="回到原点" Content="BackStart" />
+     <ToolItemModel xsi:type="LocatingViewModel"  MouseOverIcon="坐标定位C.png" Icon="坐标定位.png"  ToolTip="坐标定位" Content="Location"/>
+    <ToolItemModel xsi:type="KeyWordSearchViewModel"  MouseOverIcon="查找C.png" Icon="查找.png" ToolTip="查询" Content="Query"/>
+    <ToolItemModel xsi:type="HMeasurationViewModel"  MouseOverIcon="水平测量C.png" Icon="水平测量.png" ToolTip="水平测量" Content="Levelmeasurement" GroupName="CommomTool"/>
+    <ToolItemModel xsi:type="VMeasurationViewModel"  MouseOverIcon="垂直测量C.png" Icon="垂直测量.png" ToolTip="垂直测量" Content="Verticalmeasurement" GroupName="CommomTool"/>
+    <ToolItemModel xsi:type="AreaMeasurationViewModel"  MouseOverIcon="面积测量C.png" Icon="面积测量.png" ToolTip="面积测量" Content="Areameasurement" GroupName="CommomTool"/>
+    <ToolItemModel xsi:type="VolumeCalcViewModel"   Content="Volumecalculating" ToolTip="体积测算" Icon="体积测量.png" MouseOverIcon="体积测量C.png"  GroupName="CommomTool"/>
+    <ToolItemModel xsi:type="TopViewViewModel" MouseOverIcon="顶视C.png" Icon="顶视.png" ToolTip="顶视" Content="Topview"/>
+    <ToolItemModel xsi:type="PerspectiveViewModel" MouseOverIcon="俯视C.png" Icon="俯视.png" ToolTip="俯视" Content="Lookingdown"/>
+    <ToolItemModel xsi:type="LookAtNorthViewModel" MouseOverIcon="指北C.png" Icon="指北.png" ToolTip="指北" Content="Northarrow"/>
+    <ToolItemModel xsi:type="PersonAngleViewModel" MouseOverIcon="人视觉C.png" Icon="人视觉.png" ToolTip="人视角" Content="Peopleview" GroupName="CommomTool"/>
+    <ToolItemModel xsi:type="PaintViewModel"   Content="Drawingboard" ToolTip="画板" Icon="画板.png" MouseOverIcon="画板C.png" GroupName="CommomTool"/>
+    <ToolItemModel xsi:type="FullScreenViewModel"   Content="Fullscreen" ToolTip="全屏" Icon="全屏.png" MouseOverIcon="全屏C.png" />
+  </BottomToolMenuItems>
+
+  <RightToolMenuItems>
+
+
+    <!-- 无人机应用 -->
+    <ToolItemModel xsi:type="PatrolmanListVModel"  GroupName="Cityoverview" Content="GridPatrol" ToolTip="保安人员" Icon="GridPatrol.png" PressedOverIcon="GridPatrol_C.png" MouseOverIcon="GridPatrol_H.png" Visible="false"/>
+    <ToolItemModel xsi:type="VideoStreamViewModel"  GroupName="Cityoverview" Content="Videomonitoring" ToolTip="视频监测" Icon="Videomonitoring_N.png" PressedOverIcon="Videomonitoring_H.png" MouseOverIcon="Videomonitoring_H.png" Visible="false"/>
+    <ToolItemModel xsi:type="GpsViewModel"  GroupName="Cityoverview" Content="securityguards" ToolTip="保安人员" Icon="securityguards_N.png" PressedOverIcon="securityguards_H.png" MouseOverIcon="securityguards_H.png" Visible="false"/>
+    <ToolItemModel xsi:type="WindMonitorViewModel"  GroupName="Cityoverview" Content="windspeeddata" ToolTip="风速数据" Icon="windspeeddata_N.png"  PressedOverIcon="windspeeddata_H.png" MouseOverIcon="windspeeddata_H.png" Visible="false"/>    
+	<ToolItemModel xsi:type="TempAndHumViewModel"  GroupName="Cityoverview" Content="Temperaturedata" ToolTip="温湿度数据" Icon="humiditydata_N.png" PressedOverIcon="humiditydata_H.png" MouseOverIcon="humiditydata_H.png" Visible="false"/>
+    <ToolItemModel xsi:type="StatisticsVModel"  GroupName="Cityoverview" Content="Statistics" ToolTip="统计数据" Icon="statistics_N.png" PressedOverIcon="statistics_H.png" MouseOverIcon="statistics_H.png"  Visible="false"/>    
+    <ToolItemModel xsi:type="RoutePlanViewModel"  GroupName="UavModule" Content="Pathplanning" ToolTip="航迹显示" Icon="航迹显示.png" MouseOverIcon="航迹显示H.png" Visible="false"/> 
+       <ToolItemModel xsi:type="UavListViewModel"  GroupName="UavModule" Content="Traildisplay" ToolTip="航线规划" Icon="航线规划.png" MouseOverIcon="航线规划H.png" Visible="false"/>
+   <!-- 智能分析 -->
+    <ToolItemModel xsi:type="CompareViewExModel"  GroupName="IntelligentAnalysis" Content="Splitscreenlinkage" ToolTip="分屏对比" Icon="分屏联动.png" MouseOverIcon="分屏联动H.png" Visible="false"/>
+    <ToolItemModel xsi:type="CharactAnalysViewModel"  GroupName="IntelligentAnalysis" Content="Characteristicsanalysis" ToolTip="特征分析" Icon="特征分析.png" MouseOverIcon="特征分析H.png" Visible="false"/>
+    <ToolItemModel xsi:type="DemCompareViewModel"  GroupName="IntelligentAnalysis" Content="Elevationthan" ToolTip="高程比对" Icon="高程比对.png" MouseOverIcon="高程比对H.png" Visible="false"/>
+  <ToolItemModel xsi:type="FloodViewModel"  GroupName="IntelligentAnalysis" Content="FloodAnalysis" ToolTip="淹没分析" Icon="淹没分析.png" MouseOverIcon="淹没分析H.png" Visible="false"/>
+
+<!--常态化巡检-->
+
+
+   <ToolItemModel xsi:type="NewInspectionVModel"  GroupName="RegularInspection" Content="AddInspection" ToolTip="新增巡检" Icon="新增巡检.png" PressedOverIcon="新增巡检C.png" MouseOverIcon="新增巡检H.png" Visible="false"/>
+    <ToolItemModel xsi:type="HistoryDomVModel"  GroupName="RegularInspection" Content="HistoryDom" ToolTip="历史正射" Icon="历史正射.png" PressedOverIcon="历史正射C.png" MouseOverIcon="历史正射H.png" Visible="false"/>
+    <ToolItemModel xsi:type="PhotosToTraceVModel"  GroupName="RegularInspection" Content="PhotosTrace" ToolTip="照片轨迹" Icon="照片轨迹.png"  PressedOverIcon="照片轨迹C.png" MouseOverIcon="照片轨迹H.png" Visible="false"/>    
+	<ToolItemModel xsi:type="ScreenCompareVModel"  GroupName="RegularInspection" Content="ScreenCompare" ToolTip="分屏标注" Icon="分屏标注.png" PressedOverIcon="分屏标注C.png" MouseOverIcon="分屏标注H.png" Visible="false"/>
+   <ToolItemModel xsi:type="RoneAnalysisVModel"  GroupName="RegularInspection" Content="RoneAnalysis" ToolTip="区域分析:点开工具->选择绘制方法->绘制图形->闭合->确定（统计日期和统计方式可选）" Icon="区域分析.png" PressedOverIcon="区域分析C.png" MouseOverIcon="区域分析H.png"  Visible="false"/> 
+
+    <!-- 反恐应用 -->
+
+
+
+
+    <!-- 交通应用 -->
+
+  </RightToolMenuItems>
+  <ScaleViewModel xsi:type="MeasuringScaleViewModel" MouseOverIcon="比例尺H.png" Icon="比例尺.png" ToolTip="比例尺" Content="Scale"/>
+</ShellModel>
