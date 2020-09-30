@@ -1,0 +1,103 @@
+<UserControl
+	x:Class="MMC.MSpace.Views.ToolView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dtselector="http://schemas.mmc.com/dtselector" 
+    xmlns:frame="Mmc.Windows.Framework.Converters;assembly=Mmc.Windows.Framework"
+    xmlns:gvi="http://schemas.mmc.com" 
+    xmlns:gvifm="http://schemas.mmc.com/wpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       xmlns:converter="clr-namespace:MMC.MSpace.Converter"
+	HorizontalAlignment="Right"
+	VerticalAlignment="Center" >
+    <UserControl.Resources>
+     
+		<ResourceDictionary>
+            <converter:ConverterKeyToContent x:Key="ConverterKeyToContent"/>
+            <dtselector:ToolDataTemplateSelector
+				x:Key="ToolDataTemplateSelector" />
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        </ResourceDictionary>
+	</UserControl.Resources>
+	<ItemsControl
+		Name="tools"
+		Margin="20,40"
+		HorizontalAlignment="Right"
+		VerticalAlignment="Center"
+		ItemTemplateSelector="{DynamicResource ToolDataTemplateSelector}"
+		ItemsSource="{Binding ShellModel.ToolMenuItems}">
+		<FrameworkElement.Resources>
+			<ResourceDictionary>
+				<Style
+					TargetType="{x:Type ContentPresenter}"
+					x:Key="{x:Type ContentPresenter}">
+                    <Setter Property="Width" Value="{gvifm:SetX {Binding Source={StaticResource IconWidth}}}" />
+                    <Setter Property="Height" Value="{gvifm:SetY {Binding Source={StaticResource IconHeight}}}" />
+                    <Setter Property="Visibility" Value="{Binding Visible, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                    <Setter Property="Margin" Value="{gvifm:SetMargin {Binding Source={StaticResource ToolIconMargin}}}" />
+				</Style>
+				<Style xmlns:controls="clr-namespace:Mmc.Wpf.Toolkit.Controls;assembly=Mmc.Wpf.Toolkit"
+					TargetType="{x:Type controls:IconButton}"
+					x:Key="{x:Type controls:IconButton}">
+					<Setter
+						Property="Command"
+						Value="{Binding Command}" />
+                    <Setter
+						Property="Content"
+					Value="{Binding Content,Converter={StaticResource ConverterKeyToContent}}" />
+                    <Setter
+						Property="controls:IconButton.Icon"
+						Value="{Binding Icon}" />
+					<Setter
+						Property="controls:IconButton.MouseOverIcon"
+						Value="{Binding MouseOverIcon}" />
+					<Setter
+						Property="FrameworkElement.ToolTip"
+					Value="{Binding Content,Converter={StaticResource ConverterKeyToContent}}" />
+				</Style>
+				<Style xmlns:controls="clr-namespace:Mmc.Wpf.Toolkit.Controls;assembly=Mmc.Wpf.Toolkit"
+					TargetType="{x:Type controls:IconRadioButton}"
+					x:Key="{x:Type controls:IconRadioButton}">
+					<Setter
+						Property="controls:IconRadioButton.NCommand"
+						Value="{Binding Command}" />
+					<Setter
+						Property="Content"
+			Value="{Binding Content,Converter={StaticResource ConverterKeyToContent}}" />
+					<Setter
+						Property="controls:IconRadioButton.Icon"
+						Value="{Binding Icon}" />
+					<Setter
+						Property="controls:IconRadioButton.MouseOverIcon"
+						Value="{Binding MouseOverIcon}" />
+					<Setter
+						Property="FrameworkElement.ToolTip"
+				Value="{Binding Content,Converter={StaticResource ConverterKeyToContent}}" />
+					<Setter
+						Property="RadioButton.GroupName"
+						Value="{Binding GroupName}" />
+					<Setter
+						Property="ToggleButton.IsChecked"
+						Value="{Binding IsChecked}" />
+				</Style>
+				<Style xmlns:controls="clr-namespace:Mmc.Wpf.Toolkit.Controls;assembly=Mmc.Wpf.Toolkit"
+					TargetType="{x:Type controls:IconPopupButton}"
+					x:Key="{x:Type controls:IconPopupButton}">
+                    <Setter
+						Property="Content"
+			Value="{Binding Content,Converter={StaticResource ConverterKeyToContent}}" />
+                    <Setter
+						Property="controls:IconToggleButton.Icon"
+						Value="{Binding Icon}" />
+					<Setter
+						Property="controls:IconToggleButton.MouseOverIcon"
+						Value="{Binding MouseOverIcon}" />
+					<Setter
+						Property="FrameworkElement.ToolTip"
+					Value="{Binding Content,Converter={StaticResource ConverterKeyToContent}}" />
+				</Style>
+			</ResourceDictionary>
+		</FrameworkElement.Resources>
+	</ItemsControl>
+</UserControl>

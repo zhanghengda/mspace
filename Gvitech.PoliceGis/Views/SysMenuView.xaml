@@ -1,0 +1,133 @@
+﻿<UserControl x:Class="MMC.MSpace.Views.SysMenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:gvifm="http://schemas.mmc.com/wpf"
+    xmlns:views="clr-namespace:MMC.MSpace.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:conrols="clr-namespace:Mmc.Mspace.Theme.Controls;assembly=Mmc.Mspace.Theme"
+    xmlns:Pub="clr-namespace:Mmc.Mspace.Theme.Pop;assembly=Mmc.Mspace.Theme"
+    xmlns:dic2="clr-namespace:System.Collections;assembly=mscorlib"
+    Background="#1E2026"
+    HorizontalAlignment="Left"
+	VerticalAlignment="Top" >
+    <UserControl.Resources>
+     <dic2:ArrayList x:Key="AL_MoreInfo">
+           
+
+        </dic2:ArrayList>
+
+        <Style TargetType="gvifm:SimpleIconButton" x:Key="UserButtonStyle">
+            <Setter Property="Background" Value="#3A89FF" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Height" Value="Auto" />
+            <Setter Property="Width" Value="Auto" />
+            <Setter Property="FontSize" Value="14px" />
+            <Setter Property="Foreground" Value="#ffffff" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type gvifm:SimpleIconButton}">
+                        <Border x:Name="PART_Background" BorderBrush="{TemplateBinding BorderBrush}" Padding="{TemplateBinding Padding}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                            <Grid VerticalAlignment="Center" HorizontalAlignment="{TemplateBinding HorizontalAlignment}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <TextBlock Grid.Column="0" Margin="10,0" x:Name="PART_Pcontent"  Foreground="{TemplateBinding Foreground}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Content}" ></TextBlock>
+                                <Image  Grid.Column="1" x:Name="PART_PData"  Stretch="Uniform" Height="36" VerticalAlignment="Center" HorizontalAlignment="Right"  Source="{Binding RelativeSource={RelativeSource TemplatedParent},Path=Icon}"/>
+
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#2579F4"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#2579F4" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Padding" Value="1" />
+            <Setter Property="Content" Value="{x:Null}" />
+            <Setter Property="Cursor" Value="Hand" />
+        </Style>
+        <Style TargetType="gvifm:IconButton" x:Key="UserButtonStyle2">
+            <Setter Property="Background" Value="#3385FF" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Height" Value="Auto" />
+            <Setter Property="Width" Value="Auto" />
+            <Setter Property="FontSize" Value="16px" />
+            <Setter Property="Foreground" Value="#ffffff" />
+            <Setter Property="BorderBrush" Value="#4E95FF" />
+            <Setter Property="BorderThickness" Value="1,0,0,0" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type gvifm:IconButton}">
+                        <Border x:Name="PART_Background" BorderBrush="{TemplateBinding BorderBrush}" Padding="{TemplateBinding Padding}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                            <Grid VerticalAlignment="Center" HorizontalAlignment="{TemplateBinding HorizontalAlignment}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Column="1" Margin="5,0" x:Name="PART_Pcontent"  Foreground="{TemplateBinding Foreground}" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Content}" ></TextBlock>
+                                <Path   Grid.Column="0" x:Name="PART_PData"  Stretch="Uniform" Fill="#ffffff" Height="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0"  Data="{StaticResource glyphicon-user}"/>
+                              <Path Name="path2" Grid.Column="2" Height="10" Width="10" Data="{StaticResource glyphicon-down}"  Stretch="Uniform"
+                                                      Fill="#E2FFFF" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <DataTrigger Binding="{Binding IsChecked}" Value="true">
+                                <Setter Property="Data" Value="{StaticResource glyphicon-up}" TargetName="path2"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding IsChecked}" Value="false">
+                                <Setter Property="Data" Value="{StaticResource glyphicon-down}" TargetName="path2"/>
+                            </DataTrigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#2579F4"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#2579F4" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Padding" Value="1" />
+            <Setter Property="Content" Value="{x:Null}" />
+            <Setter Property="Cursor" Value="Hand" />
+        </Style>
+    </UserControl.Resources>
+    <Grid >
+        <DockPanel >
+            <DockPanel DockPanel.Dock="Left" Name="leftView" >
+                <StackPanel DockPanel.Dock="Left" Name="imgdock" MinWidth="363" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image HorizontalAlignment="Left" Name="img1" Margin="20,0,10,0" Width="46" Height="46" Source="{StaticResource Mmc_Logo}"  Stretch="Uniform" ></Image>
+                    <TextBlock HorizontalAlignment="Left" Foreground="#ffffff" FontSize="16" VerticalAlignment="Center"  Text="{DynamicResource LogoText}" Margin="0,0,10,0"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <views:MenuToolView x:Name="menutool"> </views:MenuToolView>
+                </StackPanel>
+            </DockPanel>
+            <StackPanel x:Name="TopMenu"  HorizontalAlignment="Right" DockPanel.Dock="Right" Orientation="Horizontal">
+                <Pub:MmcCombox x:Name="Tool" DataPath="{DynamicResource user_D}" SelectedMenuCommand="{Binding Path='SelMenuCommand'}"   UserName="{Binding UserName}" MinWidth ="140" Height ="48" Margin="0,0,10,0"  Background="#1E2026" DataContextSource="{StaticResource AL_MoreInfo}"/>
+                <conrols:Buttons    HasPathData="True" Height="48" Width="40"
+                                    RIcon="{DynamicResource set_N}"
+                                    MouseOverRIcon="{DynamicResource set_M}"
+                                    PressedRIcon="{DynamicResource set_M}" Command="{Binding SetCommand}"  Style="{StaticResource HomeTopButtonStyle}"></conrols:Buttons>
+                <conrols:Buttons    HasPathData="True" Height="48" Width="40"
+                                    RIcon="{DynamicResource min_N}"
+                                    MouseOverRIcon="{DynamicResource min_M}"
+                                    PressedRIcon="{DynamicResource min_M}" Command="{Binding MinCommand}" Style="{StaticResource HomeTopButtonStyle}"></conrols:Buttons>
+                <conrols:Buttons    HasPathData="True" Height="48" Width="40"
+                                    RIcon="{DynamicResource close_N}"
+                                    MouseOverRIcon="{DynamicResource close_M}"
+                                    PressedRIcon="{DynamicResource close_M}" Command="{Binding CloseCommand}" Style="{StaticResource HomeTopButtonStyle}"></conrols:Buttons>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</UserControl>

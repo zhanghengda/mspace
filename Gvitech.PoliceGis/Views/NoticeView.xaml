@@ -1,0 +1,60 @@
+﻿<blankWindow:BlankWindow x:Class="MMC.MSpace.Views.NoticeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMC.MSpace.Views"
+        xmlns:blankWindow="http://GFramework.org"
+        xmlns:conrols="clr-namespace:Mmc.Mspace.Theme.Controls;assembly=Mmc.Mspace.Theme"
+                         mc:Ignorable="d"
+        Height="202" Width="260">
+    <Window.Resources>
+        <DataTemplate x:Key="NoticeDataTemplate">
+            <Border x:Name="NoticeItemBorder" Margin="2" Height="32"  Width="256" Cursor="Hand" CornerRadius="2" BorderBrush="LightBlue" BorderThickness="1" Background="{StaticResource LeftWindowBg}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Grid.Column="0" Text="{Binding Value}"  Margin="4,0" 
+                          VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource TextBlock12Style}"/>
+                    
+                    <conrols:Buttons  Grid.Column="1"  HasPathData="True" 
+                        RIcon="{DynamicResource close_D}" Height="32" Width="32" 
+                        MouseOverRIcon="{DynamicResource close_M}"
+                        PressedRIcon="{DynamicResource close_N}" Command="{Binding  DataContext.DeleteItemCommand,RelativeSource={RelativeSource AncestorType=Window}}" CommandParameter="{Binding .}" Style="{StaticResource HomeTopButtonStyle}"></conrols:Buttons>
+
+
+                </Grid>
+            </Border>
+            <DataTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="#50ABFF" TargetName="NoticeItemBorder"/>
+                    <Setter Property="BorderThickness" Value="1" TargetName="NoticeItemBorder"/>
+                </Trigger>
+            </DataTemplate.Triggers>
+            
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"  CornerRadius="5,5,0,0" blankWindow:BlankWindow.Draggable="True" Background="#292C35"/>
+        <TextBlock Grid.Row="0" x:Name="TitleName" blankWindow:BlankWindow.Draggable="True" Margin="8,0,0,0"  HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontSize="12" Text="通知"/>
+        <Button Grid.Row="0" x:Name="CloseButton" Command="{Binding CloseCommand}" Style="{DynamicResource ButtonCloseStyle}" Height="24" Width="24" Panel.ZIndex="10" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,8,0"/>
+
+        <ScrollViewer  Grid.Row="1" VerticalScrollBarVisibility="Visible" HorizontalAlignment="Stretch" VerticalAlignment="Top" >
+            <ItemsControl ItemTemplate="{StaticResource NoticeDataTemplate}" ItemsSource="{Binding NoticeDataSet}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate >
+                        <StackPanel Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </ScrollViewer>
+
+    </Grid>
+</blankWindow:BlankWindow>

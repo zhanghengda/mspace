@@ -1,0 +1,336 @@
+﻿<blankWindow:BlankWindow x:Class="MMC.MSpace.Views.UserCenterView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMC.MSpace.Views"
+        xmlns:Helper="clr-namespace:Mmc.Mspace.Theme.Helper;assembly=Mmc.Mspace.Theme"
+        mc:Ignorable="d"
+		xmlns:blankWindow="http://GFramework.org"
+						 xmlns:controls="clr-namespace:Mmc.Mspace.Theme.Controls;assembly=Mmc.Mspace.Theme"
+						 Title="UserCenterView" Height="480" Width="540" Background="Black" ResizeMode="NoResize" >
+    <!--ResizeMode="NoResize"-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border  Grid.Row="0" Background="#292C35" Grid.Column="0" Grid.ColumnSpan="2" Height="32px" CornerRadius="5,5,0,0" blankWindow:BlankWindow.Draggable="True" Margin="0,0,0,0" />
+        <TextBlock x:Name="ReportCenter" Text="报告管理中心"  Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{DynamicResource DefaultTextBlockStyle}" Margin="5"  />
+        <Button Grid.Row="0" x:Name="CloseButton" Grid.Column="01"  Command="{Binding CloseCmd}"   Style="{StaticResource ButtonCloseStyle}" Height="28" Width="28" HorizontalAlignment="Right"  VerticalAlignment="Top" Margin="0,2,5,0" Grid.RowSpan="2"  />
+        <TabControl x:Name="ReportControl" Grid.Row="1" Grid.Column="0" Background="#292C35" BorderThickness="0"  VerticalAlignment="Stretch" Grid.ColumnSpan="2"  >
+            <TabItem  x:Name="UsuralReport" Grid.Row="1" Grid.Column="0" Width="80" Foreground="White" Style="{DynamicResource TabItemStyle}" Header="巡检报告"  Height="38" Background="#393D45" MouseLeftButtonUp="UsuralReport_MouseLeftButtonUp"  Margin="0,0,0,0"  >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="31*"/>
+                        <ColumnDefinition Width="22*"/>
+                        <ColumnDefinition Width="53*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="48" ></RowDefinition>
+                        <RowDefinition Height="298" ></RowDefinition>
+                        <RowDefinition Height="48" ></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Grid.Column="2"  HorizontalAlignment="Stretch"  Style="{DynamicResource AddressTbxSearchStyle}"
+                     Width="231" Height="32" 
+                     Helper:TextBoxHelper.IsNeedClearButton="False" Helper:TextBoxHelper.ButtonCommand="{Binding ReportSearchCmd}"
+                     Text="{Binding ReportSearchText,UpdateSourceTrigger=PropertyChanged}" Margin="17,8" />
+                    <StackPanel Grid.Column="2" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right"  Margin="0,10,16,10">
+
+                        <controls:Buttons x:Name="bs5" Content=""
+                                RIcon="{DynamicResource FirstPageNew}"
+                                MouseOverRIcon="{DynamicResource FirstPageNew_H}"  
+                                PressedRIcon="{DynamicResource FirstPageNew_C}"
+                                Tag="{DynamicResource FirstPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding FirstPageCmd}" Height="32" Width="32" />
+                        <controls:Buttons x:Name="bs3" Content=""
+                                IsEnabled="{Binding LastPageBtnEnable}"
+                                RIcon="{DynamicResource LastPageNew}"
+                                MouseOverRIcon="{DynamicResource LastPageNew_H}"  
+                                PressedRIcon="{DynamicResource LastPageNew_C}"
+                                Tag="{DynamicResource LastPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding LastPageCmd}" Height="32" Width="32"/>
+                        <TextBlock Text="{Binding PageNum,StringFormat= {}{0}/}" FontSize="14" Foreground="#B3BBC5"  Margin="5,5,0,5" />
+                        <TextBlock Text="{Binding PageCount}" FontSize="14" Foreground="#B3BBC5"  Margin="0,5,5,5" />
+                        <controls:Buttons x:Name="bs4" Content=""
+                              IsEnabled="{Binding NextPageBtnEnable}"
+                              RIcon="{DynamicResource NextPageNew}"
+                                MouseOverRIcon="{DynamicResource NextPageNew_H}"  
+                                PressedRIcon="{DynamicResource NextPageNew_C}"
+                                Tag="{DynamicResource NextPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding NextPageCmd}" Height="32" Width="32"/>
+                        <controls:Buttons x:Name="bs6" Content=""
+                              RIcon="{DynamicResource FinalPageNew}"
+                                MouseOverRIcon="{DynamicResource FinalPageNew_H}"  
+                                PressedRIcon="{DynamicResource FinalPageNew_C}"
+                                Tag="{DynamicResource FinalPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding EndPageCmd}" Height="32" Width="32"/>
+                    </StackPanel>
+
+                    <DataGrid Grid.Row="1"  HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Grid.ColumnSpan="3"  AlternationCount="2" VerticalGridLinesBrush="Black" HorizontalGridLinesBrush="Transparent"
+                      CanUserAddRows="False" AutoGenerateColumns="False" CanUserResizeColumns="False"  BorderBrush="Black"   
+                      Name="Reportdg" ItemsSource="{Binding ReportCollection}">
+                        <!--<i:Interaction.Triggers>
+				<i:EventTrigger EventName="MouseDoubleClick">
+					<i:InvokeCommandAction Command="{Binding LeftDoubleClickCmd}" CommandParameter="{Binding SelectedItem,ElementName=Reportdg,Mode=TwoWay}"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>-->
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="Background" Value="#1E2026"/>
+                                <Setter Property="Foreground" Value="#B3BBC5"/>
+                                <Setter Property="BorderThickness" Value="0,0,1,0" />
+                                <Setter Property="BorderBrush" Value="#000000" />
+                                <Setter Property="Height" Value="36"/>
+                                <Setter Property="FontSize" Value="12"/>
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                        <DataGrid.RowStyle>
+                            <Style TargetType="DataGridRow">
+                                <Style.Triggers>
+                                    <Trigger Property="AlternationIndex" Value="0" >
+                                        <Setter Property="Background" Value="#0A0B0D" />
+                                        <Setter Property="Foreground" Value ="#C6CCD4"/>
+                                    </Trigger>
+                                    <Trigger Property="AlternationIndex" Value="1" >
+                                        <Setter Property="Background" Value="#14151A" />
+                                        <Setter Property="Foreground" Value ="#C6CCD4"/>
+                                    </Trigger>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#50ABFF"/>
+                                        <Setter Property="Foreground" Value ="White"/>
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="#1890FF"/>
+                                        <Setter Property="Foreground" Value ="White"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.RowStyle>
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="报告名称" Width="160" >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock TextAlignment="Center"  TextTrimming="WordEllipsis" ToolTip="{Binding Name}" Text="{Binding Name}"  FontSize="12"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="创建人" Width="100	">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock TextAlignment="Center" TextTrimming="WordEllipsis" ToolTip="{Binding UseName}" Text="{Binding UseName}"  FontSize="12"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="平台开放" Width="90">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox  Command="{Binding DataContext.IsOpenCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" 
+                                        IsChecked="{Binding Is_Open}"   CommandParameter="{Binding SelectedItem,ElementName=Reportdg}" Margin="23,3,5,3"></CheckBox>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <!--<DataGridTemplateColumn Header="备注" Width="198">
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate>
+							<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+							-->
+                            <!--<TextBlock TextAlignment="Center" TextTrimming="WordEllipsis" ToolTip="{Binding path}" Text="{Binding path}"  FontSize="12"/>-->
+                            <!--
+								<TextBox x:Name="labeltext" TextAlignment="Center" ToolTip="{Binding LabelText}" Text="{Binding LabelText}" FontSize="12" Width="140" IsEnabled="{Binding IsEdit}" ></TextBox>
+								<controls:Buttons x:Name="bs2" Height="23" Width="30" Content="" Margin="20,0,0,0"
+                                                RIcon="{DynamicResource DeleteAccountItem}"
+                                                MouseOverRIcon="{DynamicResource DeleteAccountItem_H}"  
+                                                PressedRIcon="{DynamicResource DeleteAccountItem_C}"
+                                                Style="{StaticResource AddandExportAccountBtnStyle}" 
+                                                Command="{Binding DataContext.ChangeLabelCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" 
+                                                CommandParameter="{Binding SelectedItem,ElementName=Reportdg}"/>
+							</StackPanel>
+							-->
+                            <!--TextChanged="{Binding textChangeCmd}"  LostFocus="{ Binding DataContext.textChangeCmd}"-->
+                            <!--
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>-->
+                            <DataGridTemplateColumn Header="操作 " Width="180">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                                            <controls:Buttons x:Name="bs1" Height="23" Width="30" Content="" 
+                                                RIcon="{DynamicResource Account_Edit}"
+                                                MouseOverRIcon="{DynamicResource Account_Edit_H}"  
+                                                PressedRIcon="{DynamicResource Account_Edit_C}"
+                                                Style="{StaticResource AddandExportAccountBtnStyle}" 
+                                                Command="{Binding DataContext.ViewCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" 
+                                                CommandParameter="{Binding SelectedItem,ElementName=Reportdg}"/>
+                                            <controls:Buttons x:Name="bs2" Height="23" Width="30" Content="" Margin="20,0,0,0"
+                                                RIcon="{DynamicResource DeleteAccountItem}"
+                                                MouseOverRIcon="{DynamicResource DeleteAccountItem_H}"  
+                                                PressedRIcon="{DynamicResource DeleteAccountItem_C}"
+                                                Style="{StaticResource AddandExportAccountBtnStyle}" 
+                                                Command="{Binding DataContext.DeleteReportCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" 
+                                                CommandParameter="{Binding SelectedItem,ElementName=Reportdg}"/>
+                                            <!--<controls:Buttons x:Name="bs3" Height="23" Width="30" Content="" Margin="40,0,0,0"
+                                                RIcon="{DynamicResource DeleteAccountItem}"
+                                                MouseOverRIcon="{DynamicResource DeleteAccountItem_H}"  
+                                                PressedRIcon="{DynamicResource DeleteAccountItem_C}"
+                                                Style="{StaticResource AddandExportAccountBtnStyle}" 
+                                                Command="{Binding DataContext.TextChangeCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" 												 
+                                                CommandParameter="{Binding SelectedItem,ElementName=Reportdg}"/>-->
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <!--<DataGridTemplateColumn Header="完成状态" Width="120" >
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate>
+							<TextBlock TextAlignment="Center" ToolTip="{Binding loadStation}" Text="{Binding loadStation}" FontSize="12"></TextBlock>
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>-->
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem  x:Name="RoneReport" Grid.Row="1" Grid.Column="1" Width="80" Foreground="White" Style="{DynamicResource TabItemStyle}" Header="区域分析报告" Background="#393D45" Height="38"   MouseLeftButtonUp="RoneReport_MouseLeftButtonUp" HorizontalAlignment="Left" Margin="0,0,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="50*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="48" ></RowDefinition>
+                        <RowDefinition Height="298" ></RowDefinition>
+                        <RowDefinition Height="48" ></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Row="0" Grid.Column="1"  HorizontalAlignment="Stretch"  Style="{DynamicResource AddressTbxSearchStyle}"
+                     Width="231" Height="32" 
+                     Helper:TextBoxHelper.IsNeedClearButton="False" Helper:TextBoxHelper.ButtonCommand="{Binding RoneReportSearchCmd}"
+                     Text="{Binding RoneReportSearchText,UpdateSourceTrigger=PropertyChanged}" Margin="16,8,16,8" />
+                    <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right"  Margin="50,10,16,10">
+
+                        <controls:Buttons x:Name="Ronebs5" Content=""
+                                RIcon="{DynamicResource FirstPageNew}"
+                                MouseOverRIcon="{DynamicResource FirstPageNew_H}"  
+                                PressedRIcon="{DynamicResource FirstPageNew_C}"
+                                Tag="{DynamicResource FirstPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding RoneFirstPageCmd}" Height="32" Width="32" />
+                        <controls:Buttons x:Name="Ronebs3" Content=""
+                                IsEnabled="{Binding LastPageBtnEnable}"
+                                RIcon="{DynamicResource LastPageNew}"
+                                MouseOverRIcon="{DynamicResource LastPageNew_H}"  
+                                PressedRIcon="{DynamicResource LastPageNew_C}"
+                                Tag="{DynamicResource LastPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding RoneLastPageCmd}" Height="32" Width="32"/>
+                        <TextBlock Text="{Binding RonePageNum,StringFormat= {}{0}/}" FontSize="14" Foreground="#B3BBC5"  Margin="5,5,0,5" />
+                        <TextBlock Text="{Binding RonePageCount}" FontSize="14" Foreground="#B3BBC5"  Margin="0,5,5,5" />
+                        <controls:Buttons x:Name="Ronebs4" Content=""
+                              IsEnabled="{Binding NextPageBtnEnable}"
+                              RIcon="{DynamicResource NextPageNew}"
+                                MouseOverRIcon="{DynamicResource NextPageNew_H}"  
+                                PressedRIcon="{DynamicResource NextPageNew_C}"
+                                Tag="{DynamicResource NextPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding RoneNextPageCmd}" Height="32" Width="32"/>
+                        <controls:Buttons x:Name="Ronebs6" Content=""
+                              RIcon="{DynamicResource FinalPageNew}"
+                                MouseOverRIcon="{DynamicResource FinalPageNew_H}"  
+                                PressedRIcon="{DynamicResource FinalPageNew_C}"
+                                Tag="{DynamicResource FinalPageNew_D}" 
+                                Style="{StaticResource AddandExportAccountBtnStyle}" Command="{Binding RoneEndPageCmd}" Height="32" Width="32"/>
+                    </StackPanel>
+
+                    <DataGrid Grid.Row="1"  HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Grid.ColumnSpan="2"  AlternationCount="2" VerticalGridLinesBrush="Black" HorizontalGridLinesBrush="Transparent"
+                      CanUserAddRows="False" AutoGenerateColumns="False" CanUserResizeColumns="False"  BorderBrush="Black"   
+                      Name="RoneReportdg" ItemsSource="{Binding RoneReportCollection}">
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="Background" Value="#1E2026"/>
+                                <Setter Property="Foreground" Value="#B3BBC5"/>
+                                <Setter Property="BorderThickness" Value="0,0,1,0" />
+                                <Setter Property="BorderBrush" Value="#000000" />
+                                <Setter Property="Height" Value="36"/>
+                                <Setter Property="FontSize" Value="12"/>
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                        <DataGrid.RowStyle>
+                            <Style TargetType="DataGridRow">
+                                <Style.Triggers>
+                                    <Trigger Property="AlternationIndex" Value="0" >
+                                        <Setter Property="Background" Value="#0A0B0D" />
+                                        <Setter Property="Foreground" Value ="#C6CCD4"/>
+                                    </Trigger>
+                                    <Trigger Property="AlternationIndex" Value="1" >
+                                        <Setter Property="Background" Value="#14151A" />
+                                        <Setter Property="Foreground" Value ="#C6CCD4"/>
+                                    </Trigger>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#50ABFF"/>
+                                        <Setter Property="Foreground" Value ="White"/>
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="#1890FF"/>
+                                        <Setter Property="Foreground" Value ="White"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.RowStyle>
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="报告名称" Width="160" >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock TextAlignment="Center"  TextTrimming="WordEllipsis" ToolTip="{Binding Name}" Text="{Binding Name}"  FontSize="12"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="创建人" Width="100	">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock TextAlignment="Center" TextTrimming="WordEllipsis" ToolTip="{Binding UseName}" Text="{Binding UseName}"  FontSize="12"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="平台开放" Width="90">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox  Command="{Binding DataContext.IsOpenCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" 
+                                        IsChecked="{Binding RoneIs_Open}"   CommandParameter="{Binding SelectedItem,ElementName=RoneReportdg}" Margin="23,3,5,3"></CheckBox>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="操作 " Width="180">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                                            <controls:Buttons x:Name="Ronebs1" Height="23" Width="30" Content="" 
+                                                RIcon="{DynamicResource Account_Edit}"
+                                                MouseOverRIcon="{DynamicResource Account_Edit_H}"  
+                                                PressedRIcon="{DynamicResource Account_Edit_C}"
+                                                Style="{StaticResource AddandExportAccountBtnStyle}" 
+                                                Command="{Binding DataContext.RoneViewCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" 
+                                                CommandParameter="{Binding SelectedItem,ElementName=RoneReportdg}"/>
+                                            <controls:Buttons x:Name="Ronebs2" Height="23" Width="30" Content="" Margin="20,0,0,0"
+                                                RIcon="{DynamicResource DeleteAccountItem}"
+                                                MouseOverRIcon="{DynamicResource DeleteAccountItem_H}"  
+                                                PressedRIcon="{DynamicResource DeleteAccountItem_C}"
+                                                Style="{StaticResource AddandExportAccountBtnStyle}" 
+                                                Command="{Binding DataContext.RoneDeleteReportCmd,RelativeSource={RelativeSource AncestorLevel=1,AncestorType=DataGrid}}" 
+                                                CommandParameter="{Binding SelectedItem,ElementName=RoneReportdg}"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</blankWindow:BlankWindow>

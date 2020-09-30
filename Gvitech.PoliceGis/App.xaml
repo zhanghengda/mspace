@@ -1,0 +1,37 @@
+﻿<Application x:Class="MMC.MSpace.App" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             >
+ 
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/BaseColor.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/Icons.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/Window.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/SliderStyle.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/TextBlock.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/ScrollViewer.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/Button.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/RadioButton.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/Textbox.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/CheckBox.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/ListBox.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/ComboBox.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/TreeView.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/TabControl.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/DataGrid.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/Calendar.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/LabelStyle.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Mmc.Mspace.Theme;component/Styles/BorderStyle.xaml"/>
+                <!--其他国际化资源-->
+                
+                
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="{x:Type ScrollBar}" BasedOn="{StaticResource DefaultScrollBar}"/>
+            <Style TargetType="{x:Type ScrollViewer}" BasedOn="{StaticResource DefaultScrollViewer}"/>
+        </ResourceDictionary>
+
+      
+    </Application.Resources>
+    
+</Application>

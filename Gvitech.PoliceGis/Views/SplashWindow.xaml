@@ -1,0 +1,31 @@
+<Window
+	x:Class="MMC.MSpace.Views.SplashWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="SplashWindow"
+	AllowsTransparency="True"
+	Background="#00FFFFFF"
+	ResizeMode="NoResize"
+	ShowInTaskbar="False"
+	WindowStartupLocation="CenterScreen"
+	WindowState="Maximized"
+	WindowStyle="None" xmlns:views="clr-namespace:MMC.MSpace.Views">
+	<Grid>
+		<Image
+			Name="splashImage"
+			Source="pack://siteoforigin:,,,/Resources/splash.png"
+			Stretch="Fill" />
+		<TextBlock
+			Name="tittle"
+			Margin="0,100,0,0"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Top"
+			FontSize="48"
+			Foreground="#FFF5F5F5" />
+		<TextBlock
+			Name="loadinfo"
+			Margin="20,0,0,20"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Bottom"
+			FontSize="22"
+			Foreground="#FFFFFFFF" />
+	</Grid>
+</Window>
