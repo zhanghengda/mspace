@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShellModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BarMenuItems>
+    <BarItem xsi:type="BarItem" Content="城市预览" ToolTip="城市预览" Icon="透明度.png" MouseOverIcon="透明度H.png" rowIndex="0" columnIndex="0" RowSpan="2" ColumnSpan="2" Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="重点建筑" ToolTip="城市预览" Icon="透明度.png" MouseOverIcon="透明度H.png"  rowIndex="0" columnIndex="2" RowSpan="2" ColumnSpan="2" Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="交通管理" ToolTip="交通管理" Icon="透明度.png" MouseOverIcon="透明度H.png" rowIndex="0" columnIndex="4" RowSpan="2" ColumnSpan="2"  Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="片区分布" ToolTip="片区分布" Icon="透明度.png" MouseOverIcon="透明度H.png"  rowIndex="0" columnIndex="6" RowSpan="2" ColumnSpan="2" Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="景点分布" ToolTip="景点分布" Icon="透明度.png" MouseOverIcon="透明度H.png"  rowIndex="2" columnIndex="0" RowSpan="2" ColumnSpan="2" Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="狙击布防" ToolTip="狙击布防" Icon="透明度.png" MouseOverIcon="透明度H.png"  rowIndex="2" columnIndex="2" RowSpan="2" ColumnSpan="2" Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="安全布防" ToolTip="安全布防" Icon="透明度.png" MouseOverIcon="透明度H.png" rowIndex="2" columnIndex="4" RowSpan="2" ColumnSpan="2" Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="救生部署" ToolTip="救生部署" Icon="透明度.png" MouseOverIcon="透明度H.png"  rowIndex="2" columnIndex="6" RowSpan="2" ColumnSpan="2" Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="治安监控" ToolTip="治安监控" Icon="透明度.png" MouseOverIcon="透明度H.png"  rowIndex="4" columnIndex="0" RowSpan="2" ColumnSpan="2" Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="量测" ToolTip="量测" Icon="透明度.png" MouseOverIcon="透明度H.png"  rowIndex="4" columnIndex="2" RowSpan="2" ColumnSpan="2" Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="案例库" ToolTip="案例库" Icon="透明度.png" MouseOverIcon="透明度H.png"  rowIndex="4" columnIndex="4" RowSpan="2" ColumnSpan="2" Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="在线警员" ToolTip="在线警员" Icon="透明度.png" MouseOverIcon="透明度H.png"  rowIndex="4" columnIndex="6" RowSpan="2" ColumnSpan="2" Visible="false"/>
+    <BarItem xsi:type="BarItem" Content="运维管理" ToolTip="运维管理" Icon="透明度.png" MouseOverIcon="透明度H.png"  rowIndex="6" columnIndex="0" RowSpan="2" ColumnSpan="2" Visible="false"/>
+  </BarMenuItems>
+</ShellModel>

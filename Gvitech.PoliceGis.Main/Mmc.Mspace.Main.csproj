@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DF8EF1F-C9E2-4EB7-B0BE-2CC56B3EBECD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mmc.Mspace.Main</RootNamespace>
+    <AssemblyName>Mmc.Mspace.Main</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GFramework.BlankWindow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Common.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Common.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeCore.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeCore.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeGeometry.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeGeometry.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Math.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Math.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.RenderControl.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.RenderControl.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Resource.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Resource.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Extensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\AppClosedCmd.cs" />
+    <Compile Include="Commands\AppMinimizedCmd.cs" />
+    <Compile Include="Commands\FullScreenCmd.cs" />
+    <Compile Include="DTSelector\BarDataTemplateSelector.cs" />
+    <Compile Include="DTSelector\ToolDataTemplateSelector.cs" />
+    <Compile Include="Models\ShellModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utils\ObjectForScriptingHelper.cs" />
+    <Compile Include="ViewModels\ShellViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationConfig\ApplicationConfig.csproj">
+      <Project>{D917D046-2BA8-49DA-AEB9-C59DB342BB71}</Project>
+      <Name>ApplicationConfig</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\FireControlModule\FireControlModule.csproj">
+      <Project>{1ad8bb6b-5896-469c-b805-6cc9b98367ae}</Project>
+      <Name>FireControlModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.CityMaker.Extension\Gvitech.CityMaker.Extension.csproj">
+      <Project>{6024d395-ea9f-4d2d-887a-0827e16613e2}</Project>
+      <Name>Gvitech.CityMaker.Extension</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.DataSourceAccess\Mmc.DataSourceAccess.csproj">
+      <Project>{24fdf0d9-fec4-465b-915d-01fae99e2184}</Project>
+      <Name>Mmc.DataSourceAccess</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Framework\Mmc.Framework.csproj">
+      <Project>{22939209-2239-4851-8f9b-24b79823793a}</Project>
+      <Name>Mmc.Framework</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Common\Mmc.Mspace.Common.csproj">
+      <Project>{cd3991ed-0326-49cd-a83c-7816aafd88b7}</Project>
+      <Name>Mmc.Mspace.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.NavigationModule\Mmc.Mspace.NavigationModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0d8}</Project>
+      <Name>Mmc.Mspace.NavigationModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Services\Mmc.Mspace.Services.csproj">
+      <Project>{adcc12cb-e1d2-436a-8c33-47484ae76e08}</Project>
+      <Name>Mmc.Mspace.Services</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Theme\Mmc.Mspace.Theme.csproj">
+      <Project>{41C024CF-8B5D-4693-B3FF-8D36D2B753C4}</Project>
+      <Name>Mmc.Mspace.Theme</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.ToolModule\Mmc.Mspace.ToolModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0dd}</Project>
+      <Name>Mmc.Mspace.ToolModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.CityViewModule\Mmc.Mspace.CityViewModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0d3}</Project>
+      <Name>Mmc.Mspace.CityViewModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.HumanAssociationModule\Mmc.Mspace.HumanAssociationModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0d6}</Project>
+      <Name>Mmc.Mspace.HumanAssociationModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.KeyBuildingsModule\Mmc.Mspace.KeyBuildingsModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0d7}</Project>
+      <Name>Mmc.Mspace.KeyBuildingsModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.PoliceDeployedModule\Mmc.Mspace.PoliceDeployedModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0da}</Project>
+      <Name>Mmc.Mspace.PoliceDeployedModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.StatisticsModule\Mmc.Mspace.StatisticsModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0dc}</Project>
+      <Name>Mmc.Mspace.StatisticsModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.CoreModule\Mmc.Mspace.CoreModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0d5}</Project>
+      <Name>Mmc.Mspace.CoreModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.PoliceResourceModule\Mmc.Mspace.PoliceResourceModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0db}</Project>
+      <Name>Mmc.Mspace.PoliceResourceModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.PlanShowModule\Mmc.Mspace.PlanShowModule.csproj">
+      <Project>{f9b0f837-5eb0-42b1-9020-4214d038c0d9}</Project>
+      <Name>Mmc.Mspace.PlanShowModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Const\Mmc.Mspace.Const.csproj">
+      <Project>{149A90B6-D7BD-4B48-8DAF-2E8151C8CC6B}</Project>
+      <Name>Mmc.Mspace.Const</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Windows\Mmc.Windows.csproj">
+      <Project>{8f12bf24-3e61-46e6-8baa-4bd059203aca}</Project>
+      <Name>Mmc.Windows</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf\Mmc.Wpf.csproj">
+      <Project>{2efe1860-3671-43c0-9e80-e0a80f438ac3}</Project>
+      <Name>Mmc.Wpf</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.IntelligentAnalysis\Mmc.Mspace.IntelligentAnalysisModule.csproj">
+      <Project>{9342BC75-2640-44B9-B3D9-9CEF16362481}</Project>
+      <Name>Mmc.Mspace.IntelligentAnalysisModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.IotModule\Mmc.Mspace.IotModule.csproj">
+      <Project>{70db019a-283f-4ae4-8174-3c448ac7d4f6}</Project>
+      <Name>Mmc.Mspace.IotModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.PoiManager\Mmc.Mspace.PoiManagerModule.csproj">
+      <Project>{4DD21CF7-3B94-4336-9774-AC09C552896B}</Project>
+      <Name>Mmc.Mspace.PoiManagerModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.Project\Mmc.Mspace.Project.csproj">
+      <Project>{0beeb286-23cb-49cf-9924-bbeb847073da}</Project>
+      <Name>Mmc.Mspace.Project</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.RegularInspectionModule\Mmc.Mspace.RegularInspectionModule.csproj">
+      <Project>{31301f8d-e330-4e33-996c-d0afa093dcd8}</Project>
+      <Name>Mmc.Mspace.RegularInspectionModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.RoutePlanning\Mmc.Mspace.RoutePlanning.csproj">
+      <Project>{f2b97e15-9ec8-49b6-8ead-6c8e1d933518}</Project>
+      <Name>Mmc.Mspace.RoutePlanning</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.UavModule\Mmc.Mspace.UavModule.csproj">
+      <Project>{2a47aff8-7743-4adf-8890-45d189f7ba45}</Project>
+      <Name>Mmc.Mspace.UavModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.Mspace.WireTowerModule\Mmc.Mspace.WireTowerModule.csproj">
+      <Project>{8ce8b8cc-8a00-405c-a33c-e2ed1dcbe5da}</Project>
+      <Name>Mmc.Mspace.WireTowerModule</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="config\shellconfig.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

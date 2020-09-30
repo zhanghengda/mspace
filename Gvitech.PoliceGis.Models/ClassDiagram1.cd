@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Mmc.Mspace.Models.Case.AreaSubjectCaseInfo" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Case\AreaSubjectCaseInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Case.CaseInfo" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAEEAAQAAAAAAAAAACAAAAAAAAAAAAQABAAAAYAA=</HashCode>
+      <FileName>Case\CaseInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Case.HttpCaseInfos" Collapsed="true">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Case\HttpCaseInfos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Case.HttpSubjectCaseInfos" Collapsed="true">
+    <Position X="14.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Case\HttpSubjectCaseInfos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Case.SubjectCaseInfo" Collapsed="true">
+    <Position X="16" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAIAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Case\SubjectCaseInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.CommonPoi.PoiInfo" Collapsed="true">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAICEAQAAAAAAAAAQAAQAgEAAAAEAAAAAIAACAAAA=</HashCode>
+      <FileName>CommonPoi\PoiInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.FireIot.FireIotInfo" Collapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAEAAAAIAAAAAAAAIQAFACAAAAAAAAQKAAA=</HashCode>
+      <FileName>FireIot\FireIotInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.HttpResult.HttpResult&lt;T&gt;" Collapsed="true">
+    <Position X="17.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAABAAAAAAAAAAAAAg=</HashCode>
+      <FileName>HttpResult\HttpResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.HttpResult.HttpResultModel" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAACA=</HashCode>
+      <FileName>HttpResult\HttpResultModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.HttpResult.HttpServiceConfig" Collapsed="true">
+    <Position X="21.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAAACAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HttpResult\HttpServiceConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.HttpResult.HttpServiceParam" Collapsed="true">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAACAAAABAEAAA=</HashCode>
+      <FileName>HttpResult\HttpServiceParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Human.HttpPopulationInfos" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Human\HttpPopulationInfos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Human.PopulationInfo" Collapsed="true">
+    <Position X="21.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAACCAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Human\PopulationInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Inspection.DomItem" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inspection\DomItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Inspection.InspectItem">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAEAIAAAABAAQAAAAAAAIAAQAAAAAAAAA=</HashCode>
+      <FileName>Inspection\InspectItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Inspection.InspectRegion" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="7.75" Width="1.5" />
+    <AssociationLine Name="InspectUnits" Type="Mmc.Mspace.Models.Inspection.InspectUnit">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.388" Y="0.495" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAIAAQAQAAAAAAA=</HashCode>
+      <FileName>Inspection\InspectRegion.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="InspectUnits" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Inspection.InspectUnit" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="6" Width="1.5" />
+    <AssociationLine Name="DomLayer" Type="Mmc.Mspace.Models.Inspection.DomItem" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="7" />
+        <Point X="8.094" Y="7" />
+        <Point X="8.094" Y="4.177" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.129" Y="2.623" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="PicLayer" Type="Mmc.Mspace.Models.Inspection.PictureItem">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.779" Y="2.681" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ReportLayer" Type="Mmc.Mspace.Models.Inspection.ReportItem" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="7.062" />
+        <Point X="4" Y="7.062" />
+        <Point X="4" Y="4.177" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.413" Y="2.691" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="RouteLayer" Type="Mmc.Mspace.Models.Inspection.RouteItem">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.989" Y="0.918" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="VideoLayer" Type="Mmc.Mspace.Models.Inspection.VideoItem" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="7" />
+        <Point X="10.906" Y="7" />
+        <Point X="10.906" Y="4.177" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.746" Y="2.633" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAICQAAAAAAAAAAAAAAAACQAAACAAAIAAQAAAAAASQA=</HashCode>
+      <FileName>Inspection\InspectUnit.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DomLayer" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="PicLayer" />
+      <Property Name="ReportLayer" />
+      <Property Name="RouteLayer" />
+      <Property Name="VideoLayer" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Inspection.PictureItem" Collapsed="true">
+    <Position X="1" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAE=</HashCode>
+      <FileName>Inspection\PictureItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Inspection.ReportItem" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inspection\ReportItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Inspection.RouteItem">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inspection\RouteItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Inspection.VideoItem" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inspection\VideoItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.BaseObject" Collapsed="true">
+    <Position X="1.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAgAAAAAAAAAAAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>MovePoi\BaseObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.HttpPoliceInfo" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>MovePoi\HttpPoliceInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.HttpPoliceMenInfo" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MovePoi\HttpPoliceMenInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.MovePoi" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACIABIABAAAgAgACAAAASCBACGAAICAARIABADIBA=</HashCode>
+      <FileName>MovePoi\MovePoi.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.MovePoliceCar" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCCAAABBABAAAAAAAAAQCAAAAAEAAkAAAAAADAAA=</HashCode>
+      <FileName>MovePoi\MovePoliceCar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.MovePoliceman" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCCAAABBABAAAAAIAAAQCAAAAAEAAEAAAAAADAAA=</HashCode>
+      <FileName>MovePoi\MovePoliceman.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.PoiFeatueClass" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAERAEAAAAoBMEgAQgAIAAAAAIAQAIAACgkAg=</HashCode>
+      <FileName>MovePoi\PoiFeatueClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.PoliceCar" Collapsed="true">
+    <Position X="2.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAIAAAAAAAQEBAAAAAAABAAAgAAAACEAAAAAA=</HashCode>
+      <FileName>MovePoi\PoliceCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.PoliceCarInfo" Collapsed="true">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACAQAAAAAABAAECAAACAAAAAAAAAAABIAAA=</HashCode>
+      <FileName>MovePoi\PoliceCarInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.Policeman" Collapsed="true">
+    <Position X="0.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAIAACgAAAAYEBAAAAIIAAAAIAAAAAAQAAAAAA=</HashCode>
+      <FileName>MovePoi\Policeman.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.PoliceManInfo" Collapsed="true">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABACAAAAAAAAAAAAAAAQGBAAA=</HashCode>
+      <FileName>MovePoi\PoliceManInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.MovePoi.RecevieMessage" Collapsed="true">
+    <Position X="14.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgAIAAAAAAAIAAAEAAAAAAABAAgAQAQEAAQAAAAAAA=</HashCode>
+      <FileName>MovePoi\RecevieMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Navigation.CameraTour" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQBAAAAAAAAAAAAEAAIEAEAAAAAAQAAgQIAgAAAAAAE=</HashCode>
+      <FileName>Navigation\CameraTour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Navigation.LocationScene" Collapsed="true">
+    <Position X="17.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEAAAAEGAACAACEABIgAAAAAAAACgAgACAAAAAAIAA=</HashCode>
+      <FileName>Navigation\LocationScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.PlanShowService.Preview" Collapsed="true">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAkAAAAAAAAAAAAAAAAgAQAAAIAABAAoAAAAAAgAEA=</HashCode>
+      <FileName>PlanShowService\Preview.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Video.HttpVideoInfos" Collapsed="true">
+    <Position X="16" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Video\HttpVideoInfos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Video.VideoInfo" Collapsed="true">
+    <Position X="17.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAAAAAAAAAAAAEAAEAABAAAAAAAAAAAAAAAAAQYAA=</HashCode>
+      <FileName>Video\VideoInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.Video.VideoParam" Collapsed="true">
+    <Position X="19.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAEAAAAAAAAAACAAAAEAAAAAA=</HashCode>
+      <FileName>Video\VideoParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mmc.Mspace.Models.VideoMonitor.CameraInfo" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAABIQAABACAQgAAAEYICAEAAABAAEAAACIAAAA=</HashCode>
+      <FileName>VideoMonitor\CameraInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Mmc.Mspace.Models.MovePoi.IBaseObject" Collapsed="true">
+    <Position X="12.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>MovePoi\IBaseObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mmc.Mspace.Models.MovePoi.IMoveObject" Collapsed="true">
+    <Position X="14.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAABBABAAAAAAAAAQCAAAAAEAAEAAAAAABAAA=</HashCode>
+      <FileName>MovePoi\IMoveObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mmc.Mspace.Models.MovePoi.IMovePoi" Collapsed="true">
+    <Position X="16" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAABAAAAAgACAAAAQCBACGAAAAAARAABABIAA=</HashCode>
+      <FileName>MovePoi\IMovePoi.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mmc.Mspace.Models.MovePoi.IPOIFeatureClass" Collapsed="true">
+    <Position X="17.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEBAEAAAAIAAAAAQAAAAAAAAIAQAAAACAAAg=</HashCode>
+      <FileName>MovePoi\IPOIFeatureClass.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mmc.Mspace.Models.User.IUserInfo" Collapsed="true">
+    <Position X="19.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAIAAQAAAAAAAAA=</HashCode>
+      <FileName>User\IUserInfo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Mmc.Mspace.Models.MovePoi.MoveObjectType" Collapsed="true">
+    <Position X="12.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>MovePoi\MoveObjectType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
