@@ -1,0 +1,104 @@
+﻿<Window x:Class="FireControlModule.UnitDetailView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gvi="http://schemas.mmc.com"
+        xmlns:gvifm="http://schemas.mmc.com/wpf"
+        xmlns:frame="Mmc.Windows.Framework.Converters;assembly=Mmc.Windows.Framework"
+        xmlns:local="clr-namespace:FireControlModule"
+         AllowsTransparency="True"
+	Background="#00FFFFFF"
+	ShowInTaskbar="False"
+	SizeToContent="WidthAndHeight"
+	WindowStartupLocation="CenterScreen"
+	WindowStyle="None"
+        Loaded="Window_Loaded">
+
+    <Border
+		BorderThickness="1"
+		MouseDown="UIElement_OnPreviewMouseDown">
+        <FrameworkElement.Style>
+            <Style BasedOn="{StaticResource BorderPanelStyle}" TargetType="{x:Type Border}">
+                <Style.Triggers>
+                    <DataTrigger
+						Value="true"
+						Binding="{Binding IsActive, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}">
+                        <Setter
+							Property="BorderBrush"
+							Value="{DynamicResource HighlightBackBrush}" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </FrameworkElement.Style>
+        <GroupBox
+			HorizontalContentAlignment="Stretch"
+			Padding="5">
+            <HeaderedContentControl.Header>
+                <DockPanel>
+                    <Button
+						DockPanel.Dock="Right"
+						Style="{DynamicResource CloseWndButtonStyle}"
+						Command="{Binding CloseCmd}" />
+                    <TextBlock
+						Style="{DynamicResource ViewHeaderStyle}"
+						Text="单位详情" />
+                </DockPanel>
+            </HeaderedContentControl.Header>
+            <StackPanel>
+                <DockPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <Image Source="pack://siteoforigin:,,,/Resources/BuildInfo/单位.png" Width="20" />
+                        <Label Style="{StaticResource LabelValueStyle}"  FontSize="15" Content="{Binding UnitName}"></Label>
+                    </StackPanel>
+                    <!--<StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                        <Label Style="{StaticResource LabelTextStyle}">房间号</Label>
+                        <Label Style="{StaticResource LabelValueStyle}" Content="{Binding Manager}"></Label>
+                    </StackPanel>-->
+                </DockPanel>
+                <DockPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <Label Style="{StaticResource LabelTextStyle}">法人</Label>
+                        <Label Style="{StaticResource LabelValueStyle}" Content="{Binding OwnerName}"></Label>
+                        <Label Style="{StaticResource LabelTextStyle}">联系电话</Label>
+                        <Label Style="{StaticResource LabelValueStyle}" Content="{Binding OwnerPhone}"></Label>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                        <Image Margin="5,0,5,0" Source="pack://siteoforigin:,,,/Resources/BuildInfo/呼叫中心.png" ></Image>
+                        <Image Margin="5,0,5,0" Source="pack://siteoforigin:,,,/Resources/BuildInfo/信息.png" ></Image>
+                    </StackPanel>
+                </DockPanel>
+                <local:BuildContentView DataContext="{Binding BuildContent}"></local:BuildContentView>
+                <DockPanel>
+                    <gvifm:SimpleIconButton  x:Name="buildDetialBtn"
+                              Width="16" Height="16"
+                              gvifm:SimpleIconButton.Icon="{Binding Icon}"
+                              ButtonBase.Command="{Binding Command}"
+                              ButtonBase.CommandParameter="{Binding BuildCode}" />
+                    <Label Style="{StaticResource LabelTextStyle}">档案册</Label>
+                    <gvifm:SimpleIconButton  x:Name="unitBaseBtn"
+                              Width="16" Height="16"
+                              DataContext="{Binding UnitBaseInfo}"
+                              gvifm:SimpleIconButton.Icon="{Binding Icon}"
+                              ButtonBase.Command="{Binding Command}"
+                              ButtonBase.CommandParameter="{Binding RequestUrl}" />
+                    <Label Style="{StaticResource LabelTextStyle}">基本信息</Label>
+                    <gvifm:SimpleIconButton  x:Name="UnitProblemBtn"
+                              Width="16" Height="16"
+                              DataContext="{Binding UnitProblem}"
+                              gvifm:SimpleIconButton.Icon="{Binding Icon}"
+                              ButtonBase.Command="{Binding Command}"
+                              ButtonBase.CommandParameter="{Binding RequestUrl}" />
+                    <Label Style="{StaticResource LabelTextStyle}">问题清单</Label>
+                    <gvifm:SimpleIconButton  x:Name="UnitVideoBtn"
+                              Width="16" Height="16"
+                              DataContext="{Binding UnitVideo}"
+                              gvifm:SimpleIconButton.Icon="{Binding Icon}"
+                              ButtonBase.Command="{Binding Command}"
+                              ButtonBase.CommandParameter="{Binding UnitId}" />
+                    <Label Style="{StaticResource LabelTextStyle}">室内全景</Label>
+                </DockPanel>
+            </StackPanel>
+        </GroupBox>
+    </Border>
+</Window>

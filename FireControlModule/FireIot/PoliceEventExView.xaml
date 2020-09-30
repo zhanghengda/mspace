@@ -1,0 +1,185 @@
+<Window
+	x:Class="FireControlModule.FireIot.PoliceEventExView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:gvi="http://schemas.mmc.com"
+    xmlns:gvifm="http://schemas.mmc.com/wpf"
+    xmlns:policeevent="clr-namespace:FireControlModule.FireIot"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	Width="470" AllowsTransparency="True"
+	Background="#00FFFFFF"
+	ShowInTaskbar="False"
+	SizeToContent="Height"
+	WindowStartupLocation="Manual"
+	WindowStyle="None">
+    <FrameworkElement.Resources>
+        <ResourceDictionary>
+            <DataTemplate
+				x:Key="editDataTemplate">
+                <Button
+					Padding="5"
+					Style="{StaticResource ButtonStyle}"
+					Command="{Binding DataContext.EditStateCmd, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=DockPanel}}"
+					CommandParameter="{Binding Value}"
+					Content="{Binding Alias}" />
+            </DataTemplate>
+            <DataTemplate x:Key="filteDataTemplate">
+                <TextBlock Text="{Binding Alias}" />
+            </DataTemplate>
+            <DataTemplate
+				x:Key="PoliceEventTemplate">
+                <DockPanel>
+                    <ItemsControl Name="cmds" Margin="0,0,0,5" HorizontalAlignment="Right" DockPanel.Dock="Bottom" Visibility="Collapsed"
+						ItemTemplate="{StaticResource editDataTemplate}"
+                          ItemsSource="{Binding ProcessingState}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <gvifm:UniformGridWithSpacing
+									FrameworkElement.HorizontalAlignment="Center"
+									UniformGrid.Rows="1"
+									UniformGrid.Columns="{Binding Items.Count, RelativeSource={RelativeSource AncestorType=ItemsControl, Mode=FindAncestor}}" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+                    <Grid
+						Width="300"
+						Margin="5,10">
+                        <FrameworkElement.Resources>
+                            <ResourceDictionary>
+                                <Style
+									TargetType="{x:Type TextBlock}" x:Key="{x:Type TextBlock}">
+                                    <Setter Property="FontSize" Value="16" />
+                                    <Setter Property="Foreground" Value="#FFFFFFFF" />
+                                    <Setter Property="VerticalAlignment" Value="Center" />
+                                    <Setter Property="HorizontalAlignment" Value="Left" />
+                                </Style>
+                            </ResourceDictionary>
+                        </FrameworkElement.Resources>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition 	 Width="60" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="1" Text="报警:" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Createdate}" />
+                        <TextBlock Grid.Row="2" Text="地址:" />
+                        <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Address}" />
+                        <TextBlock Grid.Row="3" Text="名称:" VerticalAlignment="Top" />
+                        <TextBlock Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" 	Text="{Binding Name}" />
+                        <TextBlock Grid.Row="4" Text="状态:" />
+                        <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding Status}" />
+                        <TextBlock Grid.Row="5" Text="阀值:" />
+                        <TextBlock Grid.Row="5"	Grid.Column="1" Text="{Binding Value}" />
+                        <TextBlock Grid.Row="6" Text="范围:" />
+                        <TextBlock Grid.Row="6"	Grid.Column="1" Text="{Binding ValueRange}" />
+                        <TextBlock Grid.Row="7" Text="联系人:" />
+                        <TextBlock Grid.Row="7" Grid.Column="1" Text="{Binding TelPepple}" />
+                        <TextBlock Grid.Row="8" Text="电话:" />
+                        <TextBlock Grid.Row="8" Grid.Column="1" Text="{Binding TelPhone}" />
+                        <StackPanel Grid.Row="9" Grid.ColumnSpan="2" Orientation="Horizontal">
+                            <Button Margin="0,0,5,0" Style="{DynamicResource ButtonStyle}" Command="{Binding LocateCmd}" CommandParameter="{Binding CodeInfo}">定位</Button>
+                            <Button Margin="5,0,5,0" Style="{DynamicResource ButtonStyle}" Command="{Binding ShowFloorMapCmd}" CommandParameter="{Binding CodeInfo}">平面图</Button>
+                            <Button Margin="5,0,5,0" Style="{DynamicResource ButtonStyle}" Command="{Binding ShowVideoCmd}">视频监控</Button>
+                            <Button Margin="5,0,5,0" Style="{DynamicResource ButtonStyle}" Command="{Binding ShowFacilityCmd}">周边设施</Button>
+                        </StackPanel>
+                    </Grid>
+                </DockPanel>
+                <DataTemplate.Triggers>
+                    <DataTrigger Value="true" Binding="{Binding IsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListBoxItem}}">
+                        <Setter TargetName="cmds" Property="Visibility" Value="Collapsed" />
+                    </DataTrigger>
+                </DataTemplate.Triggers>
+            </DataTemplate>
+        </ResourceDictionary>
+    </FrameworkElement.Resources>
+    <Border BorderThickness="1" MouseDown="UIElement_OnPreviewMouseDown">
+        <FrameworkElement.Style>
+            <Style BasedOn="{StaticResource BorderPanelStyle}" 	TargetType="{x:Type Border}">
+                <Setter Property="Background" Value="#00FFFFFF" />
+                <Style.Triggers>
+                    <DataTrigger Value="true"
+						Binding="{Binding IsActive, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}">
+                        <Setter Property="BorderBrush" Value="{DynamicResource HighlightBackBrush}" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </FrameworkElement.Style>
+        <StackPanel>
+            <Border
+				Background="{DynamicResource P75BlackBrush}"
+				CornerRadius="4">
+                <GroupBox
+					Padding="5">
+                    <HeaderedContentControl.Header>
+                        <TextBlock Style="{DynamicResource ViewHeaderStyle}" Text="{Binding Content}" />
+                    </HeaderedContentControl.Header>
+                    <DockPanel>
+                        <ListBox DockPanel.Dock="Left"
+							ItemTemplate="{StaticResource filteDataTemplate}"
+							SelectedItem="{Binding SelectedFilterType}"
+							SelectedIndex="{Binding FilterSelectedIndex}"
+                            ItemsControl.ItemsSource="{Binding Items}">
+                            <ItemsControl.ItemContainerStyle>
+                                <Style BasedOn="{StaticResource ListBoxItemStyle}" TargetType="{x:Type ListBoxItem}">
+                                    <Setter Property="Background" Value="#FF808080" />
+                                    <Setter Property="Foreground" Value="#FFF5F5F5" />
+                                    <Setter Property="Padding" Value="5" />
+                                    <Setter Property="Margin" Value="0" />
+                                </Style>
+                            </ItemsControl.ItemContainerStyle>
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <gvifm:UniformGridWithSpacing UniformGrid.Columns="1"
+										gvifm:UniformGridWithSpacing.SpaceBetweenRows="2"
+										UniformGrid.Rows="{Binding Items.Count, RelativeSource={RelativeSource AncestorType=ListBox, Mode=FindAncestor}}" />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ListBox>
+                        <ListBox
+							Height="400"
+							ItemTemplate="{StaticResource PoliceEventTemplate}"
+							ScrollViewer.VerticalScrollBarVisibility="Auto"
+							ItemsSource="{Binding FireIotEventModels}"
+							SelectedItem="{Binding SelectedFireIotEventModel}">
+                            <ItemsControl.ItemContainerStyle>
+                                <Style BasedOn="{StaticResource ListBoxItemStyle}" TargetType="{x:Type ListBoxItem}">
+                                    <Setter Property="Visibility" Value="{Binding IsVisible}" />
+                                </Style>
+                            </ItemsControl.ItemContainerStyle>
+                        </ListBox>
+                    </DockPanel>
+                </GroupBox>
+            </Border>
+            <Border Margin="0,5,0,0" Background="{DynamicResource P75BlackBrush}" CornerRadius="4">
+                <GroupBox Padding="5,10">
+                    <HeaderedContentControl.Header>
+                        <TextBlock Style="{DynamicResource ViewHeaderStyle}" Text="选择范围" />
+                    </HeaderedContentControl.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="40" />
+                        </Grid.ColumnDefinitions>
+                        <ComboBox
+							Grid.Column="0"
+							ItemsSource="{Binding BufferDistances}"
+							SelectedItem="{Binding SelectedBufferDistance}" />
+                        <Label Grid.Column="1" Margin="5,0,5,0" Content="米" Foreground="#FFFFFFFF" />
+                    </Grid>
+                </GroupBox>
+            </Border>
+        </StackPanel>
+    </Border>
+</Window>
