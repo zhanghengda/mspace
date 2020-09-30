@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FDEPlugins>
+  
+  <!--Start FDE Provider Plugin-->
+  <FDEPlguin>
+      <Name>MySQL Provider</Name>
+      <Type>1</Type><!--1 FDE Provider;2 DataInteroperation Provider-->
+    <![CDATA[
+      FDE Provider的对应gvConnectionType枚举值
+      DataInteroperation的对应gvExtDataSourceType枚举值
+    ]]>
+      <Function>2</Function><!--用户自定义 -->
+      <Identity>MySqlProvider</Identity><!--dll名称中的关键字，通过此关键字来查找dll-->
+   </FDEPlguin>
+  <FDEPlguin>
+    <Name>SQLite Provider</Name>
+    <Type>1</Type>
+    <Function>10</Function>
+    <Identity>SQLiteProvider</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>PostgreSQL Provider</Name>
+    <Type>1</Type>
+    <Function>5</Function>
+    <Identity>PostgresProvider</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>GBase8t Provider</Name>
+    <Type>1</Type>
+    <Function>11</Function>
+    <Identity>GBase8tProvider</Identity>
+  </FDEPlguin>
+
+  <FDEPlguin>
+    <Name>FireBird Provider</Name>
+    <Type>1</Type>
+    <Function>3</Function>
+    <Identity>FirebirdProvider</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>Oracle11 Provider</Name>
+    <Type>1</Type>
+    <Function>4</Function>
+    <Identity>OraProvider</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>SQLServer Provider</Name>
+    <Type>1</Type>
+    <Function>6</Function>
+    <Identity>MSSQLProvider</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>ShapeFile Provider</Name>
+    <Type>1</Type>
+    <Function>12</Function>
+    <Identity>ShapeFileProvider</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>ArcGIS Server 10 Provider</Name>
+    <Type>1</Type>
+    <Function>13</Function>
+    <Identity>ArcGISServerProvider</Identity>
+  </FDEPlguin>
+
+ <FDEPlguin>
+    <Name>ArcSDE9x Provider</Name>
+    <Type>1</Type>
+    <Function>14</Function>
+    <Identity>ArcSDE9Provider</Identity>
+  </FDEPlguin>
+
+ <FDEPlguin>
+    <Name>ArcSDE10x Provider</Name>
+    <Type>1</Type>
+    <Function>15</Function>
+    <Identity>ArcSDE10Provider</Identity>
+  </FDEPlguin>
+
+  <FDEPlguin>
+    <Name>WFS Provider</Name>
+    <Type>1</Type>
+    <Function>16</Function>
+    <Identity>WFSProvider</Identity>
+  </FDEPlguin>
+  
+  <FDEPlguin>
+    <Name>KingbaseES Provider</Name>
+    <Type>1</Type>
+    <Function>17</Function>
+    <Identity>KbaseProvider</Identity>
+  </FDEPlguin>
+ <FDEPlguin>
+    <Name>OracleSpatial Provider</Name>
+    <Type>1</Type>
+    <Function>18</Function>
+    <Identity>OracleSpatialProvider</Identity>
+  </FDEPlguin>
+  
+   <FDEPlguin>
+    <Name>EsgynDB Provider</Name>
+    <Type>1</Type>
+    <Function>19</Function>
+    <Identity>EsgynDBProvider</Identity>
+  </FDEPlguin>
+  
+  <FDEPlguin>
+    <Name>PluginExtension Provider</Name>
+    <Type>1</Type>
+    <Function>999</Function>
+    <Identity>PluginExtensionProvider</Identity>
+  </FDEPlguin>
+  
+  <!--End FDE Provider Plugin-->
+  
+  <!--Start DataInterOperation Plugin-->
+  <FDEPlguin>
+    <Name>Vector DataInterOperation Plugin</Name>
+    <Type>2</Type>
+    <Function>2</Function>
+    <Identity>VectorInteroperation</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>DWG DataInterOperation Plugin</Name>
+    <Type>2</Type>
+    <Function>1</Function>
+    <Identity>DWGInteroperation</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>GDB DataInterOperation Plugin</Name>
+    <Type>2</Type>
+    <Function>3</Function>
+    <Identity>GDBInteroperation</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>LAS DataInterOperation Plugin</Name>
+    <Type>2</Type>
+    <Function>4</Function>
+    <Identity>LASInteroperation</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>SKP DataInterOperation Plugin</Name>
+    <Type>2</Type>
+    <Function>5</Function>
+    <Identity>SKPInteroperation</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>FBX DataInterOperation Plugin</Name>
+    <Type>2</Type>
+    <Function>6</Function>
+    <Identity>FBXInteroperation</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>DAE DataInterOperation Plugin</Name>
+    <Type>2</Type>
+    <Function>7</Function>
+    <Identity>DAEInteroperation</Identity>
+  </FDEPlguin>
+    <FDEPlguin>
+    <Name>PLY DataInterOperation Plugin</Name>
+    <Type>2</Type>
+    <Function>8</Function>
+    <Identity>PLYInteroperation</Identity>
+  </FDEPlguin>
+  <FDEPlguin>
+    <Name>IFC DataInterOperation Plugin</Name>
+    <Type>2</Type>
+    <Function>9</Function>
+    <Identity>IFCInteroperation</Identity>
+  </FDEPlguin>
+  <!--End DataInterOperation Plugin-->
+  
+  <!--Start Other Plugin-->
+  <FDEPlguin>
+    <Name>ExtToolPlugin</Name>
+    <Type>3</Type>
+    <Function>1</Function>
+    <Identity>ExtToolPlugin</Identity>
+  </FDEPlguin>
+
+  <FDEPlguin>
+    <Name>ParamModelPlugin</Name>
+    <Type>5</Type>
+    <Function>1</Function>
+    <Identity>ParamModelPlugin</Identity>
+  </FDEPlguin>
+
+  <FDEPlguin>
+    <Name>RasterInteroperation</Name>
+    <Type>4</Type>
+    <Function>1</Function>
+    <Identity>RasterInteroperation</Identity>
+  </FDEPlguin>
+  <!--End Other Plugin-->
+  
+</FDEPlugins>
