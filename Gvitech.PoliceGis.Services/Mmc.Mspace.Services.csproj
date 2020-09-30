@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADCC12CB-E1D2-436A-8C33-47484AE76E08}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mmc.Mspace.Services</RootNamespace>
+    <AssemblyName>Mmc.Mspace.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\binPath\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gvitech.CityMaker.Common.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Common.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeCore.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeCore.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeDataInterop.v8.0, Version=8.0.0.1, Culture=neutral, PublicKeyToken=08b05199bd5dd760, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeDataInterop.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.FdeGeometry.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.FdeGeometry.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Math.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Math.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.RenderControl.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.RenderControl.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Gvitech.CityMaker.Resource.v8.0">
+      <HintPath>..\libs\citymaker8\Gvitech.CityMaker.Resource.v8.0.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="LiteDB">
+      <HintPath>..\libs\LiteDB.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>..\libs\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Extensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BDNetRouteAnalysisService\CoorConveter.cs" />
+    <Compile Include="BDNetRouteAnalysisService\HttpBDRouteAnalysisService.cs" />
+    <Compile Include="BDNetRouteAnalysisService\IRouteBDAnalysisService.cs" />
+    <Compile Include="BDNetRouteAnalysisService\RouteBDAnalysisService.cs" />
+    <Compile Include="CameraInfoService.cs" />
+    <Compile Include="Controls\SearchControl.xaml.cs">
+      <DependentUpon>SearchControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchControlViewModel.cs" />
+    <Compile Include="DataSourceServices\DataBaseService.cs" />
+    <Compile Include="DataSourceServices\IDataBaseService.cs" />
+    <Compile Include="DataSourceServices\OpenDataSource.cs" />
+    <Compile Include="DataSourceServices\OpenDataSourceStatusEnum.cs" />
+    <Compile Include="FieldsFilterService\FieldsFilter.cs" />
+    <Compile Include="FieldsFilterService\FieldsFilterConfig.cs" />
+    <Compile Include="FieldsFilterService\FieldsFilterService.cs" />
+    <Compile Include="FieldsFilterService\IFieldsFilterService.cs" />
+    <Compile Include="HttpService\AmapLocationService.cs" />
+    <Compile Include="HttpService\AsyncRequestObject.cs" />
+    <Compile Include="HttpService\CaseHttpService.cs" />
+    <Compile Include="HttpService\HttpDowLoadManager.cs" />
+    <Compile Include="HttpService\HttpException.cs" />
+    <Compile Include="HttpService\HttpNetMapServiceHelper.cs" />
+    <Compile Include="HttpService\HttpServiceHelper.cs" />
+    <Compile Include="HttpService\HttpService.cs" />
+    <Compile Include="HttpService\HttpServiceConfigService.cs" />
+    <Compile Include="HttpService\HttpServiceUtil.cs" />
+    <Compile Include="HttpService\HumanHttpService.cs" />
+    <Compile Include="HttpService\ICaseHttpService.cs" />
+    <Compile Include="HttpService\IHttpService.cs" />
+    <Compile Include="HttpService\IHttpServiceConfigService.cs" />
+    <Compile Include="HttpService\IHumanHttpService.cs" />
+    <Compile Include="HttpService\INetWorkCheckService.cs" />
+    <Compile Include="HttpService\IPoliceHttpService.cs" />
+    <Compile Include="HttpService\IRequestResultReSolve.cs" />
+    <Compile Include="HttpService\ISubjectCaseHttpService.cs" />
+    <Compile Include="HttpService\IVideoHttpService.cs" />
+    <Compile Include="HttpService\LoginExcetiop.cs" />
+    <Compile Include="HttpService\NetConnectableVarify.cs" />
+    <Compile Include="HttpService\NetWorkCheckService.cs" />
+    <Compile Include="HttpService\PoliceHttpService.cs" />
+    <Compile Include="HttpService\RequestResultReSolve.cs" />
+    <Compile Include="HttpService\SubjectCaseHttpService.cs" />
+    <Compile Include="HttpService\VideoHttpService.cs" />
+    <Compile Include="HttpService\WebConfig.cs" />
+    <Compile Include="ICameraInfoService.cs" />
+    <Compile Include="InspectionService\InspectData.cs" />
+    <Compile Include="InspectionService\IInspectionService.cs" />
+    <Compile Include="InspectionService\InspectionService.cs" />
+    <Compile Include="InspectionService\InspectRegionRepository.cs" />
+    <Compile Include="IQueryService.cs" />
+    <Compile Include="JscriptInvokeService\IJsScriptInvokerService.cs" />
+    <Compile Include="JscriptInvokeService\IWebView.cs" />
+    <Compile Include="LastSearchOfLabels.cs" />
+    <Compile Include="LayerGroupService\ILayerGroupService.cs" />
+    <Compile Include="LayerGroupService\LayerGroup.cs" />
+    <Compile Include="LayerGroupService\LayerGroupService.cs" />
+    <Compile Include="LayerGroupService\LayersConfig.cs" />
+    <Compile Include="LayerGroupService\LocalGroupLayerCfg.cs" />
+    <Compile Include="LiteDbService\BaseConfigCols.cs" />
+    <Compile Include="LiteDbService\BaseLiteDbKv.cs" />
+    <Compile Include="LocalConfigService\DataSourceConfigCols.cs" />
+    <Compile Include="LocalConfigService\ILocalWsConfigService.cs" />
+    <Compile Include="LiteDbService\LiteDbHelper.cs" />
+    <Compile Include="LocalConfigService\LocalWsConfigService.cs" />
+    <Compile Include="MapHostService\IMaphostService.cs" />
+    <Compile Include="MapHostService\MaphostService.cs" />
+    <Compile Include="MovePoiService\IMovePoiService.cs" />
+    <Compile Include="MovePoiService\IOracleDataService.cs" />
+    <Compile Include="MovePoiService\MovePoiService.cs" />
+    <Compile Include="MovePoiService\RandomPersonName.cs" />
+    <Compile Include="MovePoiService\SendMovePoiliceService.cs" />
+    <Compile Include="NavigationService\CameraTourData.cs" />
+    <Compile Include="NavigationService\ConnectionType.cs" />
+    <Compile Include="NavigationService\DisplayGroupType.cs" />
+    <Compile Include="NavigationService\INavigationService.cs" />
+    <Compile Include="NavigationService\LocationScene.cs" />
+    <Compile Include="NavigationService\NavigationService.cs" />
+    <Compile Include="NetRouteAnalysisService\AlgorithmicColorRamp.cs" />
+    <Compile Include="NetRouteAnalysisService\AreaPatch.cs" />
+    <Compile Include="NetRouteAnalysisService\Background.cs" />
+    <Compile Include="NetRouteAnalysisService\BezierCurve.cs" />
+    <Compile Include="NetRouteAnalysisService\BitMaskCodedValueDomain.cs" />
+    <Compile Include="NetRouteAnalysisService\Border.cs" />
+    <Compile Include="NetRouteAnalysisService\CartographicMarkerSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\CenterAndScale.cs" />
+    <Compile Include="NetRouteAnalysisService\CenterAndSize.cs" />
+    <Compile Include="NetRouteAnalysisService\CharacterMarkerSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\CircleElement.cs" />
+    <Compile Include="NetRouteAnalysisService\CircularArc.cs" />
+    <Compile Include="NetRouteAnalysisService\ClassBreakInfo.cs" />
+    <Compile Include="NetRouteAnalysisService\ClassBreaksRenderer.cs" />
+    <Compile Include="NetRouteAnalysisService\CmykColor.cs" />
+    <Compile Include="NetRouteAnalysisService\CodedValue.cs" />
+    <Compile Include="NetRouteAnalysisService\CodedValueDomain.cs" />
+    <Compile Include="NetRouteAnalysisService\Color.cs" />
+    <Compile Include="NetRouteAnalysisService\ColorRamp.cs" />
+    <Compile Include="NetRouteAnalysisService\Curve.cs" />
+    <Compile Include="NetRouteAnalysisService\DataSourceDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\Domain.cs" />
+    <Compile Include="NetRouteAnalysisService\Element.cs" />
+    <Compile Include="NetRouteAnalysisService\EllipseElement.cs" />
+    <Compile Include="NetRouteAnalysisService\EllipticArc.cs" />
+    <Compile Include="NetRouteAnalysisService\Envelope.cs" />
+    <Compile Include="NetRouteAnalysisService\EnvelopeB.cs" />
+    <Compile Include="NetRouteAnalysisService\EnvelopeN.cs" />
+    <Compile Include="NetRouteAnalysisService\esriDirectionsManeuverType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriDirectionsOutputType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriDirectionsStringType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriFieldType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriFontDecoration.cs" />
+    <Compile Include="NetRouteAnalysisService\esriFontStyle.cs" />
+    <Compile Include="NetRouteAnalysisService\esriFontWeight.cs" />
+    <Compile Include="NetRouteAnalysisService\esriGeometryType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriImageFormat.cs" />
+    <Compile Include="NetRouteAnalysisService\esriImageReturnType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriJoinType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriLabelExpressionType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriMaskStyle.cs" />
+    <Compile Include="NetRouteAnalysisService\esriMergePolicyType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNAImpedanceTransformationType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNALocationAllocationProblemType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNAODCostMatrixType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNAOutputLineType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNAOutputPolygonType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNAServerLayerType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNATimeOfDayUsage.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNATravelDirection.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNetworkAttributeDataType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNetworkAttributeUnits.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNetworkAttributeUsageType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNetworkDatasetState.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNetworkElementType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNetworkForwardStarBacktrack.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNetworkSourceType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNormalizationType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriNumericAlignmentEnum.cs" />
+    <Compile Include="NetRouteAnalysisService\esriRotationType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriRoundingOptionEnum.cs" />
+    <Compile Include="NetRouteAnalysisService\esriSearchOrder.cs" />
+    <Compile Include="NetRouteAnalysisService\esriServerLineLabelPlacementType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriServerPointLabelPlacementType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriServerPolygonLabelPlacementType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriSimpleFillStyle.cs" />
+    <Compile Include="NetRouteAnalysisService\esriSimpleLineStyle.cs" />
+    <Compile Include="NetRouteAnalysisService\esriSimpleMarkerStyle.cs" />
+    <Compile Include="NetRouteAnalysisService\esriSimpleTextHorizontalAlignment.cs" />
+    <Compile Include="NetRouteAnalysisService\esriSimpleTextVerticalAlignment.cs" />
+    <Compile Include="NetRouteAnalysisService\esriSpatialRelEnum.cs" />
+    <Compile Include="NetRouteAnalysisService\esriSplitPolicyType.cs" />
+    <Compile Include="NetRouteAnalysisService\esriTextCase.cs" />
+    <Compile Include="NetRouteAnalysisService\esriTextDirection.cs" />
+    <Compile Include="NetRouteAnalysisService\esriTextHorizontalAlignment.cs" />
+    <Compile Include="NetRouteAnalysisService\esriTextPosition.cs" />
+    <Compile Include="NetRouteAnalysisService\esriTextVerticalAlignment.cs" />
+    <Compile Include="NetRouteAnalysisService\esriTimeRelation.cs" />
+    <Compile Include="NetRouteAnalysisService\esriTimeUnits.cs" />
+    <Compile Include="NetRouteAnalysisService\esriUnits.cs" />
+    <Compile Include="NetRouteAnalysisService\FeatureExtent.cs" />
+    <Compile Include="NetRouteAnalysisService\FeatureLayerDrawingDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\FeatureRenderer.cs" />
+    <Compile Include="NetRouteAnalysisService\FIDSet.cs" />
+    <Compile Include="NetRouteAnalysisService\Field.cs" />
+    <Compile Include="NetRouteAnalysisService\Fields.cs" />
+    <Compile Include="NetRouteAnalysisService\FillSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\FilterDef.cs" />
+    <Compile Include="NetRouteAnalysisService\GeographicCoordinateSystem.cs" />
+    <Compile Include="NetRouteAnalysisService\Geometry.cs" />
+    <Compile Include="NetRouteAnalysisService\GeometryDef.cs" />
+    <Compile Include="NetRouteAnalysisService\GeometryResultOptions.cs" />
+    <Compile Include="NetRouteAnalysisService\GeoTransformation.cs" />
+    <Compile Include="NetRouteAnalysisService\GetNALayerNamesRequest.cs" />
+    <Compile Include="NetRouteAnalysisService\GetNALayerNamesResponse.cs" />
+    <Compile Include="NetRouteAnalysisService\GetNetworkDescriptionRequest.cs" />
+    <Compile Include="NetRouteAnalysisService\GetNetworkDescriptionResponse.cs" />
+    <Compile Include="NetRouteAnalysisService\GetSolverParameters2Request.cs" />
+    <Compile Include="NetRouteAnalysisService\GetSolverParameters2Response.cs" />
+    <Compile Include="NetRouteAnalysisService\GetSolverParametersRequest.cs" />
+    <Compile Include="NetRouteAnalysisService\GetSolverParametersResponse.cs" />
+    <Compile Include="NetRouteAnalysisService\GPMessage.cs" />
+    <Compile Include="NetRouteAnalysisService\GPMessages.cs" />
+    <Compile Include="NetRouteAnalysisService\GraphicElement.cs" />
+    <Compile Include="NetRouteAnalysisService\GrayColor.cs" />
+    <Compile Include="NetRouteAnalysisService\GroupElement.cs" />
+    <Compile Include="NetRouteAnalysisService\HlsColor.cs" />
+    <Compile Include="NetRouteAnalysisService\HsvColor.cs" />
+    <Compile Include="NetRouteAnalysisService\HttpRouteAnalysisService.cs" />
+    <Compile Include="NetRouteAnalysisService\ImageDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\ImageDisplay.cs" />
+    <Compile Include="NetRouteAnalysisService\ImageQueryFilter.cs" />
+    <Compile Include="NetRouteAnalysisService\ImageType.cs" />
+    <Compile Include="NetRouteAnalysisService\IRouteAnalysisService.cs" />
+    <Compile Include="NetRouteAnalysisService\JoinTableSourceDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\LabelClassDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\LabelingDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\LabelPlacementDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\LayerDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\LayerDrawingDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\LayerResultOptions.cs" />
+    <Compile Include="NetRouteAnalysisService\LegendClass.cs" />
+    <Compile Include="NetRouteAnalysisService\LegendClassFormat.cs" />
+    <Compile Include="NetRouteAnalysisService\LegendGroup.cs" />
+    <Compile Include="NetRouteAnalysisService\Line.cs" />
+    <Compile Include="NetRouteAnalysisService\LineElement.cs" />
+    <Compile Include="NetRouteAnalysisService\LineLabelPlacementDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\LinePatch.cs" />
+    <Compile Include="NetRouteAnalysisService\LineSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\MapArea.cs" />
+    <Compile Include="NetRouteAnalysisService\MapDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\MapExtent.cs" />
+    <Compile Include="NetRouteAnalysisService\MapImage.cs" />
+    <Compile Include="NetRouteAnalysisService\MapServerBookmark.cs" />
+    <Compile Include="NetRouteAnalysisService\MapServerSourceDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\MapTableDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\MapTableSourceDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\MarkerElement.cs" />
+    <Compile Include="NetRouteAnalysisService\MarkerSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\MultiPartColorRamp.cs" />
+    <Compile Include="NetRouteAnalysisService\MultiPatch.cs" />
+    <Compile Include="NetRouteAnalysisService\MultiPatchB.cs" />
+    <Compile Include="NetRouteAnalysisService\MultiPatchN.cs" />
+    <Compile Include="NetRouteAnalysisService\Multipoint.cs" />
+    <Compile Include="NetRouteAnalysisService\MultipointB.cs" />
+    <Compile Include="NetRouteAnalysisService\MultipointN.cs" />
+    <Compile Include="NetRouteAnalysisService\NAAttributeParameterValue.cs" />
+    <Compile Include="NetRouteAnalysisService\NACandidateFieldMap.cs" />
+    <Compile Include="NetRouteAnalysisService\NAClassCandidateFieldMap.cs" />
+    <Compile Include="NetRouteAnalysisService\NACompactStreetDirection.cs" />
+    <Compile Include="NetRouteAnalysisService\NACompactStreetDirections.cs" />
+    <Compile Include="NetRouteAnalysisService\NACompactStreetDirectionSummary.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerClosestFacilityParams.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerClosestFacilityResults.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerDataLayer.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerLocationAllocationParams.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerLocationAllocationResults.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerLocations.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerNetworkAttribute.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerNetworkDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerNetworkDirections.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerNetworkSource.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerODCostMatrixParams.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerODCostMatrixResults.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerPort.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerPortChannel.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerPortClient.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerPropertySets.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerRecordSet.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerRouteParams.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerRouteResults.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerServiceAreaParams.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerServiceAreaResults.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerSolverParams.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerSolverResults.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerVRPParams.cs" />
+    <Compile Include="NetRouteAnalysisService\NAServerVRPResults.cs" />
+    <Compile Include="NetRouteAnalysisService\NAStreetDirection.cs" />
+    <Compile Include="NetRouteAnalysisService\NAStreetDirectionEvent.cs" />
+    <Compile Include="NetRouteAnalysisService\NAStreetDirections.cs" />
+    <Compile Include="NetRouteAnalysisService\NumericFormat.cs" />
+    <Compile Include="NetRouteAnalysisService\ParagraphTextElement.cs" />
+    <Compile Include="NetRouteAnalysisService\Patch.cs" />
+    <Compile Include="NetRouteAnalysisService\Path.cs" />
+    <Compile Include="NetRouteAnalysisService\PictureFillSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\PictureMarkerSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\Point.cs" />
+    <Compile Include="NetRouteAnalysisService\PointB.cs" />
+    <Compile Include="NetRouteAnalysisService\PointLabelPlacementDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\PointN.cs" />
+    <Compile Include="NetRouteAnalysisService\Polycurve.cs" />
+    <Compile Include="NetRouteAnalysisService\Polygon.cs" />
+    <Compile Include="NetRouteAnalysisService\PolygonB.cs" />
+    <Compile Include="NetRouteAnalysisService\PolygonElement.cs" />
+    <Compile Include="NetRouteAnalysisService\PolygonLabelPlacementDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\PolygonN.cs" />
+    <Compile Include="NetRouteAnalysisService\Polyline.cs" />
+    <Compile Include="NetRouteAnalysisService\PolylineB.cs" />
+    <Compile Include="NetRouteAnalysisService\PolylineN.cs" />
+    <Compile Include="NetRouteAnalysisService\PresetColorRamp.cs" />
+    <Compile Include="NetRouteAnalysisService\ProjectedCoordinateSystem.cs" />
+    <Compile Include="NetRouteAnalysisService\PropertySet.cs" />
+    <Compile Include="NetRouteAnalysisService\PropertySetProperty.cs" />
+    <Compile Include="NetRouteAnalysisService\QueryFilter.cs" />
+    <Compile Include="NetRouteAnalysisService\QueryTableDataSourceDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\RandomColorRamp.cs" />
+    <Compile Include="NetRouteAnalysisService\RangeDomain.cs" />
+    <Compile Include="NetRouteAnalysisService\RasterClassifyRenderer.cs" />
+    <Compile Include="NetRouteAnalysisService\RasterDataSourceDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\RasterDef.cs" />
+    <Compile Include="NetRouteAnalysisService\RasterLayerDrawingDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\RasterRenderer.cs" />
+    <Compile Include="NetRouteAnalysisService\RasterRGBRenderer.cs" />
+    <Compile Include="NetRouteAnalysisService\RasterStretchRenderer.cs" />
+    <Compile Include="NetRouteAnalysisService\RasterUniqueValueRenderer.cs" />
+    <Compile Include="NetRouteAnalysisService\RasterUniqueValues.cs" />
+    <Compile Include="NetRouteAnalysisService\Record.cs" />
+    <Compile Include="NetRouteAnalysisService\RecordSet.cs" />
+    <Compile Include="NetRouteAnalysisService\RectangleElement.cs" />
+    <Compile Include="NetRouteAnalysisService\RgbColor.cs" />
+    <Compile Include="NetRouteAnalysisService\Ring.cs" />
+    <Compile Include="NetRouteAnalysisService\RouteAnalysisService.cs" />
+    <Compile Include="NetRouteAnalysisService\Segment.cs" />
+    <Compile Include="NetRouteAnalysisService\Shadow.cs" />
+    <Compile Include="NetRouteAnalysisService\SimpleFillSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\SimpleLineSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\SimpleMarkerSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\SimpleRenderer.cs" />
+    <Compile Include="NetRouteAnalysisService\SimpleTextSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\SolveRequest.cs" />
+    <Compile Include="NetRouteAnalysisService\SolveResponse.cs" />
+    <Compile Include="NetRouteAnalysisService\SpatialFilter.cs" />
+    <Compile Include="NetRouteAnalysisService\SpatialReference.cs" />
+    <Compile Include="NetRouteAnalysisService\StandaloneTableDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\Symbol.cs" />
+    <Compile Include="NetRouteAnalysisService\SymbolBackground.cs" />
+    <Compile Include="NetRouteAnalysisService\SymbolBorder.cs" />
+    <Compile Include="NetRouteAnalysisService\SymbolShadow.cs" />
+    <Compile Include="NetRouteAnalysisService\TableDataSourceDescription.cs" />
+    <Compile Include="NetRouteAnalysisService\TextElement.cs" />
+    <Compile Include="NetRouteAnalysisService\TextSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\TimeExtent.cs" />
+    <Compile Include="NetRouteAnalysisService\TimeInstant.cs" />
+    <Compile Include="NetRouteAnalysisService\TimeQueryFilter.cs" />
+    <Compile Include="NetRouteAnalysisService\TimeReference.cs" />
+    <Compile Include="NetRouteAnalysisService\TimeValue.cs" />
+    <Compile Include="NetRouteAnalysisService\TriangleFan.cs" />
+    <Compile Include="NetRouteAnalysisService\Triangles.cs" />
+    <Compile Include="NetRouteAnalysisService\TriangleStrip.cs" />
+    <Compile Include="NetRouteAnalysisService\UniqueValueInfo.cs" />
+    <Compile Include="NetRouteAnalysisService\UniqueValueRenderer.cs" />
+    <Compile Include="NetRouteAnalysisService\UnknownCoordinateSystem.cs" />
+    <Compile Include="NetRouteAnalysisService\XMLBinaryFillSymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\XMLBinarySymbol.cs" />
+    <Compile Include="NetRouteAnalysisService\XMLFilterDef.cs" />
+    <Compile Include="NetRouteAnalysisService\XMLPersistedObject.cs" />
+    <Compile Include="PlanShowService\IPlanShowService.cs" />
+    <Compile Include="PlanShowService\PlanShowService.cs" />
+    <Compile Include="PoliceEventService\CaseState.cs" />
+    <Compile Include="PoliceEventService\CaseType.cs" />
+    <Compile Include="PoliceEventService\IPoliceIntelligenceService.cs" />
+    <Compile Include="PoliceEventService\PoliceIntelligenceModel.cs" />
+    <Compile Include="PoliceEventService\PoliceIntelligenceService.cs" />
+    <Compile Include="PoliceEventService\ProcessingState.cs" />
+    <Compile Include="PoliceEventService\ReceivePoliceIntelligenceService.cs" />
+    <Compile Include="PoliceEventService\SendPoliceIntelligenceService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryService.cs" />
+    <Compile Include="ResourceServices\IResourceService.cs" />
+    <Compile Include="ResourceServices\ResourceService.cs" />
+    <Compile Include="ShowCaptureObjectService\IShowCaptureObjectService.cs" />
+    <Compile Include="ShowCaptureObjectService\PopViewDataContext.cs" />
+    <Compile Include="ShowCaptureObjectService\ShowCaptureObjectService.cs" />
+    <Compile Include="ShowCaptureObjectService\ShowCaptureObjectServiceView.xaml.cs">
+      <DependentUpon>ShowCaptureObjectServiceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SocketService\AsyncMessageReceiveService.cs" />
+    <Compile Include="SocketService\AsyncMessageSendService.cs" />
+    <Compile Include="SocketService\IAsyncMessageReceiveService.cs" />
+    <Compile Include="SocketService\IAsyncMessageSendService.cs" />
+    <Compile Include="SocketService\IMessageReceiveService.cs" />
+    <Compile Include="SocketService\IMessageSendService.cs" />
+    <Compile Include="SocketService\MessageReceiveService.cs" />
+    <Compile Include="SocketService\MessageSendService.cs" />
+    <Compile Include="StatisticService\AlarmAllKindStatistics.cs" />
+    <Compile Include="StatisticService\AlarmChromatography.cs" />
+    <Compile Include="StatisticService\AlarmKindStatistic.cs" />
+    <Compile Include="StatisticService\AlarmKindStatisticItem.cs" />
+    <Compile Include="StatisticService\AlarmStatisticalChart.cs" />
+    <Compile Include="StatisticService\AlarmStatisticData.cs" />
+    <Compile Include="StatisticService\AlarmStatisticItem.cs" />
+    <Compile Include="StatisticService\Chromatography.cs" />
+    <Compile Include="StatisticService\ChromatographyItem.cs" />
+    <Compile Include="StatisticService\IStatisticLayerService.cs" />
+    <Compile Include="StatisticService\StatisticalChartItem.cs" />
+    <Compile Include="StatisticService\StatisticLayerService.cs" />
+    <Compile Include="TestBlindSpot.cs" />
+    <Compile Include="WireTowerService\IWireTowerService.cs" />
+    <Compile Include="WireTowerService\WireTowerService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationConfig\ApplicationConfig.csproj">
+      <Project>{d917d046-2ba8-49da-aeb9-c59db342bb71}</Project>
+      <Name>ApplicationConfig</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.CityMaker.Extension\Gvitech.CityMaker.Extension.csproj">
+      <Project>{6024d395-ea9f-4d2d-887a-0827e16613e2}</Project>
+      <Name>Gvitech.CityMaker.Extension</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.DataSourceAccess\Mmc.DataSourceAccess.csproj">
+      <Project>{24fdf0d9-fec4-465b-915d-01fae99e2184}</Project>
+      <Name>Mmc.DataSourceAccess</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Framework\Mmc.Framework.csproj">
+      <Project>{22939209-2239-4851-8f9b-24b79823793a}</Project>
+      <Name>Mmc.Framework</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.LayerSymbol\Mmc.LayerSymbol.csproj">
+      <Project>{f9f507c3-dd50-4179-b950-f86739c4ea19}</Project>
+      <Name>Mmc.LayerSymbol</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Common\Mmc.Mspace.Common.csproj">
+      <Project>{cd3991ed-0326-49cd-a83c-7816aafd88b7}</Project>
+      <Name>Mmc.Mspace.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Const\Mmc.Mspace.Const.csproj">
+      <Project>{149A90B6-D7BD-4B48-8DAF-2E8151C8CC6B}</Project>
+      <Name>Mmc.Mspace.Const</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Models\Mmc.Mspace.Models.csproj">
+      <Project>{eab6d6d4-7d10-4999-bb95-9e5d1003f062}</Project>
+      <Name>Mmc.Mspace.Models</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.PoliceGis.Theme\Mmc.Mspace.Theme.csproj">
+      <Project>{41C024CF-8B5D-4693-B3FF-8D36D2B753C4}</Project>
+      <Name>Mmc.Mspace.Theme</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Windows\Mmc.Windows.csproj">
+      <Project>{8f12bf24-3e61-46e6-8baa-4bd059203aca}</Project>
+      <Name>Mmc.Windows</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf.Toolkit\Mmc.Wpf.Toolkit.csproj">
+      <Project>{0faaf359-fce7-4c30-aede-1b290abce6de}</Project>
+      <Name>Mmc.Wpf.Toolkit</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Gvitech.Wpf\Mmc.Wpf.csproj">
+      <Project>{2efe1860-3671-43c0-9e80-e0a80f438ac3}</Project>
+      <Name>Mmc.Wpf</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mmc.MathUtil\Mmc.MathUtil.csproj">
+      <Project>{BB0E5078-E0F8-43D5-8620-E11425DCB3F7}</Project>
+      <Name>Mmc.MathUtil</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\SearchControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShowCaptureObjectService\ShowCaptureObjectServiceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FireIot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

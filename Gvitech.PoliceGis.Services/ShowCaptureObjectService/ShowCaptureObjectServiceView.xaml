@@ -1,0 +1,46 @@
+<UserControl
+	x:Class="Mmc.Mspace.Services.ShowCaptureObjectService.ShowCaptureObjectServiceView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:showcaptureobjectservice="clr-namespace:Mmc.Mspace.Services.ShowCaptureObjectService"
+	Canvas.Left="{Binding Left}"
+	Canvas.Top="{Binding Top}">
+	<FrameworkElement.Resources>
+		<ResourceDictionary>
+			<Style
+				TargetType="{x:Type TextBlock}"
+				x:Key="ElementStyle">
+				<Setter
+					Property="Foreground"
+					Value="{DynamicResource NormalTextBrush}" />
+				<Setter
+					Property="TextWrapping"
+					Value="Wrap" />
+				<Setter
+					Property="VerticalAlignment"
+					Value="Center" />
+			</Style>
+		</ResourceDictionary>
+	</FrameworkElement.Resources>
+	<Popup
+		AllowsTransparency="True"
+		Focusable="False"
+		Placement="MousePoint"
+		StaysOpen="False"
+		IsOpen="{Binding IsOpen}"
+		Opened="PopupOpend">
+		<Border
+			Background="{DynamicResource P75BlackBrush}">
+			<DataGrid
+				ItemsSource="{Binding DataView}"
+				AutoGeneratingColumn="DataGrid_AutoGeneratingColumn">
+				<DataGrid.CellStyle>
+					<Style
+						BasedOn="{StaticResource DataGridCellStyle}"
+						TargetType="{x:Type DataGridCell}">
+						<Setter
+							Property="MaxWidth"
+							Value="300" />
+					</Style>
+				</DataGrid.CellStyle>
+			</DataGrid>
+		</Border>
+	</Popup>
+</UserControl>

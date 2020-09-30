@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Mmc.Mspace.Services.LocalConfigService.InspectionService">
+    <Position X="4.25" Y="1" Width="3.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAwAAIC4AAACQAAAAAAAAAEAAAEAAAgkAIBqAgSAAEA=</HashCode>
+      <FileName>InspectionService\InspectionService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mmc.Mspace.Services.LocalConfigService.BaseConfigCols&lt;T&gt;">
+    <Position X="9" Y="4" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAQAAAAAAAQAIAQAAAAAAEIAAAAAAAAAAEAgAA=</HashCode>
+      <FileName>LiteDbService\BaseConfigCols.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Mmc.Mspace.Services.LocalConfigService.IInspectionService">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAYAAACQAAAAAAAAAEAAAAAAAgAAIBCAgSAAEA=</HashCode>
+      <FileName>InspectionService\IInspectionService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mmc.Mspace.Services.LocalConfigService.IBaseConfigCols&lt;T&gt;">
+    <Position X="9.5" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAIAQAAAAAAEIAAAAAAAAAAEAgAA=</HashCode>
+      <FileName>LiteDbService\BaseConfigCols.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
