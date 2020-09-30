@@ -1,0 +1,12 @@
+D:\GitDemo\ant-design-vue\mspace\binPath\ApplicationConfig.dll
+D:\GitDemo\ant-design-vue\mspace\binPath\ApplicationConfig.pdb
+D:\GitDemo\ant-design-vue\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.csprojAssemblyReference.cache
+D:\GitDemo\ant-design-vue\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.csproj.CoreCompileInputs.cache
+D:\GitDemo\ant-design-vue\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.dll
+D:\GitDemo\ant-design-vue\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.pdb
+D:\Mspace\mspace\mspace\binPath\ApplicationConfig.dll
+D:\Mspace\mspace\mspace\binPath\ApplicationConfig.pdb
+D:\Mspace\mspace\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.csprojAssemblyReference.cache
+D:\Mspace\mspace\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.csproj.CoreCompileInputs.cache
+D:\Mspace\mspace\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.dll
+D:\Mspace\mspace\mspace\ApplicationConfig\obj\Debug\ApplicationConfig.pdb
