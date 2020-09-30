@@ -1,0 +1,5 @@
+﻿<SimpleTextRender Expression="$(NAME)" DynamicPlacement="True" MinimizeOverlap="True" RemoveDuplicate="True" >
+		<TextSymbol DrawLine="False" LockMode="Decal" MaxVisualDistance="3000" MinVisualDistance="0" Priority="1" PivotOffsetX="10" PivotOffsetY="0" PivotAlignment="BottomLeft" VerticalOffset="0">
+			  <TextAttribute TextSize="11" Italic="false" Bold="false" Underline="false" Font="华文楷体" TextColor="FFFFFFFF" OutlineColor="FF191919" BackgroundColor="00191919" MultilineJustification="MultilineLeft" />
+		</TextSymbol>
+	</SimpleTextRender>

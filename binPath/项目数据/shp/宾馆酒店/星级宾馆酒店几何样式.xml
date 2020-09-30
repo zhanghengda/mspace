@@ -1,0 +1,4 @@
+<SimpleGeometryRender HeightStyle="Absolute" HeightOffset="6" GroupField="" >
+ <ImagePointSymbol  ImageName="#(宾馆酒店)" Script="" PivotAlignment="BottomCenter" Size="15" />
+</SimpleGeometryRender>
+	

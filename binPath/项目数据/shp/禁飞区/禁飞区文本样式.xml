@@ -1,0 +1,22 @@
+﻿<!-- <SimpleTextRender Expression="$(NAME)" DynamicPlacement="True" MinimizeOverlap="True" RemoveDuplicate="True" >
+		<TextSymbol DrawLine="False" LockMode="Decal" MaxVisualDistance="3000" MinVisualDistance="0" Priority="1" PivotOffsetX="10" PivotOffsetY="0" PivotAlignment="BottomLeft" VerticalOffset="0">
+			  <TextAttribute TextSize="11" Italic="false" Bold="false" Underline="false" Font="华文楷体" TextColor="FFFFFFFF" OutlineColor="FF191919" BackgroundColor="00191919" MultilineJustification="MultilineLeft" />
+		</TextSymbol>
+	</SimpleTextRender> -->
+<!-- <SimpleTextRender Expression="$(Name)" DynamicPlacement="True" MinimizeOverlap="True" RemoveDuplicate="True" >
+		<TextSymbol DrawLine="False" LockMode="gviLockDecal" MaxVisualDistance="10000000" MinVisualDistance="0" Priority="1" PivotOffsetX="0" PivotOffsetY="0" PivotAlignment="gviPivotAlignBottomCenter" VerticalOffset="0">
+			<TextAttribute TextColor="Color [A=255, R=255, G=255, B=255]" BackgroundColor="Color [A=0, R=25, G=25, B=25]" OutlineColor="Color [A=255, R=25, G=25, B=25]" Font="华文楷体" TextSize="11" Bold="True" Italic="False" Underline="False" />
+		</TextSymbol>
+</SimpleTextRender> -->
+
+<!-- <SimpleTextRender Expression="$(Name)" DynamicPlacement="True" MinimizeOverlap="True" RemoveDuplicate="True" >
+		<TextSymbol DrawLine="False" LockMode="gviLockDecal" MaxVisualDistance="10000000" MinVisualDistance="0" Priority="1" PivotOffsetX="0" PivotOffsetY="0" PivotAlignment="gviPivotAlignBottomCenter" VerticalOffset="0">
+			<TextAttribute TextColor="Color [A=255, R=255, G=255, B=255]" BackgroundColor="Color [A=0, R=25, G=25, B=25]" OutlineColor="Color [A=255, R=25, G=25, B=25]" Font="华文楷体" TextSize="11" Bold="True" Italic="False" Underline="False" />
+		</TextSymbol>
+</SimpleTextRender> -->
+
+<SimpleTextRender Expression="$(Name)" DynamicPlacement="true" MinimizeOverlap="true" RemoveDuplicate="false">
+    <TextSymbol PivotAlignment="BottomCenter" LockMode="Decal" VerticalOffset="0.000000" DrawLine="false" LineColor="FFFFFFFF" MinVisualDistance="0.000000" MaxVisualDistance="10000000" Priority="1" MarginWidth="0" MarginHeight="0" MarginColor="00000000">
+        <TextAttribute TextSize="11" Italic="false" Bold="true" Underline="false" Font="华文楷体" TextColor="FFFFFFFF" OutlineColor="FF191919" BackgroundColor="00191919" MultilineJustification="MultilineLeft" />
+    </TextSymbol>
+</SimpleTextRender>

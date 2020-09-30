@@ -1,0 +1,10 @@
+﻿<FeatureLayer Name="airports" GeometryFieldName="Geometry" MaxVisibleDistance="50000000" MinVisibleDistance="0" MinVisiblePixels="2" ForceCullMode="False" CullMode="gviCullBack" AttributeMask="7" MouseSelectMask="gviViewAllNormalView">
+	<GeometryRender HeightStyle="gviHeightAbsolute" HeightOffset="0" GroupField="" RenderType="gviRenderSimple">
+		<GeometrySymbol GeometryType="Polygon" Script="" FillColor="Color [A=102, R=255, G=0, B=0]" FillImageName="" Rotation="0" RepeatLengthU="1" RepeatLengthV="1" EnableLight="False" BoundaryScript="" Color="Color [A=102, R=255, G=0, B=0]" Width="0" RepeatLength="1" ImageName="" />
+	</GeometryRender>
+	<TextRender Expression="$(Name)" DynamicPlacement="True" MinimizeOverlap="True" RemoveDuplicate="True" TextRenderType="gviRenderSimple">
+		<TextSymbol DrawLine="False" LockMode="gviLockDecal" MaxVisualDistance="10000000" MinVisualDistance="0" Priority="1" PivotOffsetX="0" PivotOffsetY="0" PivotAlignment="gviPivotAlignBottomCenter" VerticalOffset="0">
+			<TextAttribute TextColor="Color [A=255, R=255, G=255, B=255]" BackgroundColor="Color [A=0, R=25, G=25, B=25]" OutlineColor="Color [A=255, R=25, G=25, B=25]" Font="华文楷体" TextSize="11" Bold="True" Italic="False" Underline="False" />
+		</TextSymbol>
+	</TextRender>
+</FeatureLayer>

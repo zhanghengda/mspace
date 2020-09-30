@@ -1,0 +1,17 @@
+<!-- <SimpleGeometryRender HeightStyle="Absolute" HeightOffset="6" GroupField="" >
+ <ImagePointSymbol  ImageName="#(宾馆酒店)" Script="" PivotAlignment="BottomCenter" Size="15" />
+</SimpleGeometryRender> -->
+
+<!-- <SimpleGeometryRender HeightStyle="gviHeightAbsolute" HeightOffset="0" GroupField="" >
+    <SurfaceSymbol  Script="" FillColor="Color [A=102, R=255, G=0, B=0]" FillImageName="" Rotation="0" RepeatLengthU="1" RepeatLengthV="1" EnableLight="False" BoundaryScript="" Color="Color [A=102, R=255, G=0, B=0]" Width="0" RepeatLength="1" ImageName="" />
+</SimpleGeometryRender> -->
+
+<!-- <SimpleGeometryRender HeightStyle="gviHeightAbsolute" HeightOffset="0" GroupField="" >
+    <SurfaceSymbol  Script="" FillColor="55ff0000" FillImageName="" Rotation="0" RepeatLengthU="1" RepeatLengthV="1" EnableLight="False" BoundaryScript="" Color="55ff0000" Width="0" RepeatLength="1" ImageName="" />
+</SimpleGeometryRender> -->
+<SimpleGeometryRender HeightStyle="OnTerrain" HeightOffset="0" GroupField="" >
+	 <SurfaceSymbol Color="55ff0000" EnableLight="false" RepeatLengthU="1.000000" RepeatLengthV="1.000000" Rotation="0.000000">
+            <CurveSymbol Color="55ff0000" RepeatLength="1.000000" Width="0.000000" DashStyle="DashSolid" />
+        </SurfaceSymbol>
+</SimpleGeometryRender>
+	
