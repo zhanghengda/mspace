@@ -1,0 +1,12 @@
+D:\GitDemo\ant-design-vue\mspace\binPath\Gvitech.CityMaker.Extension.dll
+D:\GitDemo\ant-design-vue\mspace\binPath\Gvitech.CityMaker.Extension.pdb
+D:\GitDemo\ant-design-vue\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.csprojAssemblyReference.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.csproj.CoreCompileInputs.cache
+D:\GitDemo\ant-design-vue\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.dll
+D:\GitDemo\ant-design-vue\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.pdb
+D:\Mspace\mspace\mspace\binPath\Gvitech.CityMaker.Extension.dll
+D:\Mspace\mspace\mspace\binPath\Gvitech.CityMaker.Extension.pdb
+D:\Mspace\mspace\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.csprojAssemblyReference.cache
+D:\Mspace\mspace\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.csproj.CoreCompileInputs.cache
+D:\Mspace\mspace\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.dll
+D:\Mspace\mspace\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.pdb
