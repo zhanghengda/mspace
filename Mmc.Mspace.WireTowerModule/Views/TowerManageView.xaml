@@ -1,0 +1,82 @@
+﻿<UserControl  x:Class="Mmc.Mspace.WireTowerModule.Views.TowerManageView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:Mmc.Mspace.Theme.Controls;assembly=Mmc.Mspace.Theme"
+              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+              mc:Ignorable="d"
+        xmlns:converter="clr-namespace:Mmc.Mspace.WireTowerModule.Converter"
+        Height="600" Width="400">
+    <UserControl.Resources>
+        <converter:TowerTypeConverter x:Key="TowerTypeConverter"/>
+    </UserControl.Resources>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Height="50">
+                <StackPanel Margin="10,2" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal">
+                <Label Width="80"  Content="{StaticResource WTChooseLine}" Style="{StaticResource LabelTextStyle}"/>
+                    <ComboBox x:Name="LineSetCmb" Width="280"  Style="{StaticResource DefaultComboBoxStyle}" SelectedItem="{Binding SelectedLine}" ItemsSource="{Binding LineSet}" DisplayMemberPath="LineName" >
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="SelectionChanged">
+                                <i:InvokeCommandAction Command="{Binding Path=DataContext.SelectLineCommand,RelativeSource={RelativeSource AncestorLevel=1, AncestorType={x:Type ComboBox}}}" CommandParameter="{Binding SelectedItem,ElementName=LineSetCmb}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </ComboBox>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Row="1" Height="40">
+                <StackPanel Margin="0,6,10,6" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal">
+
+                <controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="10,0" 
+                                    RIcon="{DynamicResource WT_Add}" 
+                                    MouseOverRIcon="{DynamicResource WT_Add_H}" ToolTip="{DynamicResource WTAdd}"
+                                    PressedRIcon="{DynamicResource WT_Add_C}" Command="{Binding AddTowerCommand}"   Style="{StaticResource HomeLeftButtonStyle}"/>
+                    <controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="10,0" 
+                                        RIcon="{DynamicResource WT_UpMove}" 
+                                        MouseOverRIcon="{DynamicResource WT_UpMove_H}" ToolTip="{DynamicResource WTMoveUp}"
+                                        PressedRIcon="{DynamicResource WT_UpMove_C}" Command="{Binding MoveUpCommand}"  Style="{StaticResource HomeLeftButtonStyle}"></controls:Buttons>
+                    <controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="10,0" 
+                                        RIcon="{DynamicResource WT_DownMove}" 
+                                        MouseOverRIcon="{DynamicResource WT_DownUpMove_H}" ToolTip="{DynamicResource WTMoveDown}"
+                                        PressedRIcon="{DynamicResource WT_DownMove_C}" Command="{Binding MoveDownCommand}"  Style="{StaticResource HomeLeftButtonStyle}"></controls:Buttons>
+                <controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="10,0" 
+                                    RIcon="{DynamicResource WT_Save}" 
+                                    MouseOverRIcon="{DynamicResource WT_Save_H}" ToolTip="{DynamicResource WTSave}"
+                                    PressedRIcon="{DynamicResource WT_Save_C}" Command="{Binding SaveCommand}"   Style="{StaticResource HomeLeftButtonStyle}"/>
+                <controls:Buttons    HasPathData="True" Height="24" Width="24" Margin="10,0" 
+                                     RIcon="{DynamicResource WT_BuildLine}" 
+                                     MouseOverRIcon="{DynamicResource WT_BuildLine_H}" ToolTip="{DynamicResource WTCreateRoute}"
+                                     PressedRIcon="{DynamicResource WT_BuildLine_C}" Command="{Binding GenerateRouteCommand}"   Style="{StaticResource HomeLeftButtonStyle}"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  Margin="0,6,0,20"  Background="{StaticResource LeftWindowBg}">
+            <DataGrid Margin="10,0" HorizontalScrollBarVisibility="Hidden" ItemsSource="{Binding TowerSet}" SelectedItem="{Binding SelectedDataRow}" AutoGenerateColumns="False"  BorderBrush="Transparent" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn   Width="40" HeaderStyle="{StaticResource DataGridColumnHeaderStyle}"  CellStyle="{StaticResource DataGridCellCheckboxStyle}" />
+                        <!--<DataGridTextColumn Header="名称" Width="80" HeaderStyle="{StaticResource DataGridColumnHeaderStyle}" CellStyle="{StaticResource DataGridCellStyle}" Binding="{Binding Name}" />-->
+                    <DataGridTextColumn Header="{StaticResource WTListSerial}" Width="100" HeaderStyle="{StaticResource DataGridColumnHeaderStyle}" CellStyle="{StaticResource DataGridCellStyle}" Binding="{Binding Serial}" />
+                    <DataGridTextColumn Header="{StaticResource WTListType}" Width="100" HeaderStyle="{StaticResource DataGridColumnHeaderStyle}" CellStyle="{StaticResource DataGridCellStyle}" Binding="{Binding TowerType, Converter={StaticResource TowerTypeConverter}}" />
+
+                    <DataGridTextColumn Header="{StaticResource WTListOpr}" Width="140" HeaderStyle="{StaticResource DataGridColumnHeaderStyle}" CellStyle="{StaticResource DataGridCellOperateStyle}"/>
+                    </DataGrid.Columns>
+                    <!--<i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <i:InvokeCommandAction Command="{Binding FlyToCmd}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>-->
+                </DataGrid>
+            </Border>
+
+
+        </Grid>
+
+</UserControl>
