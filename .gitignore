@@ -32,14 +32,7 @@ bld/
 .vs/
 # Uncomment if you have tasks that create the
 
-*.dll
-*.dll
-*.pdb
-*.lref
-*.lock
-*.ide-wal
-*.ide-shm
-*.ide
+
 
 
 #eclipese ignore
@@ -311,3 +304,4 @@ __pycache__/
 
 
 
+binPath/PythonScript/openh264-1.7.0-win64.dll

@@ -11,7 +11,7 @@ false
 DEBUG;TRACE
 
 19-2016057588
-
+1106-1530918380
 53-776390008
 106-1309868911
 Views\AbnormalView.xaml;Views\AdministrativeView.xaml;Views\CameraDetailView.xaml;Views\DeviceView.xaml;Views\EventRecordView.xaml;Views\EventTimeView.xaml;Views\EventTypeView.xaml;Views\GridInfoDetailView.xaml;Views\InformationTableView.xaml;Views\MeshView.xaml;Views\PatrolListView.xaml;Views\PatrolmanListView.xaml;Views\PatrolRecordView.xaml;Views\ResultsView.xaml;Views\SinggleVideoView.xaml;Views\StatisticsView.xaml;Views\VideoStreamView.xaml;Views\VideoVLCView.xaml;Views\WishView.xaml;
