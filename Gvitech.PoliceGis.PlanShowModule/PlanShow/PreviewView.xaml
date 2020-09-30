@@ -1,0 +1,96 @@
+<UserControl
+	x:Class="Mmc.Mspace.PlanShowModule.PlanShow.PreviewView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:gvi="http://schemas.mmc.com"
+    xmlns:gvifm="http://schemas.mmc.com/wpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	VerticalAlignment="Bottom"
+    xmlns:planshow="clr-namespace:Mmc.Mspace.PlanShowModule.PlanShow">
+    <DockPanel
+		Visibility="{Binding HasItems, ElementName=Results, Converter={StaticResource BooleanToVisibilityConverter}}">
+        <DockPanel
+			HorizontalAlignment="Left"
+			Dock="Top">
+            <panels:UniformGridWithSpacing
+				FrameworkElement.HorizontalAlignment="Right"
+				UniformGrid.Columns="1"
+				UniformGrid.Rows="1"
+				gvifm:UniformGridWithSpacing.SpaceBetweenColumns="0" xmlns:panels="clr-namespace:Mmc.Wpf.Toolkit.Controls.Panels;assembly=Mmc.Wpf.Toolkit"
+				FrameworkElement.DataContext="{Binding SelectedItem, ElementName=Results}"
+                Visibility="{Binding SelectedItem, Converter={StaticResource NullOrEmptyStringToVisibilityConverter}}"
+                >
+                <FrameworkElement.Resources>
+                    <ResourceDictionary>
+                        <Style
+							BasedOn="{StaticResource {x:Type gvifm:IconDataButton}}"
+							TargetType="{x:Type gvifm:IconDataButton}"
+							x:Key="{x:Type gvifm:IconDataButton}">
+                            <Setter
+								Property="gvifm:IconDataButton.IconDataButtonType"
+								Value="Rect" />
+                            <Setter
+								Property="Width"
+								Value="36" />
+                            <Setter
+								Property="Height"
+								Value="36" />
+                        </Style>
+                    </ResourceDictionary>
+                </FrameworkElement.Resources>
+                <gvifm:IconDataButton
+					gvifm:IconDataButton.IconGeoData="{DynamicResource PlayGeoData}"
+					ButtonBase.Command="{Binding PlayCmd}" />
+            </panels:UniformGridWithSpacing>
+        </DockPanel>
+        <ProgressBar
+			Height="5"
+			Background="{DynamicResource P75BlackBrush}"
+			DockPanel.Dock="Top"
+			Minimum="0"
+			DataContext="{Binding SelectedItem, ElementName=Results}"
+			Maximum="{Binding TotalTime}"
+			Value="{Binding Time}"
+            Visibility="{Binding SelectedItem, Converter={StaticResource NullOrEmptyStringToVisibilityConverter}}"
+           >
+        </ProgressBar>
+        <Grid
+			Background="{DynamicResource P75BlackBrush}">
+            <ListBox
+				Name="Results"
+				gvifm:AttachedProperties.Orientation="Horizontal"
+				ItemsSource="{Binding Parameter}">
+                <ItemsControl.ItemContainerStyle>
+                    <Style
+						BasedOn="{StaticResource ListBoxItemStyle}"
+						TargetType="{x:Type ListBoxItem}">
+                        <Setter
+							Property="ListBoxItem.IsSelected"
+							Value="{Binding IsChecked}" />
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <DockPanel
+							Margin="5">
+                            <TextBlock
+								Margin=" 0,5,0,0"
+								HorizontalAlignment="Center"
+								VerticalAlignment="Center"
+								DockPanel.Dock="Bottom"
+								FontSize="16"
+								Foreground="{DynamicResource P75WhiteBrush}"
+								Text="{Binding Preview.Name}" />
+                            <Image
+								MaxHeight="100"
+                                Source="{Binding Preview.Image, Converter={StaticResource FormImageConverter}}"
+                                >
+                            </Image>
+                        </DockPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </DockPanel>
+</UserControl>
