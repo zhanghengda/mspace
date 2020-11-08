@@ -445,7 +445,9 @@ namespace Mmc.Mspace.IotModule.ViewModels
                 //| blind_spot       | string | 盲区角度| 
                 //| view_angle       | string | 视野角度| 
                 //| initial_angle       | string | 摄像头初始角度 | 
-                double _angle = Convert.ToDouble(cameraModel.initial_angle) - 90;
+              
+                double _angle = Convert.ToDouble(cameraModel.initial_angle);
+                double jiao=(360 - Convert.ToDouble(cameraModel.blind_spot)) * 0.5 - Convert.ToDouble(cameraModel.initial_angle);
                 angle.Heading = 30;
                 angle.Roll = 0;
                 angle.Tilt = -30;
@@ -465,7 +467,7 @@ namespace Mmc.Mspace.IotModule.ViewModels
 
                             if (cameraModel.IsForward)
                             {// Convert.ToDouble(cameraModel.view_angle)
-                                if ((angle.Heading +30) >= (360 - Convert.ToDouble(cameraModel.blind_spot)+ _angle))
+                                if ((angle.Heading +30) >= (360 - Convert.ToDouble(cameraModel.blind_spot)-jiao))
                                 {
                                     cameraModel.IsForward = false;
                                     return;
@@ -474,7 +476,7 @@ namespace Mmc.Mspace.IotModule.ViewModels
                             }
                             else
                             {//Convert.ToDouble(cameraModel.view_angle)
-                                if ((angle.Heading - 30) <= _angle)
+                                if ((angle.Heading - 30) <= -jiao )
                                 {
                                     cameraModel.IsForward = true;
                                     return;
@@ -770,7 +772,7 @@ namespace Mmc.Mspace.IotModule.ViewModels
                 point.Z = Convert.ToDouble(eventInfo.height);
 
 
-                double blind_spot = (360 - Convert.ToDouble(eventInfo.blind_spot))+ Convert.ToInt32(eventInfo.initial_angle);
+                double blind_spot = (360 - Convert.ToDouble(eventInfo.blind_spot));// Convert.ToInt32(eventInfo.initial_angle);
 
                 IPolyline polyline = GviMap.GeoFactory.CreateGeometry(gviGeometryType.gviGeometryPolyline, gviVertexAttribute.gviVertexAttributeNone) as IPolyline;
                 IPolygon polygon = GviMap.GeoFactory.CreateGeometry(gviGeometryType.gviGeometryPolygon, gviVertexAttribute.gviVertexAttributeZ) as IPolygon;
@@ -784,7 +786,8 @@ namespace Mmc.Mspace.IotModule.ViewModels
                 //| blind_spot       | string | 盲区角度| 
                 //| view_angle       | string | 视野角度| 
                 //| initial_angle       | string | 摄像头初始角度 | 
-                for (int i = (Convert.ToInt32(eventInfo.initial_angle)-90); i < (blind_spot-90); i++)
+                double jiao = (blind_spot) * 0.5-Convert.ToDouble(eventInfo.initial_angle);
+                for (int i = Convert.ToInt32( -jiao); i < (blind_spot-Convert.ToInt32(jiao)); i++)
                 {
                     IEulerAngle eulerAngle2 = new EulerAngle();
                     eulerAngle2.Heading = i;
