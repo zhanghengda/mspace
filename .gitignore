@@ -280,6 +280,7 @@ Gvitech.PoliceGis.exe.*
 /binPath/config/WSConfig-dev.xml
 /Gvitech.Windows.Framework
 /binPath/Log
+/binPath
 /Mmc.Mspace.RegularInspectionModule/Mmc.Mspace.RegularInspectionModule_qnjwzvbz_wpftmp.csproj
 /Mspace.exe
 /Mspace.exe.config
@@ -288,3 +289,7 @@ Gvitech.PoliceGis.exe.*
 /binPath/libvlc
 /Gvitech.PoliceGis.PoliceResourceModule/Mmc.Mspace.PoliceResourceModule_kmwxfoea_wpftmp.csproj
 /*.rar
+*.dll
+binPath/Mmc.Mspace.PoliceDeployedModule.dll
+ApplicationConfig/obj/Debug/ApplicationConfig.csproj.FileListAbsolute.txt
+*.txt
