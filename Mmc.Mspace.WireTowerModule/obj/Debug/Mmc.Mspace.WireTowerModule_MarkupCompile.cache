@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\GitHub\mspace\Mmc.Mspace.WireTowerModule\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Mmc.Mspace.WireTowerModule\obj\Debug\
 Mmc.Mspace.WireTowerModule
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 8979924302
 
 36-887332581
-39-507666067
+39844224016
 Views\GenerateRouteView.xaml;Views\LineManageView.xaml;Views\LineView.xaml;Views\SignView.xaml;Views\TowerView.xaml;Views\RouteManageView.xaml;Views\TowerManageView.xaml;Views\WirTowManageView.xaml;
 
 False

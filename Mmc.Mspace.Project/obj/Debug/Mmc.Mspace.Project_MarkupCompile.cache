@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\GitHub\mspace\Mmc.Mspace.Project\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Mmc.Mspace.Project\obj\Debug\
 Mmc.Mspace.Project
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 31616811739
 
 7-1026604368
-20-947077598
+20-933812206
 Load3DModelView.xaml;LoadImageLayerView.xaml;LoadTileLayerView.xaml;
 
 False

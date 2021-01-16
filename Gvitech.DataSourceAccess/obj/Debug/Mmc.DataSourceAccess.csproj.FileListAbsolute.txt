@@ -16,3 +16,9 @@ D:\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.csprojA
 D:\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.csproj.CoreCompileInputs.cache
 D:\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.dll
 D:\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.DataSourceAccess.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.DataSourceAccess.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.DataSourceAccess\obj\Debug\Mmc.DataSourceAccess.pdb

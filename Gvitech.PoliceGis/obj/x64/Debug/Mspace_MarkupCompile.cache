@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\GitHub\mspace\Gvitech.PoliceGis\obj\x64\Debug\
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis\obj\x64\Debug\
 MMC.MSpace
 none
 false
 DEBUG;TRACE
-D:\GitHub\mspace\Gvitech.PoliceGis\App.xaml
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis\App.xaml
 22-1895447960
 
 382134829890
-55823440603
+55583348943
 Shell.xaml;Views\BootomToolView.xaml;Views\BuildDetailView.xaml;Views\CoordinateView.xaml;Views\HomeToolView.xaml;Views\LeftContentView.xaml;Views\LeftView.xaml;Views\LoginView.xaml;Views\MapHost.xaml;Views\MenuToolView.xaml;Views\MenuView.xaml;Views\MessageBoxView.xaml;Views\ReportSettingView.xaml;Views\RightToolView.xaml;Views\SettingView.xaml;Views\SplashWindow.xaml;Views\SysMenuView.xaml;Views\ToolView.xaml;Views\NoticeView.xaml;Views\UserCenterView.xaml;Views\UserMessagesView.xaml;Views\WPFLoginView.xaml;
 
 False

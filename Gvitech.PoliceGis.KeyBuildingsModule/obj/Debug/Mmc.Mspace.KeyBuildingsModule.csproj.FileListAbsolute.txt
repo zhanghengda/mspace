@@ -31,3 +31,14 @@ D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBu
 D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.csproj.CoreCompileInputs.cache
 D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.dll
 D:\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.KeyBuildingsModule.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.KeyBuildingsModule.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\KeyBuildings\KeyBuildinsView.g.cs
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule_MarkupCompile.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule_MarkupCompile.lref
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\KeyBuildings\KeyBuildinsView.baml
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.g.resources
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.KeyBuildingsModule\obj\Debug\Mmc.Mspace.KeyBuildingsModule.pdb

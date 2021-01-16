@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Services\obj\Debug\
 Mmc.Mspace.Services
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 21477928116
 
 3732073624205
-39-1293529092
+391458106929
 Controls\SearchControl.xaml;ShowCaptureObjectService\ShowCaptureObjectServiceView.xaml;
 
 False

@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Mspace\mspace\mspace\Gvitech.PoliceGis.NavigationModule\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.NavigationModule\obj\Debug\
 Mmc.Mspace.NavigationModule
 none
 false
@@ -12,8 +12,8 @@ DEBUG;TRACE
 
 3683295740
 
-171838772907
-28-1496281728
+14434024348
+28-1605773237
 Locale\LocaleView.xaml;Navigation\NavigationRenameView.xaml;Navigation\NavigationView.xaml;
 
 True

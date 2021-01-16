@@ -37,3 +37,16 @@ D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.c
 D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
 D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.dll
 D:\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\RisCaptureLib.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\RisCaptureLib.pdb
+C:\Users\111\Documents\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\111\Documents\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+C:\Users\111\Documents\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+C:\Users\111\Documents\GitHub\mspace\RisCaptureLib\obj\Debug\Themes\Generic.baml
+C:\Users\111\Documents\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+C:\Users\111\Documents\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+C:\Users\111\Documents\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.cache
+C:\Users\111\Documents\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.dll
+C:\Users\111\Documents\GitHub\mspace\RisCaptureLib\obj\Debug\RisCaptureLib.pdb

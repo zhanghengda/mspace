@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\GitHub\mspace\Gvitech.PoliceGis.HumanAssociationModule\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.HumanAssociationModule\obj\Debug\
 Mmc.Mspace.HumanAssociationModule
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 3101606819
 
 101618742357
-22105212850
+221642641611
 findpeople\findpeopleview.xaml;findpeople\FindPeopleWebView.xaml;HumanAssociation\HumanAssociationView.xaml;
 
 False

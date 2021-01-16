@@ -19,3 +19,10 @@ D:\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.csproj.CoreCompileInputs.ca
 D:\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.csproj.CopyComplete
 D:\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.dll
 D:\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.MathUtil.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.MathUtil.pdb
+C:\Users\111\Documents\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.csproj.CopyComplete
+C:\Users\111\Documents\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.dll
+C:\Users\111\Documents\GitHub\mspace\Mmc.MathUtil\obj\Debug\Mmc.MathUtil.pdb

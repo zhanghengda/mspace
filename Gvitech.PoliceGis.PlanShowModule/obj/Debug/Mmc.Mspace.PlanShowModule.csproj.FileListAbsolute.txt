@@ -31,3 +31,14 @@ D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowM
 D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.csproj.CoreCompileInputs.cache
 D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.dll
 D:\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.PlanShowModule.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.PlanShowModule.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\PlanShow\PreviewView.g.cs
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule_MarkupCompile.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule_MarkupCompile.lref
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\PlanShow\PreviewView.baml
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.g.resources
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.PlanShowModule\obj\Debug\Mmc.Mspace.PlanShowModule.pdb

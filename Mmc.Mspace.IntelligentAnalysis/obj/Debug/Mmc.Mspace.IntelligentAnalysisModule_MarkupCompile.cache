@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\GitHub\mspace\Mmc.Mspace.IntelligentAnalysis\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Mmc.Mspace.IntelligentAnalysis\obj\Debug\
 Mmc.Mspace.IntelligentAnalysisModule
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 4918741860
 
 161527366723
-34-110836919
+34-1501598735
 CharacterAnalysis\CharactAnalysView.xaml;CharacterAnalysis\ImportImgView.xaml;CharacterAnalysis\AnalysisView.xaml;FloodAnalysis\FloodView.xaml;
 
 False

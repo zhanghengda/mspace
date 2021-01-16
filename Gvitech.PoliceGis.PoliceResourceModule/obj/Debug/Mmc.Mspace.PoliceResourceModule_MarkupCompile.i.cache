@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Mspace\mspace\mspace\Gvitech.PoliceGis.PoliceResourceModule\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.PoliceResourceModule\obj\Debug\
 Mmc.Mspace.PoliceResourceModule
 none
 false
@@ -12,8 +12,8 @@ DEBUG;TRACE
 
 3-120730388
 
-15-1158461715
-31-1466681295
+121731757022
+311243497683
 PoliceEvent\PoliceEventView.xaml;VideoMonitor\VideoMonitorView.xaml;VideoMonitor\VideoMonitorWebView.xaml;
 
 True

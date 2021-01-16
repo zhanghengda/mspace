@@ -16,3 +16,9 @@ D:\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extensi
 D:\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.csproj.CoreCompileInputs.cache
 D:\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.dll
 D:\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Gvitech.CityMaker.Extension.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Gvitech.CityMaker.Extension.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.CityMaker.Extension\obj\Debug\Gvitech.CityMaker.Extension.pdb

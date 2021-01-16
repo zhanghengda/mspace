@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Mspace\mspace\mspace\Gvitech.PoliceGis.PoliceDeployedModule\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.PoliceDeployedModule\obj\Debug\
 Mmc.Mspace.PoliceDeployedModule
 none
 false
@@ -12,8 +12,8 @@ DEBUG;TRACE
 
 6-48178663
 
-281503814941
-30-1631561975
+2599066382
+30-514609826
 FreehandProjection\FreehandProjectionView.xaml;PathAnalysis\PathAnalysisView.xaml;PoliceDeployed\ExportProgressView.xaml;PoliceDeployed\PoliceDeployedView.xaml;SafetyProtection\SafetyProtectionView.xaml;SniperProtecton\SniperProtectonView.xaml;
 
 True

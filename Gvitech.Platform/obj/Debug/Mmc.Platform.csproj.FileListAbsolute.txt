@@ -19,3 +19,10 @@ D:\GitHub\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.csproj.CoreCompileInput
 D:\GitHub\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.csproj.CopyComplete
 D:\GitHub\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.dll
 D:\GitHub\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Platform.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Platform.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.csproj.CopyComplete
+C:\Users\111\Documents\GitHub\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.Platform\obj\Debug\Mmc.Platform.pdb

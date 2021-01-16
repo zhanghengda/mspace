@@ -19,3 +19,10 @@ D:\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CoreCompileInputs.
 D:\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CopyComplete
 D:\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.dll
 D:\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Windows.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Windows.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.csproj.CopyComplete
+C:\Users\111\Documents\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.Windows\obj\Debug\Mmc.Windows.pdb

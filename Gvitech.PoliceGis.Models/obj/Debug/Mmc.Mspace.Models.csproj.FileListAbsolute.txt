@@ -16,3 +16,9 @@ D:\GitHub\mspace\Gvitech.PoliceGis.Models\obj\Debug\Mmc.Mspace.Models.csprojAsse
 D:\GitHub\mspace\Gvitech.PoliceGis.Models\obj\Debug\Mmc.Mspace.Models.csproj.CoreCompileInputs.cache
 D:\GitHub\mspace\Gvitech.PoliceGis.Models\obj\Debug\Mmc.Mspace.Models.dll
 D:\GitHub\mspace\Gvitech.PoliceGis.Models\obj\Debug\Mmc.Mspace.Models.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.Models.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.Models.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Models\obj\Debug\Mmc.Mspace.Models.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Models\obj\Debug\Mmc.Mspace.Models.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Models\obj\Debug\Mmc.Mspace.Models.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Models\obj\Debug\Mmc.Mspace.Models.pdb

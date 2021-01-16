@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\GitHub\mspace\Gvitech.PoliceGis.ToolModule\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.ToolModule\obj\Debug\
 Mmc.Mspace.ToolModule
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 14-1390599514
 
 56-1972769118
-411362777374
+41-461771582
 AlarmStatisticLayerController\statisticlegened.xaml;AlarmStatisticLayerController\StatisticsView.xaml;DynamicClip\ClipRename.xaml;DynamicClip\DynamicClipView.xaml;DynamicClip\NewClipObjectView.xaml;DynamicClip\RenameObjectView.xaml;LayerController\LayersView.xaml;LayerController\ToggleLayersView.xaml;LocatingView.xaml;Progress\ExportProgressView.xaml;Scale\ScaleView.xaml;Search\KeyWordSearchView.xaml;VideoControl\StreamPlayerView.xaml;VideoControl\VideoControl.xaml;
 
 False

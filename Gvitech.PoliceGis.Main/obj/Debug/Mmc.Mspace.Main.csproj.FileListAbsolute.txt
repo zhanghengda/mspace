@@ -25,3 +25,12 @@ D:\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.csproj.Generat
 D:\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.csproj.CoreCompileInputs.cache
 D:\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.dll
 D:\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.Main.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.Main.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.g.resources
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.Properties.Resources.resources
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.csproj.GenerateResource.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.Main\obj\Debug\Mmc.Mspace.Main.pdb

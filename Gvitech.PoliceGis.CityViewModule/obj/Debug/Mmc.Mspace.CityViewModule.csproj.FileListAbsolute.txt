@@ -16,3 +16,9 @@ D:\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewM
 D:\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.csproj.CoreCompileInputs.cache
 D:\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.dll
 D:\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.CityViewModule.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.CityViewModule.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CityViewModule\obj\Debug\Mmc.Mspace.CityViewModule.pdb

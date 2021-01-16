@@ -37,3 +37,16 @@ D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.g.
 D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.csproj.CoreCompileInputs.cache
 D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.dll
 D:\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.CoreModule.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.CoreModule.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\PoliceCommon\PoliceCommonView.g.cs
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\WebView\WebView.g.cs
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule_MarkupCompile.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule_MarkupCompile.lref
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\PoliceCommon\PoliceCommonView.baml
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\WebView\WebView.baml
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.g.resources
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.CoreModule\obj\Debug\Mmc.Mspace.CoreModule.pdb

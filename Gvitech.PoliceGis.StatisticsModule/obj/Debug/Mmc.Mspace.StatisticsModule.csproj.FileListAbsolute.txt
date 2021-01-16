@@ -37,3 +37,16 @@ D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.Statist
 D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.csproj.CoreCompileInputs.cache
 D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.dll
 D:\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.StatisticsModule.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.Mspace.StatisticsModule.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\StatisticsWebView.g.cs
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule_MarkupCompile.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule_MarkupCompile.lref
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\StatisticsWebView.baml
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.g.resources
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.Properties.Resources.resources
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.csproj.GenerateResource.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.PoliceGis.StatisticsModule\obj\Debug\Mmc.Mspace.StatisticsModule.pdb

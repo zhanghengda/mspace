@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\GitHub\mspace\Mmc.Mspace.UavModule\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Mmc.Mspace.UavModule\obj\Debug\
 Mmc.Mspace.UavModule
 none
 false
@@ -12,8 +12,8 @@ DEBUG;TRACE
 
 13-1438492541
 
-57-295148342
-114-426525236
+54-401826620
+114-1285150502
 MultiViewCompare\CompareView.xaml;MultiViewCompare\LayersView.xaml;UavTracing\MultiVideoView.xaml;UavTracing\PanoramicView.xaml;UavTracing\SinggleVideoView.xaml;UavTracing\UavControlView.xaml;UavTracing\UavHeatMapView.xaml;UavTracing\MGasView.xaml;UavTracing\UavMountControlView.xaml;UavTracing\UavVideoWebView.xaml;UavTracing\UavTracingView.xaml;UavTracing\UavVideoView.xaml;UavTracing\UavVideoVLCView.xaml;
 
 True

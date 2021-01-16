@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\GitHub\mspace\Gvitech.Wpf.Toolkit\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Gvitech.Wpf.Toolkit\obj\Debug\
 Mmc.Wpf.Toolkit
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 4-860280939
 
 36-2057542198
-12636403565
+12-990862551
 Controls\InkPad\InkPadWindow.xaml;Controls\InkPad\StylusSettings.xaml;themes\generic.xaml;themes\progressringstyle.xaml;
 
 False

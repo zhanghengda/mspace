@@ -16,3 +16,9 @@ D:\GitHub\mspace\Gvitech.LayerSymbol\obj\Debug\Mmc.LayerSymbol.csprojAssemblyRef
 D:\GitHub\mspace\Gvitech.LayerSymbol\obj\Debug\Mmc.LayerSymbol.csproj.CoreCompileInputs.cache
 D:\GitHub\mspace\Gvitech.LayerSymbol\obj\Debug\Mmc.LayerSymbol.dll
 D:\GitHub\mspace\Gvitech.LayerSymbol\obj\Debug\Mmc.LayerSymbol.pdb
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.LayerSymbol.dll
+C:\Users\111\Documents\GitHub\mspace\binPath\Mmc.LayerSymbol.pdb
+C:\Users\111\Documents\GitHub\mspace\Gvitech.LayerSymbol\obj\Debug\Mmc.LayerSymbol.csprojAssemblyReference.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.LayerSymbol\obj\Debug\Mmc.LayerSymbol.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\mspace\Gvitech.LayerSymbol\obj\Debug\Mmc.LayerSymbol.dll
+C:\Users\111\Documents\GitHub\mspace\Gvitech.LayerSymbol\obj\Debug\Mmc.LayerSymbol.pdb
