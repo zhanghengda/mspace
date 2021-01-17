@@ -569,7 +569,7 @@ namespace Mmc.Mspace.RoutePlanning
                 _newRoutePlanViewModel = new ViewModels.RoutePlanningViewModel();
                
             }
-            _newRoutePlanViewModel.ShowWindow();
+            _newRoutePlanViewModel.ShowWindow(false);
         }
 
         private void showInputPolyline(IPolyline polyline)

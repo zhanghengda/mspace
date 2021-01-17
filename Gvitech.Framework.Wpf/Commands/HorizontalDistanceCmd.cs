@@ -17,13 +17,15 @@ namespace Mmc.Framework.Wpf.Commands
 			bool angle = position;
 			if (angle)
 			{
-				base.MapControl.InteractMode = gviInteractMode.gviInteractMeasurement;
-				base.MapControl.MeasurementMode = gviMeasurementMode.gviMeasureHorizontalDistance;
+				if (base.MapControl.InteractMode != gviInteractMode.gviInteractMeasurement)
+					base.MapControl.InteractMode = gviInteractMode.gviInteractMeasurement;
+				if (base.MapControl.MeasurementMode != gviMeasurementMode.gviMeasureAerialDistance)
+					base.MapControl.MeasurementMode = gviMeasurementMode.gviMeasureAerialDistance;
 			}
 			else
 			{
-				base.MapControl.InteractMode = gviInteractMode.gviInteractNormal;
-			}
+                //base.MapControl.InteractMode = gviInteractMode.gviInteractNormal;
+            }
 		}
 	}
 }

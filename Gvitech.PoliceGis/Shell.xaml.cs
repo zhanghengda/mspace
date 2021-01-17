@@ -40,7 +40,9 @@ namespace MMC.MSpace
     public partial class Shell : Window
     {
         private DoubleAnimation c_daListAnimation;
+        private DoubleAnimation c_daListAnimation2;
         TranslateTransform tt = new TranslateTransform();
+        Storyboard myStoryboard = new Storyboard();
         public bool c_bState = true;//记录菜单栏状态 false隐藏 true显示
         System.Windows.Visibility visibility = Visibility.Hidden;
         public Shell()
@@ -64,6 +66,12 @@ namespace MMC.MSpace
             c_daListAnimation.BeginTime = TimeSpan.FromSeconds(1);//获取或设置此 Timeline 将要开始的时间。
             c_daListAnimation.FillBehavior = FillBehavior.HoldEnd;//获取或设置一个值，该值指定 Timeline 在活动周期结束后的行为方式。
             c_daListAnimation.Duration = new Duration(TimeSpan.FromSeconds(0.5));//获取或设置此时间线播放的时间长度，而不是计数重复。
+
+
+            c_daListAnimation2 = new DoubleAnimation();
+            c_daListAnimation2.BeginTime = TimeSpan.FromSeconds(0);//获取或设置此 Timeline 将要开始的时间。
+            c_daListAnimation2.FillBehavior = FillBehavior.HoldEnd;//获取或设置一个值，该值指定 Timeline 在活动周期结束后的行为方式。
+            c_daListAnimation2.Duration = new Duration(TimeSpan.FromSeconds(0.2));//获取或设置此时间线播放的时间长度，而不是计数重复。
         }
 
 
@@ -86,6 +94,21 @@ namespace MMC.MSpace
 
             leftViewPanel.RenderTransform = tt;
             tt.BeginAnimation(TranslateTransform.XProperty, c_daListAnimation);
+        }
+
+        public void ShowRight()
+        {
+            if ((bool)this.righttool.IsChecked)
+            {
+                c_daListAnimation2.From = 0;
+                c_daListAnimation2.To = 363;
+            }
+            else
+            {
+                c_daListAnimation2.From = 363;
+                c_daListAnimation2.To = 0;
+            }
+            rightToolBoder.BeginAnimation(Border.HeightProperty, c_daListAnimation2);
         }
 
         private void Shell_LocationChanged(object sender, EventArgs e)
@@ -123,7 +146,7 @@ namespace MMC.MSpace
             Messenger.Messengers.Register<bool>("BottomMenuEnumNavigation", (t) => { ShowBottomNavigationMenu(t); });
             Messenger.Messengers.Register<bool>("showMoretool", (t)=>
             {
-                this.devicetool.Visibility = (t ? Visibility.Visible : Visibility.Hidden);
+                //this.devicetool.Visibility = (t ? Visibility.Visible : Visibility.Hidden);
             });
             Messenger.Messengers.Register<bool>("ShowHiddenMenu", (t) =>
             {
@@ -516,8 +539,13 @@ namespace MMC.MSpace
 
         private void Devicetool_Click(object sender, RoutedEventArgs e)
         {
-            this.devicetool.Visibility = Visibility.Hidden;
+            //this.devicetool.Visibility = Visibility.Hidden;
             Messenger.Messengers.Notify("showCamera", true);
+        }
+
+        private void ToggleButton_Checked_1(object sender, RoutedEventArgs e)
+        {
+            ShowRight();
         }
     }
 }

@@ -134,6 +134,8 @@ namespace Mmc.Mspace.RoutePlanning
 
         [XmlIgnore]
         public ICommand cmdShowRouteListView { get; set; }
+        [XmlIgnore]
+        public ICommand cmdShowRouteListView2 { get; set; }
 
         [XmlIgnore]
         public ICommand cmdShowRoutePlanView { get; set; }
@@ -152,7 +154,13 @@ namespace Mmc.Mspace.RoutePlanning
             get { return _routeListModel ?? (_routeListModel = new RouteListViewModel()); }
             set { _routeListModel = value; base.NotifyPropertyChanged("RouteListModel"); }
         }
+        private RouteListViewModel _routeListModel2;
 
+        public RouteListViewModel RouteListModel2
+        {
+            get { return _routeListModel2 ?? (_routeListModel2 = new RouteListViewModel()); }
+            set { _routeListModel2 = value; base.NotifyPropertyChanged("RouteListModel2"); }
+        }
 
         private RoutePlanShowPageViewModel _routePlanShowPageModel;
 
@@ -318,11 +326,23 @@ namespace Mmc.Mspace.RoutePlanning
                 CleanAllRenderPoint();
                 //_routeListModel.conveyJson3 -= new ConveyJson(ReadMissionJson);
                 //_routeListModel.conveyJson3 += new ConveyJson(ReadMissionJson);
+                RouteListModel.status = false;
                 RouteListModel.conveyJson3 -= new Views.ConveyJson(ReadMissionJson);
                 RouteListModel.conveyJson3 += new Views.ConveyJson(ReadMissionJson);
                 RouteListModel?.OnChecked();
             });
+            this.cmdShowRouteListView2 = new RelayCommand(() =>
+            {
+                CloseWindows();
+                CleanAllRenderPoint();
 
+                //_routeListModel.conveyJson3 -= new ConveyJson(ReadMissionJson);
+                //_routeListModel.conveyJson3 += new ConveyJson(ReadMissionJson);
+                RouteListModel2.status = true;
+                RouteListModel2.conveyJson3 -= new Views.ConveyJson(ReadMissionJson);
+                RouteListModel2.conveyJson3 += new Views.ConveyJson(ReadMissionJson);
+                RouteListModel2?.OnChecked();
+            });
             this.CloseCmd = new RelayCommand(() =>
             {
 

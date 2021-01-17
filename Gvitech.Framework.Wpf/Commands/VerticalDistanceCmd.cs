@@ -16,12 +16,15 @@ namespace Mmc.Framework.Wpf.Commands
 			bool flag2 = flag;
 			if (flag2)
 			{
-				base.MapControl.InteractMode = gviInteractMode.gviInteractMeasurement;
-				base.MapControl.MeasurementMode = gviMeasurementMode.gviMeasureVerticalDistance;
+
+				if (base.MapControl.InteractMode != gviInteractMode.gviInteractMeasurement)
+					base.MapControl.InteractMode = gviInteractMode.gviInteractMeasurement;
+				if (base.MapControl.MeasurementMode != gviMeasurementMode.gviMeasureAerialDistance)
+					base.MapControl.MeasurementMode = gviMeasurementMode.gviMeasureAerialDistance;
 			}
 			else
 			{
-				base.MapControl.InteractMode = gviInteractMode.gviInteractNormal;
+				//base.MapControl.InteractMode = gviInteractMode.gviInteractNormal;
 			}
 		}
 	}

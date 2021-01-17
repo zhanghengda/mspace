@@ -6,6 +6,11 @@
     <sys:String x:Key="Location">Coordinate Positioning</sys:String>
     <sys:String x:Key="BackStart">Back Start</sys:String>
     <sys:String x:Key="Query">Query</sys:String>
+    <sys:String x:Key="Shijiao">视角</sys:String>
+    <sys:String x:Key="Shijiao1">测量模型</sys:String>
+    <sys:String x:Key="Shijiao2">三维模型</sys:String>
+    <sys:String x:Key="Shijiao3">警航模型</sys:String>
+    <sys:String x:Key="Shijiao4">地形展示</sys:String>
     <sys:String x:Key="Areameasurement">Area measurement</sys:String>
     <sys:String x:Key="Levelmeasurement">Level measurement</sys:String>
     <sys:String x:Key="Verticalmeasurement">Vertical measurement</sys:String>

@@ -90,8 +90,8 @@
             </i:Interaction.Triggers>
         </Border>
         <DockPanel  Grid.Column="2" Grid.Row="0" Grid.RowSpan="3" Panel.ZIndex="22">
-            <StackPanel Width="120" VerticalAlignment="Center" HorizontalAlignment="Left">
-                <Border Width="50" Height="54"></Border>
+            <StackPanel Width="120" VerticalAlignment="Top" Margin="0 300 20 0" HorizontalAlignment="Left">
+                <!--<Border Width="50" Height="54"></Border>
                 <Border Width="50" Height="54"></Border>
                 <Border Width="50" Height="54"></Border>
                 <Border Width="50" Height="54"></Border>
@@ -103,8 +103,36 @@
                                     MouseOverRIcon="{DynamicResource Filter_C}"
                                     PressedRIcon="{DynamicResource Filter_S}" Click="Devicetool_Click" Style="{StaticResource HomeTopButtonStyle}"></conrols:Buttons>
                 </StackPanel>
-                <Border Width="50" Height="54"></Border>
-
+                <Border Width="50" Height="54"></Border>-->
+                <ToggleButton Content="{DynamicResource Shijiao}" x:Name="righttool" Click="ToggleButton_Checked_1" Style="{StaticResource RightToolStyle}"></ToggleButton>
+                <Border  Background="#202437" Width="112" x:Name="rightToolBoder" CornerRadius="0 0 4 4">
+                    <StackPanel Orientation="Vertical" Margin="0 8">
+                        <Border BorderBrush="#336696" BorderThickness="1" Height="82" Width="104" Margin="0 2">
+                            <StackPanel Orientation="Vertical"  HorizontalAlignment="Center">
+                                <Image Grid.Column="0"  Width="96" Height="54"  HorizontalAlignment="Center" Source="{StaticResource shijiao}" Stretch="Uniform" VerticalAlignment="Center" />
+                                <TextBlock  Foreground="#E1E2E6" Grid.Column="1" FontSize="12" FontWeight="Bold" HorizontalAlignment="Center"   VerticalAlignment="Center" Text="{DynamicResource Shijiao1}" />
+                            </StackPanel>
+                        </Border>
+                        <Border BorderBrush="#336696" BorderThickness="1" Height="82" Width="104" Margin="0 2">
+                            <StackPanel Orientation="Vertical"  HorizontalAlignment="Center">
+                                <Image Grid.Column="0"  Width="96" Height="54"  HorizontalAlignment="Center" Source="{StaticResource shijiao}" Stretch="Uniform" VerticalAlignment="Center" />
+                                <TextBlock  Foreground="#E1E2E6" Grid.Column="1" FontSize="12" FontWeight="Bold" HorizontalAlignment="Center"   VerticalAlignment="Center" Text="{DynamicResource Shijiao2}" />
+                            </StackPanel>
+                        </Border>
+                        <Border BorderBrush="#336696" BorderThickness="1" Height="82" Width="104" Margin="0 2">
+                            <StackPanel Orientation="Vertical"  HorizontalAlignment="Center">
+                                <Image Grid.Column="0"  Width="96" Height="54"  HorizontalAlignment="Center" Source="{StaticResource shijiao}" Stretch="Uniform" VerticalAlignment="Center" />
+                                <TextBlock  Foreground="#E1E2E6" Grid.Column="1" FontSize="12" FontWeight="Bold" HorizontalAlignment="Center"   VerticalAlignment="Center" Text="{DynamicResource Shijiao3}" />
+                            </StackPanel>
+                        </Border>
+                        <Border BorderBrush="#336696" BorderThickness="1" Height="82" Width="104" Margin="0 2">
+                            <StackPanel Orientation="Vertical"  HorizontalAlignment="Center">
+                                <Image Grid.Column="0"  Width="96" Height="54"  HorizontalAlignment="Center" Source="{StaticResource shijiao}" Stretch="Uniform" VerticalAlignment="Center" />
+                                <TextBlock  Foreground="#E1E2E6" Grid.Column="1" FontSize="12" FontWeight="Bold" HorizontalAlignment="Center"   VerticalAlignment="Center" Text="{DynamicResource Shijiao4}" />
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Border>
             </StackPanel>
             <views:RightToolView x:Name="rightToolView" />
         </DockPanel>

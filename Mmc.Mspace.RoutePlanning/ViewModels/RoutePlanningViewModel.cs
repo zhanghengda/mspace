@@ -40,7 +40,8 @@ namespace Mmc.Mspace.RoutePlanning.ViewModels
             this.SearchDetailCmd = new Wpf.Commands.RelayCommand<RoutePlanModel>((routePlanModel) =>OnSearchDetail(routePlanModel));
             this.FlightSimulateCmd= new Wpf.Commands.RelayCommand<RoutePlanModel>((routePlanModel) => OnFlightSimulate(routePlanModel));
             this.DeleteItemCmd = new Wpf.Commands.RelayCommand<RoutePlanModel>((routePlanModel) => OnDeleteItem(routePlanModel));
-           
+            this.AirDeclarationCommand = new Wpf.Commands.RelayCommand<RoutePlanModel>((routePlanModel) => OnAirDeclarationCommand(routePlanModel));
+
             this.BackToListCmd = new Wpf.Commands.RelayCommand(OnBackToList);
             this.ReleaseWindowCmd = new Wpf.Commands.RelayCommand(OnReleaseWindow);
             this.SearchRouteCmd = new Wpf.Commands.RelayCommand(OnSearchRoute);
@@ -132,10 +133,6 @@ namespace Mmc.Mspace.RoutePlanning.ViewModels
             flySimulate.fly(pointList);
 
         }
-
-
-      
-
 
         public void DelFlyObject()
         {
@@ -269,7 +266,17 @@ namespace Mmc.Mspace.RoutePlanning.ViewModels
                 SystemLog.Log(e);
             }
         }
-
+        /// <summary>
+        /// 空中申报
+        /// </summary>
+        /// <param name="routePlanModel"></param>
+        private void OnAirDeclarationCommand(RoutePlanModel routePlanModel)
+        {
+            if (Messages.ShowMessageDialog(Helpers.ResourceHelper.FindKey("RoutePlan_MesTip"), "是否确定空域申报" + routePlanModel.RouteName + "?"))
+            {
+                Messages.ShowMessage("已提交申报，等待申报审核！");
+            }
+        }
         private void OnDeleteItem(RoutePlanModel routePlanModel)
         {
             try
@@ -330,7 +337,7 @@ namespace Mmc.Mspace.RoutePlanning.ViewModels
             }
         }
 
-        public void ShowWindow()
+        public void ShowWindow(bool STATUE)
         {
             try
             {
@@ -339,6 +346,7 @@ namespace Mmc.Mspace.RoutePlanning.ViewModels
                     _newRoutePlanView = new RoutePlanningView();
                     _newRoutePlanView.Closed += (sender, e) => { _newRoutePlanView = null; };
                 }
+                this.ShowDeclare = STATUE;
                 _newRoutePlanView.DataContext = this;
                 _newRoutePlanView.Owner = Application.Current.MainWindow;
                 _newRoutePlanView.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterOwner;
@@ -445,6 +453,7 @@ namespace Mmc.Mspace.RoutePlanning.ViewModels
         public ICommand SearchDetailCmd { get; set; }
 
         public ICommand DeleteItemCmd { get; set; }
+        public ICommand AirDeclarationCommand { get; set; }
 
         public ICommand BackToListCmd { get; set; }
 
@@ -474,6 +483,13 @@ namespace Mmc.Mspace.RoutePlanning.ViewModels
             }
         }
 
+        private bool _showDeclare=false;
+
+        public bool ShowDeclare
+        {
+            get { return _showDeclare; }
+            set { _showDeclare = value; NotifyPropertyChanged("ShowDeclare"); }
+        }
 
 
         private string _searchRouteCondition;

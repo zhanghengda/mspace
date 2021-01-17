@@ -23,7 +23,7 @@ namespace Mmc.Mspace.RoutePlanning
         //private RoutePlanView _routePlanView;
         private RoutePlanningView _newRoutePlanView;
         public Views.ConveyJson conveyJson3;
-
+        public bool status = false;
         [XmlIgnore]
         public ICommand cmdCloseWindow { get; set; }
         public override void Initialize()
@@ -67,7 +67,7 @@ namespace Mmc.Mspace.RoutePlanning
 
             }
             _newRoutePlanViewModel.CloseRoutePlanning += OnCloseRoutePlanning;
-            _newRoutePlanViewModel.ShowWindow();
+            _newRoutePlanViewModel.ShowWindow(status);
         }
 
         private void OnCloseRoutePlanning(string obj)

@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\GitDemo\ant-design-vue\mspace\Mmc.Mspace.RoutePlanning\obj\Debug\
+C:\Users\111\Documents\GitHub\mspace\Mmc.Mspace.RoutePlanning\obj\Debug\
 Mmc.Mspace.RoutePlanning
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 12-327120620
 
-56-1338190636
-40-262208420
+531552028101
+41349601291
 Design\RouteDesignView.xaml;FlySimulateParameterView.xaml;Grid\GridUI.xaml;MappingCameraAddView.xaml;PathplanningView.xaml;RoutePlanShowPageView.xaml;RoutePlanView.xaml;RoutePointEditView.xaml;UploadRouteTipsView.xaml;Views\RouteAdjustmentView.xaml;Views\RoutePlanDetailView.xaml;Views\RoutePlanningView.xaml;
 
-True
+False
 

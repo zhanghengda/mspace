@@ -7,8 +7,16 @@
     <sys:String x:Key="BackStart">回到原点</sys:String>
     <sys:String x:Key="Location">坐标定位</sys:String>
     <sys:String x:Key="Query">查询</sys:String>
+    <sys:String x:Key="Shijiao">视角</sys:String>
+    <sys:String x:Key="Shijiao1">测量模型</sys:String>
+    <sys:String x:Key="Shijiao2">三维模型</sys:String>
+    <sys:String x:Key="Shijiao3">警航模型</sys:String>
+    <sys:String x:Key="Shijiao4">地形展示</sys:String>
+
+
+    
     <sys:String x:Key="Areameasurement">面积测量</sys:String>
-    <sys:String x:Key="Levelmeasurement">水平测量</sys:String>
+    <sys:String x:Key="Levelmeasurement"> 水平测量</sys:String>
     <sys:String x:Key="Verticalmeasurement">垂直测量</sys:String>
     <sys:String x:Key="Topview">顶视</sys:String>
     <sys:String x:Key="Lookingdown">俯视</sys:String>

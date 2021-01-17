@@ -188,6 +188,17 @@
                                     Width="64" 
                                     Margin="0,0,0,0"
                                ToolTip="{DynamicResource Routesshow}"/>
+            <controls:Buttons HasPathData="True" GroupName="LeftMneu" IsNeedSelected="True"
+                                    RIcon="{DynamicResource Courselist_N}"
+                                    MouseOverRIcon="{DynamicResource Courselist_M}"
+                                    PressedRIcon="{DynamicResource Courselist_M}"
+                                    Style="{DynamicResource HomeLeftButtonStyle}"
+                                    Command="{Binding cmdShowRouteListView2}"
+                                    IsSelected="{Binding RouteListModel2.IsSelected,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                    Height="64" 
+                                    Width="64" 
+                                    Margin="0,0,0,0"
+                               ToolTip="{DynamicResource Routesshow}"/>
             <!--<controls:Buttons HasPathData="True" GroupName="LeftMneu" IsNeedSelected="True"
                                     RIcon="{DynamicResource Courselist_N}"
                                     MouseOverRIcon="{DynamicResource Courselist_M}"

@@ -94,6 +94,86 @@ namespace Mmc.Mspace.Models.RoutePlanning
                 }
             }
         }
+
+        private int _declarationStatus=0;
+        /// <summary>
+        /// 申报状态 0 待审核 1 通过 2 未通过
+        /// </summary>
+        public int DeclarationStatus
+        {
+            get { return _declarationStatus; }
+            set
+            { 
+                _declarationStatus = value;
+                if (this.PropertyChanged != null)
+                {
+                    this.PropertyChanged.Invoke(this, new PropertyChangedEventArgs("DeclarationStatus"));
+                }
+            }
+        }
+        private string _declarationText= "待审核";
+        /// <summary>
+        /// 申报状态 0 待审核 1 通过 2 未通过
+        /// </summary>
+        public string DeclarationText
+        {
+            get 
+            {
+                if(DeclarationStatus==0)
+                {
+                    return _declarationText="待审核";
+                }
+                if (DeclarationStatus == 1)
+                {
+                    return _declarationText = "通过";
+                }
+                if (DeclarationStatus == 2)
+                {
+                    return _declarationText = "未通过";
+                }
+                return _declarationText;
+            }
+            set
+            {
+                _declarationText = value;
+                if (this.PropertyChanged != null)
+                {
+                    this.PropertyChanged.Invoke(this, new PropertyChangedEventArgs("DeclarationText"));
+                }
+            }
+        }
+        private string _declarationForeground = "待审核";
+        /// <summary>
+        /// 申报状态 0 待审核 1 通过 2 未通过
+        /// </summary>
+        public string DeclarationForeground
+        {
+            get
+            {
+                if (DeclarationStatus == 0)
+                {
+                    return _declarationForeground = "#FF7943";
+                }
+                if (DeclarationStatus == 1)
+                {
+                    return _declarationForeground = "#669633";
+                }
+                if (DeclarationStatus == 2)
+                {
+                    return _declarationForeground = "#EE8F8F";
+                }
+                return _declarationForeground;
+            }
+            set
+            {
+                _declarationForeground = value;
+                if (this.PropertyChanged != null)
+                {
+                    this.PropertyChanged.Invoke(this, new PropertyChangedEventArgs("DeclarationForeground"));
+                }
+            }
+        }
+        
         private float _workingArea;
         public float WorkingArea
         {
